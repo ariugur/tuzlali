@@ -4,6 +4,7 @@
 *.md
 sayfa_uret.js
 veri/*.py
+veri/kaynak_acikveri
 veri/mahalle_raw.json
 *.yedek
 *.yedek2
