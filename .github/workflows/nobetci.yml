@@ -1,31 +1,40 @@
-name: Nöbetçi eczane güncelle
+name: Deploy (+ nöbetçi güncelle)
 
-# Tuzla nöbetçi eczane listesini günde iki kez (nöbet değişim saatlerine yakın)
-# sunucu tarafında çeker ve veri/nobetci.json'u günceller. Statik sitede canlı
-# API/CORS/key derdi olmadan güncel veri sağlamanın ücretsiz yolu budur.
+# İki işi yapar:
+#  1) push / schedule / elle tetik -> siteyi Cloudflare Pages'e deploy eder
+#  2) schedule (günde 2x, nöbet değişim saatleri) -> nöbetçi eczaneyi çeker,
+#     değiştiyse commit'ler, sonra deploy eder (canlı site taze kalsın).
+# Otopark canlı Function'dan geldiği için buna dahil değil (hep güncel).
+#
+# GEREKLİ SECRET: CLOUDFLARE_API_TOKEN (Pages: Edit yetkili token).
+#   GitHub repo -> Settings -> Secrets and variables -> Actions -> New secret.
 on:
+  push:
+    branches: [main]
   schedule:
-    - cron: "30 6 * * *"    # 09:30 TR (sabah nöbet devri)
-    - cron: "30 15 * * *"   # 18:30 TR (akşam nöbet devri)
-  workflow_dispatch:         # elle de tetiklenebilir
+    - cron: "30 6 * * *"    # 09:30 TR
+    - cron: "30 15 * * *"   # 18:30 TR
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: nobetci
+  group: deploy
   cancel-in-progress: false
 
 jobs:
-  guncelle:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Nöbetçi listesini çek
-        run: python3 veri/nobetci_cek.py
+      - name: Nöbetçi eczaneyi çek (schedule/elle)
+        if: github.event_name != 'push'
+        run: python3 veri/nobetci_cek.py || echo "nöbetçi çekilemedi, eski veri korunuyor"
 
       - name: Değiştiyse commit'le
+        if: github.event_name != 'push'
         run: |
           if [ -n "$(git status --porcelain veri/nobetci.json)" ]; then
             git config user.name  "nobetci-bot"
@@ -34,5 +43,12 @@ jobs:
             git commit -m "nöbetçi eczane güncellendi ($(date -u +%Y-%m-%d\ %H:%M) UTC)"
             git push
           else
-            echo "Değişiklik yok, commit atlanıyor."
+            echo "Nöbetçi değişmedi."
           fi
+
+      - name: Cloudflare Pages'e deploy (canlı güncelle)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 97bd8b6f36fadffcf529f0d9bf105e68
+          command: pages deploy . --project-name=tuzlali --branch=main --commit-dirty=true
