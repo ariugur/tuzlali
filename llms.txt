@@ -38,3 +38,4 @@ Veri kaynağı: OpenStreetMap (ODbL), İBB Açık Veri, GİSBİR üye dizini. Ka
 ## Araçlar
 - [Canlı harita ve arama](https://tuzlali.net/kesfet.html): tüm işletmeler haritada, kategori ve mahalleye göre filtrelenir.
 - [Tuzla nöbetçi eczaneleri](https://tuzlali.net/nobetci.html): bugün Tuzla'da nöbette olan eczaneler, adres ve yol tarifiyle, her gün güncellenir.
+- [Tuzla trafik durumu](https://tuzlali.net/tuzla-trafik-durumu.html): Tuzla ve çevresi güncel trafik yoğunluğu, İBB Ulaşım Yönetim Merkezi canlı haritasıyla.

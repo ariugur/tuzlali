@@ -1,0 +1,13 @@
+# Cloudflare Pages'e YÜKLENMEYECEK dosyalar (kaynak/geliştirme).
+# NOT: veri/tuzla_data.json ve veri/nobetci.json site tarafından çekilir — DURUR.
+*.zip
+*.md
+sayfa_uret.js
+veri/*.py
+veri/mahalle_raw.json
+*.yedek
+*.yedek2
+.github
+worker
+.assetsignore
+.gitignore

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuzla Trafik Durumu | Canlı Trafik Haritası</title>
+<meta name="description" content="Tuzla ve çevresinin güncel trafik yoğunluğu ve İBB canlı trafik haritası. Ana yol durumu ve trafik yoğunluğunu tek sayfada görün.">
+<link rel="canonical" href="https://tuzlali.net/tuzla-trafik-durumu.html">
+<meta property="og:title" content="Tuzla Trafik Durumu — Canlı Harita">
+<meta property="og:description" content="Tuzla ve çevresinin güncel trafik yoğunluğu, İBB canlı trafik haritasıyla.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tuzlali.net/tuzla-trafik-durumu.html">
+<meta property="og:image" content="https://tuzlali.net/gorseller/marka/og-1200x630.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tuzlali.net/gorseller/marka/og-1200x630.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#13294d">
+<link rel="stylesheet" href="ortak.css">
+<link rel="stylesheet" href="ikonlar/regular.css">
+<link rel="stylesheet" href="ikonlar/fill.css">
+<script src="ortak.js"></script>
+<style>
+  .trf-head{padding:38px 0 6px}
+  .trf-head h1{font-size:clamp(24px,3.2vw,34px);margin-bottom:10px}
+  .trf-head .lede{max-width:64ch}
+  /* iframe kabı: responsive, harita için yüksek. Kenar + gölge site diliyle. */
+  .traffic-frame{position:relative;margin:22px 0 16px;border:1px solid var(--line);
+    border-radius:var(--r-surface);overflow:hidden;box-shadow:var(--sh-2);
+    background:var(--surface);height:clamp(460px,72vh,720px)}
+  .traffic-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+  /* iframe yüklenemezse görünen zemin mesajı (iframe üstünü kaplarsa gizlenir) */
+  .trf-fallback-bg{position:absolute;inset:0;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:14px;text-align:center;padding:30px;
+    color:var(--muted);z-index:0}
+  .trf-fallback-bg i{font-size:34px;color:var(--line-strong)}
+  .trf-kaynak{font-size:12.5px;color:var(--muted);line-height:1.6;margin-bottom:18px;max-width:70ch}
+  .trf-kaynak b{color:var(--txt-2)}
+  .trf-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:56px}
+  @media(max-width:640px){ .trf-head{padding:26px 0 4px} .traffic-frame{height:74vh} }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo" aria-label="tuzlali.net ana sayfa"><img src="gorseller/marka/logo-horizontal.svg" alt="tuzlali.net" width="112" height="28"></a>
+    <div class="nav-links">
+      <a href="kesfet.html">İşletmeler</a>
+      <a href="nobetci.html">Nöbetçi eczane</a>
+      <a href="tuzla-trafik-durumu.html" aria-current="page">Trafik</a>
+      <a href="index.html#mahalleler">Mahalleler</a>
+    </div>
+    <div class="nav-sag">
+      <a href="kesfet.html" class="btn btn-primary"><i class="ph ph-map-trifold"></i> <span class="nav-cta-yazi">Haritayı aç</span></a>
+      <button class="nav-burger" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navPanel">
+        <i class="ph ph-list" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div class="nav-panel" id="navPanel">
+    <a href="index.html"><i class="ph ph-house" aria-hidden="true"></i> Ana sayfa</a>
+    <a href="kesfet.html"><i class="ph ph-storefront" aria-hidden="true"></i> İşletmeler</a>
+    <a href="nobetci.html"><i class="ph ph-first-aid-kit" aria-hidden="true"></i> Nöbetçi eczane</a>
+    <a href="tuzla-trafik-durumu.html"><i class="ph ph-car" aria-hidden="true"></i> Trafik</a>
+    <a href="index.html#mahalleler"><i class="ph ph-map-pin-area" aria-hidden="true"></i> Mahalleler</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <nav class="seo-crumb" aria-label="Konum" style="padding-top:20px">
+      <a href="index.html" class="crumb-home"><i class="ph ph-house" aria-hidden="true"></i> Ana sayfa</a>
+      <i class="ph ph-caret-right" aria-hidden="true"></i>
+      <span>Trafik durumu</span>
+    </nav>
+
+    <section class="trf-head">
+      <h1>Tuzla'da Trafik Durumu</h1>
+      <p class="lede">Tuzla ve çevresindeki güncel trafik yoğunluğunu, ana yol durumunu ve
+        erişilebilen canlı harita görüntülerini inceleyin. Görüntüler İstanbul Büyükşehir
+        Belediyesi ve ilgili resmî kurumların sistemlerinden sağlanmaktadır.</p>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <div class="traffic-frame">
+      <!-- Fallback zemin: iframe yüklenirse üstünü kaplar; engellenirse görünür kalır -->
+      <div class="trf-fallback-bg" aria-hidden="true">
+        <i class="ph ph-car"></i>
+        <div>Harita yüklenemediyse aşağıdaki butondan İBB sisteminde açabilirsiniz.</div>
+      </div>
+      <iframe
+        src="https://cdn-uym.ibb.gov.tr/yharita6/m/1"
+        title="İBB Tuzla ve İstanbul canlı trafik yoğunluk haritası"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+
+    <p class="trf-kaynak">
+      <b>Kaynak:</b> İstanbul Büyükşehir Belediyesi Ulaşım Yönetim Merkezi (uym.ibb.gov.tr).
+      Tuzlalı.net, kamera ve harita görüntülerinin sahibi veya işletmecisi değildir;
+      yalnızca resmî sayfayı görüntüler. Harita İstanbul geneli açılır, Tuzla'ya
+      yakınlaştırarak bölgeyi inceleyebilirsiniz.
+    </p>
+
+    <div class="trf-actions">
+      <a href="https://uym.ibb.gov.tr/yharita6/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+        <i class="ph ph-arrow-up-right"></i> İBB Trafik sisteminde aç
+      </a>
+      <a href="https://uym.ibb.gov.tr/yharita6/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">
+        Harita açılmıyorsa buradan görüntüle
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <a href="index.html" class="foot-logo" aria-label="tuzlali.net"><img src="gorseller/marka/logo-horizontal-white.svg" alt="tuzlali.net" width="112" height="28"></a>
+      <p class="foot-tag">Mahallendeki işletmeleri, ustaları, mağazaları ve mekânları keşfet.</p>
+    </div>
+    <nav class="foot-col" aria-label="Keşfet">
+      <h3>Keşfet</h3>
+      <a href="kesfet.html">İşletmeler</a>
+      <a href="nobetci.html">Nöbetçi eczane</a>
+      <a href="tuzla-trafik-durumu.html">Trafik durumu</a>
+      <a href="index.html#mahalleler">Mahalleler</a>
+    </nav>
+    <nav class="foot-col" aria-label="İşletmen için">
+      <h3>İşletmen için</h3>
+      <a href="ekle.html">İşletmeni ekle</a>
+      <a href="mailto:uguraripro@gmail.com?subject=Tuzla%20Haritas%C4%B1%20-%20bilgi%20d%C3%BCzeltme">Bilgini düzelt</a>
+    </nav>
+    <div class="foot-col">
+      <h3>Veri kaynağı</h3>
+      <p class="foot-src">İşletme verisi: OpenStreetMap (ODbL), İBB Açık Veri, GİSBİR. Trafik: İBB Ulaşım Yönetim Merkezi. Nöbetçi eczane: istanbul.eczaneleri.org.</p>
+    </div>
+  </div>
+  <div class="wrap foot-alt">
+    <span>© 2026 tuzlali.net · Bağımsız topluluk projesi, resmî kurum değildir.</span>
+    <span class="foot-cd">Tasarım · <a href="https://yapgitsin.co" target="_blank" rel="noopener">yapgitsin.co</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

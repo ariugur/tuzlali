@@ -1,0 +1,5 @@
+# Cloudflare Pages yönlendirmeleri.
+# Kısa adres -> asıl SEO adresi (301 kalıcı).
+/trafik            /tuzla-trafik-durumu  301
+/tuzla-trafik      /tuzla-trafik-durumu  301
+/trafik-durumu     /tuzla-trafik-durumu  301
