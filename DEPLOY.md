@@ -18,11 +18,19 @@ git push -u origin main
   output dizini kök (`/`).
 - Alternatif: GitHub Pages (Settings → Pages → Deploy from branch → main / root).
 
-## 3. Nöbetçi eczane cron'u aç
-- `.github/workflows/nobetci.yml` zaten repoda. GitHub → Actions sekmesi →
-  workflow'u **Enable** et.
-- Günde 2 kez (09:30 ve 18:30 TR) otomatik çalışır, `veri/nobetci.json`'u günceller.
-- Hemen test: Actions → "Nöbetçi eczane güncelle" → **Run workflow** (manuel tetik).
+## 3. Otomatik deploy + nöbetçi cron — TEK EKSİK: 1 secret
+Repo GitHub'da (github.com/ariugur/tuzlali), site Cloudflare Pages'te
+(tuzlali.pages.dev) CANLI. `.github/workflows/nobetci.yml` şunu yapar:
+her push + günde 2x (09:30/18:30 TR) → siteyi Pages'e deploy + nöbetçi güncelle.
+
+**Çalışması için 1 secret gerekli (bunu ekleyene kadar Actions deploy adımı hata verir):**
+1. Cloudflare → My Profile → API Tokens → Create Token → **"Cloudflare Pages: Edit"** şablonu.
+2. GitHub repo → Settings → Secrets and variables → Actions → New repository secret:
+   isim `CLOUDFLARE_API_TOKEN`, değer = oluşturduğun token.
+   (veya: `gh secret set CLOUDFLARE_API_TOKEN` ile.)
+- Account ID workflow'da gömülü (gizli değil): `97bd8b6f36fadffcf529f0d9bf105e68`.
+- Secret eklenince: her push otomatik yayınlanır; nöbetçi günde 2x tazelenir.
+- Not: Otopark canlı Function'dan (`/api/otopark`) geldiği için cron gerektirmez.
 
 ## 4. Alan adı — TAMAM ✅
 Domain **tuzlali.net** olarak yerleştirildi (`SITE_KOK`, index/nobetci canonical,
