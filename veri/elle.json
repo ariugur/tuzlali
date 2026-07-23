@@ -8,6 +8,23 @@
   "_ornek": "Asagidaki ilk kayit ornek degil, gercek: OSM way/630195011 poligonunun merkezi."
  },
  {
+  "id": "elle-saygi-market",
+  "ad": "Saygı Market",
+  "kategori": "Market",
+  "alt_kategori": "Süpermarket",
+  "lat": 40.84012,
+  "lon": 29.30087,
+  "telefon": "(0216) 395 88 58",
+  "calisma_saatleri": "Mo-Sa 06:30-23:30; Su 07:00-23:30",
+  "adres": "Evliya Çelebi, Hızır Reis Cd. 21/A, 34944 Tuzla/İstanbul",
+  "mahalle": "Evliya Çelebi",
+  "kaynak": "kullanici-bildirimi",
+  "dogrulandi": false,
+  "konum_kalitesi": "yaklasik",
+  "konum_notu": "Hızır Reis Caddesi No:21/A. Koordinat, ayni cadde uzerindeki No:2 ve No:33A arasinda enterpolasyon; sokak dogru, kapi noktasi yaklasik.",
+  "kapsam_notu": "Ad, telefon, adres ve saatler kullanici bildiriminden (harita listelemesi); sahada teyit edilmedi."
+ },
+ {
   "id": "elle-tuzla-oto-sanayi-sitesi",
   "ad": "Tuzla Oto Sanayi Sitesi",
   "kategori": "Servis",

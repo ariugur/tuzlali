@@ -1,13 +1,13 @@
 # Tuzla İşletme Haritası
 
-> Tuzla'daki 1554 yerel işletmenin adres, telefon, çalışma saati ve harita rehberi. Sağlık, yeme-içme, market, otomotiv, tersane ve daha fazlası kategori ve mahalleye göre listeli.
+> Tuzla'daki 1555 yerel işletmenin adres, telefon, çalışma saati ve harita rehberi. Sağlık, yeme-içme, market, otomotiv, tersane ve daha fazlası kategori ve mahalleye göre listeli.
 
 Veri kaynağı: OpenStreetMap (ODbL), İBB Açık Veri, GİSBİR üye dizini. Kayıtların bir kısmında telefon/çalışma saati eksik olabilir.
 
 ## Kategoriler
 - [Tuzla Sağlık](https://tuzlali.net/kategori/saglik.html): 211 işletme
 - [Tuzla Yeme İçme](https://tuzlali.net/kategori/yeme-icme.html): 793 işletme
-- [Tuzla Market & Gıda](https://tuzlali.net/kategori/market-gida.html): 182 işletme
+- [Tuzla Market & Gıda](https://tuzlali.net/kategori/market-gida.html): 183 işletme
 - [Tuzla Otomotiv](https://tuzlali.net/kategori/otomotiv.html): 88 işletme
 - [Tuzla Perakende](https://tuzlali.net/kategori/perakende.html): 87 işletme
 - [Tuzla Servis](https://tuzlali.net/kategori/servis.html): 77 işletme
@@ -21,7 +21,7 @@ Veri kaynağı: OpenStreetMap (ODbL), İBB Açık Veri, GİSBİR üye dizini. Ka
 - [Aydıntepe Mahallesi](https://tuzlali.net/mahalle/aydintepe.html): 244 işletme
 - [Postane Mahallesi](https://tuzlali.net/mahalle/postane.html): 150 işletme
 - [İçmeler Mahallesi](https://tuzlali.net/mahalle/icmeler.html): 135 işletme
-- [Evliya Çelebi Mahallesi](https://tuzlali.net/mahalle/evliya-celebi.html): 126 işletme
+- [Evliya Çelebi Mahallesi](https://tuzlali.net/mahalle/evliya-celebi.html): 127 işletme
 - [Şifa Mahallesi](https://tuzlali.net/mahalle/sifa.html): 125 işletme
 - [Cami Mahallesi](https://tuzlali.net/mahalle/cami.html): 103 işletme
 - [Yayla Mahallesi](https://tuzlali.net/mahalle/yayla.html): 99 işletme

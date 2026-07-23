@@ -38848,5 +38848,30 @@
   "olasi_tekrar": "",
   "tekrar_notu": "",
   "baro_sicil": ""
+ },
+ {
+  "id": "elle-saygi-market",
+  "slug": "saygi-market",
+  "ad": "Saygı Market",
+  "diger_ad": "",
+  "kategori": "Market",
+  "alt_kategori": "Süpermarket",
+  "lat": 40.84012,
+  "lon": 29.30087,
+  "telefon": "+90 216 395 88 58",
+  "calisma_saatleri": "Mo-Sa 06:30-23:30; Su 07:00-23:30",
+  "web": "",
+  "instagram": "",
+  "adres": "Evliya Çelebi, Hızır Reis Cd. 21/A, 34944 Tuzla/İstanbul",
+  "mahalle": "Evliya Çelebi",
+  "kaynak": "kullanici-bildirimi",
+  "dogrulandi": false,
+  "konum_kalitesi": "yaklasik",
+  "konum_notu": "Hızır Reis Caddesi No:21/A. Koordinat, ayni cadde uzerindeki No:2 ve No:33A arasinda enterpolasyon; sokak dogru, kapi noktasi yaklasik.",
+  "kapsam_notu": "Ad, telefon, adres ve saatler kullanici bildiriminden (harita listelemesi); sahada teyit edilmedi.",
+  "ad_celiskisi": "",
+  "olasi_tekrar": "",
+  "tekrar_notu": "",
+  "baro_sicil": ""
  }
 ]
