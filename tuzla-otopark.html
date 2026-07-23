@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuzla Otoparkları | Canlı Doluluk</title>
+<meta name="description" content="Tuzla'daki İSPARK otoparklarının anlık doluluk durumu: boş yer sayısı, kapasite, çalışma saati ve yol tarifi. Canlı güncellenir.">
+<link rel="canonical" href="https://tuzlali.net/tuzla-otopark.html">
+<meta property="og:title" content="Tuzla Otoparkları — Canlı Doluluk">
+<meta property="og:description" content="Tuzla İSPARK otoparklarında şu an kaç boş yer var? Anlık doluluk, kapasite ve yol tarifi.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tuzlali.net/tuzla-otopark.html">
+<meta property="og:image" content="https://tuzlali.net/gorseller/marka/og-1200x630.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tuzlali.net/gorseller/marka/og-1200x630.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#13294d">
+<link rel="stylesheet" href="ortak.css">
+<link rel="stylesheet" href="ikonlar/regular.css">
+<link rel="stylesheet" href="ikonlar/fill.css">
+<script src="ortak.js"></script>
+<style>
+  .otp-head{padding:38px 0 6px}
+  .otp-head h1{font-size:clamp(24px,3.2vw,34px);margin-bottom:10px}
+  .otp-head .lede{max-width:62ch}
+  .otp-meta{font-size:13px;color:var(--muted);margin:14px 0 4px;display:flex;
+    align-items:center;gap:8px;flex-wrap:wrap}
+  .otp-meta i{color:var(--accent)}
+  .otp-liste{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;padding:22px 0 8px}
+  .otp-kart{background:var(--card);border:1px solid var(--line);border-radius:var(--r-surface);
+    padding:20px;box-shadow:var(--sh-1);display:flex;flex-direction:column;gap:14px}
+  .otp-ust{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+  .otp-kart h2{font-size:16.5px;font-weight:600;letter-spacing:-.015em;line-height:1.3}
+  .otp-tur{font-size:11px;color:var(--muted);margin-top:4px;display:flex;align-items:center;gap:6px}
+  .otp-tur .dot{width:7px;height:7px;border-radius:var(--r-pill)}
+  /* boş yer büyük sayı: durum rengiyle */
+  .otp-bos{text-align:right;flex:0 0 auto;line-height:1}
+  .otp-bos .n{font-size:30px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+  .otp-bos .l{font-size:11px;color:var(--muted);display:block;margin-top:3px}
+  /* doluluk çubuğu */
+  .otp-bar{height:8px;border-radius:var(--r-pill);background:var(--surface);overflow:hidden}
+  .otp-bar span{display:block;height:100%;border-radius:var(--r-pill);transition:width .4s var(--ease)}
+  .otp-alt{display:flex;justify-content:space-between;align-items:center;gap:10px;
+    font-size:12.5px;color:var(--muted);flex-wrap:wrap}
+  .otp-alt .yol{color:var(--accent);font-weight:500;display:inline-flex;align-items:center;gap:6px}
+  .otp-alt .yol:hover{text-decoration:underline}
+  /* durum renkleri: bol=yeşil, azalıyor=kehribar, dolu=kırmızı, kapalı=nötr */
+  .d-bol{color:#157a3a}    .b-bol{background:#2b8a3e}
+  .d-orta{color:#9a6a00}   .b-orta{background:#e8a13a}
+  .d-dolu{color:#c0392b}   .b-dolu{background:#c0392b}
+  .d-kapali{color:var(--muted)} .b-kapali{background:var(--line-strong)}
+  .otp-kaynak{font-size:12.5px;color:var(--muted);line-height:1.6;margin:18px 0 8px;max-width:70ch}
+  .otp-kaynak a{color:var(--accent)}
+  .otp-durum{padding:56px 20px;text-align:center;color:var(--muted)}
+  .otp-durum i{font-size:34px;display:block;margin-bottom:12px;color:var(--line-strong)}
+  .otp-durum h2{font-size:16px;color:var(--txt);margin-bottom:8px}
+  .otp-not{font-size:12.5px;color:var(--muted);margin:0 0 56px}
+  @media(max-width:640px){ .otp-liste{grid-template-columns:1fr} .otp-head{padding:26px 0 4px} }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo" aria-label="tuzlali.net ana sayfa"><img src="gorseller/marka/logo-horizontal.svg" alt="tuzlali.net" width="112" height="28"></a>
+    <div class="nav-links">
+      <a href="kesfet.html">İşletmeler</a>
+      <a href="nobetci.html">Nöbetçi eczane</a>
+      <a href="tuzla-trafik-durumu.html">Trafik</a>
+      <a href="tuzla-otopark.html" aria-current="page">Otopark</a>
+      <a href="index.html#mahalleler">Mahalleler</a>
+    </div>
+    <div class="nav-sag">
+      <a href="kesfet.html" class="btn btn-primary"><i class="ph ph-map-trifold"></i> <span class="nav-cta-yazi">Haritayı aç</span></a>
+      <button class="nav-burger" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navPanel">
+        <i class="ph ph-list" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div class="nav-panel" id="navPanel">
+    <a href="index.html"><i class="ph ph-house" aria-hidden="true"></i> Ana sayfa</a>
+    <a href="kesfet.html"><i class="ph ph-storefront" aria-hidden="true"></i> İşletmeler</a>
+    <a href="nobetci.html"><i class="ph ph-first-aid-kit" aria-hidden="true"></i> Nöbetçi eczane</a>
+    <a href="tuzla-trafik-durumu.html"><i class="ph ph-car" aria-hidden="true"></i> Trafik</a>
+    <a href="tuzla-otopark.html"><i class="ph ph-car" aria-hidden="true"></i> Otopark</a>
+    <a href="index.html#mahalleler"><i class="ph ph-map-pin-area" aria-hidden="true"></i> Mahalleler</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <nav class="seo-crumb" aria-label="Konum" style="padding-top:20px">
+      <a href="index.html" class="crumb-home"><i class="ph ph-house" aria-hidden="true"></i> Ana sayfa</a>
+      <i class="ph ph-caret-right" aria-hidden="true"></i>
+      <span>Otopark doluluk</span>
+    </nav>
+
+    <header class="otp-head">
+      <h1>Tuzla Otoparkları — Canlı Doluluk</h1>
+      <p class="lede">Tuzla'daki İSPARK otoparklarında şu an kaç boş yer var? Anlık doluluk,
+        kapasite ve yol tarifiyle. Veriler her açılışta canlı çekilir.</p>
+      <div class="otp-meta" id="meta" aria-live="polite"></div>
+    </header>
+  </div>
+
+  <div class="wrap">
+    <div class="otp-liste" id="liste">
+      <div class="otp-durum" style="grid-column:1/-1"><i class="ph ph-car"></i>
+        <h2>Yükleniyor…</h2></div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <p class="otp-kaynak">
+      <b>Kaynak:</b> İBB İSPARK açık verisi (api.ibb.gov.tr). Doluluk sayıları İSPARK
+      sisteminden anlık gelir; Tuzlalı.net verinin sahibi veya işletmecisi değildir.
+      <span id="ekstra"></span>
+    </p>
+    <p class="otp-not" id="not"></p>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <a href="index.html" class="foot-logo" aria-label="tuzlali.net"><img src="gorseller/marka/logo-horizontal-white.svg" alt="tuzlali.net" width="112" height="28"></a>
+      <p class="foot-tag">Mahallendeki işletmeleri, ustaları, mağazaları ve mekânları keşfet.</p>
+    </div>
+    <nav class="foot-col" aria-label="Keşfet">
+      <h3>Keşfet</h3>
+      <a href="kesfet.html">İşletmeler</a>
+      <a href="nobetci.html">Nöbetçi eczane</a>
+      <a href="tuzla-trafik-durumu.html">Trafik durumu</a>
+      <a href="tuzla-otopark.html">Otopark doluluk</a>
+    </nav>
+    <nav class="foot-col" aria-label="İşletmen için">
+      <h3>İşletmen için</h3>
+      <a href="ekle.html">İşletmeni ekle</a>
+      <a href="mailto:uguraripro@gmail.com?subject=Tuzla%20Haritas%C4%B1%20-%20bilgi%20d%C3%BCzeltme">Bilgini düzelt</a>
+    </nav>
+    <div class="foot-col">
+      <h3>Veri kaynağı</h3>
+      <p class="foot-src">İşletme verisi: OpenStreetMap (ODbL), İBB Açık Veri, GİSBİR. Otopark: İBB İSPARK. Trafik: Yandex Haritalar.</p>
+    </div>
+  </div>
+  <div class="wrap foot-alt">
+    <span>© 2026 tuzlali.net · Bağımsız topluluk projesi, resmî kurum değildir.</span>
+    <span class="foot-cd">Tasarım · <a href="https://yapgitsin.co" target="_blank" rel="noopener">yapgitsin.co</a></span>
+  </div>
+</footer>
+
+<script>
+/* /api/otopark: Cloudflare Pages Function İSPARK'ı sunucu tarafında çeker,
+   yalnız Tuzla'yı döner (bkz. functions/api/otopark.js). CORS/anahtar derdi yok. */
+function saatKisa(iso){
+  var m=String(iso).match(/T(\d{2}):(\d{2})/); return m ? m[1]+":"+m[2] : "";
+}
+function durumSinif(kapasite, bos, acik){
+  if(!acik) return {c:"kapali", et:"Kapalı"};
+  if(!kapasite) return {c:"orta", et:""};
+  var dol=(kapasite-bos)/kapasite;
+  if(dol>=0.9) return {c:"dolu", et:"Neredeyse dolu"};
+  if(dol>=0.7) return {c:"orta", et:"Doluyor"};
+  return {c:"bol", et:"Yer var"};
+}
+function kart(p){
+  var d=durumSinif(p.kapasite, p.bos, p.acik);
+  var dolPct = p.kapasite ? Math.round((p.kapasite-p.bos)/p.kapasite*100) : 0;
+  var yol="https://www.google.com/maps/dir/?api=1&destination="+p.lat+","+p.lon;
+  var bosGoster = p.acik ? esc(p.bos) : "—";
+  return '<article class="otp-kart">'+
+    '<div class="otp-ust">'+
+      '<div><h2>'+esc(p.ad)+'</h2>'+
+        '<div class="otp-tur"><span class="dot b-'+d.c+'"></span>'+esc(p.tur||"Otopark")+
+          (d.et?' · <span class="d-'+d.c+'" style="font-weight:600">'+d.et+'</span>':'')+'</div>'+
+      '</div>'+
+      '<div class="otp-bos"><span class="n d-'+d.c+'">'+bosGoster+'</span><span class="l">boş yer</span></div>'+
+    '</div>'+
+    '<div class="otp-bar"><span class="b-'+d.c+'" style="width:'+(p.acik?dolPct:0)+'%"></span></div>'+
+    '<div class="otp-alt">'+
+      '<span>'+(p.acik?('%'+dolPct+' dolu · '):'')+esc(p.kapasite)+' kapasite'+(p.saat?' · '+esc(p.saat):'')+'</span>'+
+      '<a class="yol" href="'+yol+'" target="_blank" rel="noopener"><i class="ph ph-map-trifold" aria-hidden="true"></i> Yol tarifi</a>'+
+    '</div></article>';
+}
+function hata(){
+  document.getElementById("liste").innerHTML=
+    '<div class="otp-durum" style="grid-column:1/-1"><i class="ph ph-warning-circle"></i>'+
+    '<h2>Otopark verisi şu an alınamadı</h2><p>İSPARK sistemine ulaşılamıyor olabilir, biraz sonra tekrar deneyin.</p></div>';
+  document.getElementById("meta").textContent="";
+}
+fetch("/api/otopark",{cache:"no-store"}).then(function(r){
+  if(!r.ok) throw new Error("api"); return r.json();
+}).then(function(d){
+  var o=(d&&d.otoparklar)||[];
+  if(d.hata || !o.length){ hata(); return; }
+  document.getElementById("liste").innerHTML=o.map(kart).join("");
+  var toplamBos=o.reduce(function(s,p){return s+(p.acik?p.bos:0);},0);
+  document.getElementById("meta").innerHTML=
+    '<i class="ph-fill ph-car" aria-hidden="true"></i><b>'+o.length+'</b> otopark · şu an <b>'+toplamBos+'</b> boş yer'+
+    (saatKisa(d.guncelleme)?' · '+saatKisa(d.guncelleme)+' itibarıyla':'');
+  document.getElementById("not").textContent="Ücretsiz süre ve tarifeler İSPARK'a göre değişir; kesin bilgi için otopark girişindeki tabelayı esas alın.";
+}).catch(hata);
+</script>
+</body>
+</html>

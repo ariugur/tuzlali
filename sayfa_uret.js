@@ -73,6 +73,7 @@ function nav() {
       <a href="../kesfet.html">İşletmeler</a>
       <a href="../nobetci.html">Nöbetçi eczane</a>
       <a href="../tuzla-trafik-durumu.html">Trafik</a>
+      <a href="../tuzla-otopark.html">Otopark</a>
       <a href="../index.html#mahalleler">Mahalleler</a>
       <a href="../index.html#veri">Veri kaynağı</a>
     </div>
@@ -88,6 +89,7 @@ function nav() {
     <a href="../kesfet.html"><i class="ph ph-storefront" aria-hidden="true"></i> İşletmeler</a>
     <a href="../nobetci.html"><i class="ph ph-first-aid-kit" aria-hidden="true"></i> Nöbetçi eczane</a>
     <a href="../tuzla-trafik-durumu.html"><i class="ph ph-car" aria-hidden="true"></i> Trafik</a>
+    <a href="../tuzla-otopark.html"><i class="ph ph-car" aria-hidden="true"></i> Otopark</a>
     <a href="../index.html#mahalleler"><i class="ph ph-map-pin-area" aria-hidden="true"></i> Mahalleler</a>
     <a href="../index.html#veri"><i class="ph ph-info" aria-hidden="true"></i> Veri kaynağı</a>
   </div>
@@ -105,6 +107,7 @@ function foot() {
       <a href="../kesfet.html">İşletmeler</a>
       <a href="../nobetci.html">Nöbetçi eczane</a>
       <a href="../tuzla-trafik-durumu.html">Trafik durumu</a>
+      <a href="../tuzla-otopark.html">Otopark doluluk</a>
       <a href="../index.html#mahalleler">Mahalleler</a>
     </nav>
     <nav class="foot-col" aria-label="İşletmen için">
@@ -385,7 +388,7 @@ ${foot()}
 
 // --- uret ---
 let uretilen = 0;
-const sitemapUrls = [`${SITE_KOK}/`, `${SITE_KOK}/kesfet.html`, `${SITE_KOK}/nobetci.html`, `${SITE_KOK}/tuzla-trafik-durumu.html`];
+const sitemapUrls = [`${SITE_KOK}/`, `${SITE_KOK}/kesfet.html`, `${SITE_KOK}/nobetci.html`, `${SITE_KOK}/tuzla-trafik-durumu.html`, `${SITE_KOK}/tuzla-otopark.html`];
 
 fs.mkdirSync(path.join(KOK, "kategori"), { recursive: true });
 fs.mkdirSync(path.join(KOK, "mahalle"), { recursive: true });
@@ -464,6 +467,7 @@ ${mahSat.join("\n")}
 - [Canlı harita ve arama](${SITE_KOK}/kesfet.html): tüm işletmeler haritada, kategori ve mahalleye göre filtrelenir.
 - [Tuzla nöbetçi eczaneleri](${SITE_KOK}/nobetci.html): bugün Tuzla'da nöbette olan eczaneler, adres ve yol tarifiyle, her gün güncellenir.
 - [Tuzla trafik durumu](${SITE_KOK}/tuzla-trafik-durumu.html): Tuzla ve çevresi güncel trafik yoğunluğu, Yandex Haritalar canlı trafik katmanıyla.
+- [Tuzla otoparkları](${SITE_KOK}/tuzla-otopark.html): Tuzla'daki İSPARK otoparklarının anlık doluluğu, boş yer sayısı ve yol tarifi (İBB İSPARK canlı verisi).
 `;
 fs.writeFileSync(path.join(KOK, "llms.txt"), llms);
 

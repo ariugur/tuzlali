@@ -3,3 +3,6 @@
 /trafik            /tuzla-trafik-durumu  301
 /tuzla-trafik      /tuzla-trafik-durumu  301
 /trafik-durumu     /tuzla-trafik-durumu  301
+/otopark           /tuzla-otopark        301
+/otoparklar        /tuzla-otopark        301
+/tuzla-otoparklari /tuzla-otopark        301
