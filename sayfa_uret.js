@@ -326,12 +326,12 @@ function sayfa({ baslik, aciklama, url, aktifTip, aktifAd, kayitlar, canliLink, 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7KENG4PVTE"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9GYJV89N8X"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-7KENG4PVTE');
+  gtag('config', 'G-9GYJV89N8X');
 </script>
 <title>${esc(baslik)}</title>
 <meta name="description" content="${esc(aciklama)}">
