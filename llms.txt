@@ -5,36 +5,36 @@
 Veri kaynağı: OpenStreetMap (ODbL), İBB Açık Veri, GİSBİR üye dizini. Kayıtların bir kısmında telefon/çalışma saati eksik olabilir.
 
 ## Kategoriler
-- [Tuzla Sağlık](https://ORNEK-ALAN-ADI/kategori/saglik.html): 211 işletme
-- [Tuzla Yeme İçme](https://ORNEK-ALAN-ADI/kategori/yeme-icme.html): 793 işletme
-- [Tuzla Market & Gıda](https://ORNEK-ALAN-ADI/kategori/market-gida.html): 182 işletme
-- [Tuzla Otomotiv](https://ORNEK-ALAN-ADI/kategori/otomotiv.html): 88 işletme
-- [Tuzla Perakende](https://ORNEK-ALAN-ADI/kategori/perakende.html): 87 işletme
-- [Tuzla Servis](https://ORNEK-ALAN-ADI/kategori/servis.html): 77 işletme
-- [Tuzla Bakım & Güzellik](https://ORNEK-ALAN-ADI/kategori/bakim-guzellik.html): 49 işletme
-- [Tuzla Marina & Denizcilik](https://ORNEK-ALAN-ADI/kategori/marina-denizcilik.html): 37 işletme
-- [Tuzla Evcil Hayvan](https://ORNEK-ALAN-ADI/kategori/evcil-hayvan.html): 17 işletme
-- [Tuzla Konaklama](https://ORNEK-ALAN-ADI/kategori/konaklama.html): 13 işletme
+- [Tuzla Sağlık](https://tuzlali.net/kategori/saglik.html): 211 işletme
+- [Tuzla Yeme İçme](https://tuzlali.net/kategori/yeme-icme.html): 793 işletme
+- [Tuzla Market & Gıda](https://tuzlali.net/kategori/market-gida.html): 182 işletme
+- [Tuzla Otomotiv](https://tuzlali.net/kategori/otomotiv.html): 88 işletme
+- [Tuzla Perakende](https://tuzlali.net/kategori/perakende.html): 87 işletme
+- [Tuzla Servis](https://tuzlali.net/kategori/servis.html): 77 işletme
+- [Tuzla Bakım & Güzellik](https://tuzlali.net/kategori/bakim-guzellik.html): 49 işletme
+- [Tuzla Marina & Denizcilik](https://tuzlali.net/kategori/marina-denizcilik.html): 37 işletme
+- [Tuzla Evcil Hayvan](https://tuzlali.net/kategori/evcil-hayvan.html): 17 işletme
+- [Tuzla Konaklama](https://tuzlali.net/kategori/konaklama.html): 13 işletme
 
 ## Mahalleler
-- [Aydınlı Mahallesi](https://ORNEK-ALAN-ADI/mahalle/aydinli.html): 269 işletme
-- [Aydıntepe Mahallesi](https://ORNEK-ALAN-ADI/mahalle/aydintepe.html): 244 işletme
-- [Postane Mahallesi](https://ORNEK-ALAN-ADI/mahalle/postane.html): 150 işletme
-- [İçmeler Mahallesi](https://ORNEK-ALAN-ADI/mahalle/icmeler.html): 135 işletme
-- [Evliya Çelebi Mahallesi](https://ORNEK-ALAN-ADI/mahalle/evliya-celebi.html): 126 işletme
-- [Şifa Mahallesi](https://ORNEK-ALAN-ADI/mahalle/sifa.html): 125 işletme
-- [Cami Mahallesi](https://ORNEK-ALAN-ADI/mahalle/cami.html): 103 işletme
-- [Yayla Mahallesi](https://ORNEK-ALAN-ADI/mahalle/yayla.html): 99 işletme
-- [İstasyon Mahallesi](https://ORNEK-ALAN-ADI/mahalle/istasyon.html): 96 işletme
-- [Mimar Sinan Mahallesi](https://ORNEK-ALAN-ADI/mahalle/mimar-sinan.html): 74 işletme
-- [Tepeören Mahallesi](https://ORNEK-ALAN-ADI/mahalle/tepeoren.html): 34 işletme
-- [Orhanlı Mahallesi](https://ORNEK-ALAN-ADI/mahalle/orhanli.html): 28 işletme
-- [Orta Mahallesi](https://ORNEK-ALAN-ADI/mahalle/orta.html): 26 işletme
-- [Fatih Mahallesi](https://ORNEK-ALAN-ADI/mahalle/fatih.html): 19 işletme
-- [Mescit Mahallesi](https://ORNEK-ALAN-ADI/mahalle/mescit.html): 18 işletme
-- [Akfırat Mahallesi](https://ORNEK-ALAN-ADI/mahalle/akfirat.html): 4 işletme
-- [Anadolu Mahallesi](https://ORNEK-ALAN-ADI/mahalle/anadolu.html): 1 işletme
+- [Aydınlı Mahallesi](https://tuzlali.net/mahalle/aydinli.html): 269 işletme
+- [Aydıntepe Mahallesi](https://tuzlali.net/mahalle/aydintepe.html): 244 işletme
+- [Postane Mahallesi](https://tuzlali.net/mahalle/postane.html): 150 işletme
+- [İçmeler Mahallesi](https://tuzlali.net/mahalle/icmeler.html): 135 işletme
+- [Evliya Çelebi Mahallesi](https://tuzlali.net/mahalle/evliya-celebi.html): 126 işletme
+- [Şifa Mahallesi](https://tuzlali.net/mahalle/sifa.html): 125 işletme
+- [Cami Mahallesi](https://tuzlali.net/mahalle/cami.html): 103 işletme
+- [Yayla Mahallesi](https://tuzlali.net/mahalle/yayla.html): 99 işletme
+- [İstasyon Mahallesi](https://tuzlali.net/mahalle/istasyon.html): 96 işletme
+- [Mimar Sinan Mahallesi](https://tuzlali.net/mahalle/mimar-sinan.html): 74 işletme
+- [Tepeören Mahallesi](https://tuzlali.net/mahalle/tepeoren.html): 34 işletme
+- [Orhanlı Mahallesi](https://tuzlali.net/mahalle/orhanli.html): 28 işletme
+- [Orta Mahallesi](https://tuzlali.net/mahalle/orta.html): 26 işletme
+- [Fatih Mahallesi](https://tuzlali.net/mahalle/fatih.html): 19 işletme
+- [Mescit Mahallesi](https://tuzlali.net/mahalle/mescit.html): 18 işletme
+- [Akfırat Mahallesi](https://tuzlali.net/mahalle/akfirat.html): 4 işletme
+- [Anadolu Mahallesi](https://tuzlali.net/mahalle/anadolu.html): 1 işletme
 
 ## Araçlar
-- [Canlı harita ve arama](https://ORNEK-ALAN-ADI/kesfet.html): tüm işletmeler haritada, kategori ve mahalleye göre filtrelenir.
-- [Tuzla nöbetçi eczaneleri](https://ORNEK-ALAN-ADI/nobetci.html): bugün Tuzla'da nöbette olan eczaneler, adres ve yol tarifiyle, her gün güncellenir.
+- [Canlı harita ve arama](https://tuzlali.net/kesfet.html): tüm işletmeler haritada, kategori ve mahalleye göre filtrelenir.
+- [Tuzla nöbetçi eczaneleri](https://tuzlali.net/nobetci.html): bugün Tuzla'da nöbette olan eczaneler, adres ve yol tarifiyle, her gün güncellenir.

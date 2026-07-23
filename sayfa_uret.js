@@ -18,7 +18,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const SITE_KOK = "https://ORNEK-ALAN-ADI"; // TODO: gercek alan adi
+const SITE_KOK = "https://tuzlali.net"; // canli alan adi
 const KOK = __dirname;
 
 // --- taksonomi: gruplar.js'ten, kopyasiz ---
@@ -132,7 +132,7 @@ function listeGovde(kayitlar, bolumlu, aktifAd) {
   GRUPLAR.forEach((g) => {
     const grubun = sirali.filter((r) => r._grup === g.ad);
     if (!grubun.length) return;
-    html += `<section class="seo-bolum">
+    html += `<section class="seo-bolum" id="bol-${slug(g.ad)}">
       <h2 class="seo-bolum-bas"><span class="cdot" style="background:var(${g.renk})"></span>${esc(g.ad)} <span class="say">${grubun.length}</span></h2>
       <ol class="seo-list">
         ${grubun.map(kart).join("\n        ")}
@@ -179,6 +179,35 @@ function sssMahalle(ad, kayitlar) {
      `${ad} Mahallesi'ndeki işletmeler şu kategorilerde: ${hepsi}.`],
     ["Bu bilgiler nereden geliyor?", KAYNAK_CEVAP],
   ];
+}
+
+// Bir mahalledeki en cok gecen ust kategoriler (sayiyla). VERIDEN, uydurma yok.
+function ustKategoriler(kayitlar, kac) {
+  return GRUPLAR.map((g) => [g.ad, kayitlar.filter((r) => r._grup === g.ad).length])
+    .filter(([, n]) => n).sort((a, b) => b[1] - a[1]).slice(0, kac);
+}
+
+// Turkce dogal liste: "A, B ve C"
+function veIle(dizi) {
+  if (dizi.length <= 1) return dizi.join("");
+  return dizi.slice(0, -1).join(", ") + " ve " + dizi[dizi.length - 1];
+}
+
+// "Bu mahallede" pratik serit: en cok kategoriler (sayfa ici bolume atlar) +
+// nobetci eczane linki (Faz 2'yi baglar). Rehber degeri: sakin aradigi gunluk
+// ihtiyaci (market/saglik) ve eczaneyi bir bakista bulur. Uydurma metin YOK.
+function gunlukStrip(kayitlar) {
+  const chips = ustKategoriler(kayitlar, 5).map(([ad, n]) => {
+    const g = GRUPLAR.find((x) => x.ad === ad) || GRUPLAR[5];
+    return `<a class="g-chip" href="#bol-${slug(ad)}"><span class="cdot" style="background:var(${g.renk})"></span>${esc(ad)} <span class="n">${n}</span></a>`;
+  }).join("");
+  return `<div class="wrap">
+    <nav class="seo-gunluk" aria-label="Bu mahallede">
+      <span class="g-bas">Bu mahallede</span>
+      ${chips}
+      <a class="g-chip g-neb" href="../nobetci.html"><i class="ph ph-first-aid-kit" aria-hidden="true"></i> Bugün nöbetçi eczaneler</a>
+    </nav>
+  </div>`;
 }
 
 // Gorunur FAQ: <details> ile KATLANABILIR, varsayilan kapali. Insan icin 3
@@ -255,7 +284,7 @@ function jsonLd(baslik, url, kayitlar, sss) {
     .join("\n");
 }
 
-function sayfa({ baslik, aciklama, url, aktifTip, aktifAd, kayitlar, canliLink, lede, bolumlu, sss }) {
+function sayfa({ baslik, aciklama, url, aktifTip, aktifAd, kayitlar, canliLink, lede, bolumlu, sss, gunluk }) {
   const sirali = kayitlar.slice().sort((a, b) => (a.ad || "").localeCompare(b.ad || "", "tr"));
   // ic link cipleri: kategoriler (bu sayfa mahalle ise) + mahalleler (bu sayfa kategori ise)
   let kategoriChips = GRUPLAR.filter((g) => grupSay[g.ad] > 0).map((g) =>
@@ -297,6 +326,8 @@ ${nav()}
       <a href="${canliLink}" class="btn btn-primary"><i class="ph ph-map-trifold"></i> Haritada gör</a>
     </div>
   </div>
+
+  ${gunluk || ""}
 
   <div class="wrap">
     ${listeGovde(kayitlar, bolumlu, aktifAd)}
@@ -358,7 +389,13 @@ mahListe.forEach((m) => {
     url,
     aktifTip: "mahalle", aktifAd: m, kayitlar, bolumlu: true,
     canliLink: `../kesfet.html?mahalle=${encodeURIComponent(m)}`,
-    lede: { h1: `${m} Mahallesi, Tuzla`, p: `${m} Mahallesi'nde ${kayitlar.length} işletme. Kategorilere göz atın, haritada konumu görün.` },
+    // lede VERIDEN zenginlestirildi: en cok gecen kategorileri adiyla anar
+    // (jenerik "kategorilere goz atin" yerine). Uydurma mahalle tarihi/karakteri YOK.
+    lede: {
+      h1: `${m} Mahallesi, Tuzla`,
+      p: `${m} Mahallesi'nde ${kayitlar.length} işletme — en çok ${veIle(ustKategoriler(kayitlar, 3).map(([a]) => a))}. Aşağıda kategoriye göre listeli; haritada konumunu görün, yol tarifi alın.`,
+    },
+    gunluk: gunlukStrip(kayitlar),
     sss: sssMahalle(m, kayitlar),
   });
   fs.writeFileSync(path.join(KOK, "mahalle", `${s}.html`), html);

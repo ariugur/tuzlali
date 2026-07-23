@@ -85,6 +85,23 @@
 .seo-chip .cdot{width:8px;height:8px;border-radius:var(--r-pill)}
 .seo-chip .n{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px}
 
+/* "Bu mahallede" pratik şerit: en çok kategoriler (sayfa içi bölüme atlar) +
+   nöbetçi eczane. Sakinin günlük ihtiyacını bir bakışta bulması için. */
+.seo-gunluk{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:2px 0 20px}
+.seo-gunluk .g-bas{font-size:11.5px;color:var(--muted);font-weight:600;
+  letter-spacing:.05em;text-transform:uppercase;margin-right:4px}
+.g-chip{display:inline-flex;align-items:center;gap:7px;font-size:13px;
+  padding:8px 13px;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--r-pill);color:var(--txt-2);min-height:38px;
+  transition:.15s var(--ease)}
+.g-chip:hover{border-color:var(--accent);color:var(--accent)}
+.g-chip .cdot{width:8px;height:8px;border-radius:var(--r-pill)}
+.g-chip .n{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px}
+/* nöbetçi: yeşil, ayrışır. #157a3a / #eaf7ef AA geçer */
+.g-chip.g-neb{background:#eaf7ef;border-color:#bfe6cd;color:#157a3a;font-weight:500}
+.g-chip.g-neb:hover{border-color:#157a3a;color:#157a3a}
+.g-chip.g-neb i{font-size:15px}
+
 @media(max-width:980px){
   .seo-list{grid-template-columns:repeat(2,1fr)}
 }

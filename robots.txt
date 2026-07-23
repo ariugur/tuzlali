@@ -19,4 +19,4 @@ User-agent: Google-Extended
 Allow: /
 
 # Alan adi belli olunca degistir (sayfa_uret.js SITE_KOK ile ayni olmali).
-Sitemap: https://ORNEK-ALAN-ADI/sitemap.xml
+Sitemap: https://tuzlali.net/sitemap.xml

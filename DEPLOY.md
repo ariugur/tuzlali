@@ -24,15 +24,12 @@ git push -u origin main
 - Günde 2 kez (09:30 ve 18:30 TR) otomatik çalışır, `veri/nobetci.json`'u günceller.
 - Hemen test: Actions → "Nöbetçi eczane güncelle" → **Run workflow** (manuel tetik).
 
-## 4. Alan adını yerleştir (GEO aktifleşir)
-`ORNEK-ALAN-ADI` yer tutucu 4 yerde. Domain belli olunca:
-1. `sayfa_uret.js` → `SITE_KOK` sabitini gerçek domain yap → `node sayfa_uret.js`
-   çalıştır (27 sayfa + sitemap.xml + llms.txt otomatik güncellenir).
-2. Elle değiştir: `index.html`, `nobetci.html` (canonical), `robots.txt` (Sitemap satırı).
-```bash
-# yardımcı kontrol: kalan placeholder var mı
-grep -rl "ORNEK-ALAN-ADI" . --include="*.html" --include="*.txt" --include="*.xml" --include="*.js"
-```
+## 4. Alan adı — TAMAM ✅
+Domain **tuzlali.net** olarak yerleştirildi (`SITE_KOK`, index/nobetci canonical,
+robots, sitemap, 27 SEO sayfası, llms.txt). Placeholder kalmadı. Domain değişirse
+`sayfa_uret.js` → `SITE_KOK`'u güncelle + `index.html`/`nobetci.html`/`robots.txt`'de
+değiştir, sonra `node sayfa_uret.js`.
+- DNS: tuzlali.net'i Cloudflare Pages / GitHub Pages hedefine yönlendir (2. adım).
 
 ## 5. Analytics (Faz 5 — ücretsiz, KVKK-dostu)
 **Cloudflare Web Analytics** (çerezsiz, ücretsiz):
