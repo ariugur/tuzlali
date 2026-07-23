@@ -95,9 +95,8 @@ function foot() {
   return `<footer class="foot">
   <div class="wrap foot-in">
     <div class="foot-brand">
-      <a href="../index.html" class="foot-logo"><i class="ph-fill ph-map-pin-area" aria-hidden="true"></i> Tuzla Haritası</a>
-      <p class="foot-tag">Tuzla'nın mahalle mahalle işletme rehberi. Eczane, market, kafe, sağlık — adres, telefon ve yol tarifiyle.</p>
-      <span class="foot-alan">tuzlali.net</span>
+      <a href="../index.html" class="foot-logo"><i class="ph-fill ph-map-pin-area" aria-hidden="true"></i> tuzlali.net</a>
+      <p class="foot-tag">Mahallendeki işletmeleri, ustaları, mağazaları ve mekânları keşfet.</p>
     </div>
     <nav class="foot-col" aria-label="Keşfet">
       <h3>Keşfet</h3>
@@ -116,8 +115,8 @@ function foot() {
     </div>
   </div>
   <div class="wrap foot-alt">
-    <span>© 2026 Tuzla Haritası · tuzlali.net</span>
-    <span>Bağımsız topluluk projesi — resmî kurum değildir.</span>
+    <span>© 2026 tuzlali.net · Bağımsız topluluk projesi, resmî kurum değildir.</span>
+    <span class="foot-cd">Tasarım · ClassyDesign</span>
   </div>
 </footer>`;
 }

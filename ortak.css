@@ -226,35 +226,38 @@ section[id]{scroll-margin-top:84px}
 /* kategori noktası: harita pin rengiyle birebir aynı (anlamsal, dekoratif değil) */
 .cdot{width:8px;height:8px;border-radius:var(--r-pill);flex:0 0 8px}
 
-/* ===== FOOTER: cok sutunlu, marka + kesif + veri kaynagi =====
-   Zemin --surface (kum serit). Metin --muted bu zeminde AA gecer. */
-.foot{border-top:1px solid var(--line-strong);padding:54px 0 26px;
-  background:var(--surface);color:var(--muted);font-size:13px}
+/* ===== FOOTER: KOYU LACIVERT zemin — sicak kum sayfadan net ayrisir =====
+   Zemin #13294d (--accent-deep, paletde var). Acik zemine karsi guclu ayrac;
+   koyu footer sayfayi zarifce topraklar. Tum metinler lacivertte AA gecer. */
+.foot{padding:56px 0 26px;background:var(--accent-deep);color:#9fb0cc;font-size:13px}
 .foot-in{display:grid;grid-template-columns:1.7fr 1fr 1fr 1.5fr;gap:38px}
 .foot-brand{max-width:320px}
-.foot-logo{display:inline-flex;align-items:center;gap:8px;font-size:16px;
-  font-weight:700;color:var(--txt);letter-spacing:-.02em;margin-bottom:13px}
-.foot-logo i{color:var(--accent);font-size:21px}
-.foot-tag{font-size:12.5px;line-height:1.6;color:var(--muted);margin-bottom:14px;max-width:34ch}
-.foot-alan{font-size:12px;font-weight:600;color:var(--accent-hi);letter-spacing:.03em}
+.foot-logo{display:inline-flex;align-items:center;gap:8px;font-size:17px;
+  font-weight:700;color:#fff;letter-spacing:-.02em;margin-bottom:13px}
+.foot-logo i{color:#7aa7e8;font-size:21px}
+.foot-tag{font-size:12.5px;line-height:1.6;color:#9fb0cc;margin-bottom:4px;max-width:34ch}
 .foot-col h3{font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;
-  color:var(--txt-2);margin-bottom:12px;font-weight:600}
-.foot-col a{display:inline-block;color:var(--muted);padding:6px 0;line-height:1.3;
+  color:#c3d0e4;margin-bottom:12px;font-weight:600}
+.foot-col a{display:inline-block;color:#9fb0cc;padding:6px 0;line-height:1.3;
   transition:color .15s var(--ease)}
-.foot-col a:hover{color:var(--accent)}
-.foot-src{font-size:12px;line-height:1.65;color:var(--muted)}
-.foot-src a{color:var(--accent)}
+.foot-col a:hover{color:#fff}
+.foot-src{font-size:12px;line-height:1.65;color:#9fb0cc}
+.foot-src a{color:#7aa7e8}
 .foot-src a:hover{text-decoration:underline}
-.foot-alt{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
-  margin-top:38px;padding-top:20px;border-top:1px solid var(--line-strong);
-  font-size:12px;color:var(--muted)}
+.foot-alt{display:flex;justify-content:space-between;align-items:center;gap:16px;
+  flex-wrap:wrap;margin-top:40px;padding-top:20px;
+  border-top:1px solid rgba(255,255,255,.14);font-size:12px;color:#97a8c4}
+/* ClassyDesign kredisi: sag alt. Hafif one cikar ama alcakgonullu. */
+.foot-cd{color:#c3d0e4;font-weight:600;letter-spacing:.02em}
+.foot-cd a{color:inherit}
+.foot-cd a:hover{color:#fff}
 @media(max-width:860px){
   .foot-in{grid-template-columns:1fr 1fr;gap:28px 30px}
   .foot-brand{grid-column:1/-1;max-width:none}
 }
 @media(max-width:480px){
   .foot-in{grid-template-columns:1fr;gap:26px}
-  .foot-alt{flex-direction:column;gap:7px}
+  .foot-alt{flex-direction:column;align-items:flex-start;gap:8px}
 }
 
 @media(prefers-reduced-motion:reduce){
