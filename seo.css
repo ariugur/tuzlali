@@ -1,0 +1,94 @@
+/* SEO liste sayfalari (kategori/*.html, mahalle/*.html) icin stil.
+   ortak.css'in uzerine biner; yalniz bu sayfalara ozel kart/liste dili.
+   Uretilen sayfalar sayfa_uret.js ile olusur, elle duzenlenmez. */
+
+.seo-head{padding:40px 0 8px}
+.seo-crumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);
+  flex-wrap:wrap;margin-bottom:14px}
+.seo-crumb a{color:var(--accent)}
+.seo-crumb a:hover{text-decoration:underline}
+.seo-crumb i{font-size:13px;color:var(--line-strong)}
+/* ana sayfa: ikonlu, net geri donus (kesfet ile ayni dil) */
+.crumb-home{display:inline-flex;align-items:center;gap:5px;font-weight:500}
+.crumb-home i{color:var(--accent);font-size:15px}
+@media(max-width:600px){
+  .seo-crumb{min-height:44px}   /* mobil dokunma hedefi */
+}
+.seo-head h1{font-size:clamp(26px,3.4vw,38px);margin-bottom:10px}
+.seo-head .lede{margin-bottom:18px}
+.seo-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+
+/* kategori bolumu (mahalle sayfalarinda): her genel kategori bir baslik,
+   altinda o kategorinin isletmeleri */
+.seo-bolum{margin-bottom:30px}
+.seo-bolum-bas{display:flex;align-items:center;gap:10px;font-size:19px;
+  margin:0;letter-spacing:-.015em}
+.seo-bolum-bas .cdot{width:10px;height:10px;border-radius:var(--r-pill);flex:0 0 10px}
+.seo-bolum-bas .say{color:var(--muted);font-weight:400;font-size:14px;
+  font-variant-numeric:tabular-nums}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* liste: kesfet karti dilinin sadelesmis hali */
+.seo-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+  padding:14px 0 8px;list-style:none}
+.seo-head + .wrap > .seo-list{padding-top:24px}
+.seo-card{background:var(--card);border:1px solid var(--line);
+  border-radius:var(--r-surface);padding:16px 17px 14px;box-shadow:var(--sh-1);
+  display:flex;flex-direction:column;gap:8px;
+  transition:border-color .16s var(--ease),box-shadow .16s var(--ease)}
+.seo-card:hover{border-color:var(--line-strong);box-shadow:var(--sh-2)}
+.seo-card h2{font-size:15px;font-weight:600;line-height:1.3;letter-spacing:-.015em}
+.seo-card .sub{display:flex;align-items:center;gap:7px;font-size:12px;
+  color:var(--muted);flex-wrap:wrap}
+.seo-card .cdot{width:8px;height:8px;border-radius:var(--r-pill);flex:0 0 8px}
+.seo-rows{display:flex;flex-direction:column;gap:5px;font-size:12.5px;
+  color:var(--txt-2);margin-top:2px}
+.seo-rows .r{display:flex;gap:8px;align-items:flex-start}
+.seo-rows .r i{color:var(--muted);font-size:14px;margin-top:1px;flex:0 0 14px}
+.seo-rows a{color:var(--accent)}
+.seo-rows a:hover{text-decoration:underline}
+
+/* rozet: dogrulanmadi / yaklasik -- kesfet ile ayni anlam */
+.seo-badge{font-size:10px;background:var(--surface);color:var(--muted);
+  border:1px solid var(--line);padding:2px 7px;border-radius:var(--r-pill);
+  white-space:nowrap;font-weight:500}
+
+/* SSS: katlanabilir, kapali baslar. Insan icin 3 sade satir (bogmaz),
+   acan okur; LLM/Google DOM'dan okur. Native <details> -> JS yok. */
+.seo-sss{border-top:1px solid var(--line-soft);padding:30px 0 8px;max-width:760px}
+.seo-sss-bas{font-size:17px;margin-bottom:14px}
+.sss-q{border:1px solid var(--line);border-radius:var(--r-surface);
+  background:var(--card);margin-bottom:8px;overflow:hidden}
+.sss-q summary{padding:14px 16px;cursor:pointer;font-weight:500;font-size:14px;
+  color:var(--txt);list-style:none;display:flex;align-items:center;gap:10px;
+  min-height:44px}
+.sss-q summary::-webkit-details-marker{display:none}
+.sss-q summary::before{content:"+";color:var(--accent);font-weight:600;
+  font-size:18px;flex:0 0 14px}
+.sss-q[open] summary::before{content:"–"}
+.sss-q summary:hover{color:var(--accent)}
+.sss-q p{padding:0 16px 15px 40px;font-size:13.5px;color:var(--txt-2);
+  line-height:1.6;max-width:65ch}
+
+/* ic link bolumu: diger kategoriler / mahalleler (crawl yolu) */
+.seo-links{border-top:1px solid var(--line-soft);padding:34px 0 8px}
+.seo-links h2{font-size:17px;margin-bottom:16px}
+.seo-chips{display:flex;flex-wrap:wrap;gap:8px}
+.seo-chip{display:inline-flex;align-items:center;gap:8px;font-size:13px;
+  padding:9px 14px;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--r-pill);color:var(--txt-2);min-height:40px;
+  transition:.15s var(--ease)}
+.seo-chip:hover{border-color:var(--accent);color:var(--accent)}
+.seo-chip.aktif{background:var(--accent-wash);border-color:#bcd4f5;
+  color:var(--accent-hi);font-weight:500}
+.seo-chip .cdot{width:8px;height:8px;border-radius:var(--r-pill)}
+.seo-chip .n{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px}
+
+@media(max-width:980px){
+  .seo-list{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .seo-list{grid-template-columns:1fr}
+  .seo-head{padding:28px 0 4px}
+}

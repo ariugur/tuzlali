@@ -1,0 +1,38 @@
+name: Nöbetçi eczane güncelle
+
+# Tuzla nöbetçi eczane listesini günde iki kez (nöbet değişim saatlerine yakın)
+# sunucu tarafında çeker ve veri/nobetci.json'u günceller. Statik sitede canlı
+# API/CORS/key derdi olmadan güncel veri sağlamanın ücretsiz yolu budur.
+on:
+  schedule:
+    - cron: "30 6 * * *"    # 09:30 TR (sabah nöbet devri)
+    - cron: "30 15 * * *"   # 18:30 TR (akşam nöbet devri)
+  workflow_dispatch:         # elle de tetiklenebilir
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nobetci
+  cancel-in-progress: false
+
+jobs:
+  guncelle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Nöbetçi listesini çek
+        run: python3 veri/nobetci_cek.py
+
+      - name: Değiştiyse commit'le
+        run: |
+          if [ -n "$(git status --porcelain veri/nobetci.json)" ]; then
+            git config user.name  "nobetci-bot"
+            git config user.email "actions@github.com"
+            git add veri/nobetci.json
+            git commit -m "nöbetçi eczane güncellendi ($(date -u +%Y-%m-%d\ %H:%M) UTC)"
+            git push
+          else
+            echo "Değişiklik yok, commit atlanıyor."
+          fi

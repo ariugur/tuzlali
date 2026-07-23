@@ -1,0 +1,728 @@
+[
+ {
+  "ad": "Barbaros Eczanesi",
+  "telefon": "+90 2164468128",
+  "adres": "Şinasi Dural Caddesi 90/B Yayla Mahallesi",
+  "mahalle": "Yayla Mahallesi"
+ },
+ {
+  "ad": "Demirtaş Eczanesi",
+  "telefon": "",
+  "adres": "Ali İhsan Paşa Caddesi 35A Yayla Mahallesi",
+  "mahalle": "Yayla Mahallesi"
+ },
+ {
+  "ad": "Çelik Eczanesi",
+  "telefon": "+90 2164943288",
+  "adres": "Şahadet Sokak 42 Aydıntepe Mahallesi",
+  "mahalle": "Aydıntepe Mahallesi"
+ },
+ {
+  "ad": "Acar Eczanesi",
+  "telefon": "+90 2164468378",
+  "adres": "İstasyon Caddesi 102 Cami Mahallesi",
+  "mahalle": "Cami Mahallesi"
+ },
+ {
+  "ad": "Aydınlı Eczanesi",
+  "telefon": "+90 2164945134",
+  "adres": "Ankara Caddesi 43/A İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Sevgim Eczanesi",
+  "telefon": "",
+  "adres": "Hatboyu Caddesi 5 Evliya Çelebi Mahallesi",
+  "mahalle": "Evliya Çelebi Mahallesi"
+ },
+ {
+  "ad": "Ünsal Eczanesi",
+  "telefon": "+90 2164471404",
+  "adres": "Şinasi Dural Caddesi 29/B Yayla Mahallesi",
+  "mahalle": "Yayla Mahallesi"
+ },
+ {
+  "ad": "Eczane Vural",
+  "telefon": "+90 2164466434",
+  "adres": "Fevzi Çakmak Caddesi 101/B İstasyon Mahallesi",
+  "mahalle": "İstasyon Mahallesi"
+ },
+ {
+  "ad": "Özlem Eczanesi",
+  "telefon": "",
+  "adres": "Şinasi Dural Caddesi 90/1 Yayla Mahallesi",
+  "mahalle": "Yayla Mahallesi"
+ },
+ {
+  "ad": "Handan Eczanesi",
+  "telefon": "",
+  "adres": "İstasyon Caddesi 76/A Cami Mahallesi",
+  "mahalle": "Cami Mahallesi"
+ },
+ {
+  "ad": "Doğuş Eczanesi",
+  "telefon": "",
+  "adres": "Yavuz Caddesi 7 Aydıntepe Mahallesi",
+  "mahalle": "Aydıntepe Mahallesi"
+ },
+ {
+  "ad": "Umut Eczanesi",
+  "telefon": "+90 2163956656",
+  "adres": "Fevzi Çakmak Caddesi 29 Yayla Mahallesi",
+  "mahalle": "Yayla Mahallesi"
+ },
+ {
+  "ad": "Sağlık Eczanesi",
+  "telefon": "",
+  "adres": "Ankara Caddesi 25 İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "İlhan Eczanesi",
+  "telefon": "+90 2164475299",
+  "adres": "Ali İhsan Paşa Caddesi 37A Yayla Mahallesi",
+  "mahalle": "Yayla Mahallesi"
+ },
+ {
+  "ad": "Anka Eczanesi",
+  "telefon": "+90 2166734959",
+  "adres": "Patlayıcı Maddeler Yolu Caddesi 13/B Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Yaşam Eczanesi",
+  "telefon": "+90 2164464605",
+  "adres": "Şinasi Dural Caddesi 31/A Yayla Mahallesi",
+  "mahalle": "Yayla Mahallesi"
+ },
+ {
+  "ad": "Ceren Eczanesi",
+  "telefon": "+90 2164462430",
+  "adres": "Şinasi Dural Caddesi 22/A Dükkan-1 Yayla Mahallesi",
+  "mahalle": "Yayla Mahallesi"
+ },
+ {
+  "ad": "Dila Eczanesi",
+  "telefon": "+90 2164235226",
+  "adres": "Emiroğlu Caddesi 133 Şifa Mahallesi",
+  "mahalle": "Şifa Mahallesi"
+ },
+ {
+  "ad": "Ege Eczanesi",
+  "telefon": "+90 2164942848",
+  "adres": "Enise Sokak 4/B İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Cadde Özlem Eczanesi",
+  "telefon": "+90 2165042984",
+  "adres": "Beydağı Caddesi CT1-2 Aydıntepe Mahallesi",
+  "mahalle": "Aydıntepe Mahallesi"
+ },
+ {
+  "ad": "Sevgi Eczanesi",
+  "telefon": "+90 2165043535",
+  "adres": "İstasyon Caddesi 5 Postane Mahallesi",
+  "mahalle": "Postane Mahallesi"
+ },
+ {
+  "ad": "Damla Eczanesi",
+  "telefon": "+90 2164462725",
+  "adres": "Tahaffuzhane Caddesi 12 Postane Mahallesi",
+  "mahalle": "Postane Mahallesi"
+ },
+ {
+  "ad": "Cem Eczanesi",
+  "telefon": "",
+  "adres": "İstasyon Caddesi 48/D Cami Mahallesi",
+  "mahalle": "Cami Mahallesi"
+ },
+ {
+  "ad": "Halk Eczanesi",
+  "telefon": "+90 2164465313",
+  "adres": "İstasyon Caddesi 102/9 Cami Mahallesi",
+  "mahalle": "Cami Mahallesi"
+ },
+ {
+  "ad": "Hale Eczanesi",
+  "telefon": "",
+  "adres": "İstasyon Caddesi 82/A Cami Mahallesi",
+  "mahalle": "Cami Mahallesi"
+ },
+ {
+  "ad": "Zuhal Eczanesi",
+  "telefon": "+90 2163928778",
+  "adres": "Bağdat Caddesi 30 Aydıntepe Mahallesi",
+  "mahalle": "Aydıntepe Mahallesi"
+ },
+ {
+  "ad": "Nesrin Eczanesi",
+  "telefon": "",
+  "adres": "Hürriyet Caddesi 30/A Şifa Mahallesi",
+  "mahalle": "Şifa Mahallesi"
+ },
+ {
+  "ad": "Eda Eczanesi",
+  "telefon": "",
+  "adres": "Emiroğlu Caddesi 85/B Şifa Mahallesi",
+  "mahalle": "Şifa Mahallesi"
+ },
+ {
+  "ad": "İçmeler Eczanesi",
+  "telefon": "+90 2165072611",
+  "adres": "Seyitonbaşı Caddesi 30/B İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Yeni Şifa Eczanesi",
+  "telefon": "",
+  "adres": "Hatboyu Caddesi 174/C İstasyon Mahallesi",
+  "mahalle": "İstasyon Mahallesi"
+ },
+ {
+  "ad": "Gül Eczanesi",
+  "telefon": "+90 2164944698",
+  "adres": "Kartal Sokak 2/D İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Aydıntepe Eczanesi",
+  "telefon": "",
+  "adres": "100. Yıl Caddesi 69/A Aydıntepe Mahallesi",
+  "mahalle": "Aydıntepe Mahallesi"
+ },
+ {
+  "ad": "Sağlık Eczanesi",
+  "telefon": "",
+  "adres": "İnönü Caddesi 11/A Şifa Mahallesi",
+  "mahalle": "Şifa Mahallesi"
+ },
+ {
+  "ad": "Domaç Eczanesi",
+  "telefon": "",
+  "adres": "Sahil Yolu Caddesi 191/26 Aydıntepe Mahallesi",
+  "mahalle": "Aydıntepe Mahallesi"
+ },
+ {
+  "ad": "Mimar Sinan Eczanesi",
+  "telefon": "",
+  "adres": "Emiroğlu Caddesi 129/A Şifa Mahallesi",
+  "mahalle": "Şifa Mahallesi"
+ },
+ {
+  "ad": "Battal Eczanesi",
+  "telefon": "+90 2163094745",
+  "adres": "Beynur Sokak 3/C-6 Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Şifa Eczanesi",
+  "telefon": "+90 2164230053",
+  "adres": "Egemenlik Caddesi 40/A Şifa Mahallesi",
+  "mahalle": "Şifa Mahallesi"
+ },
+ {
+  "ad": "Hilal Eczanesi",
+  "telefon": "+90 2163956912",
+  "adres": "Tahaffuzhane Caddesi 26/C Postane Mahallesi",
+  "mahalle": "Postane Mahallesi"
+ },
+ {
+  "ad": "Berkcem Eczanesi",
+  "telefon": "+90 2163926964",
+  "adres": "Yeşildere Caddesi 54/B Aydıntepe Mahallesi",
+  "mahalle": "Aydıntepe Mahallesi"
+ },
+ {
+  "ad": "Berkay Eczanesi",
+  "telefon": "+90 2164235048",
+  "adres": "Başak Sokak (G.74 Sk.) 21/D Mimar Sinan Mahallesi",
+  "mahalle": "Mimar Sinan Mahallesi"
+ },
+ {
+  "ad": "Bizim Eczanesi",
+  "telefon": "+90 2165763705",
+  "adres": "Atatürk Caddesi 3 Şifa Mahallesi",
+  "mahalle": "Şifa Mahallesi"
+ },
+ {
+  "ad": "Ege Eczanesi",
+  "telefon": "+90 5522451426",
+  "adres": "Başak Sokak (G.74 Sk.) 19 Mimar Sinan Mahallesi",
+  "mahalle": "Mimar Sinan Mahallesi"
+ },
+ {
+  "ad": "Burcu Eczanesi",
+  "telefon": "+90 2164235620",
+  "adres": "Hürriyet Caddesi 74/B Şifa Mahallesi",
+  "mahalle": "Şifa Mahallesi"
+ },
+ {
+  "ad": "Yeni Burcu Eczanesi",
+  "telefon": "",
+  "adres": "Emiroğlu Caddesi 112-B Mimar Sinan Mahallesi",
+  "mahalle": "Mimar Sinan Mahallesi"
+ },
+ {
+  "ad": "Neva Eczanesi",
+  "telefon": "+90 2163292054",
+  "adres": "Seyitonbaşı Caddesi 27/A İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Neva Eczanesi",
+  "telefon": "+90 2163292054",
+  "adres": "Seyitonbaşı Caddesi 27/A İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Beyaz Eczanesi",
+  "telefon": "+90 2163041144",
+  "adres": "Başak Sokak (G.74 Sk.) 10/A Mimar Sinan Mahallesi",
+  "mahalle": "Mimar Sinan Mahallesi"
+ },
+ {
+  "ad": "Çiçekçiler Eczanesi",
+  "telefon": "+90 5453950404",
+  "adres": "Çiçekçiler Caddesi 26/C İstasyon Mahallesi",
+  "mahalle": "İstasyon Mahallesi"
+ },
+ {
+  "ad": "Yeni Şifa Eczanesi",
+  "telefon": "+90 2166744035",
+  "adres": "İnönü Caddesi D 3 Blok Dükkan 10 Şifa Mahallesi",
+  "mahalle": "Şifa Mahallesi"
+ },
+ {
+  "ad": "Konaşlı  Eczanesi",
+  "telefon": "+90 2163933335",
+  "adres": "Süheyla Sokak 97/A Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Cemre Eczanesi",
+  "telefon": "+90 2163930215",
+  "adres": "Başkomutan Caddesi No:50H Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Bizim Eczanesi",
+  "telefon": "",
+  "adres": "Cumhuriyet Caddesi 39 Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Kerem Eczanesi",
+  "telefon": "+90 2167595531",
+  "adres": "Atatürk Caddesi 59/C Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Eczane Plus",
+  "telefon": "+90 2166702091",
+  "adres": "Karadağ Caddesi T/42 Tepeören Mahallesi",
+  "mahalle": "Tepeören Mahallesi"
+ },
+ {
+  "ad": "Yeni Ceren Eczanesi",
+  "telefon": "+90 2164462430",
+  "adres": "Şinasi Dural Caddesi No:33 Yayla Mahallesi",
+  "mahalle": "Yayla Mahallesi"
+ },
+ {
+  "ad": "Arşipel Eczanesi",
+  "telefon": "+90 2164296084",
+  "adres": "Müştak Sokak 19 Evliya Çelebi Mahallesi",
+  "mahalle": "Evliya Çelebi Mahallesi"
+ },
+ {
+  "ad": "Edeb Eczanesi",
+  "telefon": "+90 2164391373",
+  "adres": "2. Caddesi 27A Akfırat Mahallesi",
+  "mahalle": "Akfırat Mahallesi"
+ },
+ {
+  "ad": "Orhanlı Eczanesi",
+  "telefon": "+90 2163943506",
+  "adres": "Demokrasi Caddesi 11 Orhanlı Mahallesi",
+  "mahalle": "Orhanlı Mahallesi"
+ },
+ {
+  "ad": "İhlamur Eczanesi",
+  "telefon": "",
+  "adres": "Demokrasi Caddesi 55C Mescit Mahallesi",
+  "mahalle": "Mescit Mahallesi"
+ },
+ {
+  "ad": "Naile Eczanesi",
+  "telefon": "+90 2166063050",
+  "adres": "DerSaadet Sokak 36/C Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Nur Eda Eczanesi",
+  "telefon": "",
+  "adres": "Emiroğlu Caddesi 83A Şifa Mahallesi",
+  "mahalle": "Şifa Mahallesi"
+ },
+ {
+  "ad": "Alpim Eczanesi",
+  "telefon": "+90 2165212296",
+  "adres": "Erkılıç Sokak 50/A Orta Mahallesi",
+  "mahalle": "Orta Mahallesi"
+ },
+ {
+  "ad": "Eczane Ünver",
+  "telefon": "+90 2163937202",
+  "adres": "Çamlı Belde Yolu Caddesi 27/8 Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Cemre Eczanesi",
+  "telefon": "",
+  "adres": "Başkomutan Caddesi 50H Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Arden Eczanesi",
+  "telefon": "",
+  "adres": "Beydağı Caddesi CT1 Blok D:2 No:2 Aydıntepe Mahallesi",
+  "mahalle": "Aydıntepe Mahallesi"
+ },
+ {
+  "ad": "Tuzla İstasyon Eczanesi",
+  "telefon": "+90 2164466757",
+  "adres": "Hatboyu Caddesi 130B İstasyon Mahallesi",
+  "mahalle": "İstasyon Mahallesi"
+ },
+ {
+  "ad": "Via Marin Eczanesi",
+  "telefon": "+90 2165044505",
+  "adres": "Balıkçılar Sokak 20N Cami Mahallesi",
+  "mahalle": "Cami Mahallesi"
+ },
+ {
+  "ad": "Yeni Şifam Eczanesi",
+  "telefon": "+90 2163953277",
+  "adres": "Hatboyu Caddesi 174C İstasyon Mahallesi",
+  "mahalle": "İstasyon Mahallesi"
+ },
+ {
+  "ad": "Eren Eczanesi",
+  "telefon": "",
+  "adres": "Tevfik Sokak 9A Tepeören Mahallesi",
+  "mahalle": "Tepeören Mahallesi"
+ },
+ {
+  "ad": "Orta Eczanesi",
+  "telefon": "+90 2163041144",
+  "adres": "Gazi Caddesi 6 Orta Mahallesi",
+  "mahalle": "Orta Mahallesi"
+ },
+ {
+  "ad": "Lalezar Eczanesi",
+  "telefon": "+90 2164691828",
+  "adres": "Esra Sokak 8/A Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Sevgi Eczanesi",
+  "telefon": "+90 2163953401",
+  "adres": "İstasyon Caddesi 5 Postane Mahallesi",
+  "mahalle": "Postane Mahallesi"
+ },
+ {
+  "ad": "Yeni Kiraz Eczanesi",
+  "telefon": "+90 2163937870",
+  "adres": "Patlayıcı Maddeler Yolu Caddesi 7A Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Yeni Şifam Eczanesi",
+  "telefon": "+90 2163953277",
+  "adres": "Hatboyu Caddesi 134A İstasyon Mahallesi",
+  "mahalle": "İstasyon Mahallesi"
+ },
+ {
+  "ad": "Saka Eczanesi",
+  "telefon": "+90 5443297252",
+  "adres": "Aydınlı Yolu Caddesi 6/A İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Tuzla Eczanesi",
+  "telefon": "+90 2163951552",
+  "adres": "İstasyon Caddesi 1A Cami Mahallesi",
+  "mahalle": "Cami Mahallesi"
+ },
+ {
+  "ad": "Büyük Eczanesi",
+  "telefon": "+90 2165047155",
+  "adres": "İncesu Sokak 16/3 İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Metro Eczanesi",
+  "telefon": "+90 2164473373",
+  "adres": "Hatboyu Caddesi 8/A Evliya Çelebi Mahallesi",
+  "mahalle": "Evliya Çelebi Mahallesi"
+ },
+ {
+  "ad": "Bigem Eczanesi",
+  "telefon": "+90 2164474745",
+  "adres": "Hatboyu Caddesi 42A Evliya Çelebi Mahallesi",
+  "mahalle": "Evliya Çelebi Mahallesi"
+ },
+ {
+  "ad": "Kardelen Eczanesi",
+  "telefon": "+90 2163278481",
+  "adres": "D-100 Karayolu Caddesi 44A İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Hazal Eczanesi",
+  "telefon": "+90 5339222074",
+  "adres": "Gürpınar Caddesi 32A Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Yaşar Eczanesi",
+  "telefon": "+90 2164942561",
+  "adres": "100. Yıl Caddesi 97A Aydıntepe Mahallesi",
+  "mahalle": "Aydıntepe Mahallesi"
+ },
+ {
+  "ad": "Tuzla Eczanesi",
+  "telefon": "+90 2163951552",
+  "adres": "İstasyon Caddesi 1A Postane Mahallesi",
+  "mahalle": "Postane Mahallesi"
+ },
+ {
+  "ad": "Yelken Eczanesi",
+  "telefon": "+90 5427935536",
+  "adres": "Hatboyu Caddesi 10D Evliya Çelebi Mahallesi",
+  "mahalle": "Evliya Çelebi Mahallesi"
+ },
+ {
+  "ad": "Konak Eczanesi",
+  "telefon": "+90 2163929494",
+  "adres": "Aydemir Sokak 4A İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Turuncu Eczanesi",
+  "telefon": "+90 2165047155",
+  "adres": "Hatboyu Caddesi 25/A Evliya Çelebi Mahallesi",
+  "mahalle": "Evliya Çelebi Mahallesi"
+ },
+ {
+  "ad": "Lavanta Eczanesi",
+  "telefon": "+90 2163953515",
+  "adres": "Hatboyu Caddesi 6/A Evliya Çelebi Mahallesi",
+  "mahalle": "Evliya Çelebi Mahallesi"
+ },
+ {
+  "ad": "Çiçekçiler Eczanesi",
+  "telefon": "+90 2163950404",
+  "adres": "Çiçekçiler Caddesi 26C İstasyon Mahallesi",
+  "mahalle": "İstasyon Mahallesi"
+ },
+ {
+  "ad": "Gülden Eczanesi",
+  "telefon": "+90 2166744376",
+  "adres": "Hakan Sokak 1A Mimar Sinan Mahallesi",
+  "mahalle": "Mimar Sinan Mahallesi"
+ },
+ {
+  "ad": "Masal Eczanesi",
+  "telefon": "+90 2164942210",
+  "adres": "İncesu Sokak 16/A İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Eczane Güzem",
+  "telefon": "+90 5466093032",
+  "adres": "Zinnur Sokak 3/5 İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Çınar Eczanesi",
+  "telefon": "+90 2164472000",
+  "adres": "Zinnur Sokak 3/7 İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Mahbube Eczanesi",
+  "telefon": "+90 2164472001",
+  "adres": "Zinnur Sokak 3/6 İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Nil Eczanesi",
+  "telefon": "+90 5309001540",
+  "adres": "Zinnur Sokak 3/4 İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Saraçoğlu Eczanesi",
+  "telefon": "",
+  "adres": "Lütuf Sokak 19A Yayla Mahallesi",
+  "mahalle": "Yayla Mahallesi"
+ },
+ {
+  "ad": "Doğa Eczanesi",
+  "telefon": "+90 2164233642",
+  "adres": "Başar Sokak 32A Şifa Mahallesi",
+  "mahalle": "Şifa Mahallesi"
+ },
+ {
+  "ad": "Şeyma Eczanesi",
+  "telefon": "+90 2166745005",
+  "adres": "Başar Sokak 34A Şifa Mahallesi",
+  "mahalle": "Şifa Mahallesi"
+ },
+ {
+  "ad": "Papatya Eczanesi",
+  "telefon": "+90 2167012122",
+  "adres": "Vatan Caddesi 117/4-3 İstasyon Mahallesi",
+  "mahalle": "İstasyon Mahallesi"
+ },
+ {
+  "ad": "Belkıs Eczanesi",
+  "telefon": "+90 2163929343",
+  "adres": "Batu Sokak 62A Aydıntepe Mahallesi",
+  "mahalle": "Aydıntepe Mahallesi"
+ },
+ {
+  "ad": "Mutluluk Eczanesi",
+  "telefon": "+90 2164460077",
+  "adres": "Ayışığı Sokak 4A Yayla Mahallesi",
+  "mahalle": "Yayla Mahallesi"
+ },
+ {
+  "ad": "Funda Eczanesi",
+  "telefon": "+90 2163954231",
+  "adres": "İstasyon Caddesi 53D Postane Mahallesi",
+  "mahalle": "Postane Mahallesi"
+ },
+ {
+  "ad": "İhlamur Eczanesi",
+  "telefon": "",
+  "adres": "Ulugüney Sokak 1AA Mescit Mahallesi",
+  "mahalle": "Mescit Mahallesi"
+ },
+ {
+  "ad": "Anadolu Eczanesi",
+  "telefon": "+90 2164936504",
+  "adres": "Yavuz Caddesi 7A Aydıntepe Mahallesi",
+  "mahalle": "Aydıntepe Mahallesi"
+ },
+ {
+  "ad": "Mercan Eczanesi",
+  "telefon": "+90 2163953306",
+  "adres": "İstasyon Caddesi 48D Cami Mahallesi",
+  "mahalle": "Cami Mahallesi"
+ },
+ {
+  "ad": "Defne Eczanesi",
+  "telefon": "+90 2164470244",
+  "adres": "Zinnur Sokak 3/8 İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Cantürk Eczanesi",
+  "telefon": "+90 2163927475",
+  "adres": "Batu Sokak 24/A Aydıntepe Mahallesi",
+  "mahalle": "Aydıntepe Mahallesi"
+ },
+ {
+  "ad": "Masal Eczanesi",
+  "telefon": "+90 2164942210",
+  "adres": "İncesu Sokak 16/A İçmeler Mahallesi",
+  "mahalle": "İçmeler Mahallesi"
+ },
+ {
+  "ad": "Bilge Eczanesi",
+  "telefon": "+90 2164468206",
+  "adres": "Ali İhsan Paşa Caddesi 35A Yayla Mahallesi",
+  "mahalle": "Yayla Mahallesi"
+ },
+ {
+  "ad": "Alaaddin Eczanesi",
+  "telefon": "+90 2163944200",
+  "adres": "Ulugüney Sokak 1/A Mescit Mahallesi",
+  "mahalle": "Mescit Mahallesi"
+ },
+ {
+  "ad": "Miray Eczanesi",
+  "telefon": "+90 2163932520",
+  "adres": "Gürpınar Caddesi 37B Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Handan Eczanesi",
+  "telefon": "",
+  "adres": "İstasyon Caddesi 76/A Cami Mahallesi",
+  "mahalle": "Cami Mahallesi"
+ },
+ {
+  "ad": "Manolya Eczanesi",
+  "telefon": "+90 2162088455",
+  "adres": "Şinasi Dural Caddesi 96B Yayla Mahallesi",
+  "mahalle": "Yayla Mahallesi"
+ },
+ {
+  "ad": "Vereseli Handan Eczanesi",
+  "telefon": "+90 2167660194",
+  "adres": "İstasyon Caddesi 76/A Cami Mahallesi",
+  "mahalle": "Cami Mahallesi"
+ },
+ {
+  "ad": "Bahçeler Eczanesi",
+  "telefon": "+90 2163932196",
+  "adres": "Kar Sokak 21/A Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Büşra Eczanesi",
+  "telefon": "+90 2167592824",
+  "adres": "DerSaadet Sokak 20/F Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ },
+ {
+  "ad": "Çağatay Eczanesi",
+  "telefon": "+90 2164231046",
+  "adres": "Emiroğlu Caddesi 83/B Şifa Mahallesi",
+  "mahalle": "Şifa Mahallesi"
+ },
+ {
+  "ad": "Lotus Eczanesi",
+  "telefon": "+90 2167595689",
+  "adres": "Vatan Caddesi 72/1/5 Yayla Mahallesi",
+  "mahalle": "Yayla Mahallesi"
+ },
+ {
+  "ad": "Bal Eczanesi",
+  "telefon": "+90 2163041186",
+  "adres": "Tevfik Sokak 9/A Tepeören Mahallesi",
+  "mahalle": "Tepeören Mahallesi"
+ },
+ {
+  "ad": "Erdem Eczanesi",
+  "telefon": "+90 5327803191",
+  "adres": "100. Yıl Caddesi 87/A Aydıntepe Mahallesi",
+  "mahalle": "Aydıntepe Mahallesi"
+ },
+ {
+  "ad": "Tuzla Port Eczanesi",
+  "telefon": "",
+  "adres": "Cumhuriyet Caddesi Tuzla Port Dış Kapı No:5/TD1 No:65 Postane Mahallesi",
+  "mahalle": "Postane Mahallesi"
+ },
+ {
+  "ad": "Horoz Eczanesi",
+  "telefon": "",
+  "adres": "Bahçeler Sokak 2/B Aydınlı Mahallesi",
+  "mahalle": "Aydınlı Mahallesi"
+ }
+]

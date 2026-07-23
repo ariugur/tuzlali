@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Disallow: /ekle.html
+
+# AI arama motorlarina acik davet (GEO). Bu botlar iceriği alintilar/ozetler.
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+# Alan adi belli olunca degistir (sayfa_uret.js SITE_KOK ile ayni olmali).
+Sitemap: https://ORNEK-ALAN-ADI/sitemap.xml

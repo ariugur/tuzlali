@@ -1,0 +1,235 @@
+/* Tuzla Haritası - ortak tasarım sistemi
+   TEMA KİLİDİ  : sadece açık. Hiçbir bölüm koyuya dönmez.
+   AKSAN KİLİDİ : #0b5fd0 derin mavi. Sayfadaki tek aksan.
+   YARIÇAP      : pill 999px (buton/çip) · yüzey 12px (kart/input). Başka yarıçap yok.
+   GÖLGE        : zemin tonuna boyalı, saf siyah yok. */
+
+/* Geist: SELF-HOST. Onceden jsdelivr CDN'inden geliyordu; ucuncu parti
+   kesintisinde sayfanin tipografisi komple degisiyordu. Dosyalar fontlar/
+   altinda, repo ile birlikte tasiniyor. */
+@font-face{
+  font-family:"Geist";
+  src:url("fontlar/Geist-Regular.woff2") format("woff2");
+  font-weight:400; font-display:swap;
+  unicode-range:U+0000-00FF,U+0100-017F,U+0180-024F,U+2000-206F,U+20A0-20BF;
+}
+@font-face{
+  font-family:"Geist";
+  src:url("fontlar/Geist-Medium.woff2") format("woff2");
+  font-weight:500; font-display:swap;
+  unicode-range:U+0000-00FF,U+0100-017F,U+0180-024F,U+2000-206F,U+20A0-20BF;
+}
+@font-face{
+  font-family:"Geist";
+  src:url("fontlar/Geist-SemiBold.woff2") format("woff2");
+  font-weight:600; font-display:swap;
+  unicode-range:U+0000-00FF,U+0100-017F,U+0180-024F,U+2000-206F,U+20A0-20BF;
+}
+
+:root{
+  /* yüzeyler: SICAK KUM / FILDISI undertone. Onceden notr kirik beyazdi
+     (#f7f6f4) -- karaktersiz, "cig" duruyordu. Kum tonu deniz mavisiyle
+     sicak-soguk kontrasti yaratir, ozenli/butik his verir. Saf beyaz YOK;
+     zemin kum, kart fildisi olarak yukari kalkar. */
+  --bg:#f5f1e9;        /* sayfa zemini: acik kum */
+  --card:#fffdf7;      /* kart: fildisi, zeminden yukari */
+  --surface:#ece5d8;   /* derin kum şerit */
+  --raised:#e4dbca;
+  --line:#e7dfd1;
+  --line-soft:#efe9dd;
+  /* hover/vurgulu kenar: belirgin kum. */
+  --line-strong:#d2c8b5;
+
+  /* metin: saf siyah yok */
+  --txt:#17181a;
+  --txt-2:#41444a;
+  /* kum zeminlerde AA: #5d6067 en koyu zemin (--raised) uzerinde 4.58,
+     digerlerinde 5.1+. Onceki #63666d yeni --raised'da 4.19'a dusuyordu. */
+  --muted:#5d6067;
+
+  /* aksan: TEK. */
+  --accent:#0b5fd0;
+  --accent-hi:#0a52b5;
+  --accent-wash:#e9f0fc;
+  /* lacivert: mahalle karosu hover dolgusu. Acik zemine karsi guclu kontrast,
+     beyaz sekil ve metinle estetik. Aksanin koyu akrabasi, ayri hue degil. */
+  --accent-deep:#13294d;
+
+  /* kategori renkleri = harita pin renkleri.
+     beyaz zemin için ayarlandı: her biri beyaza karşı okunur ve birbirinden ayrılır. */
+  --c-yeme:#e8590c;      /* turuncu */
+  --c-market:#2b8a3e;    /* yeşil   */
+  --c-saglik:#c92a2a;    /* kırmızı */
+  --c-marina:#0b7285;    /* petrol  */
+  --c-perakende:#6741d9; /* mor     */
+  --c-servis:#64748b;    /* arduvaz */
+  --c-bakim:#ad1a9e;     /* macenta */
+  --c-konak:#9c6644;     /* kahve   */
+  --c-evcil:#a1851b;     /* altın   */
+
+  --r-pill:999px;
+  --r-surface:12px;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --wrap:1240px;
+
+  /* gölge: zemin tonuna boyalı (hafif sıcak), saf siyah değil */
+  --sh-1:0 1px 2px rgba(38,33,26,.05);
+  --sh-2:0 4px 14px rgba(38,33,26,.08);
+  --sh-3:0 18px 48px rgba(30,26,20,.16);
+  --sh-float:0 24px 64px rgba(12,16,22,.34);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{
+  /* DERINLIK: cok hafif dikey gradyan. Ustte biraz acik kum, altta biraz
+     koyu -- fark neredeyse gorunmez ama duz tek renk "cig"ligini kirar.
+     fixed: kaydirinca kaymaz, sabit atmosfer. */
+  background:linear-gradient(177deg,#f8f4ec 0%,var(--bg) 42%,#f1ece2 100%) fixed;
+  color:var(--txt);
+  font-family:"Geist",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  line-height:1.5;
+}
+/* GRAIN: cok ince "kagit/el yapimi" dokusu. Sabit, tiklanamaz pseudo
+   (kaydiran kapta degil -> mobil FPS korunur). Opaklik cok dusuk: doku
+   hissedilir ama metni kirletmez. */
+body::before{
+  content:"";position:fixed;inset:0;z-index:60;pointer-events:none;
+  opacity:.04;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+@media(prefers-reduced-transparency:reduce){
+  body::before{display:none}   /* dokuyu istemeyene kapat */
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+
+/* ---------- navigasyon: tek satır, 68px ---------- */
+.nav{
+  position:sticky;top:0;z-index:50;height:68px;
+  background:rgba(245,241,233,.88);backdrop-filter:blur(14px);  /* --bg kum, .88 */
+  border-bottom:1px solid var(--line-soft);
+}
+.nav .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:600;font-size:15px;letter-spacing:-.015em;white-space:nowrap}
+.logo i{color:var(--accent);font-size:19px}
+.nav-links{display:flex;align-items:center;gap:26px;font-size:13.5px;color:var(--muted);white-space:nowrap}
+.nav-links a{transition:color .15s var(--ease)}
+.nav-links a:hover{color:var(--txt)}
+
+/* ---------- mobil menü ----------
+   Onceden .nav-links 980px altinda display:none idi ve yerine hicbir sey
+   gelmiyordu: telefonda gezinme tamamen kayboluyordu. Hamburger + panel.
+   Masaustunde buton gizli, baglantilar acik; mobilde tersi. */
+.nav-burger{
+  display:none;align-items:center;justify-content:center;
+  width:40px;height:40px;flex:0 0 40px;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-pill);
+  color:var(--txt);font-size:19px;cursor:pointer;font-family:inherit;
+  transition:.16s var(--ease);
+}
+.nav-burger:hover{border-color:var(--line-strong);background:var(--surface)}
+.nav-burger:active{transform:translateY(1px)}
+.nav-burger:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.nav-panel{
+  display:none;
+  position:absolute;left:0;right:0;top:100%;
+  background:var(--card);border-bottom:1px solid var(--line);
+  box-shadow:var(--sh-2);padding:8px 0 12px;
+}
+.nav-panel.acik{display:block}
+.nav-panel a{
+  display:flex;align-items:center;gap:11px;
+  padding:13px 24px;font-size:15px;color:var(--txt);
+  border-bottom:1px solid var(--line-soft);
+}
+.nav-panel a:last-child{border-bottom:none}
+.nav-panel a:active{background:var(--surface)}
+.nav-panel a i{color:var(--muted);font-size:18px;flex:0 0 18px}
+
+/* nav sag blok: birincil buton + hamburger yan yana */
+.nav-sag{display:flex;align-items:center;gap:10px}
+
+@media(max-width:980px){
+  .nav-links{display:none}
+  .nav-burger{display:inline-flex}
+}
+@media(min-width:981px){
+  .nav-panel{display:none!important}   /* masaustunde asla acilmasin */
+}
+/* dar telefonda logo+buton+hamburger yan yana sigmiyor: buton ikona iner.
+   Eylem kayboluyor degil, sadece etiketi dusuyor; panelde tam haliyle var. */
+@media(max-width:560px){
+  .nav-cta-yazi{display:none}
+  .nav .btn-primary{padding:10px 13px}
+  .wrap{padding:0 16px}
+  .nav-panel a{padding:13px 16px}
+}
+/* dokunma hedefleri: logo 23px, nav butonlari 36px idi. Gorsel boyut
+   degismiyor, tiklanabilir alan 44px'e cikiyor. */
+@media(max-width:980px){
+  .logo{min-height:44px;display:inline-flex;align-items:center}
+  .nav .btn{min-height:44px}
+}
+
+/* ---------- butonlar ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:8px;white-space:nowrap;
+  padding:10px 18px;border-radius:var(--r-pill);font-size:13.5px;font-weight:500;
+  border:1px solid transparent;cursor:pointer;transition:.16s var(--ease);
+  font-family:inherit;
+}
+.btn:active{transform:translateY(1px)}
+/* birincil: derin mavi zemin + beyaz metin. kontrast 7.1:1 */
+.btn-primary{background:var(--accent);color:#fff;font-weight:600;box-shadow:var(--sh-1)}
+.btn-primary:hover{background:var(--accent-hi);box-shadow:var(--sh-2)}
+.btn-ghost{background:var(--card);color:var(--txt);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--line-strong);background:var(--surface)}
+.btn-lg{padding:13px 24px;font-size:14.5px}
+
+/* ---------- tipografi ---------- */
+h1,h2,h3{letter-spacing:-.028em;line-height:1.1;font-weight:600;color:var(--txt)}
+.h-display{font-size:clamp(34px,5vw,58px)}
+.h-sec{font-size:clamp(25px,3.2vw,36px);margin-bottom:12px}
+.lede{color:var(--muted);font-size:15.5px;line-height:1.6;max-width:62ch}
+
+section{padding:88px 0}
+@media(max-width:860px){section{padding:60px 0}}
+/* capa hedefleri: yapiskan nav (68px) basligi ortmesin. Bu olmadan
+   nav'daki "Mahalleler" baglantisi bolume gidiyor ama baslik nav'in
+   altinda kaliyordu.
+   NOT: onceden [id^="mahalle"] yaziyordu; ekle.html'deki <select id="mahalle">
+   ogesini de yakaliyordu. Sadece bolumler hedeflensin. */
+section[id]{scroll-margin-top:84px}
+
+/* ---------- odak gostergesi ----------
+   Klavyeyle gezen kullanici nerede oldugunu gormeli. Onceden yalnizca
+   .nav-burger ve mahalle karolarinda vardi; butonlar, mod secici, kirinti
+   yolu ve kart baglantilari odak gostergesizdi. */
+.btn:focus-visible,
+.linkish:focus-visible,
+.mini:focus-visible,
+.mode:focus-visible,
+.dcell:focus-visible,
+.cat:focus-visible,
+.nav-links a:focus-visible,
+.nav-panel a:focus-visible,
+.crumb button:focus-visible,
+.crumb a:focus-visible,
+.foot a:focus-visible{
+  outline:2px solid var(--accent);outline-offset:2px;border-radius:var(--r-pill);
+}
+.field input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+
+/* kategori noktası: harita pin rengiyle birebir aynı (anlamsal, dekoratif değil) */
+.cdot{width:8px;height:8px;border-radius:var(--r-pill);flex:0 0 8px}
+
+.foot{border-top:1px solid var(--line-soft);padding:40px 0;color:var(--muted);font-size:12.5px;background:var(--surface)}
+.foot .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}

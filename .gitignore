@@ -1,0 +1,11 @@
+# OS / editör
+.DS_Store
+
+# yedekler ve tarama artıfaktları (repoya girmez, veri/tuzla_data.json canlıdır)
+*.yedek
+*.yedek2
+veri/mahalle_raw.json
+
+# bağımlılıklar / sanal ortam
+node_modules/
+.venv/

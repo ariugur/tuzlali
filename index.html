@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuzla İşletme Haritası | Sağlık, Yeme İçme, Market ve Tersaneler</title>
+<meta name="description" content="Tuzla'daki kafe, restoran, eczane, hastane, diş hekimi, psikolog, veteriner ve tersane firmalarını tek haritada bulun. Adres, telefon, çalışma saati ve yol tarifi.">
+<meta property="og:title" content="Tuzla İşletme Haritası">
+<meta property="og:description" content="Tuzla sahil, merkez ve tersaneler bölgesindeki işletmeler tek haritada.">
+<meta property="og:image" content="gorseller/tuzla-sahil-hero.jpeg">
+<meta property="og:type" content="website">
+<link rel="preload" as="image" href="gorseller/tuzla-sahil-hero.jpeg">
+<!-- WebSite schema: site kimligi, AI/arama motoru icin. Insan gormez.
+     Alan adi belli olunca ORNEK-ALAN-ADI degistir (robots/sitemap ile ayni). -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Tuzla İşletme Haritası","url":"https://ORNEK-ALAN-ADI/","description":"Tuzla'daki 1554 yerel işletmenin adres, telefon ve harita rehberi. Açık kaynaklı verilerden derlendi.","publisher":{"@type":"Organization","name":"Tuzla İşletme Haritası"}}</script>
+<link rel="stylesheet" href="ortak.css">
+<link rel="stylesheet" href="ikonlar/regular.css">
+<link rel="stylesheet" href="ikonlar/fill.css">
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" defer></script>
+<script src="gruplar.js"></script>
+<script src="ortak.js"></script>
+<style>
+  /* ===== HERO: sinematik tam genislik fotograf =====
+     Tema notu: sayfa acik temada kilitli. Bu bir tema donusu degil,
+     fotografik hero + scrim; icerik beyaz zeminde devam ediyor. */
+  .hero{
+    position:relative;overflow:hidden;
+    background:#20262e;   /* fotograf yuklenene kadar */
+    padding:64px 0 68px;
+  }
+  .hero-media{position:absolute;inset:0;overflow:hidden}
+  .hero-media img{
+    width:100%;height:100%;object-fit:cover;object-position:center 45%;
+    /* sinematik ton: hafif kontrast ve doygunluk, telefon fotografini derinlestirir */
+    filter:contrast(1.12) saturate(1.14) brightness(.94);
+    transform:scale(1.04);
+  }
+  @media(prefers-reduced-motion:no-preference){
+    .hero-media img{animation:drift 30s ease-out forwards}
+    @keyframes drift{from{transform:scale(1.12)}to{transform:scale(1.02)}}
+  }
+  /* scrim: soldan koyu (metin icin), sagda acik kalir ki fotograf gorunsun */
+  .hero-media::after{
+    content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(to right, rgba(10,14,20,.88) 0%, rgba(10,14,20,.72) 34%, rgba(10,14,20,.34) 62%, rgba(10,14,20,.22) 100%),
+      linear-gradient(to top, rgba(10,14,20,.35) 0%, rgba(10,14,20,0) 40%);
+  }
+  /* HERO IZGARASI: solda metin, sagda harita karti */
+  .hero-grid{position:relative;z-index:2;display:grid;
+    grid-template-columns:1fr 1.05fr;gap:52px;align-items:center}
+  .hero h1{color:#fff;margin-bottom:16px;text-shadow:0 2px 28px rgba(10,14,20,.6)}
+  .hero .lede{color:rgba(255,255,255,.92);max-width:42ch;margin-bottom:28px;
+    text-shadow:0 1px 14px rgba(10,14,20,.7)}
+  .hero-cta{display:flex;gap:10px;flex-wrap:wrap}
+  /* nöbetçi eczane: acil/utility satırı. Butonlarla yarışmaz ama fark edilir.
+     Scrim koyu (sol .88) -> beyaz metin AA rahat geçer. */
+  .hero-neb{display:inline-flex;align-items:center;gap:9px;margin-top:16px;
+    color:#fff;font-size:14px;font-weight:500;padding:8px 4px;
+    text-shadow:0 1px 12px rgba(10,14,20,.7);min-height:40px}
+  .hero-neb i:first-child{color:#7ee0a3;font-size:18px}
+  .hero-neb i:last-child{font-size:13px;opacity:.7;transition:transform .15s var(--ease)}
+  .hero-neb:hover{text-decoration:underline;text-underline-offset:3px}
+  .hero-neb:hover i:last-child{transform:translate(2px,-2px)}
+  /* fotograf uzerindeki ikincil buton: net kenar, kontrast garanti */
+  .btn-onphoto{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.55);
+    backdrop-filter:blur(10px)}
+  .btn-onphoto:hover{background:rgba(255,255,255,.26);border-color:#fff}
+
+  /* ===== HARITA KARTI: fotografin uzerinde yuzuyor ===== */
+  .map-frame{
+    position:relative;height:clamp(360px,50dvh,460px);border-radius:var(--r-surface);
+    overflow:hidden;background:var(--card);box-shadow:var(--sh-float);
+    border:1px solid rgba(255,255,255,.22);
+  }
+  #heroMap{position:absolute;inset:0}
+  .map-badge{
+    position:absolute;left:12px;bottom:12px;z-index:2;
+    background:rgba(255,253,247,.95);border:1px solid var(--line);
+    border-radius:var(--r-pill);padding:6px 12px;font-size:11.5px;color:var(--muted);
+    backdrop-filter:blur(8px);display:flex;align-items:center;gap:7px;box-shadow:var(--sh-1);
+  }
+  .map-badge b{color:var(--txt);font-weight:600}
+  .map-open{
+    position:absolute;left:12px;top:12px;z-index:2;   /* zoom kontrolleri sag ustte */
+    background:rgba(255,253,247,.95);border:1px solid var(--line);border-radius:var(--r-pill);
+    padding:6px 13px;font-size:11.5px;font-weight:500;color:var(--txt);
+    backdrop-filter:blur(8px);box-shadow:var(--sh-1);
+    display:flex;align-items:center;gap:6px;transition:.15s var(--ease);
+  }
+  .map-open:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* ===== MAHALLELER: fotograf oncelikli grid, sayi yok =====
+     Fotografi olmayan mahallede sahte stok yerine mahallenin GERCEK sinir sekli.
+     gorseller/mahalle/<slug>.jpeg birakilinca otomatik fotografa gecer. */
+  /* MAHALLE KAROSU
+     Onceden: koyu (#141a22) hucre + soluk beyaz sinir sekli. Hicbir mahallenin
+     fotografi olmadigi icin 17 karonun 17'si koyu kutuya dusuyordu; sicak acik
+     sayfanin ortasinda bozuk gorsel gibi duruyordu.
+     Simdi: sayfanin kendi kart dilinde acik karo, mahallenin GERCEK sinir sekli
+     aksan renginde grafik oge olarak. Stok fotografin veremeyecegi ayirt edici
+     varlik bu; artik yedek cozum degil, tasarimin kendisi.
+     .foto sinifi korundu: gorsel eklenince otomatik fotografa gecer. */
+  .mh-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:34px}
+  .mh{
+    position:relative;aspect-ratio:1/1;overflow:hidden;display:block;isolation:isolate;
+    background:var(--card);border:1px solid var(--line);border-radius:var(--r-surface);
+    box-shadow:var(--sh-1);
+    transition:border-color .16s var(--ease),box-shadow .16s var(--ease),transform .16s var(--ease);
+  }
+  /* HOVER: HARITA SEKLI one cikar. Zemin acik kalir (kart), sekil soluk
+     maviden DOLU laciverte doner -- harita belirginlesir, kaybolmaz.
+     (Onceki hatali surumde zemin lacivert, sekil beyazdi: harita kayboluyordu.) */
+  .mh:hover{border-color:var(--accent-deep);box-shadow:var(--sh-2);transform:translateY(-2px)}
+  .mh:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+  /* sinir sekli: karonun ust kismini doldurur, metne yer birakir */
+  .mh-sekil{position:absolute;left:0;right:0;top:0;height:72%;width:100%;display:block;z-index:1}
+  .mh-sekil path{
+    fill:var(--accent);fill-opacity:.10;
+    stroke:var(--accent);stroke-opacity:.45;
+    stroke-width:1;vector-effect:non-scaling-stroke;
+    transition:fill .3s var(--ease),stroke .3s var(--ease),
+               fill-opacity .3s var(--ease),stroke-opacity .3s var(--ease);
+  }
+  .mh:hover .mh-sekil path{
+    fill:var(--accent-deep);fill-opacity:1;
+    stroke:var(--accent-deep);stroke-opacity:1;
+  }
+
+  .mh-ad{
+    position:absolute;left:0;right:0;bottom:0;z-index:2;padding:14px 14px 15px;
+    color:var(--txt);font-size:15px;font-weight:600;letter-spacing:-.015em;line-height:1.2;
+  }
+  .mh:hover .mh-ad{color:var(--accent-deep)}
+  .mh-ad small{display:block;font-size:11.5px;font-weight:400;letter-spacing:0;
+    color:var(--muted);margin-top:3px;font-variant-numeric:tabular-nums}
+
+  /* --- fotograflı varyant: gorsel eklendiginde --- */
+  .mh.foto{background:#0d1219;border-color:transparent}
+  .mh-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;
+    transition:transform .7s var(--ease);will-change:transform}
+  .mh.foto:hover .mh-img{transform:scale(1.06)}
+  .mh-mavi{position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:var(--accent);opacity:0;transition:opacity .35s var(--ease)}
+  .mh.foto:hover .mh-mavi{opacity:.55}
+  .mh.foto::after{
+    content:"";position:absolute;inset:0;pointer-events:none;z-index:1;
+    background:linear-gradient(to top, rgba(8,12,18,.86) 0%, rgba(8,12,18,.30) 48%, rgba(8,12,18,.04) 100%);
+  }
+  .mh.foto .mh-ad{color:#fff;text-shadow:0 1px 18px rgba(8,12,18,.7)}
+  .mh.foto .mh-ad small{color:rgba(255,255,255,.72)}
+
+  /* ===== KATEGORILER ===== */
+  .cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:34px}
+  .cat{display:flex;align-items:center;gap:11px;padding:15px 16px;
+    background:var(--card);border:1px solid var(--line);border-radius:var(--r-surface);
+    box-shadow:var(--sh-1);transition:.16s var(--ease)}
+  .cat:hover{border-color:var(--accent);background:var(--accent-wash);
+    transform:translateY(-1px);box-shadow:var(--sh-2)}
+  .cat .n{margin-left:auto;font-variant-numeric:tabular-nums;font-weight:600;font-size:15px}
+  .cat .l{font-size:13.5px;color:var(--txt-2)}
+
+  /* ===== DENIZCILIK: fotografli sinematik serit ===== */
+  .marine{position:relative;overflow:hidden;background:#1a2028;padding:0}
+  .marine-media{position:absolute;inset:0}
+  .marine-media img{width:100%;height:100%;object-fit:cover;object-position:center 55%;
+    filter:contrast(1.1) saturate(1.1) brightness(.9)}
+  .marine-media::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to right, rgba(12,18,26,.93) 0%, rgba(12,18,26,.78) 46%, rgba(12,18,26,.45) 100%)}
+  /* padding 92 -> 64: bolum sayfanin en agir blogu olmaktan cikti.
+     Tuzla'nin gunluk isletmeleri onde, tersaneler bir bolum. */
+  .marine-in{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;
+    gap:56px;align-items:center;padding:64px 0}
+  .marine h2{color:#fff}
+  .marine .lede{color:rgba(255,255,255,.82)}
+  .firm-cloud{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px}
+  .firm{font-size:12px;padding:6px 12px;border-radius:var(--r-pill);
+    background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.78)}
+  .firm.hi{border-color:rgba(255,255,255,.62);color:#fff;font-weight:500}
+  .stat-row{display:grid;grid-template-columns:1fr 1fr;gap:1px;
+    background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.16);
+    border-radius:var(--r-surface);overflow:hidden}
+  .stat{background:rgba(14,20,28,.72);backdrop-filter:blur(10px);padding:20px 18px}
+  .stat .v{font-size:30px;font-weight:600;font-variant-numeric:tabular-nums;
+    letter-spacing:-.03em;color:#fff}
+  .stat .k{font-size:12px;color:rgba(255,255,255,.62);margin-top:3px;line-height:1.4}
+  .stat.on .v{color:#7fd4e8}
+
+  /* ===== VERI ===== */
+  .src-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:38px 56px;margin-top:36px}
+  .src h3{font-size:14.5px;margin-bottom:7px;display:flex;align-items:center;gap:8px}
+  .src h3 i{color:var(--accent);font-size:17px}
+  .src p{font-size:13.5px;color:var(--muted);line-height:1.6}
+  .src code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;
+    background:var(--raised);padding:1px 6px;border-radius:5px;color:var(--txt-2)}
+
+  /* ===== ISLETME SAHIBI ===== */
+  .band{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-surface);
+    padding:44px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+  .band h2{font-size:clamp(22px,2.6vw,30px);margin-bottom:9px}
+  .band p{color:var(--muted);font-size:14.5px;max-width:54ch}
+
+  @media(max-width:980px){
+    .hero-grid,.marine-in,.src-grid{grid-template-columns:1fr;gap:36px}
+    .hero{padding:44px 0 48px}
+    .map-frame{height:clamp(300px,42dvh,380px)}
+    .marine-in{padding:64px 0}
+    .cat-grid{grid-template-columns:repeat(2,1fr)}
+    .mh-grid{grid-template-columns:repeat(2,1fr)}
+    .band{grid-template-columns:1fr;padding:30px;gap:24px}
+    .nav-links{display:none}
+  }
+  @media(max-width:560px){
+    .cat-grid{grid-template-columns:1fr}
+    /* mahalle karolari telefonda da IKILI kalir: 17 mahalle tek sutunda
+       kare karo demek, sonu gelmeyen bir kaydirma olurdu. */
+    .mh-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+    .mh-ad{padding:11px 11px 12px;font-size:13.5px}
+    .mh-ad small{font-size:10.5px}
+    .stat-row{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo"><i class="ph-fill ph-map-pin-area"></i> Tuzla Haritası</a>
+    <div class="nav-links">
+      <a href="kesfet.html">İşletmeler</a>
+      <a href="nobetci.html">Nöbetçi eczane</a>
+      <a href="#mahalleler">Mahalleler</a>
+      <a href="#veri">Veri kaynağı</a>
+    </div>
+    <div class="nav-sag">
+      <a href="kesfet.html" class="btn btn-primary"><i class="ph ph-map-trifold"></i> <span class="nav-cta-yazi">Haritayı aç</span></a>
+      <button class="nav-burger" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navPanel">
+        <i class="ph ph-list" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div class="nav-panel" id="navPanel">
+    <a href="kesfet.html"><i class="ph ph-storefront" aria-hidden="true"></i> İşletmeler</a>
+    <a href="nobetci.html"><i class="ph ph-first-aid-kit" aria-hidden="true"></i> Nöbetçi eczane</a>
+    <a href="#mahalleler"><i class="ph ph-map-pin-area" aria-hidden="true"></i> Mahalleler</a>
+    <a href="kesfet.html"><i class="ph ph-map-trifold" aria-hidden="true"></i> Haritayı aç</a>
+    <a href="#denizcilik"><i class="ph ph-anchor" aria-hidden="true"></i> Tersaneler</a>
+    <a href="#veri"><i class="ph ph-info" aria-hidden="true"></i> Veri kaynağı</a>
+  </div>
+</nav>
+
+<!-- HERO: sinematik fotograf + yaninda canli harita -->
+<header class="hero">
+  <div class="hero-media">
+    <img src="gorseller/tuzla-sahil-hero.jpeg" alt="Tuzla sahilinde deniz kenarındaki yürüyüş yolu ve bulutlu gökyüzü" fetchpriority="high">
+  </div>
+  <div class="wrap hero-grid">
+    <div>
+      <h1 class="h-display">Tuzla'da ne varsa,<br>tek haritada.</h1>
+      <p class="lede">Mahallendeki eczane, market, kafe, diş hekimi. Adres, telefon, çalışma saati ve yol tarifi.</p>
+      <div class="hero-cta">
+        <a href="kesfet.html" class="btn btn-primary btn-lg"><i class="ph ph-magnifying-glass"></i> İşletme ara</a>
+        <a href="#mahalleler" class="btn btn-onphoto btn-lg"><i class="ph ph-map-pin-area"></i> Mahallene bak</a>
+      </div>
+      <!-- Acil/utility ihtiyaç: her gün değişen, tekrar eden arama. Ana CTA'larla
+           yarışmasın diye ayrı, hafif bir satır -- ama ana sayfada görünür. -->
+      <a href="nobetci.html" class="hero-neb"><i class="ph-fill ph-first-aid-kit"></i> Bugün Tuzla'da nöbetçi eczaneler <i class="ph ph-arrow-up-right"></i></a>
+    </div>
+    <div class="map-frame">
+      <div id="heroMap"></div>
+      <a href="kesfet.html" class="map-open">Tam ekran <i class="ph ph-arrow-up-right"></i></a>
+      <div class="map-badge"><i class="ph-fill ph-circle" style="color:var(--c-marina);font-size:8px"></i> <b id="hcount">0</b> işletme · Tuzla</div>
+    </div>
+  </div>
+</header>
+
+<!-- MAHALLELER: grid, tiklayinca o mahallenin kategorilerine iner -->
+<section id="mahalleler">
+  <div class="wrap">
+    <h2 class="h-sec">Mahallene göre bak</h2>
+    <p class="lede">Bir mahalleye gir, oradaki eczaneyi, kafeyi, diş hekimini kategori kategori gör.</p>
+    <div class="mh-grid" id="mhGrid"></div>
+  </div>
+</section>
+
+<!-- KATEGORILER -->
+<section id="kategoriler" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="h-sec">Ya da doğrudan kategoriden</h2>
+    <p class="lede">Her kategori haritada kendi rengiyle işaretli. Filtrele, gör, yol tarifini al.</p>
+    <div class="cat-grid" id="catGrid"></div>
+  </div>
+</section>
+
+<!-- DENIZCILIK: fotografli serit -->
+<section class="marine" id="denizcilik">
+  <div class="marine-media">
+    <img src="gorseller/tuzla-sahil-liman.jpeg" alt="Tuzla sahilinden deniz, yelkenli ve liman görünümü" loading="lazy">
+  </div>
+  <div class="wrap marine-in">
+    <div>
+      <h2 class="h-sec">Tersaneler bölgesi, ilk kez haritada</h2>
+      <p class="lede">Türkiye'nin en büyük gemi inşa bölgesi Tuzla'da. Ama bu firmalar hiçbir yerel haritada toplu halde yok. Burada var.</p>
+      <div class="firm-cloud">
+        <span class="firm hi">Sedef Gemi İnşaatı</span>
+        <span class="firm hi">Gemak</span>
+        <span class="firm hi">Dearsan</span>
+        <span class="firm hi">RMK Marine</span>
+        <span class="firm">Kuzey Star Shipyard</span>
+        <span class="firm">Desan</span>
+        <span class="firm">Sanmar Denizcilik</span>
+        <span class="firm">Mengi-Yay Yatçılık</span>
+      </div>
+      <a href="kesfet.html?k=Marina%20%26%20Denizcilik" class="btn btn-onphoto" style="margin-top:22px">
+        <i class="ph ph-arrow-right"></i> Tümünü haritada gör
+      </a>
+    </div>
+    <div class="stat-row">
+      <div class="stat on">
+        <div class="v" id="mCount">0</div>
+        <div class="k">tersane ve yat firması, Tersaneler Caddesi hattında</div>
+      </div>
+      <div class="stat on">
+        <div class="v" id="mTel">0</div>
+        <div class="k">tanesinin telefonu ve adresi tam</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VERI -->
+<section id="veri">
+  <div class="wrap">
+    <h2 class="h-sec">Veri nereden geliyor</h2>
+    <p class="lede">Kaynağını söyleyemediğimiz hiçbir kayıt haritada yok.</p>
+    <div class="src-grid">
+      <div class="src">
+        <h3><i class="ph ph-globe-hemisphere-east"></i> OpenStreetMap</h3>
+        <p>İşletmelerin isim, konum ve kategori bilgisi OpenStreetMap'ten alındı. ODbL lisansı altında, açık veri.</p>
+      </div>
+      <div class="src">
+        <h3><i class="ph ph-anchor-simple"></i> GİSBİR üye dizini</h3>
+        <p>Tersane ve yat firmaları, Türkiye Gemi İnşa Sanayicileri Birliği'nin kamuya açık üye dizininden derlendi. Adres ve telefonlar birliğin yayınladığı bilgidir.</p>
+      </div>
+      <div class="src">
+        <h3><i class="ph ph-hospital"></i> İBB Açık Veri</h3>
+        <p>Hastane, diş hekimi, muayenehane, psikolog, aile sağlığı merkezi ve veteriner kayıtları İBB Açık Veri Portalı'nın sağlık tesisleri veri setinden geldi. İBB Açık Veri Lisansı. Bu set portalda güncellenmiyor, yani anlık bir görüntü.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ISLETME SAHIBI -->
+<section>
+  <div class="wrap">
+    <div class="band">
+      <div>
+        <h2>Bu işletme sizin mi?</h2>
+        <p>Çalışma saatiniz, telefonunuz veya konumunuz yanlışsa düzeltelim. Kayıt ücretsiz, bir şey satmıyoruz.</p>
+      </div>
+      <!-- Onceden mailto: idi ve ana sayfa gercek forma (ekle.html) hic link
+           vermiyordu. Ayni is icin iki ayri yol vardi; form olan kazandi. -->
+      <a href="ekle.html" class="btn btn-primary btn-lg"><i class="ph ph-pencil-simple"></i> Bilgimi düzelt</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Tuzla İşletme Haritası</span>
+    <span>Harita verisi © OpenStreetMap katkıcıları (ODbL) · Sağlık verisi: İBB Açık Veri · Firma verisi: GİSBİR</span>
+  </div>
+</footer>
+
+<script>
+// Taksonomi gruplar.js'te: TEK kaynak. Burada kopyasi YOK.
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+// gorseller/mahalle/<slug>.jpeg olan mahalleler. Foto eklendikce buraya slug ekle.
+// Bos: hicbir mahallenin fotografi yok -> hepsi kendi sinir seklini gosterir.
+const FOTOGRAFI_OLAN=new Set([]);
+
+fetch("veri/tuzla_data.json").then(r=>r.json()).then(DATA=>{
+  gruplaHepsi(DATA);   // her kayda _grup yazar
+  document.getElementById("hcount").textContent=DATA.length;
+  const c={}; DATA.forEach(r=>c[r._grup]=(c[r._grup]||0)+1);
+
+  // denizcilik sayilari: hepsi veriden, elle yazilmiyor
+  const mar=DATA.filter(r=>r.kategori==="Marina & Denizcilik");
+  document.getElementById("mCount").textContent=mar.length;
+  document.getElementById("mTel").textContent=mar.filter(r=>r.telefon).length;
+
+  // kesfet.html'deki cipler ve grup baslıklariyla AYNI liste: gruplar.js
+  // Statik SEO sayfasina link (kesfet.html?k= degil): Google index'ten
+  // kategori sayfalarini buradan buluyor. Sayfa icinde "Haritada gor" ->
+  // kesfet.html?k= var, yani kullanici yine canli haritaya inebiliyor.
+  document.getElementById("catGrid").innerHTML=GRUPLAR.filter(g=>c[g.ad])
+    .map(g=>`<a class="cat" href="kategori/${slug(g.ad)}.html">
+        <span class="cdot" style="background:${esc(css(g.renk))}"></span>
+        <span class="l">${esc(g.ad)}</span><span class="n">${c[g.ad]}</span>
+      </a>`).join("");
+
+  // --- MAHALLE GRIDI: fotograf oncelikli, sayi yok ---
+  fetch("veri/mahalle_sekil.json").then(r=>r.json()).then(SEKIL=>{
+    const mh={};
+    DATA.forEach(r=>{ const m=(r.mahalle||"").trim(); if(m) mh[m]=(mh[m]||0)+1; });
+    // kayit sayisina gore sirala ama sayiyi GOSTERME
+    const sirali=Object.keys(mh).sort((a,b)=>mh[b]-mh[a]);
+    document.getElementById("mhGrid").innerHTML=sirali.map(ad=>{
+      const sk=SEKIL[ad];
+      const slug=sk?sk.slug:ad.toLowerCase();
+      // fotograf varsa o, yoksa mahallenin kendi sekli
+      const foto=`gorseller/mahalle/${slug}.jpeg`;
+      const gorsel = FOTOGRAFI_OLAN.has(slug)
+        ? `<img class="mh-img" src="${esc(foto)}" alt="${esc(ad)} Mahallesi" loading="lazy">
+           <span class="mh-mavi"></span>`
+        : (sk?`<svg class="mh-sekil" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"
+               aria-hidden="true"><path d="${esc(sk.path)}"/></svg>`:"");
+      // sayi geri geldi: fotograf yokken karo bilgisiz kaliyordu.
+      // Link canli kesfet'e: mahalle secilince o mahalledeki KATEGORILER
+      // (grup karolari) cikar, kategori secince isletmeler. Kullanici once
+      // "hangi kategori" secsin, isletme yigini gormesin.
+      return `<a class="mh${FOTOGRAFI_OLAN.has(slug)?" foto":""}"
+                 href="kesfet.html?mahalle=${encodeURIComponent(ad)}">
+        ${gorsel}
+        <span class="mh-ad">${esc(ad)}<small>${mh[ad]} işletme</small></span>
+      </a>`;
+    }).join("");
+  });
+
+    if(typeof maplibregl==="undefined"){ addEventListener("load",()=>initMap(DATA)); } else initMap(DATA);
+});
+
+function initMap(DATA){
+  const map=new maplibregl.Map({
+    container:"heroMap",
+    style:"https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+    center:[29.315,40.845], zoom:11.6, attributionControl:false,
+    interactive:true, scrollZoom:false   // sayfa kaydirmasi calissin
+  });
+  map.addControl(new maplibregl.AttributionControl({compact:true}));
+  map.addControl(new maplibregl.NavigationControl({showCompass:false}),"top-right");
+  map.on("load",()=>{
+    const expr=renkIfadesi(css);   // pin rengi ust gruba gore: gruplar.js
+    map.addSource("b",{type:"geojson",data:{type:"FeatureCollection",
+      features:DATA.map(r=>({type:"Feature",geometry:{type:"Point",coordinates:[r.lon,r.lat]},
+        properties:{_grup:r._grup}}))}});
+    map.addLayer({id:"p",type:"circle",source:"b",paint:{
+      "circle-color":expr,
+      "circle-radius":["interpolate",["linear"],["zoom"],11,2.4,15,6.2],
+      "circle-opacity":.92,
+      "circle-stroke-width":.9,"circle-stroke-color":"#ffffff"}});
+    // kapsam buyudu: sabit zoom yerine veriye sigdir
+    const b=new maplibregl.LngLatBounds();
+    DATA.forEach(r=>b.extend([r.lon,r.lat]));
+    map.fitBounds(b,{padding:26,duration:0,maxZoom:13.4});
+  });
+}
+</script>
+</body>
+</html>

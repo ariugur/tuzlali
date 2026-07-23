@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Phosphor-Fill";
+  src: url("./Phosphor-Fill.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.ph-fill{/* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "Phosphor-Fill" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;}
+.ph-anchor:before{content:"\e514"}
+.ph-anchor-simple:before{content:"\e5d8"}
+.ph-arrow-left:before{content:"\e058"}
+.ph-arrow-right:before{content:"\e06c"}
+.ph-arrow-up-right:before{content:"\e092"}
+.ph-arrows-left-right:before{content:"\e0a0"}
+.ph-bed:before{content:"\e0cc"}
+.ph-car:before{content:"\e112"}
+.ph-caret-right:before{content:"\e13a"}
+.ph-check-circle:before{content:"\e184"}
+.ph-circle:before{content:"\e18a"}
+.ph-clock:before{content:"\e19a"}
+.ph-cloud-warning:before{content:"\ea98"}
+.ph-first-aid-kit:before{content:"\e570"}
+.ph-fork-knife:before{content:"\e262"}
+.ph-globe:before{content:"\e288"}
+.ph-globe-hemisphere-east:before{content:"\e28a"}
+.ph-hospital:before{content:"\e844"}
+.ph-house:before{content:"\e2c2"}
+.ph-info:before{content:"\e2ce"}
+.ph-list:before{content:"\e2f0"}
+.ph-list-bullets:before{content:"\e2f2"}
+.ph-magnifying-glass:before{content:"\e30c"}
+.ph-map-pin:before{content:"\e316"}
+.ph-map-pin-area:before{content:"\ee3a"}
+.ph-map-trifold:before{content:"\e31a"}
+.ph-paper-plane-tilt:before{content:"\e398"}
+.ph-paw-print:before{content:"\e648"}
+.ph-pencil-simple:before{content:"\e3b4"}
+.ph-phone:before{content:"\e3b8"}
+.ph-plus-circle:before{content:"\e3d6"}
+.ph-scissors:before{content:"\eae0"}
+.ph-seal-check:before{content:"\e606"}
+.ph-shopping-cart-simple:before{content:"\e420"}
+.ph-storefront:before{content:"\e470"}
+.ph-warning:before{content:"\e4e0"}
+.ph-warning-circle:before{content:"\e4e2"}
+.ph-wrench:before{content:"\e5d4"}
+.ph-x:before{content:"\e4f6"}

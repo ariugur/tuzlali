@@ -1,0 +1,33 @@
+{
+  "ilce": "Tuzla",
+  "kaynak": "istanbul.eczaneleri.org",
+  "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
+  "guncelleme": "2026-07-23T17:26+03:00",
+  "eczaneler": [
+    {
+      "ad": "Lavanta Eczanesi",
+      "adres": "Evliya Çelebi Mahallesi Hatboyu Caddesi 6/a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-lavanta-eczanesi.html"
+    },
+    {
+      "ad": "Önder Eczanesi",
+      "adres": "Mimarsinan Mimar Sinan Mahallesi Güngörmüş Sokak No:35/a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-onder-eczanesi.html"
+    },
+    {
+      "ad": "Ecem Eczanesi",
+      "adres": "Yayla Mahallesi Vatan Caddesi Vizyon Park Sitesi B1 Blok No:72/1 No:3",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-ecem-eczanesi.html"
+    },
+    {
+      "ad": "Horoz Eczanesi",
+      "adres": "Aydınlı Aydınlı Mahallesi Bahçeler Sokak 2/b",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-horoz-eczanesi.html"
+    },
+    {
+      "ad": "Şifa Eczanesi",
+      "adres": "Şifa Mahallesi Egemenlik Caddesi 40/a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-sifa-eczanesi.html"
+    }
+  ]
+}

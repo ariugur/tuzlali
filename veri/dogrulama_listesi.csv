@@ -1,0 +1,26 @@
+﻿# DOGRULANMAMIS YAPAY ZEKA CIKTISI - HARITAYA GIRMEDI
+# Buradaki ad/adres/telefon birer IDDIA. Telefonlar uydurulmus olabilir.
+# Buyuk harfli sutunlari sen doldur. Doldurulanlari elle.json'a gecirecegim.
+
+sira,iddia_edilen_ad,kategori,onerilen_alt_kategori,iddia_edilen_adres,telefon_1,telefon_2,ARANDI_MI,ACTI_MI,GERCEK_AD,GERCEK_TELEFON,ADRES_DOGRU_MU,HARITAYA_GIRSIN_MI,NOT
+1,Otorapor Tuzla Oto Sanayi Oto Ekspertiz,Oto ekspertiz,Oto Ekspertiz,Aydıntepe Mah. Fedakar Sok. A5 Blok No:87,0216 392 32 43,0532 529 50 60,,,,,,,
+2,Söğüt Oto Cam Tuzla Şubesi,Oto cam,Oto Cam,"Tuzla Oto Sanayi Sitesi, Aydınlı Yolu Cad. No:23",0216 494 25 00,0532 747 62 26,,,,,,,
+3,Mert Otomotiv Servisi,Peugeot / Citroën servis,Oto Servis,Aydıntepe Mah. Fedakar Sok. Tuzla Oto Sanayi Sitesi B3 No:138,0532 544 74 37,,,,,,,,
+4,Özen Rot Balans Servisi,Rot balans / lastik,Lastikçi,"Tuzla Oto Sanayi Sitesi, Aydınlı Yolu Cad. B-3 Blok No:152",0532 315 12 34,,,,,,,,
+5,Birlik Otomotiv Yedek Parça,Yedek parça,Oto Yedek Parça,Aydıntepe Mah. Fedakar Sok. B1 Blok No:39,0216 493 00 81,,,,,,,,
+6,Kılıç Opel Servis,Opel özel servis,Oto Servis,"Tuzla Oto Sanayi Sitesi, Aydıntepe 1. Blok No:109/B",0536 337 25 36,,,,,,,,
+7,Çağlar Egzoz,Egzoz servisi,Egzozcu,Aydıntepe Mah. Fedakar Sok. Küçük Oto Sanayi A/2 No:38/8,0535 943 74 40,0533 610 66 82,,,,,,,
+8,Ersin Oto - Japon Oto Servis,Japon araç servisi,Oto Servis,"Tuzla Oto Sanayi Sitesi, Aydınlı Yolu Cad. A-2 Blok No:18",0532 747 48 73,,,,,,,,
+9,Yunus Otomotiv,Kaporta / boya,Kaporta / Boya,"Tuzla Oto Sanayi Sitesi, Aydınlı Yolu Cad. B-3 Blok No:155",0216 392 58 20,,,,,,,,
+10,Beta Özel Servis,Özel servis,Oto Servis,"Tuzla Oto Sanayi Sitesi B/1 Blok No:105, İçmeler",0533 208 14 00,0216 392 22 59,,,,,,,
+11,Mesa Otomotiv,Peugeot / Citroën / Opel servis,Oto Servis,Tuzla Oto Sanayi Sitesi B-2 Blok No:124,0216 493 37 63,0532 690 43 45,,,,,,,
+12,Hakan Egzoz Tuzla,Egzoz servisi,Egzozcu,Aydıntepe Mah. Tuzla Oto Sanayi Sitesi B-3 Blok No:151,0546 631 29 29,,,,,,,,
+13,Altun Motor Yenileme,Motor yenileme / rektifiye,Motor Yenileme,Aydıntepe Mah. Fedakar Sok. Tuzla Oto Sanayi Sitesi B-2 Blok No:39/129,0216 392 07 13,,,,,,,,
+14,Klas Oto Peugeot & Citroën Servis,Peugeot / Citroën servis,Oto Servis,"Aydıntepe, Fedakar Sok. Tuzla Oto Sanayi Sitesi B2 Blok No:39/123",0542 198 51 34,,,,,,,,
+15,Yıldız Otomotiv,SsangYong özel servis,Oto Servis,Aydıntepe Mah. Tuzla Oto Sanayi Sitesi B-3 Blok No:140,0535 629 72 39,,,,,,,,
+16,Emin Otomotiv - Salih Tan,Otomotiv servis,Oto Servis,Aydıntepe Mah. Fedakar Sok. Tuzla Oto Sanayi Sitesi B2 Blok No:39-121/9,0216 493 53 16,,,,,,,,
+17,Miraç Oto - Renault Servisi,Renault servis,Oto Servis,"Tuzla Oto Sanayi Sitesi, Aydınlı Yolu Cad. B-2 Blok No:130",0533 571 82 45,,,,,,,,
+18,Tek Otomotiv,Otomotiv servis,Oto Servis,Tuzla Oto Sanayi Sitesi B-2 Blok No:111,,,,,,,,,
+19,Işık BMW Servis,BMW servis,Oto Servis,Aydıntepe Mah. Fedakar Sok. Tuzla Oto Sanayi Sitesi B5 Blok No:179,,,,,,,,,
+20,Çağlar Kebap,Yeme içme,Lokanta,"Tuzla Oto Sanayi Sitesi, Fedakar Sok. B1 Blok No:39/95",0216 493 03 15,,,,,,,,
+21,Tuzla Auto Center,Otomotiv servis,Oto Servis,"Aydıntepe Mah. Fedakar Sok. No:133, Tuzla Oto Sanayi Sitesi B-2 Blok",0536 560 84 23,0530 419 18 25,,,,,,,

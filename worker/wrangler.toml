@@ -1,0 +1,22 @@
+name = "tuzla-basvuru"
+main = "src/index.js"
+compatibility_date = "2026-07-16"
+
+# Basvurular ve ispat belgeleri burada. Tek gercek kaynak.
+# Kova once elle olusturulmali:  wrangler r2 bucket create tuzla-basvuru
+[[r2_buckets]]
+binding = "BASVURU"
+bucket_name = "tuzla-basvuru"
+
+# Saatlik temizlik: 24 saati dolmus ispat belgelerini siler.
+# Sadece belge/ siliniyor; basvuru/ duruyor.
+[triggers]
+crons = ["17 * * * *"]
+
+[vars]
+# Gizli DEGIL, o yuzden burada. Gonderen adresin domaini Resend'de dogrulanmis olmali.
+MAIL_KIME = "uguraripro@gmail.com"
+MAIL_KIMDEN = "Tuzla Haritasi <basvuru@DOMAIN-BEKLENIYOR>"
+
+# RESEND_API_KEY buraya YAZILMAZ. Gizli olarak eklenir:
+#   wrangler secret put RESEND_API_KEY

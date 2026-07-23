@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuzla Nöbetçi Eczaneleri | Bugün Açık Eczaneler</title>
+<meta name="description" content="Bugün Tuzla'da nöbetçi eczaneler: adres, harita ve yol tarifi. Her gün güncellenir.">
+<link rel="canonical" href="https://ORNEK-ALAN-ADI/nobetci.html">
+<link rel="stylesheet" href="ortak.css">
+<link rel="stylesheet" href="ikonlar/regular.css">
+<link rel="stylesheet" href="ikonlar/fill.css">
+<script src="ortak.js"></script>
+<style>
+  .neb-head{padding:38px 0 6px}
+  .neb-head h1{font-size:clamp(24px,3.2vw,34px);margin-bottom:10px}
+  .neb-head .lede{max-width:60ch}
+  .neb-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    font-size:13px;color:var(--muted);margin:14px 0 4px}
+  .neb-tarih{display:inline-flex;align-items:center;gap:7px;font-weight:600;color:var(--txt)}
+  .neb-tarih i{color:var(--accent)}
+  .neb-liste{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;padding:22px 0 8px}
+  .neb-kart{background:var(--card);border:1px solid var(--line);border-radius:var(--r-surface);
+    padding:20px 20px 16px;box-shadow:var(--sh-1);display:flex;flex-direction:column;gap:10px}
+  .neb-kart h2{font-size:17px;font-weight:600;letter-spacing:-.015em;display:flex;
+    align-items:center;gap:9px}
+  .neb-kart h2 i{color:#157a3a;font-size:19px}
+  .neb-adres{font-size:13.5px;color:var(--txt-2);line-height:1.5;display:flex;gap:8px}
+  .neb-adres i{color:var(--muted);font-size:15px;margin-top:2px;flex:0 0 15px}
+  .neb-aksiyon{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+  .neb-btn{display:inline-flex;align-items:center;gap:7px;font-size:13px;min-height:40px;
+    padding:8px 14px;border-radius:var(--r-pill);border:1px solid var(--line);
+    background:var(--card);color:var(--txt-2);transition:.15s var(--ease)}
+  .neb-btn:hover{border-color:var(--accent);color:var(--accent)}
+  .neb-btn.ana{background:var(--accent-wash);border-color:#bcd4f5;color:var(--accent-hi);font-weight:500}
+  .neb-not{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-surface);
+    padding:16px 18px;margin:18px 0 60px;font-size:13px;color:var(--txt-2);line-height:1.55}
+  .neb-not b{color:var(--txt)}
+  .neb-not a{color:var(--accent);font-weight:500}
+  .neb-not a:hover{text-decoration:underline}
+  .neb-durum{padding:60px 20px;text-align:center;color:var(--muted)}
+  .neb-durum i{font-size:36px;display:block;margin-bottom:12px;color:var(--line-strong)}
+  .neb-durum h2{font-size:17px;color:var(--txt);margin-bottom:8px}
+  .neb-durum a{color:var(--accent);font-weight:500}
+  @media(max-width:640px){ .neb-liste{grid-template-columns:1fr} .neb-head{padding:26px 0 4px} }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo"><i class="ph-fill ph-map-pin-area"></i> Tuzla Haritası</a>
+    <div class="nav-links">
+      <a href="kesfet.html">İşletmeler</a>
+      <a href="nobetci.html" aria-current="page">Nöbetçi eczane</a>
+      <a href="index.html#mahalleler">Mahalleler</a>
+    </div>
+    <div class="nav-sag">
+      <a href="kesfet.html" class="btn btn-primary"><i class="ph ph-map-trifold"></i> <span class="nav-cta-yazi">Haritayı aç</span></a>
+      <button class="nav-burger" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navPanel">
+        <i class="ph ph-list" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div class="nav-panel" id="navPanel">
+    <a href="index.html"><i class="ph ph-house" aria-hidden="true"></i> Ana sayfa</a>
+    <a href="kesfet.html"><i class="ph ph-storefront" aria-hidden="true"></i> İşletmeler</a>
+    <a href="nobetci.html"><i class="ph ph-first-aid-kit" aria-hidden="true"></i> Nöbetçi eczane</a>
+    <a href="index.html#mahalleler"><i class="ph ph-map-pin-area" aria-hidden="true"></i> Mahalleler</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <nav class="seo-crumb" aria-label="Konum" style="padding-top:20px">
+      <a href="index.html" class="crumb-home"><i class="ph ph-house" aria-hidden="true"></i> Ana sayfa</a>
+      <i class="ph ph-caret-right" aria-hidden="true"></i>
+      <span>Nöbetçi eczane</span>
+    </nav>
+
+    <header class="neb-head">
+      <h1>Tuzla Nöbetçi Eczaneleri</h1>
+      <p class="lede">Bugün Tuzla'da nöbette olan eczaneler, adres ve yol tarifiyle. Liste her gün otomatik güncellenir.</p>
+      <div class="neb-meta" id="meta" aria-live="polite"></div>
+    </header>
+  </div>
+
+  <div class="wrap">
+    <div class="neb-liste" id="liste">
+      <div class="neb-durum" style="grid-column:1/-1"><i class="ph ph-first-aid-kit"></i>
+        <h2>Yükleniyor…</h2></div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="neb-not">
+      <b>Nöbet bilgisi gün içinde değişebilir.</b> Bu liste açık kaynaktan
+      (<span id="kaynakAd">istanbul.eczaneleri.org</span>) otomatik derlenir.
+      Acil bir durumda resmî kaynaktan teyit edin:
+      <a href="https://www.turkiye.gov.tr/saglik-titck-nobetci-eczane-sorgulama" target="_blank" rel="noopener">e-Devlet Nöbetçi Eczane Sorgulama</a>.
+    </div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Tuzla İşletme Haritası</span>
+    <span>Nöbetçi eczane verisi: <span id="kaynakAlt">istanbul.eczaneleri.org</span> · Resmî teyit: e-Devlet / İl Eczacı Odası</span>
+  </div>
+</footer>
+
+<script>
+/* Nöbetçi eczaneler: veri/nobetci.json GitHub Actions ile günde birkaç kez
+   sunucu tarafında güncellenir (bkz. .github/workflows/nobetci.yml).
+   Bu sayfa yalnız o statik JSON'u okur -- tarayıcıda API/CORS derdi yok. */
+var AYLAR=["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz",
+           "Ağustos","Eylül","Ekim","Kasım","Aralık"];
+function tarihYaz(iso){
+  // "2026-07-23T17:25+03:00" -> "23 Temmuz 2026, 17:25"
+  var m=String(iso).match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
+  if(!m) return "";
+  return parseInt(m[3],10)+" "+AYLAR[parseInt(m[2],10)-1]+" "+m[1]+", "+m[4]+":"+m[5];
+}
+function haritaLink(adres){
+  return "https://www.google.com/maps/dir/?api=1&destination="+
+    encodeURIComponent(adres+" Tuzla İstanbul");
+}
+function eczaneKart(e){
+  return '<article class="neb-kart">'+
+    '<h2><i class="ph-fill ph-first-aid-kit" aria-hidden="true"></i>'+esc(e.ad)+'</h2>'+
+    (e.adres?'<div class="neb-adres"><i class="ph ph-map-pin" aria-hidden="true"></i><span>'+esc(e.adres)+'</span></div>':'')+
+    '<div class="neb-aksiyon">'+
+      (e.adres?'<a class="neb-btn ana" href="'+haritaLink(e.adres)+'" target="_blank" rel="noopener"><i class="ph ph-map-trifold" aria-hidden="true"></i> Yol tarifi</a>':'')+
+      (e.detay?'<a class="neb-btn" href="'+esc(e.detay)+'" target="_blank" rel="noopener"><i class="ph ph-info" aria-hidden="true"></i> Detay &amp; telefon</a>':'')+
+    '</div></article>';
+}
+function hataDurum(){
+  document.getElementById("liste").innerHTML=
+    '<div class="neb-durum" style="grid-column:1/-1"><i class="ph ph-warning-circle"></i>'+
+    '<h2>Nöbetçi listesi şu an yüklenemedi</h2>'+
+    '<p>Resmî kaynaktan bakabilirsiniz: '+
+    '<a href="https://www.turkiye.gov.tr/saglik-titck-nobetci-eczane-sorgulama" target="_blank" rel="noopener">e-Devlet Nöbetçi Eczane Sorgulama</a></p></div>';
+  document.getElementById("meta").textContent="";
+}
+fetch("veri/nobetci.json",{cache:"no-store"}).then(function(r){
+  if(!r.ok) throw new Error("yok"); return r.json();
+}).then(function(d){
+  var ecz=(d&&d.eczaneler)||[];
+  if(!ecz.length){ hataDurum(); return; }
+  document.getElementById("liste").innerHTML=ecz.map(eczaneKart).join("");
+  var t=tarihYaz(d.guncelleme);
+  document.getElementById("meta").innerHTML=
+    '<span class="neb-tarih"><i class="ph-fill ph-clock" aria-hidden="true"></i>'+
+    esc(ecz.length)+' nöbetçi eczane</span>'+(t?' · son güncelleme '+esc(t):'');
+  if(d.kaynak){ document.getElementById("kaynakAd").textContent=d.kaynak;
+                document.getElementById("kaynakAlt").textContent=d.kaynak; }
+  // GEO: nöbetçi listesini yapılandırılmış veriyle de sun (LLM/arama alıntılar)
+  try{
+    var ld={"@context":"https://schema.org","@type":"ItemList",
+      "name":"Tuzla Nöbetçi Eczaneleri","numberOfItems":ecz.length,
+      "itemListElement":ecz.map(function(e,i){return {"@type":"ListItem","position":i+1,
+        "item":{"@type":"Pharmacy","name":e.ad,
+          "address":{"@type":"PostalAddress","streetAddress":e.adres,
+            "addressLocality":"Tuzla","addressRegion":"İstanbul","addressCountry":"TR"}}};})};
+    var s=document.createElement("script");s.type="application/ld+json";
+    s.textContent=JSON.stringify(ld);document.head.appendChild(s);
+  }catch(e){}
+}).catch(hataDurum);
+</script>
+</body>
+</html>

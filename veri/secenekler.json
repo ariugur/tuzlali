@@ -1,0 +1,34 @@
+{
+ "_uretildi": "veri/secenek_uret.py ile tuzla_data.json'dan turetildi",
+ "_kayit_sayisi": 1554,
+ "kategoriler": [
+  "Bakım & Güzellik",
+  "Evcil Hayvan",
+  "Konaklama",
+  "Marina & Denizcilik",
+  "Market",
+  "Perakende",
+  "Sağlık",
+  "Servis",
+  "Yeme İçme"
+ ],
+ "mahalleler": [
+  "Akfırat",
+  "Anadolu",
+  "Aydınlı",
+  "Aydıntepe",
+  "Cami",
+  "Evliya Çelebi",
+  "Fatih",
+  "İçmeler",
+  "İstasyon",
+  "Mescit",
+  "Mimar Sinan",
+  "Orhanlı",
+  "Orta",
+  "Postane",
+  "Şifa",
+  "Tepeören",
+  "Yayla"
+ ]
+}

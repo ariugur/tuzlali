@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuzla İşletmeleri | Liste ve Harita</title>
+<meta name="description" content="Tuzla'daki işletmeleri kategoriye göre listeleyin veya haritada görün. Telefon, adres, çalışma saati ve yol tarifi.">
+<link rel="stylesheet" href="ortak.css">
+<link rel="stylesheet" href="ikonlar/regular.css">
+<link rel="stylesheet" href="ikonlar/fill.css">
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" defer></script>
+<script src="gruplar.js"></script>
+<script src="ortak.js"></script>
+<style>
+  .tools{border-bottom:1px solid var(--line-soft);background:var(--bg);
+    position:sticky;top:68px;z-index:40;padding:16px 0}
+  .tools-in{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .field{position:relative;flex:1;min-width:220px;max-width:420px}
+  .field i{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:16px}
+  .field input{
+    width:100%;background:var(--bg);border:1px solid var(--line);color:var(--txt);
+    padding:11px 14px 11px 38px;border-radius:var(--r-surface);font-size:13.5px;
+    font-family:inherit;outline:none;transition:.15s var(--ease);
+  }
+  .field input::placeholder{color:var(--muted)}
+  .field input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-wash)}
+
+  /* mod geçişi */
+  .modes{display:flex;background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--r-pill);padding:3px;gap:2px;margin-left:auto}
+  .mode{display:flex;align-items:center;gap:7px;padding:8px 15px;border-radius:var(--r-pill);
+    font-size:13px;font-weight:500;color:var(--muted);background:none;border:none;
+    cursor:pointer;font-family:inherit;transition:.15s var(--ease)}
+  .mode[aria-selected="true"]{background:var(--bg);color:var(--txt);font-weight:600;box-shadow:var(--sh-1)}
+  .mode:not([aria-selected="true"]):hover{color:var(--txt)}
+
+  /* NOT: cip seridi kaldirildi. Grup karolari ayni filtreyi yapiyordu;
+     ikisi birden ayni taksonomiyi iki ayri bicimde gostermek oluyordu. */
+  .bar{display:flex;justify-content:space-between;align-items:center;
+    padding:18px 0;font-size:13px;color:var(--muted);flex-wrap:wrap;gap:10px}
+  .bar b{color:var(--txt);font-variant-numeric:tabular-nums}
+  .linkish{color:var(--accent);cursor:pointer;background:none;border:none;
+    font-family:inherit;font-size:13px;padding:0}
+  .linkish:hover{text-decoration:underline}
+
+  /* ---- LİSTE modu ---- */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding-bottom:26px}
+
+  /* ---- "işletmen yok mu?" bandı ----
+     Liste bittiği yerde duruyor: adam aradı, gezdi, kendini görmedi.
+     Aksan yıkaması (wash) kullanıyor, dolu mavi değil: bu bir reklam değil,
+     sayfanın devamı. Dolu mavi olsa banner körlüğüne girerdi. */
+  .ekle{
+    display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;
+    background:var(--accent-wash);border:1px solid #bcd4f5;
+    border-radius:var(--r-surface);padding:24px 26px;margin-bottom:70px;
+  }
+  .ekle-t{flex:1;min-width:260px}
+  .ekle h3{font-size:17px;margin-bottom:7px;display:flex;align-items:center;gap:9px}
+  .ekle h3 i{color:var(--accent);font-size:20px}
+  .ekle p{font-size:13.5px;color:var(--txt-2);line-height:1.55;max-width:64ch}
+  /* boş sonuç ekranındaki ikinci giriş: aranan terim burada geçiyor */
+  .empty .ekle-mini{margin-top:16px;font-size:13px;color:var(--muted)}
+  .empty .ekle-mini a{color:var(--accent);font-weight:500}
+  .empty .ekle-mini a:hover{text-decoration:underline}
+  /* KART: --card, --bg degil. ortak.css "kart zeminden yukari kalkar" diyor;
+     onceden zeminle ayni renkti, yani kart yuzmuyor sadece ciziliyordu. */
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-surface);
+    padding:16px 17px 13px;display:flex;flex-direction:column;gap:9px;
+    box-shadow:var(--sh-1);transition:border-color .16s var(--ease),box-shadow .16s var(--ease)}
+  /* translateY YOK: 1554 kartlik bir dizinde her hover'da zipla­yan kart huzursuz
+     ediyor. Kenar + golge yeterli geri bildirim. (MOTION dusuk: burasi dizin.) */
+  .card:hover{border-color:var(--line-strong);box-shadow:var(--sh-2)}
+  .card-top{display:flex;align-items:flex-start;gap:9px}
+  .card h3{font-size:14.5px;font-weight:600;line-height:1.35;letter-spacing:-.015em}
+  .card .sub{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);
+    flex-wrap:wrap;row-gap:4px}
+  .rows{display:flex;flex-direction:column;gap:5px;font-size:12.5px;color:var(--txt-2)}
+  .row{display:flex;gap:8px;align-items:flex-start}
+  .row i{color:var(--muted);font-size:14px;margin-top:1px;flex:0 0 14px}
+  .row a{color:var(--accent)}
+  .row a:hover{text-decoration:underline}
+  /* canlı çalışma durumu: açık yeşil (karar sinyali), kapalı sessiz notr.
+     #157a3a #fffdf7 kart üstünde AA geçer; kapalı bağırmaz -- bilgi, uyarı değil */
+  .s-acik{color:#157a3a;font-weight:600}
+  .s-kapali{color:var(--muted);font-weight:600}
+  .s-detay{color:var(--muted);font-weight:400}
+  /* WhatsApp: yalnız cep numaralı kayıtlarda. #157a3a AA geçer (marka yeşili
+     #25D366 açık zeminde okunmaz). İkon marka tanınırlığını taşıyor. */
+  .row .wa{color:#157a3a;white-space:nowrap;font-weight:500}
+  .row .wa:hover{text-decoration:underline}
+  .row .ayr{color:var(--line-strong);margin:0 1px}
+
+  /* ---- KART ALTI: uc hap buton -> tek sessiz satir ----
+     Onceden her kartta esit genislikte uc dolgulu hap vardi. 1554 kart x 3 = 2772
+     buton: liste bir dugme duvarina donuyordu. Islev ayni (uc harita da duruyor),
+     agirlik ucte bir. Yol tarifi kartin AMACI degil, cikisi. */
+  .card-foot{margin-top:auto;padding-top:10px;border-top:1px solid var(--line-soft);
+    display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted)}
+  .card-foot .et{margin-right:1px}
+  .mini{color:var(--txt-2);padding:2px 1px;border-bottom:1px solid transparent;
+    transition:.15s var(--ease)}
+  .mini:hover{color:var(--accent);border-bottom-color:var(--accent)}
+  .card-foot .ayrac{color:var(--line-strong)}
+
+  /* ---- ROZETLER: iki seviye, uc renk degil ----
+     CEKINCE (yaklasik konum / ad dogrulanmali / tekrar olabilir): sessiz notr.
+       Onceden ucu de --accent-wash mavisiydi. Ama mavi "bilgi" demek ve tek
+       kartta ucu birden cikabiliyordu -> aksan enflasyonu. Bunlar bilgi degil,
+       kayittaki bosluk. Notr olmalari dogru: gorunuyorlar ama bagirmiyorlar.
+     UYARI (dogrulanmadi): kehribar. Tek basina, cunku anlami farkli:
+       "bu kayda henuz guvenme". Cekincelerle ayni renk olsa kaybolurdu. */
+  .approx{font-size:10px;background:var(--surface);color:var(--muted);
+    border:1px solid var(--line);padding:2px 7px;border-radius:var(--r-pill);
+    white-space:nowrap;font-weight:500;cursor:help}
+  .taslak{font-size:10px;background:#fff4e6;color:#8a4b08;border:1px solid #ffd8a8;
+    padding:2px 7px;border-radius:var(--r-pill);white-space:nowrap;font-weight:500;cursor:help}
+
+  /* ---- HARİTA modu ---- */
+  /* --tools-h JS'ten geliyor: cip seridi kaldirilinca .tools yuksekligi degisti ve
+     buradaki sabit sayi yanlis kaldi. Sabit sayi yerine gercek yukseklik olculuyor. */
+  .maparea{display:none;height:calc(100dvh - 68px - var(--tools-h,72px));position:relative}
+  .maparea.on{display:block}
+  #m{position:absolute;inset:0}
+  .maplibregl-popup-content{background:var(--bg);color:var(--txt);border:1px solid var(--line);
+    border-radius:var(--r-surface);padding:0;overflow:hidden;box-shadow:var(--sh-3);min-width:238px}
+  .maplibregl-popup-tip{border-top-color:var(--bg)!important;border-bottom-color:var(--bg)!important}
+  .maplibregl-popup-close-button{color:var(--muted);font-size:18px;padding:5px 9px}
+  .pop{padding:15px}
+  .pop h3{font-size:14.5px;margin-bottom:5px;line-height:1.3}
+  .pop .sub{font-size:11.5px;color:var(--muted);margin-bottom:10px;display:flex;align-items:center;gap:6px}
+
+  /* ---- KIRINTI YOLU: Tuzla > Servis > Elektrikci ---- */
+  .crumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);
+    padding:20px 0 0;flex-wrap:wrap}
+  .crumb button,.crumb a{color:var(--accent);background:none;border:none;padding:0;
+    font-family:inherit;font-size:13px;cursor:pointer}
+  .crumb button:hover,.crumb a:hover{text-decoration:underline}
+  .crumb i{font-size:13px;color:var(--line-strong)}
+  .crumb .simdi{color:var(--txt);font-weight:500}
+  /* ana sayfa: net, ikonlu, hafif vurgulu -- geri donus yolu belli olsun */
+  .crumb-home{display:inline-flex;align-items:center;gap:5px;font-weight:500}
+  .crumb-home i{color:var(--accent);font-size:15px}
+
+  /* ---- KARO IZGARASI: gezinmenin kendisi ----
+     kesfet acilista KART gostermiyor: 10 grup karosu gosteriyor.
+     Sebep: "acil elektrikci lazim" senaryosu. Elektrikci 2 kayit; 1554 kartin
+     icinde Saglik 211 / Yeme Icme 185 / Market 160'i gecip Servis'in dibine
+     kadar kaydirmak gerekiyordu. Simdi Servis > Elektrikci: iki tik. */
+  .dgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding-bottom:8px}
+  /* ALT KATEGORI FILTRE CUBUGU
+     Kategori secilince artik alt kategori "sec" ekrani cikmiyor; direkt
+     isletmeler geliyor. Alt kategoriler burada opsiyonel DARALTMA cipi:
+     "acil elektrikci" -> Servis'e gir, 77 isletme + ustte Elektrikci cipi. */
+  .fbar{display:flex;flex-wrap:wrap;gap:8px;padding-bottom:20px}
+  .fchip{display:inline-flex;align-items:center;gap:7px;min-height:40px;
+    padding:8px 14px;background:var(--card);border:1px solid var(--line);
+    border-radius:var(--r-pill);font-size:13px;color:var(--txt-2);cursor:pointer;
+    font-family:inherit;transition:.15s var(--ease)}
+  .fchip:hover{border-color:var(--accent);color:var(--accent)}
+  .fchip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .fchip.aktif{background:var(--accent-wash);border-color:#bcd4f5;
+    color:var(--accent-hi);font-weight:600}
+  .fchip .n{color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
+  .fchip.aktif .n{color:var(--accent-hi)}
+  .dcell{display:flex;flex-direction:column;gap:11px;padding:17px;
+    background:var(--card);border:1px solid var(--line);border-radius:var(--r-surface);
+    box-shadow:var(--sh-1);cursor:pointer;transition:.16s var(--ease);text-align:left;
+    font-family:inherit}
+  .dcell:hover{border-color:var(--accent);box-shadow:var(--sh-2);transform:translateY(-2px)}
+  .dcell .ic{width:34px;height:34px;border-radius:var(--r-surface);display:grid;place-items:center;font-size:18px}
+  .dcell .ad{font-size:14px;font-weight:600;letter-spacing:-.01em}
+  .dcell .n{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .mh-secili{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;
+    background:var(--accent-wash);color:var(--accent-hi);border:1px solid #bcd4f5;
+    padding:6px 12px;border-radius:var(--r-pill);font-weight:500}
+  .mh-secili button{background:none;border:none;color:inherit;cursor:pointer;
+    font-size:14px;line-height:1;padding:0;font-family:inherit}
+
+  .empty{text-align:center;padding:80px 20px;color:var(--muted)}
+  .empty i{font-size:38px;display:block;margin-bottom:14px;color:var(--line-strong)}
+  .empty h3{font-size:16px;color:var(--txt);margin-bottom:7px}
+  .empty p{font-size:13.5px;margin-bottom:18px}
+  /* ---- BASLIK ---- */
+  .baslik{font-size:clamp(22px,2.8vw,31px);margin:10px 0 6px}
+  #altbaslik{font-size:14.5px}
+
+  /* kademeli yukleme nobetcisi. #grid'in ICINDE duruyor ki harita moduna
+     gecince grid ile birlikte gizlensin. */
+  .daha{grid-column:1/-1;text-align:center;padding:26px 20px;
+    font-size:12.5px;color:var(--muted)}
+  .skel{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--r-surface);height:150px}
+  @media(prefers-reduced-motion:no-preference){
+    .skel{animation:pulse 1.5s ease-in-out infinite}
+    @keyframes pulse{50%{opacity:.45}}
+  }
+
+  @media(max-width:980px){.grid,.dgrid{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}}
+  @media(max-width:640px){
+    .grid{grid-template-columns:1fr}
+    .dgrid{grid-template-columns:repeat(2,1fr)}   /* karo kucuk: telefonda da ikili sigar */
+    .modes{margin-left:0;width:100%}
+    .mode{flex:1;justify-content:center}
+
+    /* CIFT YAPISKAN CUBUK COZUMU
+       Onceden: nav (68px, sticky) + .tools (sticky top:68px, mobilde iki satira
+       tasiyor ~124px) = ekranin ust ~190px'i kalici olarak doluydu. Kucuk bir
+       telefonda gorunur alanin dortte biri icerik gormeden gidiyordu.
+       Simdi: nav yukari kayip gidiyor, sadece arama/mod cubugu sabit kaliyor.
+       position:relative (static DEGIL): mobil menu paneli .nav'a gore
+       konumlaniyor, static olsa panel viewport'a kacardi. */
+    .nav{position:relative}
+    .tools{top:0;padding:10px 0}
+    .tools-in{gap:8px}
+    /* harita modu yuksekligi: artik nav'i cikarmiyoruz, o kaydi */
+    .maparea{height:calc(100dvh - var(--tools-h,64px))}
+
+    /* DOKUNMA HEDEFLERI
+       .linkish ve kirinti butonlari 16px yuksekligindeydi: parmakla isabet
+       ettirmek zor. Gorsel boyut ayni kaliyor, TIKLANABILIR alan buyuyor
+       (dikey dolgu + negatif margin, boylece satir yuksekligi bozulmuyor). */
+    .linkish,.crumb button,.crumb a{
+      min-height:44px;display:inline-flex;align-items:center;
+      padding-top:12px;padding-bottom:12px;margin-top:-12px;margin-bottom:-12px;
+    }
+    .mode{min-height:44px}
+    .card-foot .mini{min-height:38px;display:inline-flex;align-items:center}
+    /* mahalle filtresini kaldir (✕): 14px hedefti */
+    #mhKapat{min-width:40px;min-height:40px;display:inline-flex;
+      align-items:center;justify-content:center;margin:-10px -8px -10px 0}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo"><i class="ph-fill ph-map-pin-area"></i> Tuzla Haritası</a>
+    <div class="nav-links">
+      <a href="nobetci.html">Nöbetçi eczane</a>
+      <a href="index.html#mahalleler">Mahalleler</a>
+      <a href="index.html#veri">Veri kaynağı</a>
+    </div>
+    <div class="nav-sag">
+      <a href="mailto:uguraripro@gmail.com?subject=Tuzla%20Haritası%20-%20işletme%20bilgisi" class="btn btn-ghost"><i class="ph ph-pencil-simple"></i> <span class="nav-cta-yazi">Bilgimi düzelt</span></a>
+      <button class="nav-burger" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navPanel">
+        <i class="ph ph-list" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div class="nav-panel" id="navPanel">
+    <a href="index.html"><i class="ph ph-house" aria-hidden="true"></i> Ana sayfa</a>
+    <a href="nobetci.html"><i class="ph ph-first-aid-kit" aria-hidden="true"></i> Nöbetçi eczane</a>
+    <a href="index.html#mahalleler"><i class="ph ph-map-pin-area" aria-hidden="true"></i> Mahalleler</a>
+    <a href="index.html#denizcilik"><i class="ph ph-anchor" aria-hidden="true"></i> Tersaneler</a>
+    <a href="index.html#veri"><i class="ph ph-info" aria-hidden="true"></i> Veri kaynağı</a>
+  </div>
+</nav>
+
+<div class="tools">
+  <div class="wrap">
+    <div class="tools-in">
+      <div class="field">
+        <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
+        <input id="q" type="search" aria-label="İşletme, kategori veya adres ara"
+               placeholder="İşletme, kategori veya adres ara" autocomplete="off">
+      </div>
+      <!-- aria-controls + tabpanel eklendi: onceden role="tab" vardi ama
+           karsiliginda panel yoktu. Yarim ARIA, hic ARIA'dan kotudur:
+           ekran okuyucu sekme vaat edip hedefi bulamiyordu. -->
+      <div class="modes" role="tablist" aria-label="Gorunum">
+        <button class="mode" id="mList" role="tab" aria-selected="true" aria-controls="grid"><i class="ph ph-list-bullets" aria-hidden="true"></i> Liste</button>
+        <button class="mode" id="mMap" role="tab" aria-selected="false" aria-controls="maparea"><i class="ph ph-map-trifold" aria-hidden="true"></i> Harita</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GEZINME: grup karolari -> alt kategori karolari -> kartlar.
+     Cip seridi kaldirildi: grup karolari ayni isi yapiyordu, ikisi birden
+     ayni taksonomiyi iki ayri bicimde gostermek oluyordu.
+     Ayri "drill" ekrani da kaldirildi: mahalle artik sadece bir filtre,
+     gezinme her yerde ayni. -->
+<main>
+  <div class="wrap">
+    <nav class="crumb" id="crumb" aria-label="Konum"></nav>
+    <!-- h1: sayfanin tek ana basligi. Onceden h2 idi ve sayfada hic h1 yoktu;
+         diger uc sayfada var. Gorunum .baslik sinifindan geliyor, degismedi. -->
+    <h1 class="baslik" id="baslik"></h1>
+    <p class="lede" id="altbaslik"></p>
+    <div class="bar">
+      <!-- aria-live: filtre degisince sonuc sayisi degisiyor ama ekran
+           okuyucu sessiz kaliyordu. polite = kullaniciyi kesmeden bildirir. -->
+      <span id="cnt" aria-live="polite" aria-atomic="true">Yükleniyor</span>
+      <span id="mhRozet"></span>
+      <button class="linkish" id="clear">Filtreleri temizle</button>
+    </div>
+  </div>
+  <div class="wrap"><div class="dgrid" id="tiles"></div></div>
+  <div class="wrap"><div class="grid" id="grid" role="tabpanel" aria-labelledby="mList"></div></div>
+
+  <!-- Harita modunda setMode gizliyor. -->
+  <div class="wrap" id="ekleBand">
+    <aside class="ekle">
+      <div class="ekle-t">
+        <h3><i class="ph ph-storefront"></i> İşletmen burada yok mu?</h3>
+        <p>Bu harita açık kaynaklı verilerden derlendi, o yüzden her yer kayıtlı değil.
+           Formu doldur, ekleyelim. Ücretsiz, aracı yok.
+           <b>Yetkili olduğunu ispatlaman gerekiyor:</b> vergi levhası ya da ruhsat.</p>
+      </div>
+      <a class="btn btn-primary btn-lg" id="ekleBtn" href="#">
+        <i class="ph ph-plus-circle"></i> İşletmemi ekle
+      </a>
+    </aside>
+  </div>
+
+  <div class="maparea" id="maparea" role="tabpanel" aria-labelledby="mMap"><div id="m"></div></div>
+</main>
+
+<script>
+// Taksonomi gruplar.js'te: TEK kaynak. Burada kopyasi YOK.
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const GRUP=Object.fromEntries(GRUPLAR.map(g=>[g.ad,g]));
+const gorsel=r=>{ const g=GRUP[r._grup]||GRUP["Servis"]; return [css(g.renk),g.ikon]; };
+/* esc() ortak.js'te: TEK KAYNAK. Buradaki kopyasi kaldirildi -- global
+   'const esc' ile ortak.js'teki 'function esc' ayni isimde iki global
+   bildirim demek, sayfa SyntaxError ile komple kirilirdi. */
+
+/* ---- GEZINME DURUMU ----
+   Uc seviye: grup karolari -> alt kategori karolari -> kartlar.
+   Kart, ANCAK bir alt kategori secilince veya arama yapilinca cikiyor.
+   Boylece "acil elektrikci lazim" -> Servis > Elektrikci = iki tik.
+   Onceden 1554 kart aciliyordu ve Elektrikci (2 kayit) en dipteydi. */
+let DATA=[],query="",mode="list",map=null,mapReady=false;
+let grup="", altKat="", mahalle="";
+
+document.getElementById("grid").innerHTML=Array.from({length:6},()=>'<div class="skel"></div>').join("");
+
+const url=new URL(location.href);
+grup    = url.searchParams.get("k")||"";        // index.html'den gelen kategori
+altKat  = url.searchParams.get("alt")||"";
+mahalle = url.searchParams.get("mahalle")||"";
+
+fetch("veri/tuzla_data.json").then(r=>r.json()).then(d=>{
+  DATA=gruplaHepsi(d);   // her kayda _grup yazar
+  if(grup && !GRUP[grup]) grup="";   // bilinmeyen ?k= parametresi bos ekran birakmasin
+  render();
+}).catch(()=>{
+  document.getElementById("grid").innerHTML=
+    `<div class="empty" style="grid-column:1/-1"><i class="ph ph-cloud-warning"></i>
+      <h3>Veri yüklenemedi</h3><p>veri/tuzla_data.json okunamadı.</p></div>`;
+});
+
+/* Hangi seviyedeyiz. Arama her seviyeyi kisa devre yaptirir: adam "elektrikci"
+   yaziyorsa karo gezdirmek degil, sonucu gostermek lazim. */
+/* Kategori secilince "kart": direkt isletmeler. Alt kategori artik ara-adim
+   degil, kartlarin ustundeki daraltma cipi (altFiltreCiz). Sadece hicbir sey
+   secili degilken grup karolari (giris noktasi -- 1554'u birden gostermemek). */
+function seviye(){
+  if(query.trim() || grup || altKat) return "kart";
+  return "grup";
+}
+function filtered(){
+  const q=query.toLowerCase().trim();
+  return DATA.filter(r=>{
+    if(mahalle && (r.mahalle||"")!==mahalle) return false;
+    if(grup && r._grup!==grup) return false;
+    if(altKat && r.alt_kategori!==altKat) return false;
+    if(!q)return true;
+    return (r.ad+" "+(r.diger_ad||"")+" "+r.kategori+" "+r.alt_kategori+" "+(r.adres||"")+" "+(r.mahalle||"")).toLowerCase().includes(q);
+  });
+}
+// Mahalle disinda hicbir sey secilmemis hali: karo sayilari bunun uzerinden.
+const kapsam=()=>DATA.filter(r=>!mahalle||(r.mahalle||"")===mahalle);
+
+function urlYaz(){
+  const p=new URLSearchParams();
+  if(grup)    p.set("k",grup);
+  if(altKat)  p.set("alt",altKat);
+  if(mahalle) p.set("mahalle",mahalle);
+  const s=p.toString();
+  history.replaceState({},"","kesfet.html"+(s?"?"+s:""));
+}
+function links(r){
+  return {g:`https://www.google.com/maps/dir/?api=1&destination=${r.lat},${r.lon}`,
+          a:`https://maps.apple.com/?daddr=${r.lat},${r.lon}`,
+          y:`https://yandex.com.tr/harita/?rtext=~${r.lat},${r.lon}&rtt=auto`};
+}
+/* ekle.html'e goturur. Aranan terim ve secili mahalle formda hazir gelsin diye
+   query'ye tasiniyor: adam ayni seyi iki kere yazmasin. */
+function ekleLink(ad){
+  const p=new URLSearchParams();
+  if(ad) p.set("ad",ad);
+  if(mahalle) p.set("mahalle",mahalle);
+  const s=p.toString();
+  return "ekle.html"+(s?"?"+s:"");
+}
+/* Yol tarifi cikisi. Uc harita da duruyor -- kaldirilmadi, sadece uc dolgulu
+   hap yerine tek sessiz satira indi. Hem kart hem harita balonu bunu kullaniyor
+   ki iki yuzey ayrismasin. */
+function yolTarifi(r){
+  const L=links(r);
+  return `<div class="card-foot">
+    <span class="et">Yol tarifi</span>
+    <a class="mini" href="${L.g}" target="_blank" rel="noopener">Google</a>
+    <span class="ayrac">·</span>
+    <a class="mini" href="${L.a}" target="_blank" rel="noopener">Apple</a>
+    <span class="ayrac">·</span>
+    <a class="mini" href="${L.y}" target="_blank" rel="noopener">Yandex</a>
+  </div>`;
+}
+/* Ham OSM saatini ("Mo-Su 09:00-21:00") canli duruma cevirir. saatDurum()
+   ortak.js'te -- TEK KAYNAK. Cozulemezse ham metne duser (yanlis "acik" demeyiz).
+   Turkce ek tuzagindan kacinmak icin "kapanis 22:00" / "acilis 09:00" kullaniyoruz
+   ("22:00'de" gibi sayi-ek uyumu sorununa girmiyoruz). */
+function saatSatir(r){
+  if(!r.calisma_saatleri) return "";
+  var d=saatDurum(r.calisma_saatleri), ic;
+  if(d.hep) ic='<span class="s-acik">24 saat açık</span>';
+  else if(d.durum==="acik") ic='<span class="s-acik">Şu an açık</span>'+(d.kapanis?`<span class="s-detay"> · kapanış ${d.kapanis}</span>`:"");
+  else if(d.durum==="kapali") ic='<span class="s-kapali">Şu an kapalı</span>'+(d.acilis?`<span class="s-detay"> · açılış ${d.acilis}</span>`:"");
+  else return `<div class="row"><i class="ph ph-clock"></i><span>${esc(r.calisma_saatleri)}</span></div>`;
+  return `<div class="row"><i class="ph ph-clock"></i><span>${ic}</span></div>`;
+}
+function card(r){
+  const [col,icon]=gorsel(r);
+  return `<article class="card">
+    <div class="card-top">
+      <i class="ph ${icon}" style="color:${col};font-size:17px;margin-top:1px"></i>
+      <div style="flex:1">
+        <h3>${esc(r.ad)}</h3>
+        <div class="sub">${esc(r.alt_kategori)}
+          ${r.kaynak==="ai-taslak"?'<span class="taslak" title="Bu kayit dogrulanmadi. Isletme sahibiysen ekle.html uzerinden duzeltebilirsin.">doğrulanmadı</span>':""}
+          ${r.konum_kalitesi==="yaklasik"?'<span class="approx">yaklaşık konum</span>':""}
+          ${r.ad_celiskisi?'<span class="approx" title="İki kaynak bu noktada farklı isim veriyor">ad doğrulanmalı</span>':""}
+          ${r.olasi_tekrar?`<span class="approx" title="${esc(r.tekrar_notu||"Yakınında aynı türde başka kayıt var, aynı kurum olabilir")}">tekrar olabilir</span>`:""}</div>
+      </div>
+    </div>
+    <div class="rows">
+      ${r.kaynak==="ai-taslak"?`<div class="row"><i class="ph ph-warning-circle" style="color:#8a4b08"></i><span>Bilgiler doğrulanmadı, telefon eksik. <a href="${ekleLink(r.ad)}">Burası senin işletmen mi?</a></span></div>`:""}
+      ${r.diger_ad?`<div class="row"><i class="ph ph-arrows-left-right"></i><span>diğer kayıt: ${esc(r.diger_ad)}</span></div>`:""}
+      ${r.adres?`<div class="row"><i class="ph ph-map-pin"></i><span>${esc(r.adres)}</span></div>`:""}
+      ${r.telefon?`<div class="row"><i class="ph ph-phone"></i><span><a href="tel:${esc(r.telefon).replace(/\s/g,"")}">${esc(r.telefon)}</a>${waLink(r.telefon)?` <span class="ayr">·</span> <a class="wa" href="${waLink(r.telefon)}" target="_blank" rel="noopener">WhatsApp</a>`:""}</span></div>`:""}
+      ${saatSatir(r)}
+      ${r.web?`<div class="row"><i class="ph ph-globe"></i><a href="https://${esc(r.web).replace(/^https?:\/\//,"")}" target="_blank" rel="noopener">${esc(r.web)}</a></div>`:""}
+    </div>
+    ${yolTarifi(r)}
+  </article>`;
+}
+/* ---- KAROLAR ---- */
+function karo(ad,n,col,ikon,nitelik){
+  return `<button class="dcell" ${nitelik}>
+    <span class="ic" style="background:${col}1f;color:${col}"><i class="ph ${ikon}"></i></span>
+    <span class="ad">${esc(ad)}</span>
+    <span class="n">${n} yer</span>
+  </button>`;
+}
+// 1. seviye: 10 ust grup. gruplar.js sirasi = kayit sayisi sirasi.
+function grupKarolari(){
+  const c={}; kapsam().forEach(r=>c[r._grup]=(c[r._grup]||0)+1);
+  const T=document.getElementById("tiles");
+  T.className="dgrid";   // grid karo modu (altFiltreCiz fbar'a cevirmis olabilir)
+  T.innerHTML=GRUPLAR.filter(g=>c[g.ad])
+    .map(g=>karo(g.ad,c[g.ad],css(g.renk),g.ikon,`data-grup="${esc(g.ad)}"`)).join("");
+  T.querySelectorAll("[data-grup]").forEach(el=>el.onclick=()=>{
+    grup=el.dataset.grup; altKat=""; urlYaz(); scrollTo({top:0}); render();
+  });
+}
+// Kategori secili + arama yokken: alt kategori DARALTMA cipleri (kartlarin ustunde).
+function altFiltreCiz(){
+  const a={};
+  kapsam().filter(r=>r._grup===grup).forEach(r=>a[r.alt_kategori]=(a[r.alt_kategori]||0)+1);
+  const toplam=Object.values(a).reduce((s,n)=>s+n,0);
+  const T=document.getElementById("tiles");
+  T.className="fbar";
+  const cips=[`<button class="fchip${!altKat?" aktif":""}" data-alt="">Tümü <span class="n">${toplam}</span></button>`]
+    .concat(Object.entries(a).sort((x,y)=>y[1]-x[1]||x[0].localeCompare(y[0],"tr"))
+      .map(([ad,n])=>`<button class="fchip${altKat===ad?" aktif":""}" data-alt="${esc(ad)}">${esc(ad)} <span class="n">${n}</span></button>`));
+  T.innerHTML=cips.join("");
+  T.querySelectorAll("[data-alt]").forEach(el=>el.onclick=()=>{
+    altKat=el.dataset.alt; urlYaz(); scrollTo({top:0}); render();
+  });
+}
+
+/* ---- KIRINTI YOLU: Tuzla > Servis > Elektrikci ----
+   Geri donus yolu. Mahalle burada YOK: onun kendi rozeti var (mhRozet),
+   iki yerde gostermek tekrar olurdu. */
+function crumbCiz(){
+  const ok=`<i class="ph ph-caret-right"></i>`;
+  const p=[];
+  // ANA SAYFA donusu: her gorunumde, her zaman ilk. Onceden ana sayfaya tek
+  // yol logoydu; mobilde fark edilmiyordu. "Tuzla" kesfet kokune doner (filtre
+  // temizler), ev ikonu index.html'e -- ikisi farkli, ikisi de lazim.
+  p.push(`<a href="index.html" class="crumb-home"><i class="ph ph-house" aria-hidden="true"></i> Ana sayfa</a>`);
+  const kok=(grup||altKat||query.trim())
+    ? ok+`<button data-git="kok">Tuzla</button>` : ok+`<span class="simdi">Tuzla</span>`;
+  p.push(kok);
+  if(query.trim()) p.push(ok+`<span class="simdi">&ldquo;${esc(query.trim())}&rdquo; araması</span>`);
+  else{
+    if(grup) p.push(ok+(altKat?`<button data-git="grup">${esc(grup)}</button>`
+                             :`<span class="simdi">${esc(grup)}</span>`));
+    if(altKat) p.push(ok+`<span class="simdi">${esc(altKat)}</span>`);
+  }
+  const C=document.getElementById("crumb");
+  C.innerHTML=p.join(" ");
+  C.querySelectorAll("[data-git]").forEach(el=>el.onclick=()=>{
+    if(el.dataset.git==="kok"){ grup=""; }
+    altKat=""; query=""; document.getElementById("q").value="";
+    urlYaz(); scrollTo({top:0}); render();
+  });
+}
+
+/* ---- KADEMELI BOYAMA ----
+   Onceden filtered() ne dondurduyse hepsi tek innerHTML ile basiliyordu: 1554 kart
+   x ~10 dugum = her tus vurusunda ~10 bin dugum yeniden yaratiliyor. Arama
+   takiliyordu. Simdi 60'ar 60'ar, gozcu asagi inince devami geliyor.
+   Sayac hala TOPLAM'i gosteriyor -- kullanicinin gordugu sayi degismiyor. */
+const SAYFA=60;
+let sonRows=[], basilan=0;
+const nobetci=document.createElement("div");
+nobetci.className="daha";
+const gozcu=new IntersectionObserver(es=>{
+  if(es[0].isIntersecting && basilan<sonRows.length) listeCiz(sonRows,false);
+},{rootMargin:"700px"});
+
+function listeCiz(rows,sifirla){
+  const G=document.getElementById("grid");
+  if(sifirla){ G.innerHTML=""; basilan=0; }
+  const dilim=rows.slice(basilan,basilan+SAYFA);
+  nobetci.remove();
+  G.insertAdjacentHTML("beforeend",dilim.map(card).join(""));
+  basilan+=dilim.length;
+  if(basilan<rows.length){
+    nobetci.textContent=`${rows.length-basilan} kayıt daha`;
+    G.appendChild(nobetci);
+    // Gozcu ayni konumda kesismeye devam ediyorsa yeni geri cagri gelmez;
+    // yeniden gozlemek taze bir tetik uretiyor, aksi halde liste tikaniyordu.
+    gozcu.unobserve(nobetci); gozcu.observe(nobetci);
+  }
+}
+
+function render(){
+  const rows=filtered(), ara=query.trim();
+  // Haritada seviye yok: ne secildiyse pinleri o.
+  const sv = mode==="map" ? "kart" : seviye();
+
+  crumbCiz();
+  document.getElementById("mhRozet").innerHTML = mahalle
+    ? `<span class="mh-secili"><i class="ph ph-map-pin-area"></i>${esc(mahalle)}
+        <button id="mhKapat" type="button" aria-label="Mahalle filtresini kaldır" title="Mahalle filtresini kaldır">✕</button></span>` : "";
+  const mk=document.getElementById("mhKapat");
+  if(mk) mk.onclick=()=>{ mahalle=""; urlYaz(); render(); };
+  // mahalle filtresi degisebiliyor -> band linkini her render'da tazele
+  document.getElementById("ekleBtn").href=ekleLink("");
+
+  const B=document.getElementById("baslik"), A=document.getElementById("altbaslik");
+  const nerede = mahalle ? mahalle+" Mahallesi" : "Tuzla";
+  // kategori secili + arama yok: alt kategori daraltma cipleri gorunecek
+  const cipVar = mode==="list" && sv==="kart" && grup && !ara;
+  if(sv==="grup"){
+    // Turkce ek: "Mahallesi'nde" ama "Tuzla'da" -- farkli ekler
+    B.textContent = mahalle ? `${mahalle} Mahallesi'nde ne arıyorsun?` : "Tuzla'da ne arıyorsun?";
+    A.textContent=`${rows.length} işletme. Bir grup seç, ya da yukarıdan doğrudan ara.`;
+  }else{
+    B.textContent = ara ? `“${ara}”` : (altKat||grup||nerede);
+    A.textContent = cipVar ? `${rows.length} işletme. Daraltmak için bir alt kategori seç, ya da hepsine göz at.` : "";
+  }
+  document.getElementById("cnt").innerHTML=`<b>${rows.length}</b> işletme`;
+
+  const T=document.getElementById("tiles"), G=document.getElementById("grid");
+  // tiles: grup karolari (giris) VEYA alt kategori cipleri (kategori secili)
+  T.style.display = (mode==="list" && (sv==="grup" || cipVar)) ? "" : "none";
+  G.style.display = (mode==="list" && sv==="kart") ? "" : "none";
+
+  if(mode==="list"){
+    if(sv==="grup") grupKarolari();
+    else{
+      if(cipVar) altFiltreCiz();   // kartlarin ustunde daraltma cipleri
+      sonRows=rows.slice().sort((a,b)=>a.ad.localeCompare(b.ad,"tr"));
+      if(rows.length) listeCiz(sonRows,true);
+      else{
+        nobetci.remove();
+        G.style.display="";
+        G.innerHTML=`<div class="empty" style="grid-column:1/-1"><i class="ph ph-magnifying-glass"></i>
+          <h3>${ara?`&ldquo;${esc(ara)}&rdquo; bulunamadı`:"Sonuç yok"}</h3>
+          <p>Aramanı değiştir veya filtreleri kaldır.</p>
+          <button class="btn btn-ghost" onclick="document.getElementById('clear').click()">Filtreleri temizle</button>
+          <div class="ekle-mini">${ara?"Senin işletmen mi?":"Eksik bir yer mi var?"}
+            <a href="${ekleLink(ara)}">Haritaya ekleyelim</a></div>
+        </div>`;
+      }
+    }
+  }
+  if(mapReady) map.getSource("b").setData(fc(rows));
+}
+const fc=rows=>({type:"FeatureCollection",features:rows.map(r=>({
+  type:"Feature",geometry:{type:"Point",coordinates:[r.lon,r.lat]},properties:{...r}}))});
+
+function setMode(m){
+  mode=m;
+  const isMap=m==="map";
+  document.getElementById("mList").setAttribute("aria-selected",!isMap);
+  document.getElementById("mMap").setAttribute("aria-selected",isMap);
+  document.getElementById("maparea").classList.toggle("on",isMap);
+  // .grid ve #tiles gorunurlugunu render() yonetiyor (seviyeye bagli).
+  // harita tam yuksekligi kapliyor: bandi altta birakmak katlanan bir kuyruk olurdu
+  document.getElementById("ekleBand").style.display=isMap?"none":"";
+  if(isMap){ initMap(); map && setTimeout(()=>map.resize(),30); }
+  render();
+}
+document.getElementById("mList").onclick=()=>setMode("list");
+document.getElementById("mMap").onclick=()=>setMode("map");
+
+/* Harita yuksekligi .tools'un GERCEK yuksekligine bagli. Sabit sayi yazsaydik
+   serit her degistiginde (cip kaldirma gibi) sessizce yanlis kalirdi. */
+function toolsOlc(){
+  const h=document.querySelector(".tools").offsetHeight;
+  document.documentElement.style.setProperty("--tools-h",h+"px");
+  if(map) map.resize();
+}
+addEventListener("resize",toolsOlc);
+toolsOlc();
+
+function initMap(){
+  if(map) return;
+  map=new maplibregl.Map({container:"m",
+    style:"https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+    center:[29.315,40.845],zoom:11.8});
+  map.addControl(new maplibregl.NavigationControl({showCompass:false}),"top-right");
+  map.addControl(new maplibregl.GeolocateControl({}),"top-right");
+  map.on("load",()=>{
+    const expr=renkIfadesi(css);   // pin rengi ust gruba gore: gruplar.js
+    map.addSource("b",{type:"geojson",data:fc(filtered()),cluster:true,clusterRadius:46,clusterMaxZoom:14});
+    map.addLayer({id:"cl",type:"circle",source:"b",filter:["has","point_count"],
+      paint:{"circle-color":"#ffffff","circle-stroke-color":css("--accent"),"circle-stroke-width":1.5,
+        "circle-radius":["step",["get","point_count"],15,10,19,30,24]}});
+    map.addLayer({id:"cln",type:"symbol",source:"b",filter:["has","point_count"],
+      layout:{"text-field":["get","point_count_abbreviated"],"text-size":12,
+        "text-font":["Open Sans Semibold"]},paint:{"text-color":css("--accent-hi")}});
+    map.addLayer({id:"p",type:"circle",source:"b",filter:["!",["has","point_count"]],
+      paint:{"circle-color":expr,"circle-radius":["interpolate",["linear"],["zoom"],12,3.8,16,7.2],
+        "circle-stroke-width":1.2,"circle-stroke-color":"#ffffff"}});
+    const b=new maplibregl.LngLatBounds();
+    DATA.forEach(r=>b.extend([r.lon,r.lat]));
+    map.fitBounds(b,{padding:34,duration:0,maxZoom:13.4});
+    mapReady=true;
+    map.on("click","p",e=>{
+      const r=e.features[0].properties,[col]=gorsel(r);
+      new maplibregl.Popup({offset:13,maxWidth:"300px"}).setLngLat([r.lon,r.lat]).setHTML(
+        `<div class="pop"><h3>${esc(r.ad)}</h3>
+        <div class="sub"><span class="cdot" style="background:${col}"></span>${esc(r.alt_kategori)}
+          ${r.konum_kalitesi==="yaklasik"?'<span class="approx">yaklaşık</span>':""}</div>
+        <div class="rows">
+          ${r.adres?`<div class="row"><i class="ph ph-map-pin"></i><span>${esc(r.adres)}</span></div>`:""}
+          ${r.telefon?`<div class="row"><i class="ph ph-phone"></i><span><a href="tel:${esc(r.telefon).replace(/\s/g,"")}">${esc(r.telefon)}</a>${waLink(r.telefon)?` <span class="ayr">·</span> <a class="wa" href="${waLink(r.telefon)}" target="_blank" rel="noopener">WhatsApp</a>`:""}</span></div>`:""}
+          ${saatSatir(r)}
+        </div>
+        ${yolTarifi(r)}</div>`).addTo(map);
+    });
+    ["p","cl"].forEach(l=>{
+      map.on("mouseenter",l,()=>map.getCanvas().style.cursor="pointer");
+      map.on("mouseleave",l,()=>map.getCanvas().style.cursor="");
+    });
+    map.on("click","cl",e=>{
+      const f=map.queryRenderedFeatures(e.point,{layers:["cl"]})[0];
+      map.getSource("b").getClusterExpansionZoom(f.properties.cluster_id)
+        .then(z=>map.easeTo({center:f.geometry.coordinates,zoom:z}));
+    });
+  });
+}
+/* ARAMA GENELDIR: yazinca secili grup/alt kategori dusuyor.
+   Sebep: Servis > Elektrikci'deyken "eczane" yazan adama "sonuc yok" demek
+   sacma olurdu. Mahalle duruyor -- onun gorunur ve kaldirilabilir bir rozeti var.
+   1554 kayitta her tus vurusunda filtrelemek gereksiz: yazma durunca bir kez. */
+let araZaman;
+document.getElementById("q").oninput=e=>{
+  query=e.target.value;
+  if(query.trim()){ grup=""; altKat=""; }
+  urlYaz();
+  clearTimeout(araZaman);
+  araZaman=setTimeout(render,120);
+};
+document.getElementById("clear").onclick=()=>{
+  grup="";altKat="";query="";mahalle="";
+  document.getElementById("q").value="";
+  urlYaz();
+  scrollTo({top:0});
+  render();
+};
+</script>
+</body>
+</html>

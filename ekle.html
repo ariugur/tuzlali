@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İşletmeni Haritaya Ekle | Tuzla Haritası</title>
+<meta name="description" content="Tuzla'daki işletmeni haritaya ekletmek için formu doldur. Ücretsiz, aracı yok.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="ortak.css">
+<script src="ortak.js"></script>
+<link rel="stylesheet" href="ikonlar/regular.css">
+<link rel="stylesheet" href="ikonlar/fill.css">
+<style>
+  .sayfa{padding:52px 0 90px}
+  .basmak{max-width:720px}
+  .crumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);margin-bottom:22px}
+  .crumb a{color:var(--accent)}
+  .crumb a:hover{text-decoration:underline}
+  .crumb i{font-size:13px}
+  .sayfa h1{font-size:clamp(27px,3.6vw,40px);margin-bottom:12px}
+  .sayfa .lede{font-size:15.5px;margin-bottom:18px}
+
+  /* ispat kurali: sayfanin en ustunde, formdan once.
+     Amaci vazgecirmek degil, dogru kisiyi hizla gecirip yanlisi bastan elemek. */
+  .kural{display:flex;gap:11px;align-items:flex-start;max-width:64ch;
+    background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:var(--r-surface);padding:15px 17px;margin-bottom:34px;
+    font-size:13.5px;line-height:1.6;color:var(--txt-2)}
+  .kural i{color:var(--accent);font-size:19px;flex:0 0 19px;margin-top:1px}
+  .kural b{color:var(--txt)}
+
+  input[type=file]{padding:9px 11px;font-size:12.5px;cursor:pointer;background:var(--surface)}
+  input[type=file]::file-selector-button{
+    font-family:inherit;font-size:12.5px;font-weight:500;margin-right:11px;cursor:pointer;
+    padding:7px 13px;border-radius:var(--r-pill);border:1px solid var(--line);
+    background:var(--card);color:var(--txt-2);transition:.15s var(--ease)}
+  input[type=file]::file-selector-button:hover{border-color:var(--accent);color:var(--accent)}
+
+  form{max-width:720px;display:flex;flex-direction:column;gap:26px}
+  fieldset{border:none}
+  legend{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:14px}
+  .satir{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .alan{display:flex;flex-direction:column;gap:7px}
+  .alan.tam{grid-column:1/-1}
+  label{font-size:13px;font-weight:500;color:var(--txt-2)}
+  label .ops{color:var(--muted);font-weight:400}
+  input,select,textarea{
+    background:var(--card);border:1px solid var(--line);color:var(--txt);
+    padding:11px 13px;border-radius:var(--r-surface);font-size:13.5px;
+    font-family:inherit;outline:none;transition:.15s var(--ease);width:100%;
+  }
+  textarea{resize:vertical;min-height:88px;line-height:1.55}
+  input::placeholder,textarea::placeholder{color:var(--muted)}
+  input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-wash)}
+  input:invalid:not(:placeholder-shown){border-color:var(--c-saglik)}
+  .ipucu{font-size:12px;color:var(--muted);line-height:1.5}
+
+  /* radyo grubu: GBP / site sorulari. Buton gibi, secilince aksan. */
+  .secim{display:flex;gap:8px;flex-wrap:wrap}
+  .secim input{position:absolute;opacity:0;width:0;height:0}
+  .secim label{
+    display:inline-flex;align-items:center;gap:7px;padding:9px 16px;
+    border:1px solid var(--line);border-radius:var(--r-pill);background:var(--card);
+    font-size:13px;cursor:pointer;transition:.15s var(--ease);color:var(--txt-2);
+  }
+  .secim label:hover{border-color:var(--line-strong)}
+  .secim input:checked+label{
+    border-color:var(--accent);background:var(--accent-wash);
+    color:var(--accent-hi);font-weight:500;
+  }
+  .secim input:focus-visible+label{box-shadow:0 0 0 3px var(--accent-wash)}
+
+  .onay{display:flex;gap:11px;align-items:flex-start;font-size:12.5px;
+    color:var(--txt-2);line-height:1.55}
+  .onay input{width:16px;height:16px;flex:0 0 16px;margin-top:2px;accent-color:var(--accent)}
+  .onay a{color:var(--accent);text-decoration:underline}
+
+  .gonder{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .durum{font-size:13px;color:var(--muted)}
+  .durum.hata{color:var(--c-saglik)}
+
+  /* basarili ekrani */
+  .bitti{display:none;max-width:620px;padding:38px 34px;background:var(--accent-wash);
+    border:1px solid #bcd4f5;border-radius:var(--r-surface)}
+  .bitti.on{display:block}
+  .bitti i{font-size:34px;color:var(--accent);display:block;margin-bottom:14px}
+  .bitti h2{font-size:21px;margin-bottom:9px}
+  .bitti p{font-size:14px;color:var(--txt-2);line-height:1.6;margin-bottom:20px}
+  form.gizli{display:none}
+
+  /* KVKK metni HENUZ YAZILMADI - asagidaki uyari bilerek duruyor */
+  .eksik{background:#fff4e6;border:1px solid #ffd8a8;color:#8a4b08;
+    border-radius:var(--r-surface);padding:13px 15px;font-size:12.5px;line-height:1.55}
+
+  @media(max-width:640px){.satir{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo"><i class="ph-fill ph-map-pin-area"></i> Tuzla Haritası</a>
+    <div class="nav-links">
+      <a href="kesfet.html">İşletmeler</a>
+      <a href="nobetci.html">Nöbetçi eczane</a>
+      <a href="index.html#mahalleler">Mahalleler</a>
+      <a href="index.html#veri">Veri kaynağı</a>
+    </div>
+    <div class="nav-sag">
+      <a href="kesfet.html" class="btn btn-ghost"><i class="ph ph-list-bullets"></i> <span class="nav-cta-yazi">Listeye dön</span></a>
+      <button class="nav-burger" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navPanel">
+        <i class="ph ph-list" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div class="nav-panel" id="navPanel">
+    <a href="index.html"><i class="ph ph-house" aria-hidden="true"></i> Ana sayfa</a>
+    <a href="kesfet.html"><i class="ph ph-storefront" aria-hidden="true"></i> İşletmeler</a>
+    <a href="nobetci.html"><i class="ph ph-first-aid-kit" aria-hidden="true"></i> Nöbetçi eczane</a>
+    <a href="index.html#mahalleler"><i class="ph ph-map-pin-area" aria-hidden="true"></i> Mahalleler</a>
+    <a href="index.html#veri"><i class="ph ph-info" aria-hidden="true"></i> Veri kaynağı</a>
+  </div>
+</nav>
+
+<main class="sayfa">
+  <div class="wrap">
+    <div class="crumb">
+      <a href="index.html">Tuzla</a> <i class="ph ph-caret-right"></i>
+      <a href="kesfet.html">Keşfet</a> <i class="ph ph-caret-right"></i>
+      <span>İşletme ekle</span>
+    </div>
+
+    <div class="basmak">
+      <h1>İşletmeni haritaya ekle</h1>
+      <p class="lede">Harita açık kaynaklı verilerden derlendi, o yüzden Tuzla'daki her yer kayıtlı değil.
+        Formu doldur, bilgileri kontrol edip ekleyelim. Ücretsiz, aracı yok.</p>
+      <p class="kural"><i class="ph-fill ph-seal-check"></i>
+        <span><b>İşletmenin sahibi veya yetkilisi olduğunu ispatlaman gerekiyor.</b>
+        Vergi levhası ya da ruhsat görmeden hiçbir kayıt yayınlanmıyor.
+        Bu harita, işletmenin kendi beyanıyla değil doğrulanmış bilgiyle duruyor;
+        kural herkes için aynı.</span></p>
+    </div>
+
+    <form id="f" novalidate>
+      <fieldset>
+        <legend>İşletme</legend>
+        <div class="satir">
+          <div class="alan tam">
+            <label for="ad">İşletme adı</label>
+            <input id="ad" name="ad" required placeholder="Tabelada yazdığı gibi">
+          </div>
+          <div class="alan">
+            <label for="kategori">Kategori</label>
+            <select id="kategori" name="kategori" required>
+              <option value="">Seç</option>
+            </select>
+          </div>
+          <div class="alan">
+            <label for="mahalle">Mahalle</label>
+            <select id="mahalle" name="mahalle" required>
+              <option value="">Seç</option>
+            </select>
+          </div>
+          <div class="alan tam">
+            <label for="adres">Açık adres</label>
+            <input id="adres" name="adres" required placeholder="Cadde / sokak, kapı no">
+          </div>
+          <div class="alan">
+            <label for="telefon">Telefon</label>
+            <input id="telefon" name="telefon" type="tel" required placeholder="0216 ... / 05..">
+          </div>
+          <div class="alan">
+            <label for="saat">Çalışma saatleri <span class="ops">(isteğe bağlı)</span></label>
+            <input id="saat" name="saat" placeholder="Hafta içi 09:00-19:00, Pazar kapalı">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dijital durum</legend>
+        <div class="satir">
+          <div class="alan tam">
+            <label>Google İşletme Profili (Google Haritalar kaydı) var mı?</label>
+            <div class="secim">
+              <input type="radio" id="g1" name="gbp" value="var" required>
+              <label for="g1">Var, ben yönetiyorum</label>
+              <input type="radio" id="g2" name="gbp" value="var_yonetmiyorum">
+              <label for="g2">Var ama giremiyorum</label>
+              <input type="radio" id="g3" name="gbp" value="yok">
+              <label for="g3">Yok</label>
+              <input type="radio" id="g4" name="gbp" value="bilmiyorum">
+              <label for="g4">Bilmiyorum</label>
+            </div>
+            <p class="ipucu">Google'da işletme adını aratınca sağda bilgi kartı (adres, saat, yorum)
+              çıkıyorsa var demektir.</p>
+          </div>
+
+          <div class="alan tam">
+            <label>Web siteniz var mı?</label>
+            <div class="secim">
+              <input type="radio" id="w1" name="site" value="var" required>
+              <label for="w1">Var</label>
+              <input type="radio" id="w2" name="site" value="sadece_sosyal">
+              <label for="w2">Sadece Instagram / sosyal medya</label>
+              <input type="radio" id="w3" name="site" value="yok">
+              <label for="w3">Yok</label>
+            </div>
+          </div>
+
+          <div class="alan tam">
+            <label for="web">Web / Instagram adresi <span class="ops">(varsa)</span></label>
+            <input id="web" name="web" placeholder="ornek.com veya @kullaniciadi">
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- ISPAT: formun asil kapisi. Bunsuz yayin yok, o yuzden gonderi
+           icinde degil ayri bir bolum ve zorunlu. -->
+      <fieldset>
+        <legend>İspat <span style="color:var(--c-saglik)">*</span></legend>
+        <div class="satir">
+          <div class="alan tam">
+            <label>Yetkili olduğunu neyle ispatlayacaksın?</label>
+            <div class="secim">
+              <input type="radio" id="i1" name="ispat_tur" value="vergi_levhasi" required>
+              <label for="i1">Vergi levhası</label>
+              <input type="radio" id="i2" name="ispat_tur" value="ruhsat">
+              <label for="i2">İşyeri açma ruhsatı</label>
+              <input type="radio" id="i3" name="ispat_tur" value="imza_sirkuleri">
+              <label for="i3">İmza sirküleri / ticaret sicil</label>
+              <input type="radio" id="i4" name="ispat_tur" value="gbp_sahipligi">
+              <label for="i4">Google profilinin sahibiyim</label>
+            </div>
+          </div>
+
+          <div class="alan tam" id="dosyaAlan">
+            <label for="belge">Belgeyi yükle <span class="ops">(foto veya PDF, en fazla 8 MB)</span></label>
+            <input id="belge" name="belge" type="file" accept="image/*,application/pdf">
+            <p class="ipucu">Telefonla çekilmiş net bir fotoğraf yeter. Vergi numarası ve unvan
+              okunuyorsa tamam. <b>Belge yalnızca doğrulama için kullanılır, hiçbir yerde
+              yayınlanmaz ve doğrulamadan sonra en geç 24 saat içinde silinir.</b>
+              Haritada sadece işletme bilgileri görünür.</p>
+          </div>
+
+          <div class="alan tam" id="gbpNot" hidden>
+            <p class="ipucu">Google profilinin sahibi olduğunu doğrulamak için, gönderdikten sonra
+              o profilin yönetim panelinden bize kısa bir mesaj atmanı ya da profildeki
+              numaradan aramanı isteyeceğiz. Belge yüklemene gerek yok.</p>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sana nasıl ulaşalım</legend>
+        <div class="satir">
+          <div class="alan">
+            <label for="yetkili">Adın</label>
+            <input id="yetkili" name="yetkili" required placeholder="Ad soyad">
+          </div>
+          <div class="alan">
+            <label for="eposta">E-posta</label>
+            <input id="eposta" name="eposta" type="email" required placeholder="ornek@mail.com">
+          </div>
+          <div class="alan tam">
+            <label for="not">Eklemek istediğin bir şey <span class="ops">(isteğe bağlı)</span></label>
+            <textarea id="not" name="not" placeholder="Düzeltilmesi gereken bir bilgi, ikinci şube, vb."></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <label class="onay">
+        <input type="checkbox" id="kvkk" name="kvkk" required>
+        <span>Verdiğim bilgilerin haritada yayınlanmasını ve benimle e-posta yoluyla
+          iletişime geçilmesini kabul ediyorum.</span>
+      </label>
+
+      <div class="eksik">
+        <b>Yayına almadan önce:</b> KVKK aydınlatma metni ve gizlilik politikası henüz yazılmadı.
+        Bu form kişisel veri (ad, telefon, e-posta) <b>ve vergi levhası / ruhsat gibi belge</b>
+        topluyor. Belge toplamak açık rıza ve saklama/imha politikası gerektiriyor;
+        metinler bağlanmadan canlıya alınmamalı.
+      </div>
+
+      <div class="gonder">
+        <button type="submit" class="btn btn-primary btn-lg" id="btn">
+          <i class="ph ph-paper-plane-tilt"></i> Gönder
+        </button>
+        <span class="durum" id="durum"></span>
+      </div>
+    </form>
+
+    <div class="bitti" id="bitti">
+      <i class="ph-fill ph-check-circle"></i>
+      <h2>Aldık, teşekkürler</h2>
+      <p>Belgeyi ve bilgileri kontrol edeceğiz. Doğrulama tamamlanınca kaydın haritaya girecek
+        ve sana e-posta ile haber vereceğiz. Bir eksik olursa yine e-posta ile döneriz.</p>
+      <a class="btn btn-ghost" href="kesfet.html"><i class="ph ph-arrow-left"></i> Haritaya dön</a>
+    </div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Tuzla Haritası &middot; açık kaynaklı verilerden derlendi</span>
+    <span><a href="index.html#veri">Veri kaynakları</a></span>
+  </div>
+</footer>
+
+<script>
+/* GONDERIM UCU: form verisinin gidecegi adres.
+   null oldugu surece form e-posta istemcisine dusuyor (mailto yedegi).
+   Gercek uc (Cloudflare Worker / Formspree / Netlify) secilince buraya yazilacak. */
+const GONDER_UCU = null;
+const MAIL = "uguraripro@gmail.com";
+
+/* esc() ortak.js'te: TEK KAYNAK. Buradaki kopya kaldirildi -- global
+   'const esc' ile ortak.js'teki 'function esc' cakisir, sayfa SyntaxError
+   ile kirilirdi. */
+
+/* Kategori ve mahalle listelerini uydurmuyoruz: haritanin kendi verisinden okuyoruz.
+   Boylece formdan gelen kayit mevcut kategorilere birebir oturuyor. */
+/* secenekler.json: tuzla_data.json'dan veri/secenek_uret.py ile turetilir.
+   Onceden bu iki menuyu doldurmak icin 941 KB'lik tam veri iniyordu; simdi 1 KB.
+   Kategoriler hala uydurulmuyor, ayni kaynaktan geliyor. */
+fetch("veri/secenekler.json").then(r=>r.json()).then(d=>{
+  const kat=d.kategoriler;
+  const mah=d.mahalleler;
+  const doldur=(id,liste)=>{
+    const s=document.getElementById(id);
+    liste.forEach(v=>s.insertAdjacentHTML("beforeend",`<option value="${esc(v)}">${esc(v)}</option>`));
+  };
+  doldur("kategori",kat.concat("Listede yok / başka"));
+  doldur("mahalle",mah);
+  // kesfet.html'den "?ad=..." ile gelinirse aranan terim hazir gelsin
+  const q=new URL(location.href).searchParams;
+  if(q.get("ad")) document.getElementById("ad").value=q.get("ad");
+  if(q.get("mahalle")) document.getElementById("mahalle").value=q.get("mahalle");
+}).catch(()=>{
+  // veri okunamazsa select bos kalmasin, form yine calissin
+  document.getElementById("kategori").insertAdjacentHTML("beforeend",
+    '<option value="Belirtilmedi">Listede yok / başka</option>');
+});
+
+const F=document.getElementById("f"), D=document.getElementById("durum"), B=document.getElementById("btn");
+const BELGE=document.getElementById("belge");
+const MAX_MB=8;
+
+/* GBP sahipligi disindaki her ispat turu belge istiyor.
+   GBP'de belge yok cunku dogrulama profilin kendi paneli uzerinden yapiliyor. */
+function ispatDurumu(){
+  const s=F.querySelector('input[name="ispat_tur"]:checked');
+  const gbp = s && s.value==="gbp_sahipligi";
+  document.getElementById("dosyaAlan").hidden = !!gbp;
+  document.getElementById("gbpNot").hidden = !gbp;
+  BELGE.required = !!s && !gbp;
+  if(gbp) BELGE.value="";
+}
+F.querySelectorAll('input[name="ispat_tur"]').forEach(r=>r.addEventListener("change",ispatDurumu));
+ispatDurumu();
+
+/* Boyut kontrolu tarayicida: 20 MB'lik levha fotografi ucu bosuna mesgul etmesin. */
+BELGE.addEventListener("change",()=>{
+  BELGE.setCustomValidity("");
+  const f=BELGE.files[0];
+  if(f && f.size > MAX_MB*1024*1024){
+    BELGE.setCustomValidity(`Dosya ${MAX_MB} MB'tan büyük (${(f.size/1048576).toFixed(1)} MB).`);
+    D.className="durum hata";
+    D.textContent=`Dosya çok büyük: ${(f.size/1048576).toFixed(1)} MB. En fazla ${MAX_MB} MB.`;
+  }else{ D.className="durum"; D.textContent=""; }
+});
+
+function veri(){
+  const fd=new FormData(F), o={};
+  for(const [k,v] of fd.entries()){
+    if(v instanceof File){ o[k]= v.name ? `${v.name} (${(v.size/1024).toFixed(0)} KB)` : ""; }
+    else o[k]=v;
+  }
+  o.sayfa=location.href;
+  return o;
+}
+
+function mailtoYedegi(o){
+  const govde=[
+    "İşletme adı: "+(o.ad||""),
+    "Kategori: "+(o.kategori||""),
+    "Mahalle: "+(o.mahalle||""),
+    "Adres: "+(o.adres||""),
+    "Telefon: "+(o.telefon||""),
+    "Çalışma saatleri: "+(o.saat||""),
+    "",
+    "Google İşletme Profili: "+(o.gbp||""),
+    "Web sitesi: "+(o.site||""),
+    "Web / Instagram: "+(o.web||""),
+    "",
+    "Yetkili: "+(o.yetkili||""),
+    "E-posta: "+(o.eposta||""),
+    "Not: "+(o.not||""),
+    "",
+    "İspat türü: "+(o.ispat_tur||""),
+    o.ispat_tur==="gbp_sahipligi"
+      ? "!! Google profili üzerinden doğrulanacak."
+      : "!! BELGEYİ BU E-POSTAYA EKLEMEYİ UNUTMA ("+(o.belge||"seçilmedi")+")",
+    "",
+    "(Tuzla Haritası ekleme formu)"
+  ].join("\n");
+  return "mailto:"+MAIL
+    +"?subject="+encodeURIComponent("Tuzla Haritası - işletme ekleme: "+(o.ad||""))
+    +"&body="+encodeURIComponent(govde);
+}
+
+F.addEventListener("submit", async e=>{
+  e.preventDefault();
+  D.className="durum"; D.textContent="";
+  if(!F.checkValidity()){
+    F.reportValidity();
+    D.className="durum hata";
+    D.textContent="Zorunlu alanlar eksik.";
+    return;
+  }
+  const o=veri();
+  B.disabled=true; D.textContent="Gönderiliyor...";
+
+  if(!GONDER_UCU){
+    // Uc yok: e-posta istemcisini ac. mailto DOSYA TASIYAMAZ; o yuzden
+    // kullaniciya belgeyi elle eklemesini soyluyoruz ve form ekranda kaliyor.
+    location.href=mailtoYedegi(o);
+    B.disabled=false;
+    D.textContent = o.ispat_tur==="gbp_sahipligi"
+      ? "E-posta uygulaman açıldı, göndermeyi unutma."
+      : "E-posta uygulaman açıldı. Belgeyi e-postaya eklemeyi unutma.";
+    return;
+  }
+  try{
+    // Belge varsa multipart gonderiyoruz: JSON dosya tasiyamaz.
+    const f=BELGE.files[0];
+    const r = f
+      ? await fetch(GONDER_UCU,{method:"POST",body:new FormData(F)})
+      : await fetch(GONDER_UCU,{method:"POST",
+          headers:{"Content-Type":"application/json","Accept":"application/json"},
+          body:JSON.stringify(o)});
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    F.classList.add("gizli");
+    document.getElementById("bitti").classList.add("on");
+    window.scrollTo({top:0,behavior:"smooth"});
+  }catch(err){
+    B.disabled=false;
+    D.className="durum hata";
+    D.innerHTML='Gönderilemedi. <a href="'+mailtoYedegi(o)+'">E-posta ile gönder</a>';
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+# Tuzla İşletme Haritası
+
+> Tuzla'daki 1554 yerel işletmenin adres, telefon, çalışma saati ve harita rehberi. Sağlık, yeme-içme, market, otomotiv, tersane ve daha fazlası kategori ve mahalleye göre listeli.
+
+Veri kaynağı: OpenStreetMap (ODbL), İBB Açık Veri, GİSBİR üye dizini. Kayıtların bir kısmında telefon/çalışma saati eksik olabilir.
+
+## Kategoriler
+- [Tuzla Sağlık](https://ORNEK-ALAN-ADI/kategori/saglik.html): 211 işletme
+- [Tuzla Yeme İçme](https://ORNEK-ALAN-ADI/kategori/yeme-icme.html): 793 işletme
+- [Tuzla Market & Gıda](https://ORNEK-ALAN-ADI/kategori/market-gida.html): 182 işletme
+- [Tuzla Otomotiv](https://ORNEK-ALAN-ADI/kategori/otomotiv.html): 88 işletme
+- [Tuzla Perakende](https://ORNEK-ALAN-ADI/kategori/perakende.html): 87 işletme
+- [Tuzla Servis](https://ORNEK-ALAN-ADI/kategori/servis.html): 77 işletme
+- [Tuzla Bakım & Güzellik](https://ORNEK-ALAN-ADI/kategori/bakim-guzellik.html): 49 işletme
+- [Tuzla Marina & Denizcilik](https://ORNEK-ALAN-ADI/kategori/marina-denizcilik.html): 37 işletme
+- [Tuzla Evcil Hayvan](https://ORNEK-ALAN-ADI/kategori/evcil-hayvan.html): 17 işletme
+- [Tuzla Konaklama](https://ORNEK-ALAN-ADI/kategori/konaklama.html): 13 işletme
+
+## Mahalleler
+- [Aydınlı Mahallesi](https://ORNEK-ALAN-ADI/mahalle/aydinli.html): 269 işletme
+- [Aydıntepe Mahallesi](https://ORNEK-ALAN-ADI/mahalle/aydintepe.html): 244 işletme
+- [Postane Mahallesi](https://ORNEK-ALAN-ADI/mahalle/postane.html): 150 işletme
+- [İçmeler Mahallesi](https://ORNEK-ALAN-ADI/mahalle/icmeler.html): 135 işletme
+- [Evliya Çelebi Mahallesi](https://ORNEK-ALAN-ADI/mahalle/evliya-celebi.html): 126 işletme
+- [Şifa Mahallesi](https://ORNEK-ALAN-ADI/mahalle/sifa.html): 125 işletme
+- [Cami Mahallesi](https://ORNEK-ALAN-ADI/mahalle/cami.html): 103 işletme
+- [Yayla Mahallesi](https://ORNEK-ALAN-ADI/mahalle/yayla.html): 99 işletme
+- [İstasyon Mahallesi](https://ORNEK-ALAN-ADI/mahalle/istasyon.html): 96 işletme
+- [Mimar Sinan Mahallesi](https://ORNEK-ALAN-ADI/mahalle/mimar-sinan.html): 74 işletme
+- [Tepeören Mahallesi](https://ORNEK-ALAN-ADI/mahalle/tepeoren.html): 34 işletme
+- [Orhanlı Mahallesi](https://ORNEK-ALAN-ADI/mahalle/orhanli.html): 28 işletme
+- [Orta Mahallesi](https://ORNEK-ALAN-ADI/mahalle/orta.html): 26 işletme
+- [Fatih Mahallesi](https://ORNEK-ALAN-ADI/mahalle/fatih.html): 19 işletme
+- [Mescit Mahallesi](https://ORNEK-ALAN-ADI/mahalle/mescit.html): 18 işletme
+- [Akfırat Mahallesi](https://ORNEK-ALAN-ADI/mahalle/akfirat.html): 4 işletme
+- [Anadolu Mahallesi](https://ORNEK-ALAN-ADI/mahalle/anadolu.html): 1 işletme
+
+## Araçlar
+- [Canlı harita ve arama](https://ORNEK-ALAN-ADI/kesfet.html): tüm işletmeler haritada, kategori ve mahalleye göre filtrelenir.
+- [Tuzla nöbetçi eczaneleri](https://ORNEK-ALAN-ADI/nobetci.html): bugün Tuzla'da nöbette olan eczaneler, adres ve yol tarifiyle, her gün güncellenir.
