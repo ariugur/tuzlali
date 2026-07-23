@@ -325,6 +325,14 @@ function sayfa({ baslik, aciklama, url, aktifTip, aktifAd, kayitlar, canliLink, 
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7KENG4PVTE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7KENG4PVTE');
+</script>
 <title>${esc(baslik)}</title>
 <meta name="description" content="${esc(aciklama)}">
 <link rel="canonical" href="${esc(url)}">

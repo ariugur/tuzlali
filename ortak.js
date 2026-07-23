@@ -3,21 +3,6 @@
    <head>'de defer OLMADAN yüklenir: sayfa sonundaki satır içi script'ler
    esc()'i çağırıyor, defer olsaydı onlardan sonra çalışırdı. */
 
-/* Google Analytics (GA4: G-7KENG4PVTE).
-   TEK KAYNAK: ortak.js her sayfada (27 SEO sayfası dahil) yüklenir, o yüzden
-   snippet'i her <head>'e ayrı koymak yerine buradan enjekte ediyoruz.
-   Not (KVKK): GA çerez kullanır; ileride çerez onayı / aydınlatma metni gerekebilir. */
-(function(){
-  var s=document.createElement("script");
-  s.async=true;
-  s.src="https://www.googletagmanager.com/gtag/js?id=G-7KENG4PVTE";
-  document.head.appendChild(s);
-  window.dataLayer=window.dataLayer||[];
-  window.gtag=function(){dataLayer.push(arguments);};
-  gtag("js", new Date());
-  gtag("config", "G-7KENG4PVTE");
-})();
-
 /* HTML kaçışı. İşletme adları Google Places'ten geliyor, yani işletme
    sahibinin yazdığı metin. innerHTML'e kaçışsız girerse depolanmış XSS
    olur. Metin ve öznitelik bağlamlarının ikisinde de güvenli. */
