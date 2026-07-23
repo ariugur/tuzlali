@@ -8,6 +8,7 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage:'denied',analytics_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});
   gtag('js', new Date());
   gtag('config', 'G-9GYJV89N8X');
 </script>
@@ -293,16 +294,16 @@
 
       <label class="onay">
         <input type="checkbox" id="kvkk" name="kvkk" required>
-        <span>Verdiğim bilgilerin haritada yayınlanmasını ve benimle e-posta yoluyla
-          iletişime geçilmesini kabul ediyorum.</span>
+        <span><a href="kvkk.html" target="_blank" rel="noopener">KVKK Aydınlatma Metni</a>'ni okudum;
+          verdiğim bilgilerin haritada yayınlanmasını ve benimle e-posta yoluyla iletişime
+          geçilmesini kabul ediyorum.</span>
       </label>
 
-      <div class="eksik">
-        <b>Yayına almadan önce:</b> KVKK aydınlatma metni ve gizlilik politikası henüz yazılmadı.
-        Bu form kişisel veri (ad, telefon, e-posta) <b>ve vergi levhası / ruhsat gibi belge</b>
-        topluyor. Belge toplamak açık rıza ve saklama/imha politikası gerektiriyor;
-        metinler bağlanmadan canlıya alınmamalı.
-      </div>
+      <p style="font-size:12.5px;color:var(--muted);line-height:1.6;margin:2px 0 4px">
+        Form, bilgilerinizi <b>tarayıcınızın e-posta uygulaması</b> üzerinden bize iletir; sitede
+        otomatik sunucu kaydı oluşmaz. Belge eklerseniz e-postaya kendiniz eklersiniz. Verilerin
+        nasıl işlendiği: <a href="kvkk.html">KVKK</a> · <a href="gizlilik.html">Gizlilik & Çerez</a>.
+      </p>
 
       <div class="gonder">
         <button type="submit" class="btn btn-primary btn-lg" id="btn">
@@ -349,6 +350,7 @@
   </div>
   <div class="wrap foot-alt">
     <span>© 2026 tuzlali.net · Bağımsız topluluk projesi, resmî kurum değildir.</span>
+    <span class="foot-legal"><a href="gizlilik.html">Gizlilik & Çerez</a> · <a href="kvkk.html">KVKK</a> · <a href="#" data-cerez>Çerez ayarları</a></span>
     <span class="foot-cd">Tasarım · <a href="https://yapgitsin.co" target="_blank" rel="noopener">yapgitsin.co</a></span>
   </div>
 </footer>

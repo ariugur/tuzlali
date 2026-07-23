@@ -8,6 +8,7 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage:'denied',analytics_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});
   gtag('js', new Date());
   gtag('config', 'G-9GYJV89N8X');
 </script>
@@ -78,6 +79,20 @@
   .hero-neb i:last-child{font-size:13px;opacity:.7;transition:transform .15s var(--ease)}
   .hero-neb:hover{text-decoration:underline;text-underline-offset:3px}
   .hero-neb:hover i:last-child{transform:translate(2px,-2px)}
+  /* Kamu & Yaşam giriş kartı */
+  .yasam-card{display:block;background:var(--card);border:1px solid var(--line);
+    border-radius:var(--r-surface);box-shadow:var(--sh-1);overflow:hidden;
+    transition:box-shadow .2s var(--ease),transform .2s var(--ease)}
+  .yasam-card:hover{box-shadow:var(--sh-2);transform:translateY(-2px)}
+  .yasam-card-in{display:grid;grid-template-columns:1.4fr 1fr;gap:30px;padding:30px 32px;align-items:center}
+  .yasam-eyebrow{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;
+    color:var(--accent);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+  .yasam-card h2{margin:0 0 8px}
+  .yasam-card .lede{margin:0 0 18px}
+  .yasam-tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+  .yasam-tags li{font-size:13px;color:var(--txt-2);background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--r-pill);padding:7px 13px}
+  @media(max-width:820px){ .yasam-card-in{grid-template-columns:1fr;gap:20px;padding:24px 22px} }
   /* fotograf uzerindeki ikincil buton: net kenar, kontrast garanti */
   .btn-onphoto{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.55);
     backdrop-filter:blur(10px)}
@@ -315,6 +330,31 @@
   </div>
 </section>
 
+<!-- KAMU & YAŞAM: giriş kartı -->
+<section id="yasam-giris" style="padding-top:0">
+  <div class="wrap">
+    <a href="tuzla-kamu-alanlari.html" class="yasam-card">
+      <div class="yasam-card-in">
+        <div>
+          <span class="yasam-eyebrow"><i class="ph-fill ph-map-pin"></i> Kamu &amp; Yaşam</span>
+          <h2 class="h-sec">Sadece işletmeler değil</h2>
+          <p class="lede">Mahallendeki cami ve mescitler, muhtarlıklar, acil durum toplanma alanları,
+            semt pazarları (hangi gün kurulur), AÇEM kurs merkezleri ve parklar — adres ve yol tarifiyle.</p>
+          <span class="btn btn-primary"><i class="ph ph-arrow-right"></i> Yaşam rehberini aç</span>
+        </div>
+        <ul class="yasam-tags">
+          <li>Cami &amp; Mescit</li>
+          <li>Muhtarlık</li>
+          <li>Toplanma Alanı</li>
+          <li>Semt Pazarı</li>
+          <li>AÇEM</li>
+          <li>Park</li>
+        </ul>
+      </div>
+    </a>
+  </div>
+</section>
+
 <!-- DENIZCILIK: fotografli serit -->
 <section class="marine" id="denizcilik">
   <div class="marine-media">
@@ -415,6 +455,7 @@
   </div>
   <div class="wrap foot-alt">
     <span>© 2026 tuzlali.net · Bağımsız topluluk projesi, resmî kurum değildir.</span>
+    <span class="foot-legal"><a href="gizlilik.html">Gizlilik & Çerez</a> · <a href="kvkk.html">KVKK</a> · <a href="#" data-cerez>Çerez ayarları</a></span>
     <span class="foot-cd">Tasarım · <a href="https://yapgitsin.co" target="_blank" rel="noopener">yapgitsin.co</a></span>
   </div>
 </footer>

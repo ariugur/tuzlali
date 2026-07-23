@@ -125,6 +125,7 @@ function foot() {
   </div>
   <div class="wrap foot-alt">
     <span>© 2026 tuzlali.net · Bağımsız topluluk projesi, resmî kurum değildir.</span>
+    <span class="foot-legal"><a href="../gizlilik.html">Gizlilik & Çerez</a> · <a href="../kvkk.html">KVKK</a> · <a href="#" data-cerez>Çerez ayarları</a></span>
     <span class="foot-cd">Tasarım · <a href="https://yapgitsin.co" target="_blank" rel="noopener">yapgitsin.co</a></span>
   </div>
 </footer>`;
@@ -333,6 +334,7 @@ function sayfa({ baslik, aciklama, url, aktifTip, aktifAd, kayitlar, canliLink, 
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage:'denied',analytics_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});
   gtag('js', new Date());
   gtag('config', 'G-9GYJV89N8X');
 </script>
@@ -399,7 +401,7 @@ ${foot()}
 
 // --- uret ---
 let uretilen = 0;
-const sitemapUrls = [`${SITE_KOK}/`, `${SITE_KOK}/kesfet.html`, `${SITE_KOK}/nobetci.html`, `${SITE_KOK}/tuzla-trafik-durumu.html`, `${SITE_KOK}/tuzla-otopark.html`, `${SITE_KOK}/tuzla-kamu-alanlari.html`];
+const sitemapUrls = [`${SITE_KOK}/`, `${SITE_KOK}/kesfet.html`, `${SITE_KOK}/nobetci.html`, `${SITE_KOK}/tuzla-trafik-durumu.html`, `${SITE_KOK}/tuzla-otopark.html`, `${SITE_KOK}/tuzla-kamu-alanlari.html`, `${SITE_KOK}/gizlilik.html`, `${SITE_KOK}/kvkk.html`];
 
 fs.mkdirSync(path.join(KOK, "kategori"), { recursive: true });
 fs.mkdirSync(path.join(KOK, "mahalle"), { recursive: true });

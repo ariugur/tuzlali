@@ -2308,5 +2308,1415 @@
   "lat": 40.8207944,
   "lon": 29.3050023,
   "not": "Kurs saati 09:00–16:00"
+ },
+ {
+  "id": "park-sehit-j-er-murat-asci-parki",
+  "tur": "Park",
+  "ad": "Şehit J.er Murat Aşçı Parkı",
+  "adres": "1. Cadde",
+  "mahalle": "Akfırat",
+  "lat": 40.92540849564695,
+  "lon": 29.424513753133777,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-3-cadde-parki-2018",
+  "tur": "Park",
+  "ad": "3. Cadde Parkı 2018",
+  "adres": "3. Cadde",
+  "mahalle": "Akfırat",
+  "lat": 40.923430156190825,
+  "lon": 29.41398842016929,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-43-leya-sokak-parki",
+  "tur": "Park",
+  "ad": "43.leya Sokak Parkı",
+  "adres": "43. Sokak",
+  "mahalle": "Akfırat",
+  "lat": 40.92315642530877,
+  "lon": 29.42524651063093,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-6-cadde-parki",
+  "tur": "Park",
+  "ad": "6. Cadde Parkı",
+  "adres": "6. Cadde",
+  "mahalle": "Akfırat",
+  "lat": 40.92448246801255,
+  "lon": 29.42053566419032,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-firat-parki",
+  "tur": "Park",
+  "ad": "Fırat Parkı",
+  "adres": "Akfırat Cad.",
+  "mahalle": "Akfırat",
+  "lat": 40.925753604584735,
+  "lon": 29.41811796187486,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-sosyal-tesisler-parki",
+  "tur": "Park",
+  "ad": "Sosyal Tesisler Parkı",
+  "adres": "Süleymaniye Bulvarı",
+  "mahalle": "Akfırat",
+  "lat": 40.927062354329664,
+  "lon": 29.415486690074157,
+  "not": "Halı saha · Basketbol · Çok amaçlı saha"
+ },
+ {
+  "id": "park-genclik-parki",
+  "tur": "Park",
+  "ad": "Gençlik Parkı",
+  "adres": "Alsancak Cd.",
+  "mahalle": "Anadolu",
+  "lat": 40.9055443347091,
+  "lon": 29.375787311803077,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-anadolu-mahallesi-parki",
+  "tur": "Park",
+  "ad": "Anadolu Mahallesi Parkı",
+  "adres": "Ulubey Sok.",
+  "mahalle": "Anadolu",
+  "lat": 40.90867197751682,
+  "lon": 29.37595223762979,
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-selale-parki",
+  "tur": "Park",
+  "ad": "Şelale Parkı",
+  "adres": "Aydınlı Yolu Cd.",
+  "mahalle": "Aydınlı",
+  "lat": 40.85891135365244,
+  "lon": 29.316904154559676,
+  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-sehit-j-er-bekir-demir-parki",
+  "tur": "Park",
+  "ad": "Şehit J.er Bekir Demir Parkı",
+  "adres": "Aydınlık Cd.",
+  "mahalle": "Aydınlı",
+  "lat": 40.86790846148264,
+  "lon": 29.32630398301048,
+  "not": "Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-aydinli-merkez-parki",
+  "tur": "Park",
+  "ad": "Aydınlı Merkez Parkı",
+  "adres": "Başkomutan Cd",
+  "mahalle": "Aydınlı",
+  "lat": 40.86931711687865,
+  "lon": 29.328566671209252,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-dersaadet-caddesi-shell-yani-parki",
+  "tur": "Park",
+  "ad": "Dersaadet Caddesi ( Shell Yanı ) Parkı",
+  "adres": "Dersaadet Cad.",
+  "mahalle": "Aydınlı",
+  "lat": 40.87157327715853,
+  "lon": 29.33183255073612,
+  "not": "Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-giresun-mah-oyun-alani",
+  "tur": "Park",
+  "ad": "Giresun Mah. Oyun Alanı",
+  "adres": "Egemen Sokak",
+  "mahalle": "Aydınlı",
+  "lat": 40.86099080574513,
+  "lon": 29.338914693068073,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-necip-fazil-kisakurek-cami-yani-parki",
+  "tur": "Park",
+  "ad": "Necip Fazıl Kısakürek Cami Yanı Parkı",
+  "adres": "Erdemli Sok.",
+  "mahalle": "Aydınlı",
+  "lat": 40.86568691749339,
+  "lon": 29.340487327453218,
+  "not": "Futbol sahası · Basketbol · Çocuk oyun grubu"
+ },
+ {
+  "id": "park-sht-piyade-cavus-omer-oner-parki",
+  "tur": "Park",
+  "ad": "Şht.piyade .çavuş Ömer Öner Parkı",
+  "adres": "Gürpınar Cad.",
+  "mahalle": "Aydınlı",
+  "lat": 40.86829783456918,
+  "lon": 29.33152336390373,
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-radisson-otel-yani-parki",
+  "tur": "Park",
+  "ad": "Radisson Otel Yanı Parkı",
+  "adres": "İnal Sokak",
+  "mahalle": "Aydınlı",
+  "lat": 40.87646620479649,
+  "lon": 29.314689058524845,
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-kadesler-parki",
+  "tur": "Park",
+  "ad": "Kadeşler Parkı",
+  "adres": "Kardeşler Sok",
+  "mahalle": "Aydınlı",
+  "lat": 40.8790984237853,
+  "lon": 29.321908323892004,
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-kovan-sokak-saha",
+  "tur": "Park",
+  "ad": "Kovan Sokak Saha",
+  "adres": "Kovan Sokak",
+  "mahalle": "Aydınlı",
+  "lat": 40.86746645349166,
+  "lon": 29.3379082465654,
+  "not": "Çok amaçlı saha"
+ },
+ {
+  "id": "park-mor-sokak-parki-2018",
+  "tur": "Park",
+  "ad": "Mor Sokak Parkı 2018",
+  "adres": "Mor Sok.",
+  "mahalle": "Aydınlı",
+  "lat": 40.87687005061282,
+  "lon": 29.327817190257367,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-nazik-sokak-parki-2018",
+  "tur": "Park",
+  "ad": "Nazik Sokak Parkı 2018",
+  "adres": "Nazik Sok.",
+  "mahalle": "Aydınlı",
+  "lat": 40.864670644662795,
+  "lon": 29.3275407530119,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-okan-sokak-parki",
+  "tur": "Park",
+  "ad": "Okan Sokak Parkı",
+  "adres": "Okan Sok.",
+  "mahalle": "Aydınlı",
+  "lat": 40.86216139972024,
+  "lon": 29.336718959396663,
+  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-aydinli-parki",
+  "tur": "Park",
+  "ad": "Aydınlı Parkı",
+  "adres": "Özyurt Sokak",
+  "mahalle": "Aydınlı",
+  "lat": 40.864600778946034,
+  "lon": 29.323683814306992,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-sedef-parki",
+  "tur": "Park",
+  "ad": "Sedef Parkı",
+  "adres": "Sedef Sokak",
+  "mahalle": "Aydınlı",
+  "lat": 40.87572425905213,
+  "lon": 29.334262278639493,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-berkant-sokak-parki",
+  "tur": "Park",
+  "ad": "Berkant Sokak Parkı",
+  "adres": "Berkant Sok.",
+  "mahalle": "Aydıntepe",
+  "lat": 40.85392101224729,
+  "lon": 29.299145912207006,
+  "not": "Fitness"
+ },
+ {
+  "id": "park-bilgili-sokak-parki",
+  "tur": "Park",
+  "ad": "Bilgili Sokak Parkı",
+  "adres": "Bilgili Sok.",
+  "mahalle": "Aydıntepe",
+  "lat": 40.856511410407016,
+  "lon": 29.29339849042643,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-aydintepe-evora-parki",
+  "tur": "Park",
+  "ad": "Aydıntepe (evora) Parkı",
+  "adres": "Evora C-d",
+  "mahalle": "Aydıntepe",
+  "lat": 40.85866885416139,
+  "lon": 29.30069271029459,
+  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-aydintepe-gonca-sokak-parki",
+  "tur": "Park",
+  "ad": "Aydıntepe Gonca Sokak Parkı",
+  "adres": "Gonca Sok.",
+  "mahalle": "Aydıntepe",
+  "lat": 40.85545959480895,
+  "lon": 29.296296466094475,
+  "not": "Park"
+ },
+ {
+  "id": "park-sht-j-er-kamber-kutuk-parki",
+  "tur": "Park",
+  "ad": "Şht.j.er Kamber Kütük Parkı",
+  "adres": "Marmara Cad.",
+  "mahalle": "Aydıntepe",
+  "lat": 40.856254838697055,
+  "lon": 29.294791590522745,
+  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-fatih-sultan-mehmet-parki",
+  "tur": "Park",
+  "ad": "Fatih Sultan Mehmet Parkı",
+  "adres": "Yeşildere Cad.",
+  "mahalle": "Aydıntepe",
+  "lat": 40.85606876613372,
+  "lon": 29.30065047868328,
+  "not": "Halı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-aydintepe-dinlenme-alani",
+  "tur": "Park",
+  "ad": "Aydıntepe Dinlenme Alanı",
+  "adres": "Yeşildere Cad.",
+  "mahalle": "Aydıntepe",
+  "lat": 40.85595356490906,
+  "lon": 29.29773949183044,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-ova-parki",
+  "tur": "Park",
+  "ad": "Ova Parkı",
+  "adres": "Demet Sok",
+  "mahalle": "Cami",
+  "lat": 40.817598253029104,
+  "lon": 29.30719398452377,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-cinar-parki",
+  "tur": "Park",
+  "ad": "Çınar Parkı",
+  "adres": "Erhan Sok",
+  "mahalle": "Cami",
+  "lat": 40.82158121757359,
+  "lon": 29.3134575595357,
+  "not": "Basketbol · Çocuk oyun grubu"
+ },
+ {
+  "id": "park-filiz-parki",
+  "tur": "Park",
+  "ad": "Filiz Parkı",
+  "adres": "Erhan Sok",
+  "mahalle": "Cami",
+  "lat": 40.82198690251644,
+  "lon": 29.31507253129518,
+  "not": "Basketbol · Tenis kortu · Fitness"
+ },
+ {
+  "id": "park-okul-dinlenme-alani",
+  "tur": "Park",
+  "ad": "Okul Dinlenme Alanı",
+  "adres": "İstasyon Cad.",
+  "mahalle": "Cami",
+  "lat": 40.8202595250759,
+  "lon": 29.307765579715955,
+  "not": "Park"
+ },
+ {
+  "id": "park-marmados-evleri-yani-parki",
+  "tur": "Park",
+  "ad": "Marmados Evleri Yanı Parkı",
+  "adres": "Şahide Sok.",
+  "mahalle": "Cami",
+  "lat": 40.81980442868127,
+  "lon": 29.316621800502638,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-sahil-parki",
+  "tur": "Park",
+  "ad": "Sahil Parkı",
+  "adres": "Şehitler Caddesi",
+  "mahalle": "Cami",
+  "lat": 40.81418994791446,
+  "lon": 29.30529764408572,
+  "not": "Halı saha · Basketbol · Tenis kortu · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-onur-parki",
+  "tur": "Park",
+  "ad": "Onur Parkı",
+  "adres": "Baha Sok",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.83810838154738,
+  "lon": 29.299518078124002,
+  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-evliya-celebi-parki",
+  "tur": "Park",
+  "ad": "Evliya Çelebi Parkı",
+  "adres": "Cihat Sok.",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.840824236997875,
+  "lon": 29.30427400188605,
+  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-doruk-sokak-dinlenme-alani",
+  "tur": "Park",
+  "ad": "Doruk Sokak Dinlenme Alanı",
+  "adres": "Doruk Sok.",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.83729828071951,
+  "lon": 29.30096846829295,
+  "not": "Fitness"
+ },
+ {
+  "id": "park-huzur-parki",
+  "tur": "Park",
+  "ad": "Huzur Parkı",
+  "adres": "Gülağacı Sok.",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.84206895987184,
+  "lon": 29.2994789569686,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-gundogdu-sokak-dinlenme-alani",
+  "tur": "Park",
+  "ad": "Gündoğdu Sokak Dinlenme Alanı",
+  "adres": "Gündoğdu Sok.",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.841904773189356,
+  "lon": 29.299890682748785,
+  "not": "Park"
+ },
+ {
+  "id": "park-merdekan-parki",
+  "tur": "Park",
+  "ad": "Merdekan Parkı",
+  "adres": "Hatboyu Cad.",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.841063251682755,
+  "lon": 29.303236112737935,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-belediye-parki",
+  "tur": "Park",
+  "ad": "Belediye Parkı",
+  "adres": "Hatboyu Cad.",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.84346339863317,
+  "lon": 29.301366037386146,
+  "not": "Park"
+ },
+ {
+  "id": "park-kir-lokantasi",
+  "tur": "Park",
+  "ad": "Kır Lokantası",
+  "adres": "Hatboyu Cad.",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.842616186990604,
+  "lon": 29.302134833477382,
+  "not": "Park"
+ },
+ {
+  "id": "park-tersane-meydan",
+  "tur": "Park",
+  "ad": "Tersane Meydan",
+  "adres": "Rauf Orbay Cad.",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.84195419450828,
+  "lon": 29.292695023226763,
+  "not": "Park"
+ },
+ {
+  "id": "park-dere-kenari-dinlenme-alani",
+  "tur": "Park",
+  "ad": "Dere Kenarı Dinlenme Alanı",
+  "adres": "Sade Sok.",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.839604887137625,
+  "lon": 29.298073736926387,
+  "not": "Park"
+ },
+ {
+  "id": "park-sener-sokak-parki-2018",
+  "tur": "Park",
+  "ad": "Şener Sokak Parkı 2018",
+  "adres": "Şener Sok.",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.83660266268247,
+  "lon": 29.299739103295117,
+  "not": "Halı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-sener-sokak-dinlenme-alani",
+  "tur": "Park",
+  "ad": "Şener Sokak Dinlenme Alanı",
+  "adres": "Şener Sok.",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.837823927522145,
+  "lon": 29.29956796535495,
+  "not": "Park"
+ },
+ {
+  "id": "park-duravit-parki",
+  "tur": "Park",
+  "ad": "Duravit Parkı",
+  "adres": "Sergen Sok",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.83721959017678,
+  "lon": 29.29736325486697,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-veysel-karani-parki",
+  "tur": "Park",
+  "ad": "Veysel Karani Parkı",
+  "adres": "Veysel Karani Sok.",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.83864119953005,
+  "lon": 29.304687648901574,
+  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-hz-omer-cami-yani-parki",
+  "tur": "Park",
+  "ad": "Hz.ömer Cami Yanı Parkı",
+  "adres": "Sefa Sokak",
+  "mahalle": "Evliya Çelebi",
+  "lat": 40.843125544502534,
+  "lon": 29.29706145890465,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-okul-parki",
+  "tur": "Park",
+  "ad": "Okul Parkı",
+  "adres": "Avşar Sok.",
+  "mahalle": "Fatih",
+  "lat": 40.92770006706208,
+  "lon": 29.341319193454343,
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-hasan-cosar-parki",
+  "tur": "Park",
+  "ad": "Hasan Coşar Parkı",
+  "adres": "29 Ekim Cad.",
+  "mahalle": "İçmeler",
+  "lat": 40.85097875930075,
+  "lon": 29.312078771898676,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-icmeler-meydan",
+  "tur": "Park",
+  "ad": "İçmeler Meydan",
+  "adres": "Ankara Cad.",
+  "mahalle": "İçmeler",
+  "lat": 40.84900057276441,
+  "lon": 29.305544195829235,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-cumhuriyet-parki",
+  "tur": "Park",
+  "ad": "Cumhuriyet Parkı",
+  "adres": "Aysun Sok.",
+  "mahalle": "İçmeler",
+  "lat": 40.846950279597806,
+  "lon": 29.304719639720012,
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-sehit-ferdi-bolat-parki-2018",
+  "tur": "Park",
+  "ad": "Şehit Ferdi Bolat Parkı 2018",
+  "adres": "Dal Sok.",
+  "mahalle": "İçmeler",
+  "lat": 40.84633563749788,
+  "lon": 29.30700773580772,
+  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-gokturk-caddesi-parki",
+  "tur": "Park",
+  "ad": "Göktürk Caddesi Parkı",
+  "adres": "Göktürk Caddesi",
+  "mahalle": "İçmeler",
+  "lat": 40.849589909066665,
+  "lon": 29.309179309052954,
+  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-galatasaraylilar-parki",
+  "tur": "Park",
+  "ad": "Galatasaraylılar Parkı",
+  "adres": "Ayhan Sok.",
+  "mahalle": "İstasyon",
+  "lat": 40.823225863963415,
+  "lon": 29.319733950459586,
+  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-cicekciler-parki",
+  "tur": "Park",
+  "ad": "Çiçekçiler Parkı",
+  "adres": "Çiçekçiler Cad.",
+  "mahalle": "İstasyon",
+  "lat": 40.8278477180896,
+  "lon": 29.31686263400843,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-ugurkent-parki",
+  "tur": "Park",
+  "ad": "Uğurkent Parkı",
+  "adres": "Hatboyu Cad.",
+  "mahalle": "İstasyon",
+  "lat": 40.83213341489249,
+  "lon": 29.31607371394307,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-cinarli-bahce-yani-parki",
+  "tur": "Park",
+  "ad": "Çınarlı Bahçe Yanı Parkı",
+  "adres": "Hatboyu Cad.",
+  "mahalle": "İstasyon",
+  "lat": 40.83168192762027,
+  "lon": 29.315516992234045,
+  "not": "Park"
+ },
+ {
+  "id": "park-borsa-kent-parki",
+  "tur": "Park",
+  "ad": "Borsa Kent Parkı",
+  "adres": "Kazım Karabekir Cad.",
+  "mahalle": "İstasyon",
+  "lat": 40.827586553919446,
+  "lon": 29.31335968167676,
+  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-kazim-karabekir-parki",
+  "tur": "Park",
+  "ad": "Kazım Karabekir Parkı",
+  "adres": "Kazım Karabekir Cd.",
+  "mahalle": "İstasyon",
+  "lat": 40.832441486795354,
+  "lon": 29.314854045447905,
+  "not": "Basketbol · Çocuk oyun grubu"
+ },
+ {
+  "id": "park-eksen-parki",
+  "tur": "Park",
+  "ad": "Eksen Parkı",
+  "adres": "Leyla Sok.",
+  "mahalle": "İstasyon",
+  "lat": 40.82681894777775,
+  "lon": 29.320239674681616,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-leyla-sokak-dinlenme-alani",
+  "tur": "Park",
+  "ad": "Leyla Sokak Dinlenme Alanı",
+  "adres": "Leyla Sok.",
+  "mahalle": "İstasyon",
+  "lat": 40.82701068403998,
+  "lon": 29.321504086060717,
+  "not": "Park"
+ },
+ {
+  "id": "park-miray-parki",
+  "tur": "Park",
+  "ad": "Miray Parkı",
+  "adres": "Özdinç Sok",
+  "mahalle": "İstasyon",
+  "lat": 40.829656433208534,
+  "lon": 29.317165348803176,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-aksemseddin-parki",
+  "tur": "Park",
+  "ad": "Akşemseddin Parkı",
+  "adres": "Paptya Sok.",
+  "mahalle": "İstasyon",
+  "lat": 40.825158521244866,
+  "lon": 29.31440625278038,
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-yunus-emre-parki",
+  "tur": "Park",
+  "ad": "Yunus Emre Parkı",
+  "adres": "Sarıçam Sok.",
+  "mahalle": "İstasyon",
+  "lat": 40.827312265758735,
+  "lon": 29.323414669842045,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-hacioglu-piknik-alani-parki",
+  "tur": "Park",
+  "ad": "Hacıoğlu Piknik Alanı Parkı",
+  "adres": "Sarıçam Sok.",
+  "mahalle": "İstasyon",
+  "lat": 40.82774584384396,
+  "lon": 29.32288655951696,
+  "not": "Fitness"
+ },
+ {
+  "id": "park-tip-kent-parki",
+  "tur": "Park",
+  "ad": "Tıp Kent Parkı",
+  "adres": "Sarraf Sok",
+  "mahalle": "İstasyon",
+  "lat": 40.824165274015726,
+  "lon": 29.32244274472155,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-batakcali-parki",
+  "tur": "Park",
+  "ad": "Batakçalı Parkı",
+  "adres": "Sevcan Sok",
+  "mahalle": "İstasyon",
+  "lat": 40.83044304068969,
+  "lon": 29.322569127531803,
+  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-sevenler-sokak-dinlenme-alani",
+  "tur": "Park",
+  "ad": "Sevenler Sokak Dinlenme Alanı",
+  "adres": "Sevenler Sok.",
+  "mahalle": "İstasyon",
+  "lat": 40.82621788493258,
+  "lon": 29.31888358095645,
+  "not": "Park"
+ },
+ {
+  "id": "park-manolya-parki",
+  "tur": "Park",
+  "ad": "Manolya Parkı",
+  "adres": "Sipahi Sk.",
+  "mahalle": "İstasyon",
+  "lat": 40.82897961659587,
+  "lon": 29.320049147499354,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-maresal-fevzi-cakmak-parki",
+  "tur": "Park",
+  "ad": "Mareşal Fevzi Çakmak Parkı",
+  "adres": "Sude Sok.",
+  "mahalle": "İstasyon",
+  "lat": 40.825091424703544,
+  "lon": 29.32439409076768,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-hayat-parki",
+  "tur": "Park",
+  "ad": "Hayat Parkı",
+  "adres": "Tok Sok.",
+  "mahalle": "İstasyon",
+  "lat": 40.82782668743666,
+  "lon": 29.315428128754455,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-pati-park",
+  "tur": "Park",
+  "ad": "Pati Park",
+  "adres": "Muhtar Sokak",
+  "mahalle": "İstasyon",
+  "lat": 40.82769418349127,
+  "lon": 29.31495663432405,
+  "not": "Park"
+ },
+ {
+  "id": "park-ceren-parki",
+  "tur": "Park",
+  "ad": "Ceren Parkı",
+  "adres": "Başaran Sok.",
+  "mahalle": "Mescit",
+  "lat": 40.896510609869004,
+  "lon": 29.35286994692335,
+  "not": "Halı saha · Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-hanedan-sokak-parki-kum-havuzu",
+  "tur": "Park",
+  "ad": "Hanedan Sokak Parkı ( Kum Havuzu )",
+  "adres": "Hanedan Sok.",
+  "mahalle": "Mescit",
+  "lat": 40.89453708232958,
+  "lon": 29.34366163477124,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-malazgirt-caddesi-parki-kum-havuzu",
+  "tur": "Park",
+  "ad": "Malazgirt Caddesi Parkı ( Kum Havuzu )",
+  "adres": "Malazgirt Cad.",
+  "mahalle": "Mescit",
+  "lat": 40.89184895816876,
+  "lon": 29.35006723547052,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-15-temmuz-sehitler-parki",
+  "tur": "Park",
+  "ad": "15 Temmuz Şehitler Parkı",
+  "adres": "Sevdanur Sok.",
+  "mahalle": "Mimar Sinan",
+  "lat": 40.83533670390569,
+  "lon": 29.365772232434367,
+  "not": "Halı saha · Tenis kortu · Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-sehit-ibrahim-dogan-parki",
+  "tur": "Park",
+  "ad": "Şehit İbrahim Doğan Parkı",
+  "adres": "23 Nisan Cad.",
+  "mahalle": "Mimar Sinan",
+  "lat": 40.832468326908405,
+  "lon": 29.36790989911024,
+  "not": "Halı saha · Basketbol · Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-seyh-edebali-parki",
+  "tur": "Park",
+  "ad": "Şeyh Edebali Parkı",
+  "adres": "Ardıç Sok.",
+  "mahalle": "Mimar Sinan",
+  "lat": 40.8469334247682,
+  "lon": 29.362681613663568,
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-baris-manco-parki",
+  "tur": "Park",
+  "ad": "Barış Manço Parkı",
+  "adres": "Başak Sok.",
+  "mahalle": "Mimar Sinan",
+  "lat": 40.84087431224422,
+  "lon": 29.361640335596967,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-saglik-ocagi-parki",
+  "tur": "Park",
+  "ad": "Sağlık Ocağı Parkı",
+  "adres": "Başak Sok.",
+  "mahalle": "Mimar Sinan",
+  "lat": 40.840535300851585,
+  "lon": 29.36050893975716,
+  "not": "Fitness"
+ },
+ {
+  "id": "park-ciftlik-sok-parki",
+  "tur": "Park",
+  "ad": "Çiftlik Sok.parkı",
+  "adres": "Çiftlik Sok.",
+  "mahalle": "Mimar Sinan",
+  "lat": 40.838035551683674,
+  "lon": 29.367053029658766,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-mimar-sinan-parki",
+  "tur": "Park",
+  "ad": "Mimar Sinan Parkı",
+  "adres": "Gülüm Sok.",
+  "mahalle": "Mimar Sinan",
+  "lat": 40.83443294429823,
+  "lon": 29.362199966952797,
+  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-gungormus-sok-parki",
+  "tur": "Park",
+  "ad": "Güngörmüş Sok.parkı",
+  "adres": "Güngörmüş Sok.",
+  "mahalle": "Mimar Sinan",
+  "lat": 40.841912865137886,
+  "lon": 29.3644199953881,
+  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-komurcu-sokak-parki",
+  "tur": "Park",
+  "ad": "Kömürcü Sokak Parkı",
+  "adres": "Kömürcü",
+  "mahalle": "Mimar Sinan",
+  "lat": 40.84246764346447,
+  "lon": 29.361723851299395,
+  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-sehit-j-er-bahtiyar-maden-parki-1-2-kisim",
+  "tur": "Park",
+  "ad": "Şehit J.er Bahtiyar Maden Parkı (1.-2. Kısım )",
+  "adres": "Mersin Sok.",
+  "mahalle": "Mimar Sinan",
+  "lat": 40.84525095822034,
+  "lon": 29.361673461416245,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-anit-parki",
+  "tur": "Park",
+  "ad": "Anıt Parkı",
+  "adres": "Anıt Sok.",
+  "mahalle": "Orhanlı",
+  "lat": 40.895802875298216,
+  "lon": 29.362583124189555,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-orhanli-meydan",
+  "tur": "Park",
+  "ad": "Orhanlı Meydan",
+  "adres": "Demokrasi Cad.",
+  "mahalle": "Orhanlı",
+  "lat": 40.895651534974434,
+  "lon": 29.357424419659743,
+  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-kultur-parki",
+  "tur": "Park",
+  "ad": "Kültür Parkı",
+  "adres": "Fettahbaşaran Cad.",
+  "mahalle": "Orhanlı",
+  "lat": 40.900282856346465,
+  "lon": 29.35184136309855,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-gulsumsokak-parki",
+  "tur": "Park",
+  "ad": "Gülsümsokak Parkı",
+  "adres": "Gülsüm",
+  "mahalle": "Orhanlı",
+  "lat": 40.89225072942497,
+  "lon": 29.356392403335853,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-ishakpasa-parki",
+  "tur": "Park",
+  "ad": "İshakpaşa Parkı",
+  "adres": "İshakpaşa Cad.",
+  "mahalle": "Orta",
+  "lat": 40.90309686506869,
+  "lon": 29.379466786090845,
+  "not": "Halı saha · Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-pazar-yeri-parki",
+  "tur": "Park",
+  "ad": "Pazar Yeri Parkı",
+  "adres": "Polina Sok.",
+  "mahalle": "Orta",
+  "lat": 40.901676033762605,
+  "lon": 29.37616552061919,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-seyh-samil-parki",
+  "tur": "Park",
+  "ad": "Şeyh Şamil Parkı",
+  "adres": "Atatürk Cad.",
+  "mahalle": "Postane",
+  "lat": 40.81450251101081,
+  "lon": 29.304874326422727,
+  "not": "Park"
+ },
+ {
+  "id": "park-ikizler-parki",
+  "tur": "Park",
+  "ad": "İkizler Parkı",
+  "adres": "Begonya Sok.",
+  "mahalle": "Postane",
+  "lat": 40.813350647736144,
+  "lon": 29.27028619435779,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-cevher-parki",
+  "tur": "Park",
+  "ad": "Cevher Parkı",
+  "adres": "Cevher Sok.",
+  "mahalle": "Postane",
+  "lat": 40.824914491557344,
+  "lon": 29.306703426919874,
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-yildirim-beyazid-parki",
+  "tur": "Park",
+  "ad": "Yıldırım Beyazıd Parkı",
+  "adres": "Dalgakıran Sok.",
+  "mahalle": "Postane",
+  "lat": 40.82499406691107,
+  "lon": 29.308807040609047,
+  "not": "Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-dogan-sok-parki",
+  "tur": "Park",
+  "ad": "Doğan Sok.parkı",
+  "adres": "Doğan Sok.",
+  "mahalle": "Postane",
+  "lat": 40.81903348484183,
+  "lon": 29.299396279610693,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-org-esref-bitlis-parki",
+  "tur": "Park",
+  "ad": "Org.eşref Bitlis Parkı",
+  "adres": "Fevzi Çakmak Cad.",
+  "mahalle": "Postane",
+  "lat": 40.82291886519499,
+  "lon": 29.308907891791588,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-sumru-parki",
+  "tur": "Park",
+  "ad": "Sumru Parkı",
+  "adres": "Gelibolu Sok.",
+  "mahalle": "Postane",
+  "lat": 40.81565122536684,
+  "lon": 29.28333234640502,
+  "not": "Futbol sahası · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-sehit-murat-matuz-parki",
+  "tur": "Park",
+  "ad": "Şehit Murat Matuz Parkı",
+  "adres": "Gülşah Sok.",
+  "mahalle": "Postane",
+  "lat": 40.81985149239292,
+  "lon": 29.289474985565462,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-derya-parki",
+  "tur": "Park",
+  "ad": "Derya Parkı",
+  "adres": "İbrahim Korkmaz Sok.",
+  "mahalle": "Postane",
+  "lat": 40.82159165531612,
+  "lon": 29.300795087235425,
+  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-gonca-sokak-parki",
+  "tur": "Park",
+  "ad": "Gonca Sokak Parkı",
+  "adres": "İdil Sok.",
+  "mahalle": "Postane",
+  "lat": 40.82092985335187,
+  "lon": 29.29095656722481,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-ertugrul-gazi-parki",
+  "tur": "Park",
+  "ad": "Ertuğrul Gazi Parkı",
+  "adres": "İremnur Sok.",
+  "mahalle": "Postane",
+  "lat": 40.81757992704444,
+  "lon": 29.291764373884273,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-esentepe-parki-2018",
+  "tur": "Park",
+  "ad": "Esentepe Parkı 2018",
+  "adres": "Itır Sok.",
+  "mahalle": "Postane",
+  "lat": 40.81567416347513,
+  "lon": 29.28675857938798,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-krizantem-parki",
+  "tur": "Park",
+  "ad": "Krizantem Parkı",
+  "adres": "Krizantem Sok.",
+  "mahalle": "Postane",
+  "lat": 40.81979373706355,
+  "lon": 29.28689532385994,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-zabita-parki",
+  "tur": "Park",
+  "ad": "Zabıta Parkı",
+  "adres": "Mert Sok.",
+  "mahalle": "Postane",
+  "lat": 40.820454105324025,
+  "lon": 29.305033472352438,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-sehit-umut-eraslan-parki",
+  "tur": "Park",
+  "ad": "Şehit Umut Eraslan Parkı",
+  "adres": "Muhacir Sok.",
+  "mahalle": "Postane",
+  "lat": 40.81867592540367,
+  "lon": 29.304885796799205,
+  "not": "Çocuk oyun grubu"
+ },
+ {
+  "id": "park-gol-boyu-parki",
+  "tur": "Park",
+  "ad": "Göl Boyu Parkı",
+  "adres": "Rauf Orbay Cad.",
+  "mahalle": "Postane",
+  "lat": 40.82236542071348,
+  "lon": 29.28943188875836,
+  "not": "Park"
+ },
+ {
+  "id": "park-orhan-gazi-parki",
+  "tur": "Park",
+  "ad": "Orhan Gazi Parkı",
+  "adres": "Şeref Sok.",
+  "mahalle": "Postane",
+  "lat": 40.82444131788416,
+  "lon": 29.284745329487546,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-osman-gazi-parki",
+  "tur": "Park",
+  "ad": "Osman Gazi Parkı",
+  "adres": "Simge Sok.",
+  "mahalle": "Postane",
+  "lat": 40.8196229600567,
+  "lon": 29.301575364738323,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-sumer-sokak-parki",
+  "tur": "Park",
+  "ad": "Sümer Sokak Parkı",
+  "adres": "Sümer Sok.",
+  "mahalle": "Postane",
+  "lat": 40.82111045102434,
+  "lon": 29.303265647626215,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-bahceler-parki",
+  "tur": "Park",
+  "ad": "Bahçeler Parkı",
+  "adres": "Sunay Sok.",
+  "mahalle": "Postane",
+  "lat": 40.81901809641779,
+  "lon": 29.30392243279557,
+  "not": "Basketbol · Çocuk oyun grubu"
+ },
+ {
+  "id": "park-sahil-2-etap-parki",
+  "tur": "Park",
+  "ad": "Sahil 2. Etap Parkı",
+  "adres": "Ahmet Kılıç Caddesi",
+  "mahalle": "Postane",
+  "lat": 40.813351041391,
+  "lon": 29.28109008900876,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-ugurlu-sokak-parki-2018",
+  "tur": "Park",
+  "ad": "Uğurlu Sokak Parkı 2018",
+  "adres": "Uğurlu Sok.",
+  "mahalle": "Postane",
+  "lat": 40.81522647445659,
+  "lon": 29.27187186047788,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-kardelen-parki",
+  "tur": "Park",
+  "ad": "Kardelen Parkı",
+  "adres": "Yalıboyu Cad.",
+  "mahalle": "Postane",
+  "lat": 40.818643022888196,
+  "lon": 29.28857757259697,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-pati-park",
+  "tur": "Park",
+  "ad": "Pati Park",
+  "adres": "Sema Sokak",
+  "mahalle": "Postane",
+  "lat": 40.82136863705957,
+  "lon": 29.285635448372325,
+  "not": "Park"
+ },
+ {
+  "id": "park-19-mayis-cad-dinlenme-alani",
+  "tur": "Park",
+  "ad": "19 Mayıs Cad. Dinlenme Alanı",
+  "adres": "19 Mayıs Cad.",
+  "mahalle": "Şifa",
+  "lat": 40.8320973375031,
+  "lon": 29.35956011129329,
+  "not": "Park"
+ },
+ {
+  "id": "park-sehit-bahadirhan-solak-parki",
+  "tur": "Park",
+  "ad": "Şehit Bahadırhan Solak Parkı",
+  "adres": "Başar Sok.",
+  "mahalle": "Şifa",
+  "lat": 40.830989148380326,
+  "lon": 29.35624755448985,
+  "not": "Basketbol · Çocuk oyun grubu"
+ },
+ {
+  "id": "park-s-uzm-cavus-ertan-bayraktar",
+  "tur": "Park",
+  "ad": "Ş.uzm.çavuş Ertan Bayraktar",
+  "adres": "D-100 Yanyol",
+  "mahalle": "Şifa",
+  "lat": 40.823553848781465,
+  "lon": 29.35345542558561,
+  "not": "Halı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-mevlana-cami-yani",
+  "tur": "Park",
+  "ad": "Mevlana Cami Yanı",
+  "adres": "Dinçöz Sok.",
+  "mahalle": "Şifa",
+  "lat": 40.837787923051636,
+  "lon": 29.357949815188913,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-mecidiye-parki",
+  "tur": "Park",
+  "ad": "Mecidiye Parkı",
+  "adres": "Mecidiye Sok.",
+  "mahalle": "Şifa",
+  "lat": 40.832254591243874,
+  "lon": 29.35427952950215,
+  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-sht-er-sezgin-zorba",
+  "tur": "Park",
+  "ad": "Şht.er Sezgin Zorba",
+  "adres": "Sht.er Sezgin Zorba Sok.",
+  "mahalle": "Şifa",
+  "lat": 40.827994442245654,
+  "lon": 29.35411044538956,
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-kudret-parki",
+  "tur": "Park",
+  "ad": "Kudret Parkı",
+  "adres": "Gökalp Sok.",
+  "mahalle": "Tepeören",
+  "lat": 40.90847325196291,
+  "lon": 29.390001493091933,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-kirazli-mevkii-kiyi-sokak-parki",
+  "tur": "Park",
+  "ad": "Kirazlı Mevkii Kıyı Sokak Parkı",
+  "adres": "Kıyı",
+  "mahalle": "Tepeören",
+  "lat": 40.91143528857806,
+  "lon": 29.40393088658518,
+  "not": "Park"
+ },
+ {
+  "id": "park-medeniyet-bulvari-parki-2018",
+  "tur": "Park",
+  "ad": "Medeniyet Bulvarı Parkı 2018",
+  "adres": "Medeniyet Bulvarı",
+  "mahalle": "Tepeören",
+  "lat": 40.91325452070086,
+  "lon": 29.389707948762652,
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-yavuz-selim-parki",
+  "tur": "Park",
+  "ad": "Yavuz Selim Parkı",
+  "adres": "Adabük Sok.",
+  "mahalle": "Yayla",
+  "lat": 40.83682356953456,
+  "lon": 29.307724298505924,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-ahu-sok-parki-2017",
+  "tur": "Park",
+  "ad": "Ahu Sok. Parkı 2017",
+  "adres": "Ahu Sok.",
+  "mahalle": "Yayla",
+  "lat": 40.829655546510025,
+  "lon": 29.303155005347694,
+  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-mavi-evler-parki",
+  "tur": "Park",
+  "ad": "Mavi Evler Parkı",
+  "adres": "Barbaros Hayrettin Cad.",
+  "mahalle": "Yayla",
+  "lat": 40.83030571555208,
+  "lon": 29.29958976187594,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-sehit-j-er-necmi-yildirim-parki",
+  "tur": "Park",
+  "ad": "Şehit J.er Necmi Yıldırım Parkı",
+  "adres": "Boğaz Sok.",
+  "mahalle": "Yayla",
+  "lat": 40.833217145671874,
+  "lon": 29.30243296261415,
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-anadolu-parki",
+  "tur": "Park",
+  "ad": "Anadolu Parkı",
+  "adres": "Boğaz Sok.",
+  "mahalle": "Yayla",
+  "lat": 40.832593358740674,
+  "lon": 29.30111788692368,
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-denizhan-parki",
+  "tur": "Park",
+  "ad": "Denizhan Parkı",
+  "adres": "Denizhan Sok.",
+  "mahalle": "Yayla",
+  "lat": 40.82618798128271,
+  "lon": 29.30326923124534,
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-zeytinlik-parki",
+  "tur": "Park",
+  "ad": "Zeytinlik Parkı",
+  "adres": "Dönence Sok.",
+  "mahalle": "Yayla",
+  "lat": 40.82803214421562,
+  "lon": 29.304943319080937,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-huseyin-cakir-parki",
+  "tur": "Park",
+  "ad": "Hüseyin Çakır Parkı",
+  "adres": "Dua Sok.",
+  "mahalle": "Yayla",
+  "lat": 40.830151509545786,
+  "lon": 29.30919204086466,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-m-akif-ersoy-parki",
+  "tur": "Park",
+  "ad": "M.akif Ersoy Parkı",
+  "adres": "Ercüment Sok.",
+  "mahalle": "Yayla",
+  "lat": 40.8354617221195,
+  "lon": 29.304323179349943,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-gazali-sokak-park-alani",
+  "tur": "Park",
+  "ad": "Gazali Sokak Park Alanı",
+  "adres": "Gazali Sok.",
+  "mahalle": "Yayla",
+  "lat": 40.82653792498476,
+  "lon": 29.306564202044473,
+  "not": "Park"
+ },
+ {
+  "id": "park-yayla-cocuk-parki",
+  "tur": "Park",
+  "ad": "Yayla Çocuk Parkı",
+  "adres": "Gazi Osmanpaşa Cad.",
+  "mahalle": "Yayla",
+  "lat": 40.83020709637259,
+  "lon": 29.312373306459765,
+  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-toros-evleri-parki",
+  "tur": "Park",
+  "ad": "Toros Evleri Parkı",
+  "adres": "Hatboyu Cad.",
+  "mahalle": "Yayla",
+  "lat": 40.83469493374041,
+  "lon": 29.313858528967554,
+  "not": "Çocuk oyun grubu · Fitness"
+ },
+ {
+  "id": "park-yayla-yolu-parki",
+  "tur": "Park",
+  "ad": "Yayla Yolu Parkı",
+  "adres": "Yayla Yolu",
+  "mahalle": "Yayla",
+  "lat": 40.82208500240158,
+  "lon": 29.304166848649505,
+  "not": "Park"
  }
 ]

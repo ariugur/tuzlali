@@ -16,6 +16,7 @@ Dataset kaynaklari (portal id):
   toplanma.csv    -> acil-durum-toplanma-alanlari
   pazar.csv       -> tuzla-belediyesi-pazar-yerleri
   acem.csv        -> acem-kurs-merkezleri
+  parklar.csv     -> tuzla-belediyesinde-bulunan-parklar-ve-imkanlar
 """
 import csv, json, os, re, sys
 
@@ -40,7 +41,8 @@ _MAH_NORM = [(_norm(m), m) for m in MAHALLELER]
 def mahalle_bul(*metinler):
     """Adres/ad icinde gecen resmi mahalle adini yakalar (best-effort)."""
     hepsi = _norm(" ".join(m or "" for m in metinler)).replace(
-        "mimarsinan", "mimar sinan").replace("postahane", "postane")
+        "mimarsinan", "mimar sinan").replace("postahane", "postane").replace(
+        "e.celebi", "evliya celebi")
     for nm, ad in _MAH_NORM:
         if nm in hepsi:
             return ad
@@ -185,6 +187,26 @@ def main():
         note = f"Kurs saati {bas}–{bit}" if bas and bit else ""
         out.append(kayit("AÇEM Kurs Merkezi", acem_adi(r["ANNE VE COCUK EGITIM MERKEZLERI"]),
                          r["ADRES"], sayi(r["ENLEM"]), sayi(r["BOYLAM"]), "", note))
+
+    # --- Parklar --- MAHALLE,ADRES,PARKLARIMIZ,ENLEM,BOYLAM,...,saha/oyun sayilari
+    IMKAN = [("HALI SAHA", "Halı saha"), ("FUTBOL SAHASI", "Futbol sahası"),
+             ("BASKETBOL SAHASI", "Basketbol"), ("TENIS KORTU", "Tenis kortu"),
+             ("ÇOK AMACLI SAHA", "Çok amaçlı saha"),
+             ("COCUK OYUN GRUBU SAYISI", "Çocuk oyun grubu"),
+             ("FITNESS GRUBU SAYISI", "Fitness")]
+
+    def poz(v):
+        try:
+            return int(float(str(v).replace(",", ".").strip() or 0)) > 0
+        except ValueError:
+            return False
+
+    for r in oku("parklar.csv", ","):
+        var = [ad for kol, ad in IMKAN if poz(r.get(kol))]
+        note = " · ".join(var) if var else "Park"
+        out.append(kayit("Park", tr_baslik(r["PARKLARIMIZ"]), tr_baslik(r.get("ADRES", "")),
+                         sayi(r["ENLEM"]), sayi(r["BOYLAM"]),
+                         mahalle_bul(r.get("MAHALLE", "")), note))
 
     json.dump(out, open(CIKTI, "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)

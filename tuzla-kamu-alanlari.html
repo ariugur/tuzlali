@@ -8,11 +8,12 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage:'denied',analytics_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});
   gtag('js', new Date());
   gtag('config', 'G-9GYJV89N8X');
 </script>
 <title>Tuzla Kamu & Yaşam Rehberi | Cami, Muhtarlık, Toplanma Alanı, Pazar</title>
-<meta name="description" content="Tuzla'daki camiler ve mescitler, mahalle muhtarlıkları, acil durum toplanma alanları, semt pazarları (kuruluş günleri) ve AÇEM kurs merkezleri. Adres ve yol tarifiyle.">
+<meta name="description" content="Tuzla'daki camiler ve mescitler, mahalle muhtarlıkları, acil durum toplanma alanları, semt pazarları (kuruluş günleri), AÇEM kurs merkezleri ve parklar. Adres ve yol tarifiyle.">
 <link rel="canonical" href="https://tuzlali.net/tuzla-kamu-alanlari.html">
 <meta property="og:title" content="Tuzla Kamu & Yaşam Rehberi">
 <meta property="og:description" content="Cami, muhtarlık, acil durum toplanma alanı, semt pazarı ve AÇEM merkezleri — adres ve yol tarifiyle.">
@@ -30,7 +31,7 @@
 <link rel="stylesheet" href="ikonlar/regular.css">
 <link rel="stylesheet" href="ikonlar/fill.css">
 <script src="ortak.js"></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Tuzla Kamu & Yaşam Rehberi","url":"https://tuzlali.net/tuzla-kamu-alanlari.html","description":"Tuzla'daki cami ve mescitler, mahalle muhtarlıkları, acil durum toplanma alanları, semt pazarları ve AÇEM kurs merkezleri.","isPartOf":{"@type":"WebSite","name":"tuzlali.net","url":"https://tuzlali.net/"},"about":[{"@type":"Thing","name":"Cami ve mescitler"},{"@type":"Thing","name":"Mahalle muhtarlıkları"},{"@type":"Thing","name":"Acil durum toplanma alanları"},{"@type":"Thing","name":"Semt pazarları"},{"@type":"Thing","name":"AÇEM kurs merkezleri"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Tuzla Kamu & Yaşam Rehberi","url":"https://tuzlali.net/tuzla-kamu-alanlari.html","description":"Tuzla'daki cami ve mescitler, mahalle muhtarlıkları, acil durum toplanma alanları, semt pazarları ve AÇEM kurs merkezleri.","isPartOf":{"@type":"WebSite","name":"tuzlali.net","url":"https://tuzlali.net/"},"about":[{"@type":"Thing","name":"Cami ve mescitler"},{"@type":"Thing","name":"Mahalle muhtarlıkları"},{"@type":"Thing","name":"Acil durum toplanma alanları"},{"@type":"Thing","name":"Semt pazarları"},{"@type":"Thing","name":"AÇEM kurs merkezleri"},{"@type":"Thing","name":"Parklar"}]}</script>
 <style>
   .kmu-head{padding:38px 0 6px}
   .kmu-head h1{font-size:clamp(24px,3.2vw,34px);margin-bottom:10px}
@@ -122,7 +123,7 @@
     <section class="kmu-head">
       <h1>Tuzla Kamu & Yaşam Rehberi</h1>
       <p class="lede">Mahallendeki cami ve mescitler, muhtarlıklar, acil durum toplanma alanları,
-        semt pazarları ve AÇEM kurs merkezleri — adres ve tek dokunuşla yol tarifiyle.
+        semt pazarları, AÇEM kurs merkezleri ve parklar — adres ve tek dokunuşla yol tarifiyle.
         Bir tür seç ya da ara.</p>
       <p class="kmu-meta"><i class="ph-fill ph-map-pin" aria-hidden="true"></i>
         <span><b id="top">0</b> kayıt · Tuzla geneli</span></p>
@@ -184,7 +185,8 @@ var TURLER = [
   {ad:"Muhtarlık",          renk:"#0b5fd0", ikon:"ph-house"},
   {ad:"Toplanma Alanı",     renk:"#0e7c86", ikon:"ph-warning"},
   {ad:"Pazar Yeri",         renk:"#9a6a00", ikon:"ph-shopping-cart-simple"},
-  {ad:"AÇEM Kurs Merkezi",  renk:"#7b4bc0", ikon:"ph-info"}
+  {ad:"AÇEM Kurs Merkezi",  renk:"#7b4bc0", ikon:"ph-info"},
+  {ad:"Park",               renk:"#b5651d", ikon:"ph-map-pin-area"}
 ];
 var RENK = {}; TURLER.forEach(function(t){ RENK[t.ad]=t.renk; });
 

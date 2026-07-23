@@ -144,9 +144,68 @@ function waLink(tel){
     });
   }
 
+  /* ---- Çerez rızası (KVKK / Google Consent Mode v2) ----
+     GA head snippet'inde varsayilan izin 'denied'. Kullanici KABUL edene
+     kadar analitik cerez yuklenmez. Tercih localStorage'da tutulur; sayfa
+     altindaki "Çerez ayarlari" baglantisi bandi yeniden acar. TEK KAYNAK. */
+  function izinGuncelle(durum){
+    if(typeof window.gtag !== "function") return;
+    window.gtag("consent","update",{
+      analytics_storage:durum, ad_storage:durum,
+      ad_user_data:durum, ad_personalization:durum
+    });
+  }
+  function altKlasor(){
+    var p = location.pathname;
+    return (p.indexOf("/kategori/") >= 0 || p.indexOf("/mahalle/") >= 0) ? "../" : "";
+  }
+  function cerezOku(){ try{ return localStorage.getItem("cerez_izin"); }catch(e){ return null; } }
+  function cerezYaz(v){ try{ localStorage.setItem("cerez_izin", v); }catch(e){} }
+  function bantKapat(){ var b=document.getElementById("cerezBar"); if(b && b.parentNode) b.parentNode.removeChild(b); }
+
+  function bantGoster(){
+    if(document.getElementById("cerezBar")) return;
+    var d = document.createElement("div");
+    d.id = "cerezBar"; d.className = "cerez-bar";
+    d.setAttribute("role","dialog"); d.setAttribute("aria-label","Çerez tercihi");
+    d.innerHTML =
+      '<div class="cerez-in"><p>Ziyaret istatistikleri için Google Analytics çerezleri kullanıyoruz. '+
+      'Kabul ederseniz analitik çerezler yüklenir; reddederseniz yüklenmez. '+
+      '<a href="'+altKlasor()+'gizlilik.html">Ayrıntılar</a>.</p>'+
+      '<div class="cerez-btn">'+
+      '<button type="button" class="btn btn-ghost" data-secim="red">Reddet</button>'+
+      '<button type="button" class="btn btn-primary" data-secim="kabul">Kabul et</button>'+
+      '</div></div>';
+    document.body.appendChild(d);
+    d.addEventListener("click", function(e){
+      var t = e.target.closest("[data-secim]"); if(!t) return;
+      var v = t.getAttribute("data-secim");
+      cerezYaz(v);
+      if(v === "kabul") izinGuncelle("granted");
+      bantKapat();
+    });
+  }
+
+  function cerezRiza(){
+    var secim = cerezOku();
+    if(secim === "kabul") izinGuncelle("granted");
+    else if(secim !== "red") bantGoster();
+    // "Çerez ayarlari" baglantilari (footer): tercihi sifirla, bandi tekrar ac
+    var lst = document.querySelectorAll("[data-cerez]");
+    for(var i=0;i<lst.length;i++){
+      lst[i].addEventListener("click", function(e){
+        e.preventDefault();
+        try{ localStorage.removeItem("cerez_izin"); }catch(err){}
+        bantGoster();
+      });
+    }
+  }
+
+  function baslat(){ mobilMenu(); cerezRiza(); }
+
   if(document.readyState === "loading"){
-    document.addEventListener("DOMContentLoaded", mobilMenu);
+    document.addEventListener("DOMContentLoaded", baslat);
   } else {
-    mobilMenu();
+    baslat();
   }
 })();

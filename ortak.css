@@ -266,3 +266,24 @@ section[id]{scroll-margin-top:84px}
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
 }
+
+/* ---- footer yasal linkleri ---- */
+.foot-legal{color:#97a8c4}
+.foot-legal a{color:#c3d0e4}
+.foot-legal a:hover{text-decoration:underline}
+
+/* ---- çerez rıza bandı (ortak.js olusturur) ---- */
+.cerez-bar{position:fixed;left:16px;right:16px;bottom:16px;z-index:300;
+  background:var(--accent-deep);border:1px solid rgba(255,255,255,.12);
+  border-radius:var(--r-surface);box-shadow:var(--sh-2)}
+.cerez-in{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:18px;
+  padding:15px 20px;flex-wrap:wrap;justify-content:space-between}
+.cerez-in p{margin:0;font-size:13px;line-height:1.55;color:#d3ddef;max-width:70ch}
+.cerez-in a{color:#fff;text-decoration:underline}
+.cerez-btn{display:flex;gap:10px;flex:0 0 auto}
+.cerez-bar .btn{padding:9px 18px}
+.cerez-bar .btn-ghost{color:#fff;border:1px solid rgba(255,255,255,.4);background:transparent}
+.cerez-bar .btn-ghost:hover{background:rgba(255,255,255,.08)}
+.cerez-bar .btn-primary{background:#fff;color:var(--accent-deep)}
+.cerez-bar .btn-primary:hover{background:#eef2f9}
+@media(max-width:560px){.cerez-in{padding:14px 16px;gap:12px}.cerez-btn{width:100%}.cerez-btn .btn{flex:1}}
