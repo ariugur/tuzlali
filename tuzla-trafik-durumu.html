@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tuzla Trafik Durumu | Canlı Trafik Haritası</title>
-<meta name="description" content="Tuzla ve çevresinin güncel trafik yoğunluğu ve İBB canlı trafik haritası. Ana yol durumu ve trafik yoğunluğunu tek sayfada görün.">
+<meta name="description" content="Tuzla ve çevresinin güncel trafik yoğunluğu ve canlı trafik haritası. Yol renklerinden anlık trafik durumunu, ana yol yoğunluğunu tek sayfada görün.">
 <link rel="canonical" href="https://tuzlali.net/tuzla-trafik-durumu.html">
 <meta property="og:title" content="Tuzla Trafik Durumu — Canlı Harita">
-<meta property="og:description" content="Tuzla ve çevresinin güncel trafik yoğunluğu, İBB canlı trafik haritasıyla.">
+<meta property="og:description" content="Tuzla merkezli canlı trafik haritası; yol renkleri anlık yoğunluğu gösterir.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tuzlali.net/tuzla-trafik-durumu.html">
 <meta property="og:image" content="https://tuzlali.net/gorseller/marka/og-1200x630.png">
@@ -79,9 +79,9 @@
 
     <section class="trf-head">
       <h1>Tuzla'da Trafik Durumu</h1>
-      <p class="lede">Tuzla ve çevresindeki güncel trafik yoğunluğunu, ana yol durumunu ve
-        erişilebilen canlı harita görüntülerini inceleyin. Görüntüler İstanbul Büyükşehir
-        Belediyesi ve ilgili resmî kurumların sistemlerinden sağlanmaktadır.</p>
+      <p class="lede">Aşağıdaki harita Tuzla merkezli açılır ve yol renkleri o anki trafik
+        yoğunluğunu gösterir: <b>yeşil</b> akıcı, <b>sarı</b> yoğun, <b>kırmızı</b> tıkalı.
+        Ana yol durumunu ve çevredeki trafiği tek bakışta görün.</p>
     </section>
   </div>
 
@@ -90,29 +90,29 @@
       <!-- Fallback zemin: iframe yüklenirse üstünü kaplar; engellenirse görünür kalır -->
       <div class="trf-fallback-bg" aria-hidden="true">
         <i class="ph ph-car"></i>
-        <div>Harita yüklenemediyse aşağıdaki butondan İBB sisteminde açabilirsiniz.</div>
+        <div>Harita yüklenemediyse aşağıdaki butondan yeni sekmede açabilirsiniz.</div>
       </div>
       <iframe
-        src="https://cdn-uym.ibb.gov.tr/yharita6/m/1"
-        title="İBB Tuzla ve İstanbul canlı trafik yoğunluk haritası"
+        src="https://yandex.com.tr/map-widget/v1/?ll=29.3010,40.8156&z=12&l=map,trf&lang=tr_TR"
+        title="Tuzla merkezli canlı trafik yoğunluk haritası"
         loading="lazy"
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen></iframe>
     </div>
 
     <p class="trf-kaynak">
-      <b>Kaynak:</b> İstanbul Büyükşehir Belediyesi Ulaşım Yönetim Merkezi (uym.ibb.gov.tr).
-      Tuzlalı.net, kamera ve harita görüntülerinin sahibi veya işletmecisi değildir;
-      yalnızca resmî sayfayı görüntüler. Harita İstanbul geneli açılır, Tuzla'ya
-      yakınlaştırarak bölgeyi inceleyebilirsiniz.
+      <b>Kaynak:</b> Yandex Haritalar canlı trafik katmanı. Trafik verisi ve harita
+      görüntüleri Yandex'e aittir; Tuzlalı.net görüntülerin sahibi veya işletmecisi
+      değildir, yalnızca haritayı Tuzla merkezli gösterir. Resmî alternatif için
+      İstanbul Büyükşehir Belediyesi Ulaşım Yönetim Merkezi haritasını da kullanabilirsiniz.
     </p>
 
     <div class="trf-actions">
-      <a href="https://uym.ibb.gov.tr/yharita6/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
-        <i class="ph ph-arrow-up-right"></i> İBB Trafik sisteminde aç
+      <a href="https://yandex.com.tr/harita/?ll=29.3010,40.8156&z=12&l=trf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+        <i class="ph ph-arrow-up-right"></i> Tam ekran Yandex Haritalar'da aç
       </a>
       <a href="https://uym.ibb.gov.tr/yharita6/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">
-        Harita açılmıyorsa buradan görüntüle
+        İBB trafik haritası (resmî)
       </a>
     </div>
   </div>
@@ -138,7 +138,7 @@
     </nav>
     <div class="foot-col">
       <h3>Veri kaynağı</h3>
-      <p class="foot-src">İşletme verisi: OpenStreetMap (ODbL), İBB Açık Veri, GİSBİR. Trafik: İBB Ulaşım Yönetim Merkezi. Nöbetçi eczane: istanbul.eczaneleri.org.</p>
+      <p class="foot-src">İşletme verisi: OpenStreetMap (ODbL), İBB Açık Veri, GİSBİR. Trafik: Yandex Haritalar. Nöbetçi eczane: istanbul.eczaneleri.org.</p>
     </div>
   </div>
   <div class="wrap foot-alt">

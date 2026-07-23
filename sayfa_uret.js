@@ -463,7 +463,7 @@ ${mahSat.join("\n")}
 ## Araçlar
 - [Canlı harita ve arama](${SITE_KOK}/kesfet.html): tüm işletmeler haritada, kategori ve mahalleye göre filtrelenir.
 - [Tuzla nöbetçi eczaneleri](${SITE_KOK}/nobetci.html): bugün Tuzla'da nöbette olan eczaneler, adres ve yol tarifiyle, her gün güncellenir.
-- [Tuzla trafik durumu](${SITE_KOK}/tuzla-trafik-durumu.html): Tuzla ve çevresi güncel trafik yoğunluğu, İBB Ulaşım Yönetim Merkezi canlı haritasıyla.
+- [Tuzla trafik durumu](${SITE_KOK}/tuzla-trafik-durumu.html): Tuzla ve çevresi güncel trafik yoğunluğu, Yandex Haritalar canlı trafik katmanıyla.
 `;
 fs.writeFileSync(path.join(KOK, "llms.txt"), llms);
 
