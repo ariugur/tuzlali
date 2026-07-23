@@ -37,6 +37,16 @@ değiştir, sonra `node sayfa_uret.js`.
   sayfaların `</body>` öncesine koy (veya `ortak.js` üzerinden tek yerden enjekte et).
 - Alternatif: GoatCounter (ücretsiz, açık kaynak).
 
+## 6. Marka varlıkları — TAMAM ✅
+Logo, favicon, PWA ikonları, OG/sosyal görseller yerleştirildi ve bağlandı:
+- Favicon seti + `site.webmanifest` + `theme-color` tüm sayfaların `<head>`'inde
+  (root: favicon.ico/.svg, apple-touch-icon, icon-192/512, manifest).
+- OG/Twitter kartı: `https://tuzlali.net/gorseller/marka/og-1200x630.png` (her sayfada).
+- Nav + footer logosu: `gorseller/marka/logo-horizontal(-white).svg`.
+- Kalan sosyal görseller `gorseller/marka/` içinde hazır (fb-cover, ig-post,
+  ig-story, x-cover, avatar) — sosyal hesap açınca yükle.
+- PWA "ana ekrana ekle" manifest + ikonlarla hazır; HTTPS'te deploy olunca çalışır.
+
 ---
 Not: Nöbetçi eczane verisi açık kaynaktan (istanbul.eczaneleri.org) derlenir;
 sayfa her zaman e-Devlet resmî sorgulamaya da link verir. Kaynağın HTML yapısı

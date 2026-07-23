@@ -68,7 +68,7 @@ const mahListe = Object.keys(mahSay).sort((a, b) => mahSay[b] - mahSay[a]);
 function nav() {
   return `<nav class="nav">
   <div class="wrap">
-    <a href="../index.html" class="logo"><i class="ph-fill ph-map-pin-area"></i> Tuzla Haritası</a>
+    <a href="../index.html" class="logo" aria-label="tuzlali.net ana sayfa"><img src="../gorseller/marka/logo-horizontal.svg" alt="tuzlali.net" width="112" height="28"></a>
     <div class="nav-links">
       <a href="../kesfet.html">İşletmeler</a>
       <a href="../nobetci.html">Nöbetçi eczane</a>
@@ -95,7 +95,7 @@ function foot() {
   return `<footer class="foot">
   <div class="wrap foot-in">
     <div class="foot-brand">
-      <a href="../index.html" class="foot-logo"><i class="ph-fill ph-map-pin-area" aria-hidden="true"></i> tuzlali.net</a>
+      <a href="../index.html" class="foot-logo" aria-label="tuzlali.net"><img src="../gorseller/marka/logo-horizontal-white.svg" alt="tuzlali.net" width="112" height="28"></a>
       <p class="foot-tag">Mahallendeki işletmeleri, ustaları, mağazaları ve mekânları keşfet.</p>
     </div>
     <nav class="foot-col" aria-label="Keşfet">
@@ -116,7 +116,7 @@ function foot() {
   </div>
   <div class="wrap foot-alt">
     <span>© 2026 tuzlali.net · Bağımsız topluluk projesi, resmî kurum değildir.</span>
-    <span class="foot-cd">Tasarım · ClassyDesign</span>
+    <span class="foot-cd">Tasarım · <a href="https://yapgitsin.co" target="_blank" rel="noopener">yapgitsin.co</a></span>
   </div>
 </footer>`;
 }
@@ -326,6 +326,14 @@ function sayfa({ baslik, aciklama, url, aktifTip, aktifAd, kayitlar, canliLink, 
 <meta property="og:description" content="${esc(aciklama)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${esc(url)}">
+<meta property="og:image" content="https://tuzlali.net/gorseller/marka/og-1200x630.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tuzlali.net/gorseller/marka/og-1200x630.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#13294d">
 <link rel="stylesheet" href="../ortak.css">
 <link rel="stylesheet" href="../ikonlar/regular.css">
 <link rel="stylesheet" href="../ikonlar/fill.css">

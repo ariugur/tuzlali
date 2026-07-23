@@ -9,3 +9,7 @@ veri/mahalle_raw.json
 # bağımlılıklar / sanal ortam
 node_modules/
 .venv/
+
+# marka tasarım kaynağı (varlıklar zaten root + gorseller/marka içinde)
+*.zip
+marka-staging/
