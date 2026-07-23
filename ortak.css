@@ -226,8 +226,36 @@ section[id]{scroll-margin-top:84px}
 /* kategori noktası: harita pin rengiyle birebir aynı (anlamsal, dekoratif değil) */
 .cdot{width:8px;height:8px;border-radius:var(--r-pill);flex:0 0 8px}
 
-.foot{border-top:1px solid var(--line-soft);padding:40px 0;color:var(--muted);font-size:12.5px;background:var(--surface)}
-.foot .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+/* ===== FOOTER: cok sutunlu, marka + kesif + veri kaynagi =====
+   Zemin --surface (kum serit). Metin --muted bu zeminde AA gecer. */
+.foot{border-top:1px solid var(--line-strong);padding:54px 0 26px;
+  background:var(--surface);color:var(--muted);font-size:13px}
+.foot-in{display:grid;grid-template-columns:1.7fr 1fr 1fr 1.5fr;gap:38px}
+.foot-brand{max-width:320px}
+.foot-logo{display:inline-flex;align-items:center;gap:8px;font-size:16px;
+  font-weight:700;color:var(--txt);letter-spacing:-.02em;margin-bottom:13px}
+.foot-logo i{color:var(--accent);font-size:21px}
+.foot-tag{font-size:12.5px;line-height:1.6;color:var(--muted);margin-bottom:14px;max-width:34ch}
+.foot-alan{font-size:12px;font-weight:600;color:var(--accent-hi);letter-spacing:.03em}
+.foot-col h3{font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--txt-2);margin-bottom:12px;font-weight:600}
+.foot-col a{display:inline-block;color:var(--muted);padding:6px 0;line-height:1.3;
+  transition:color .15s var(--ease)}
+.foot-col a:hover{color:var(--accent)}
+.foot-src{font-size:12px;line-height:1.65;color:var(--muted)}
+.foot-src a{color:var(--accent)}
+.foot-src a:hover{text-decoration:underline}
+.foot-alt{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  margin-top:38px;padding-top:20px;border-top:1px solid var(--line-strong);
+  font-size:12px;color:var(--muted)}
+@media(max-width:860px){
+  .foot-in{grid-template-columns:1fr 1fr;gap:28px 30px}
+  .foot-brand{grid-column:1/-1;max-width:none}
+}
+@media(max-width:480px){
+  .foot-in{grid-template-columns:1fr;gap:26px}
+  .foot-alt{flex-direction:column;gap:7px}
+}
 
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
