@@ -1,753 +1,903 @@
 [
  {
-  "id": "cami-mescit-abdullah-pehlivanli-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-abdullah-pehlivanli-camii",
+  "tur": "İbadethaneler",
   "ad": "Abdullah Pehlivanlı Camii",
   "adres": "Postane Mahallesi Kılıç Cadde No:6 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8183481474601,
   "lon": 29.2974224311931,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-akfirat-kirazli-mah-behice-cizmeci-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-akfirat-kirazli-mah-behice-cizmeci-camii",
+  "tur": "İbadethaneler",
   "ad": "Akfırat Kirazlı Mah. Behice Çizmeci Camii",
   "adres": "Tepeören Mahallesi Ertuğrul Sokak No: 7 Tuzla / İstanbul",
   "mahalle": "Akfırat",
   "lat": 40.9134799438525,
   "lon": 29.4025172046736,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-akfirat-merkez-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-akfirat-merkez-camii",
+  "tur": "İbadethaneler",
   "ad": "Akfırat Merkez Camii",
   "adres": "Akfırat Mahallesi 16. Sokak No: 5 Tuzla / İstanbul",
   "mahalle": "Akfırat",
   "lat": 40.9242187577142,
   "lon": 29.4158908803365,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-akfirat-mah-sifa-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-akfirat-mah-sifa-camii",
+  "tur": "İbadethaneler",
   "ad": "Akfırat Mah. Şifa Camii",
   "adres": "Akfırat Mahallesi 8. Sokak No: 6 Tuzla / İstanbul",
   "mahalle": "Akfırat",
   "lat": 40.9228926017152,
   "lon": 29.4129699468613,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-anadolu-mah-aksemsettin-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-anadolu-mah-aksemsettin-camii",
+  "tur": "İbadethaneler",
   "ad": "Anadolu Mah. Akşemsettin Camii",
   "adres": "Anadolu Mah. Alsancak Cad. No: 25/1 - Tuzla / İstanbul",
   "mahalle": "Anadolu",
   "lat": 40.9072189080928,
   "lon": 29.3750970738163,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-aydinli-ebubekir-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-aydinli-ebubekir-camii",
+  "tur": "İbadethaneler",
   "ad": "Aydınlı Ebubekir Camii",
   "adres": "Aydınlı Mahallesi Süheyla Sokak No: 100 Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.8850968426046,
   "lon": 29.3364036083221,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-aydinli-mah-deri-sanayi-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-aydinli-mah-deri-sanayi-camii",
+  "tur": "İbadethaneler",
   "ad": "Aydınlı Mah. Deri Sanayi Camii",
   "adres": "Aydınlı Mahallesi Organize Deri Sanayi Bölgesi 1. Yol Kazlıçeşme Cadde No: 3 Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.8804842266466,
   "lon": 29.3506301023744,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-aydinli-mah-hacilar-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-aydinli-mah-hacilar-camii",
+  "tur": "İbadethaneler",
   "ad": "Aydınlı Mah. Hacılar Camii",
   "adres": "Aydınlı Mahallesi Ayçiçeği Sokak No: 19 Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.8633510525552,
   "lon": 29.3443590402603,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-aydinli-mah-huda-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-aydinli-mah-huda-camii",
+  "tur": "İbadethaneler",
   "ad": "Aydınlı Mah. Hüda Camii",
   "adres": "Aydınlı Mahallesi Dersaadet Cadde No: 29 Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.8728314889026,
   "lon": 29.3313664197922,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-aydinli-mah-yunusemre-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-aydinli-mah-yunusemre-camii",
+  "tur": "İbadethaneler",
   "ad": "Aydınlı Mah. Yunusemre Camii",
   "adres": "Aydınlı Mahallesi Yeniyurt Sokak No: 38 Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.8598856431839,
   "lon": 29.3405113962178,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-aydinli-yildiz-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-aydinli-yildiz-camii",
+  "tur": "İbadethaneler",
   "ad": "Aydınlı Yıldız Camii",
   "adres": "Aydınlı Mahallesi Çilek Sokak No: 2 Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.8628503174995,
   "lon": 29.3281208562364,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-aydintepe-merkez-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-aydintepe-merkez-camii",
+  "tur": "İbadethaneler",
   "ad": "Aydıntepe Merkez Camii",
   "adres": "Aydıntepe Mahallesi Tevhid Sokak No: 13 Tuzla / İstanbul",
   "mahalle": "Aydıntepe",
   "lat": 40.8534405339091,
   "lon": 29.295211254372,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-aydintepe-mah-yesildere-merkez-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-aydintepe-mah-yesildere-merkez-camii",
+  "tur": "İbadethaneler",
   "ad": "Aydıntepe Mah. Yeşildere Merkez Camii",
   "adres": "Aydıntepe Mahallesi Fedakar Sokak No: 1 Tuzla / İstanbul",
   "mahalle": "Aydıntepe",
   "lat": 40.8538983711067,
   "lon": 29.300700868269,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-birmes-sanayi-sitesi-mescidi",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-birmes-sanayi-sitesi-mescidi",
+  "tur": "İbadethaneler",
   "ad": "Birmes Sanayi Sitesi Mescidi",
   "adres": "Mescit Mahallesi Demokrasi Cadde No: 5 Tuzla / İstanbul",
   "mahalle": "Mescit",
   "lat": 40.8823785247645,
   "lon": 29.3454158811405,
-  "not": ""
+  "not": "Mescit",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-bosb-ahmet-selim-telli-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-bosb-ahmet-selim-telli-camii",
+  "tur": "İbadethaneler",
   "ad": "Bosb Ahmet Selim Telli Camii",
   "adres": "Aydınlı - Birlik Osb Mahallesi 1 Nolu Cadde No: 2 Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.8784517118723,
   "lon": 29.3988639052566,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-deniz-harp-okulu-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-deniz-harp-okulu-camii",
+  "tur": "İbadethaneler",
   "ad": "Deniz Harp Okulu Camii",
   "adres": "Postane Mahallesi Rauf Orbay Cadde No: 193 A Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.814,
   "lon": 29.2929,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-el-emin-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-el-emin-camii",
+  "tur": "İbadethaneler",
   "ad": "El-emin Camii",
   "adres": "Evliya Çelebi Mahallesi Genç Osman Cadde No: 52 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8403201438686,
   "lon": 29.2954296424682,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-evliya-celebi-mah-evliya-celebi",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-evliya-celebi-mah-evliya-celebi",
+  "tur": "İbadethaneler",
   "ad": "Evliya Çelebi Mah. Evliya Çelebi",
   "adres": "Evliya Çelebi Mahallesi Hatboyu Cadde No: 54 /1 Tuzla / İstanbul",
   "mahalle": "Evliya Çelebi",
   "lat": 40.8404849049364,
   "lon": 29.3063554204609,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-fatih-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-fatih-camii",
+  "tur": "İbadethaneler",
   "ad": "Fatih Camii",
   "adres": "Şifa Mahallesi Yeşilay Sokak No: 33 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.827157144502,
   "lon": 29.3605113029479,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-fatih-mah-ensar-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-fatih-mah-ensar-camii",
+  "tur": "İbadethaneler",
   "ad": "Fatih Mah. Ensar Camii",
   "adres": "Fatih Mahallesi Avşar Sokak No: 10 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.9279403452874,
   "lon": 29.3415937456302,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-gisbir-sahil-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-gisbir-sahil-camii",
+  "tur": "İbadethaneler",
   "ad": "Gisbir Sahil Camii",
   "adres": "Cami Mahallesi Şehitler Cadde No: 14 /1 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.813041804422,
   "lon": 29.3079290377184,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-haci-bekir-yildirim-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-haci-bekir-yildirim-camii",
+  "tur": "İbadethaneler",
   "ad": "Hacı Bekir Yıldırım Camii",
   "adres": "Aydınlı Mahallesi İnal Sokak No: 5 Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.8764926638524,
   "lon": 29.3131542834453,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-haci-mustafa-eminoglu-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-haci-mustafa-eminoglu-camii",
+  "tur": "İbadethaneler",
   "ad": "Hacı Mustafa Eminoğlu Camii",
   "adres": "Yayla Mahallesi Şinasi Dural Cadde No: 10 A Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8336778902092,
   "lon": 29.3034070730209,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-haci-zarife-ors-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-haci-zarife-ors-camii",
+  "tur": "İbadethaneler",
   "ad": "Hacı Zarife Örs Camii",
   "adres": "Postane Mahallesi Çağlayan Sokak No: 4 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8186519740907,
   "lon": 29.2899373352169,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-hasani-basri-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-hasani-basri-camii",
+  "tur": "İbadethaneler",
   "ad": "Hasanı Basri Camii",
   "adres": "Mimar Sinan Mahallesi Tecelli Sokak No: 26 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8387516863455,
   "lon": 29.362389301376,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-hz-ali-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-hz-ali-camii",
+  "tur": "İbadethaneler",
   "ad": "Hz. Ali Camii",
   "adres": "Mimar Sinan Mahallesi İhlas Sokak No: 26 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8456792360904,
   "lon": 29.3629427634418,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-hz-osman-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-hz-osman-camii",
+  "tur": "İbadethaneler",
   "ad": "Hz. Osman Camii",
   "adres": "Aydınlı Mahallesi Bayram Sokak No: 6 Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.877305523744,
   "lon": 29.3350946903229,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-hz-omer-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-hz-omer-camii",
+  "tur": "İbadethaneler",
   "ad": "Hz. Ömer Camii",
   "adres": "Evliya Çelebi Mahallesi Sefa Sokak No: 6 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.84331659901,
   "lon": 29.2969376477412,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-icmeler-istasyon-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-icmeler-istasyon-camii",
+  "tur": "İbadethaneler",
   "ad": "İçmeler İstasyon Camii",
   "adres": "İçmeler Mahallesi Harmanlı Sokak No: 4 /1 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8457396084392,
   "lon": 29.3006230029278,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-icmeler-mah-icmeler-merkez-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-icmeler-mah-icmeler-merkez-camii",
+  "tur": "İbadethaneler",
   "ad": "İçmeler Mah. İçmeler Merkez Camii",
   "adres": "İçmeler Mahallesi Ankara Cadde No: 34 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8484659499094,
   "lon": 29.305062310422,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-icmeler-mah-muhammedul-emin-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-icmeler-mah-muhammedul-emin-camii",
+  "tur": "İbadethaneler",
   "ad": "İçmeler Mah. Muhammedül Emin Camii",
   "adres": "İçmeler Mahallesi Enise Sokak No: 35 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.845964698485,
   "lon": 29.3072319030762,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-istanbul-anadolu-yakasi-organize-sanayi-bolgesi-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-istanbul-anadolu-yakasi-organize-sanayi-bolgesi-camii",
+  "tur": "İbadethaneler",
   "ad": "İstanbul Anadolu Yakası Organize Sanayi Bölgesi Camii",
   "adres": "Aydınlı - İstanbul Ayosb Mahallesi 1. Sokak No: 1 Tuzla / İstanbul",
   "mahalle": "Anadolu",
   "lat": 40.8845513518232,
   "lon": 29.3859401726144,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-istanbul-deri-osb-yan-sanayi-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-istanbul-deri-osb-yan-sanayi-camii",
+  "tur": "İbadethaneler",
   "ad": "İstanbul Deri Osb Yan Sanayi Camii",
   "adres": "Deri Osb Mahallesi Yan Sanayi Cadde No: 6 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8766,
   "lon": 29.3409,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-istanbul-nakliyeciler-sitesi-mescidi",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-istanbul-nakliyeciler-sitesi-mescidi",
+  "tur": "İbadethaneler",
   "ad": "İstanbul Nakliyeciler Sitesi Mescidi",
   "adres": "Orhanlı Mahallesi Demokrasi Cadde No: 111 Tuzla / İstanbul",
   "mahalle": "Orhanlı",
   "lat": 40.8996878295207,
   "lon": 29.3642030004612,
-  "not": ""
+  "not": "Mescit",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-istasyon-cicekciler-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-istasyon-cicekciler-camii",
+  "tur": "İbadethaneler",
   "ad": "İstasyon Çiçekçiler Camii",
   "adres": "İstasyon Mahallesi Hançer Sokak No: 16 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.827494055259,
   "lon": 29.3181163072586,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-istasyon-dortyol-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-istasyon-dortyol-camii",
+  "tur": "İbadethaneler",
   "ad": "İstasyon Dörtyol Camii",
   "adres": "İstasyon Mahallesi İstasyon Cadde No: 184 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8259825593875,
   "lon": 29.3247467908077,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-istasyon-yeni-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-istasyon-yeni-camii",
+  "tur": "İbadethaneler",
   "ad": "İstasyon Yeni Camii",
   "adres": "İstasyon Mahallesi Güllü Bahçe Sokak No: 8 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8312324320345,
   "lon": 29.321790933609,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-kasri-arifan-mescidi",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-kasri-arifan-mescidi",
+  "tur": "İbadethaneler",
   "ad": "Kasri Arifan Mescidi",
   "adres": "Tepeören Mahallesi Eski Ankara Asfaltı Cadde No: 121 Tuzla / İstanbul",
   "mahalle": "Tepeören",
   "lat": 40.9104396594869,
   "lon": 29.3837016820908,
-  "not": ""
+  "not": "Mescit",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-melek-cokmez-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-melek-cokmez-camii",
+  "tur": "İbadethaneler",
   "ad": "Melek Çökmez Camii",
   "adres": "Tepeören Mahallesi Kurtdoğmuş Yolu Cadde No: 1 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.935,
   "lon": 29.3563,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-mercan-yeni-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-mercan-yeni-camii",
+  "tur": "İbadethaneler",
   "ad": "Mercan Yeni Camii",
   "adres": "Postane Mahallesi Enis Sokak No: 9 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8218809690004,
   "lon": 29.2835563523905,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-mimar-sinan-merkez-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-mimar-sinan-merkez-camii",
+  "tur": "İbadethaneler",
   "ad": "Mimar Sinan Merkez Camii",
   "adres": "Mimar Sinan Mahallesi Bahriye Sokak No: 2 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8315537537925,
   "lon": 29.3627401959459,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-mimar-sinan-mah-yavuz-selim-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-mimar-sinan-mah-yavuz-selim-camii",
+  "tur": "İbadethaneler",
   "ad": "Mimar Sinan Mah. Yavuz Selim Camii",
   "adres": "Mimar Sinan Mahallesi Kömürcü Sokak No: 16 C Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.841479324774,
   "lon": 29.3617841713727,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-mimar-sinan-mah-gumuspinar-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-mimar-sinan-mah-gumuspinar-camii",
+  "tur": "İbadethaneler",
   "ad": "Mimar Sinan Mah. Gümüşpınar Camii",
   "adres": "Mimar Sinan Mahallesi Emiroğlu Cadde No: 80 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8342927920564,
   "lon": 29.3616056442261,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-nalbant-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-nalbant-camii",
+  "tur": "İbadethaneler",
   "ad": "Nalbant Camii",
   "adres": "Yayla Mahallesi Kadim Sokak No: 11 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.82883300832,
   "lon": 29.3082833918743,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-nazmi-durbakayim-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-nazmi-durbakayim-camii",
+  "tur": "İbadethaneler",
   "ad": "Nazmi Durbakayım Camii",
   "adres": "Aydıntepe Mahallesi Harbiye Sokak No: 21 Tuzla / İstanbul",
   "mahalle": "Aydıntepe",
   "lat": 40.8595739153047,
   "lon": 29.3028379113457,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-necip-fazil-kisakurek-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-necip-fazil-kisakurek-camii",
+  "tur": "İbadethaneler",
   "ad": "Necip Fazıl Kısakürek Camii",
   "adres": "Aydınlı Mahallesi Erdemli Sokak No: 5 Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.864682081005,
   "lon": 29.3407819299752,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-nisanci-mehmet-pasa-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-nisanci-mehmet-pasa-camii",
+  "tur": "İbadethaneler",
   "ad": "Nişancı Mehmet Paşa Camii",
   "adres": "Aydınlı Mahallesi İzzet Kabadayı Sokak Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.8698794545044,
   "lon": 29.3268771196189,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-orhanli-haci-ahmet-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-orhanli-haci-ahmet-camii",
+  "tur": "İbadethaneler",
   "ad": "Orhanlı Hacı Ahmet Camii",
   "adres": "Mescit Mahallesi Adnan Kahveci Cadde No: 37 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8958677123805,
   "lon": 29.3511128425598,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-orhanli-merkez-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-orhanli-merkez-camii",
+  "tur": "İbadethaneler",
   "ad": "Orhanlı Merkez Camii",
   "adres": "Orhanlı Mahallesi Çeşme Cad. No: 17 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8939316435283,
   "lon": 29.3565227015572,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-orhanli-sanayi-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-orhanli-sanayi-camii",
+  "tur": "İbadethaneler",
   "ad": "Orhanlı Sanayi Camii",
   "adres": "Orta Mahallesi Cengizhan Cadde No: 11 A Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8977,
   "lon": 29.3862,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-orhanli-yavuz-selim-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-orhanli-yavuz-selim-camii",
+  "tur": "İbadethaneler",
   "ad": "Orhanlı Yavuz Selim Camii",
   "adres": "Orhanlı Mahallesi Gençlik Cadde No: 6 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.9016249973078,
   "lon": 29.3519737649556,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-orhanli-yesil-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-orhanli-yesil-camii",
+  "tur": "İbadethaneler",
   "ad": "Orhanlı Yeşil Camii",
   "adres": "Mescit Mahallesi Malazgirt Cadde No: 1 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8925076518572,
   "lon": 29.3522786196013,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-orta-mah-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-orta-mah-camii",
+  "tur": "İbadethaneler",
   "ad": "Orta Mah. Camii",
   "adres": "Orta Mahallesi Sıraevler Sokak No: 2 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.9019826605149,
   "lon": 29.3779570304114,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-piyade-okulu-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-piyade-okulu-camii",
+  "tur": "İbadethaneler",
   "ad": "Piyade Okulu Camii",
   "adres": "İstasyon Mahallesi Şehitler Cadde No: 70 /2 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8274401748721,
   "lon": 29.3324655054379,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-ss-192-nolu-dersan-kooperatifi-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-ss-192-nolu-dersan-kooperatifi-camii",
+  "tur": "İbadethaneler",
   "ad": "Ss 192 Nolu Dersan Kooperatifi Camii",
   "adres": "Aydınlı - İstanbul Ayosb Mahallesi 6. Sokak No: 1 Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.8709075582841,
   "lon": 29.3763630262126,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-sultan-1-ahmet-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-sultan-1-ahmet-camii",
+  "tur": "İbadethaneler",
   "ad": "Sultan 1. Ahmet Camii",
   "adres": "Cami Mahallesi Mimar Sinan Cadde Ova Sokak. Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8167810788757,
   "lon": 29.3050472438335,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-sehit-omer-oner-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-sehit-omer-oner-camii",
+  "tur": "İbadethaneler",
   "ad": "Şehit Ömer Öner Camii",
   "adres": "Aydınlı Mahallesi Kar Sokak No: 27 Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.8784267971178,
   "lon": 29.3209469291623,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-sehitler-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-sehitler-camii",
+  "tur": "İbadethaneler",
   "ad": "Şehitler Camii",
   "adres": "Aydıntepe Mahallesi Alaaddin Sokak No: 3 Tuzla / İstanbul",
   "mahalle": "Aydıntepe",
   "lat": 40.8635,
   "lon": 29.2981,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-sifa-merkez-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-sifa-merkez-camii",
+  "tur": "İbadethaneler",
   "ad": "Şifa Merkez Camii",
   "adres": "Şifa Mahallesi Cihangir Sokak No: 14 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8269337155526,
   "lon": 29.3525909200717,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-sifa-mah-kiptas-imam-gazali-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-sifa-mah-kiptas-imam-gazali-camii",
+  "tur": "İbadethaneler",
   "ad": "Şifa Mah. Kiptaş İmam Gazali Camii",
   "adres": "Şifa Mahallesi Hürriyet Cadde No: 63 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8284986442614,
   "lon": 29.3559454648467,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-sifa-mah-mevlana-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-sifa-mah-mevlana-camii",
+  "tur": "İbadethaneler",
   "ad": "Şifa Mah. Mevlana Camii",
   "adres": "Şifa Mahallesi Serpil Sokak No: 39 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8379801128617,
   "lon": 29.357898570598,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-sifa-mah-sifa-mescidi",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-sifa-mah-sifa-mescidi",
+  "tur": "İbadethaneler",
   "ad": "Şifa Mah. Şifa Mescidi",
   "adres": "Şifa Mahallesi Yaylacık Sokak No: 17 Tuzla / İstanbul",
   "mahalle": "Şifa",
   "lat": 40.8300983759129,
   "lon": 29.3529267847322,
-  "not": ""
+  "not": "Mescit",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-sifa-mimar-sinan-mezarlik-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-sifa-mimar-sinan-mezarlik-camii",
+  "tur": "İbadethaneler",
   "ad": "Şifa Mimar Sinan Mezarlık Camii",
   "adres": "Mimar Sinan Mahallesi Çiftlik Sokak No: 7 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.835900033315,
   "lon": 29.3669164180756,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-tepeoren-merkez-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-tepeoren-merkez-camii",
+  "tur": "İbadethaneler",
   "ad": "Tepeören Merkez Camii",
   "adres": "Tepeören Mahallesi Tepeviran Cadde No: 10 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.9094989956443,
   "lon": 29.3910759309745,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-tersane-mescidi",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-tersane-mescidi",
+  "tur": "İbadethaneler",
   "ad": "Tersane Mescidi",
   "adres": "Evliya Çelebi Mahallesi Uyum Sokak No: 2 Tuzla / İstanbul",
   "mahalle": "Evliya Çelebi",
   "lat": 40.8417895973468,
   "lon": 29.2938289124868,
-  "not": ""
+  "not": "Mescit",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-tuzla-belediyesi-selale-park-mescidi",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-tuzla-belediyesi-selale-park-mescidi",
+  "tur": "İbadethaneler",
   "ad": "Tuzla Belediyesi Şelale Park Mescidi",
   "adres": "Aydınlı Mahallesi Aydınlı Yolu Cadde Şelale Park Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.8595667239969,
   "lon": 29.3171982595087,
-  "not": ""
+  "not": "Mescit",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-tuzla-devlet-hastanesi-mescidi",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-tuzla-devlet-hastanesi-mescidi",
+  "tur": "İbadethaneler",
   "ad": "Tuzla Devlet Hastanesi Mescidi",
   "adres": "İçmeler Mahallesi Piri Reis Cadde No: 74 /1 Tuzla / İstanbul",
   "mahalle": "İçmeler",
   "lat": 40.8444,
   "lon": 29.3032,
-  "not": ""
+  "not": "Mescit",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-tuzla-emlak-konut-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-tuzla-emlak-konut-camii",
+  "tur": "İbadethaneler",
   "ad": "Tuzla Emlak Konut Camii",
   "adres": "Aydınlı Mahallesi Esra Sokak No: 7 Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.8647345312123,
   "lon": 29.318795075731,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-turkan-omer-okan-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-turkan-omer-okan-camii",
+  "tur": "İbadethaneler",
   "ad": "Türkan Ömer Okan Camii",
   "adres": "Tepeören Mahallesi Ballıca Yolu Cadde No: 24 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.9460428044189,
   "lon": 29.3906164169312,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-uskubi-melek-aras-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-uskubi-melek-aras-camii",
+  "tur": "İbadethaneler",
   "ad": "Üskübi Melek Aras Camii",
   "adres": "Aydınlı-kosb Mahallesi Organik Cadde No: 15 Tuzla / İstanbul",
   "mahalle": "Aydınlı",
   "lat": 40.8842340022456,
   "lon": 29.3966124951839,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-via-marin-mescidi",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-via-marin-mescidi",
+  "tur": "İbadethaneler",
   "ad": "Via Marin Mescidi",
   "adres": "Cami Mahallesi Balıkçılar Sokak No: 20 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8158,
   "lon": 29.3174,
-  "not": ""
+  "not": "Mescit",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-yavuzevler-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-yavuzevler-camii",
+  "tur": "İbadethaneler",
   "ad": "Yavuzevler Camii",
   "adres": "Aydıntepe Mahallesi Gülle Sokak No: 20 Tuzla / İstanbul",
   "mahalle": "Aydıntepe",
   "lat": 40.8511890137081,
   "lon": 29.3015027674846,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-yayla-merkez-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-yayla-merkez-camii",
+  "tur": "İbadethaneler",
   "ad": "Yayla Merkez Camii",
   "adres": "Yayla Mahallesi Lütuf Sokak No: 66 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8321298863764,
   "lon": 29.3108457284453,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-yenievler-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-yenievler-camii",
+  "tur": "İbadethaneler",
   "ad": "Yenievler Camii",
   "adres": "Yayla Mahallesi Hatboyu Cadde No: 70 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8369757566277,
   "lon": 29.3115826604627,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
-  "id": "cami-mescit-zeytinlik-yavuzhan-camii",
-  "tur": "Cami & Mescit",
+  "id": "ibadethaneler-zeytinlik-yavuzhan-camii",
+  "tur": "İbadethaneler",
   "ad": "Zeytinlik Yavuzhan Camii",
   "adres": "Yayla Mahallesi Eryılmaz Sokak No: 9 /1 Tuzla / İstanbul",
   "mahalle": "Cami",
   "lat": 40.8258956894756,
   "lon": 29.3041398885646,
-  "not": ""
+  "not": "Cami",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-evliya-celebi-mahallesi-muhtarligi",
@@ -757,7 +907,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.8420579934382,
   "lon": 29.300134,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-sifa-mahalle-muhtarligi",
@@ -767,7 +919,9 @@
   "mahalle": "Şifa",
   "lat": 40.8271875383361,
   "lon": 29.3573379560447,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-postane-mahallesi-muhtarligi",
@@ -777,7 +931,9 @@
   "mahalle": "Postane",
   "lat": 40.817730564944,
   "lon": 29.3038719137175,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-istasyon-mahallesi-muhtarligi",
@@ -787,7 +943,9 @@
   "mahalle": "İstasyon",
   "lat": 40.8359044004235,
   "lon": 29.322596920766,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-aydintepe-muhtarligi",
@@ -797,7 +955,9 @@
   "mahalle": "Aydıntepe",
   "lat": 40.8526595145973,
   "lon": 29.2990484560454,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-tepeoren-mahallesi-muhtarligi",
@@ -807,7 +967,9 @@
   "mahalle": "Tepeören",
   "lat": 40.9103234591152,
   "lon": 29.3885601695372,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-aydinli-mahallesi-muhtarligi",
@@ -817,7 +979,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.8707451616008,
   "lon": 29.3297101118629,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-icmeler-mahallesi-muhtarligi",
@@ -827,7 +991,9 @@
   "mahalle": "İçmeler",
   "lat": 40.8491549867697,
   "lon": 29.3057507272086,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-fatih-mahallesi-muhtarligi",
@@ -837,7 +1003,9 @@
   "mahalle": "Fatih",
   "lat": 40.9330127871899,
   "lon": 29.3431604139983,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-yayla-mahallesi-muhtarligi",
@@ -847,7 +1015,9 @@
   "mahalle": "Yayla",
   "lat": 40.8345952608511,
   "lon": 29.3084847346825,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-orhanli-orta-mahallesi-muhtarligi",
@@ -857,7 +1027,9 @@
   "mahalle": "Orhanlı",
   "lat": 40.904750636244,
   "lon": 29.3786320272101,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-mimar-sinan-mahallesi-muhtarligi",
@@ -867,7 +1039,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.8112738982955,
   "lon": 29.3847993434124,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-cami-mahallesi-muhtarligi",
@@ -877,7 +1051,9 @@
   "mahalle": "Cami",
   "lat": 40.8202608354328,
   "lon": 29.3075392525386,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-anadolu-mahallesi-muhtarligi",
@@ -887,7 +1063,9 @@
   "mahalle": "Anadolu",
   "lat": 40.9254775257744,
   "lon": 29.3730618536402,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-orhanli-mahallesi-muhtarligi",
@@ -897,7 +1075,9 @@
   "mahalle": "Orhanlı",
   "lat": 40.8959812375811,
   "lon": 29.357037738844,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-akfirat-mahallesi-muhtarligi",
@@ -907,7 +1087,9 @@
   "mahalle": "Akfırat",
   "lat": 40.9245108272775,
   "lon": 29.4161417695373,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "muhtarlik-mescit-mahallesi-muhtarligi",
@@ -917,7 +1099,9 @@
   "mahalle": "Mescit",
   "lat": 40.8950565304693,
   "lon": 29.3550992695368,
-  "not": ""
+  "not": "",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-filiz-parki",
@@ -927,7 +1111,9 @@
   "mahalle": "Cami",
   "lat": 40.82196781750072,
   "lon": 29.31523421094284,
-  "not": "≈1690 m² toplanma alanı"
+  "not": "≈1690 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-cinar-sitesi-parki",
@@ -937,7 +1123,9 @@
   "mahalle": "Cami",
   "lat": 40.82162083054779,
   "lon": 29.31393764857012,
-  "not": "≈9978 m² toplanma alanı"
+  "not": "≈9978 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-ova-parki",
@@ -947,7 +1135,9 @@
   "mahalle": "Cami",
   "lat": 40.81759391148841,
   "lon": 29.307206744914254,
-  "not": "≈1040 m² toplanma alanı"
+  "not": "≈1040 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-aydinli-merkez-parki",
@@ -957,7 +1147,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.86927763232813,
   "lon": 29.328858628350357,
-  "not": "≈650 m² toplanma alanı"
+  "not": "≈650 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-aydinli-parki",
@@ -967,7 +1159,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.864656101917895,
   "lon": 29.323774421759207,
-  "not": "≈5832 m² toplanma alanı"
+  "not": "≈5832 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-aydinli-pazar-alani",
@@ -977,7 +1171,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.8710304504975,
   "lon": 29.324249722736692,
-  "not": "≈5799 m² toplanma alanı"
+  "not": "≈5799 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-gurpinar-caddesi-parki",
@@ -987,7 +1183,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.86827649040629,
   "lon": 29.331574294595004,
-  "not": "≈4083 m² toplanma alanı"
+  "not": "≈4083 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-kardesler-sokak-parki",
@@ -997,7 +1195,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.87908295116843,
   "lon": 29.32189296530128,
-  "not": "≈2095 m² toplanma alanı"
+  "not": "≈2095 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-konasli-parki",
@@ -1007,7 +1207,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.88492319970537,
   "lon": 29.334732370206822,
-  "not": "≈1500 m² toplanma alanı"
+  "not": "≈1500 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-necip-fazil-kisakurek-parki",
@@ -1017,7 +1219,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.86533790689796,
   "lon": 29.340291040618887,
-  "not": "≈18064 m² toplanma alanı"
+  "not": "≈18064 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-okan-sokak-parki",
@@ -1027,7 +1231,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.86214100482897,
   "lon": 29.33685026315075,
-  "not": "≈4913 m² toplanma alanı"
+  "not": "≈4913 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sedef-parki",
@@ -1037,7 +1243,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.87567075520133,
   "lon": 29.33435772338329,
-  "not": "≈2078 m² toplanma alanı"
+  "not": "≈2078 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sehit-j-er-bekir-demir-parki",
@@ -1047,7 +1255,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.86779521132663,
   "lon": 29.326243705051454,
-  "not": "≈2434 m² toplanma alanı"
+  "not": "≈2434 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-hacet-deresi-mesire-alani",
@@ -1057,7 +1267,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.8785065300469,
   "lon": 29.329597405915926,
-  "not": "≈81600 m² toplanma alanı"
+  "not": "≈81600 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-oruc-reis-ilkogretim-okulu-bahcesi",
@@ -1067,7 +1279,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.8663908480336,
   "lon": 29.33892712548075,
-  "not": "≈5300 m² toplanma alanı"
+  "not": "≈5300 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-osmangazi-ilkogretim-okulu-bahcesi",
@@ -1077,7 +1291,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.872449863521545,
   "lon": 29.33036481596725,
-  "not": "≈2100 m² toplanma alanı"
+  "not": "≈2100 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-anit-park",
@@ -1087,7 +1303,9 @@
   "mahalle": "Orhanlı",
   "lat": 40.89581029343743,
   "lon": 29.36261291202198,
-  "not": "≈435 m² toplanma alanı"
+  "not": "≈435 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-kultur-parki",
@@ -1097,7 +1315,9 @@
   "mahalle": "Orhanlı",
   "lat": 40.90032758553301,
   "lon": 29.351840434916628,
-  "not": "≈7815 m² toplanma alanı"
+  "not": "≈7815 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-muhtarlik-parki-ayni-zamanda-transfer-alanidir",
@@ -1107,7 +1327,9 @@
   "mahalle": "Orhanlı",
   "lat": 40.89573613781663,
   "lon": 29.35738400768526,
-  "not": "≈3262 m² toplanma alanı"
+  "not": "≈3262 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-ishakpasa-parki",
@@ -1117,7 +1339,9 @@
   "mahalle": "Orta",
   "lat": 40.90314437701653,
   "lon": 29.379238706428968,
-  "not": "≈7127 m² toplanma alanı"
+  "not": "≈7127 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-orta-mahalle-orman-arazisi",
@@ -1127,7 +1351,9 @@
   "mahalle": "Orta",
   "lat": 40.89874153873269,
   "lon": 29.38165041878156,
-  "not": "≈6600 m² toplanma alanı"
+  "not": "≈6600 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-orta-mahalle-pazar-alani",
@@ -1137,7 +1363,9 @@
   "mahalle": "Orta",
   "lat": 40.90166758793213,
   "lon": 29.376246746828688,
-  "not": "≈3300 m² toplanma alanı"
+  "not": "≈3300 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-anadolu-parki",
@@ -1147,7 +1375,9 @@
   "mahalle": "Anadolu",
   "lat": 40.83271749977685,
   "lon": 29.301284035127683,
-  "not": "≈3579 m² toplanma alanı"
+  "not": "≈3579 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-huseyin-cakir-parki",
@@ -1157,7 +1387,9 @@
   "mahalle": "Yayla",
   "lat": 40.83013593002469,
   "lon": 29.309233239738088,
-  "not": "≈997 m² toplanma alanı"
+  "not": "≈997 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-ibb-torosevleri-parki",
@@ -1167,7 +1399,9 @@
   "mahalle": "Yayla",
   "lat": 40.83415623768957,
   "lon": 29.313780060781276,
-  "not": "≈18718 m² toplanma alanı"
+  "not": "≈18718 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-mavi-evler-parki",
@@ -1177,7 +1411,9 @@
   "mahalle": "Yayla",
   "lat": 40.83035721297466,
   "lon": 29.29954708517463,
-  "not": "≈992 m² toplanma alanı"
+  "not": "≈992 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-mehmet-akif-ersoy-parki",
@@ -1187,7 +1423,9 @@
   "mahalle": "Yayla",
   "lat": 40.83547552607723,
   "lon": 29.304390926978023,
-  "not": "≈4763 m² toplanma alanı"
+  "not": "≈4763 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sehit-j-er-necmi-yildirim-parki",
@@ -1197,7 +1435,9 @@
   "mahalle": "Yayla",
   "lat": 40.83341718048395,
   "lon": 29.30240423444415,
-  "not": "≈2065 m² toplanma alanı"
+  "not": "≈2065 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-yasam-sitesi-parki-7969-parsel",
@@ -1207,7 +1447,9 @@
   "mahalle": "Yayla",
   "lat": 40.83467515651003,
   "lon": 29.30561015926596,
-  "not": "≈4753 m² toplanma alanı"
+  "not": "≈4753 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-yavuz-selim-parki",
@@ -1217,7 +1459,9 @@
   "mahalle": "Yayla",
   "lat": 40.83679329040704,
   "lon": 29.307722747564647,
-  "not": "≈2544 m² toplanma alanı"
+  "not": "≈2544 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-yayla-cocuk-parki",
@@ -1227,7 +1471,9 @@
   "mahalle": "Yayla",
   "lat": 40.8302148786493,
   "lon": 29.312377527503077,
-  "not": "≈1003 m² toplanma alanı"
+  "not": "≈1003 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-zeytinlik-parki-ve-cevresi",
@@ -1237,7 +1483,9 @@
   "mahalle": "Yayla",
   "lat": 40.82614469681107,
   "lon": 29.303193745547432,
-  "not": "≈1112 m² toplanma alanı"
+  "not": "≈1112 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-19-mayis-caddesi-dinlenme-alani",
@@ -1247,7 +1495,9 @@
   "mahalle": "Şifa",
   "lat": 40.83212176994263,
   "lon": 29.35956589167907,
-  "not": "≈250 m² toplanma alanı"
+  "not": "≈250 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sehit-bahadirhan-solak-parki",
@@ -1257,7 +1507,9 @@
   "mahalle": "Şifa",
   "lat": 40.83100121312078,
   "lon": 29.35623644300754,
-  "not": "≈2195 m² toplanma alanı"
+  "not": "≈2195 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-mecidiye-parki",
@@ -1267,7 +1519,9 @@
   "mahalle": "Şifa",
   "lat": 40.83214369112255,
   "lon": 29.354322829058084,
-  "not": "≈850 m² toplanma alanı"
+  "not": "≈850 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-mevlana-parki",
@@ -1277,7 +1531,9 @@
   "mahalle": "Şifa",
   "lat": 40.83796523637762,
   "lon": 29.357885263906923,
-  "not": "≈2883 m² toplanma alanı"
+  "not": "≈2883 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sehit-er-sezgin-zorba-parki",
@@ -1287,7 +1543,9 @@
   "mahalle": "Şifa",
   "lat": 40.82800523765757,
   "lon": 29.35416396821553,
-  "not": "≈4330 m² toplanma alanı"
+  "not": "≈4330 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-fatih-sultan-mehmet-imam-hatip-ortaokulu-bahcesi",
@@ -1297,7 +1555,9 @@
   "mahalle": "Fatih",
   "lat": 40.83524324249925,
   "lon": 29.358557274873437,
-  "not": "≈2400 m² toplanma alanı"
+  "not": "≈2400 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sehit-ertan-bayraktar-parki-ayni-zamanda-transfer-alanidir",
@@ -1307,7 +1567,9 @@
   "mahalle": "Şifa",
   "lat": 40.82366444262535,
   "lon": 29.35358889607276,
-  "not": "≈10309 m² toplanma alanı"
+  "not": "≈10309 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-taptuk-emre-ilkokulu-bahcesi",
@@ -1317,7 +1579,9 @@
   "mahalle": "Şifa",
   "lat": 40.82910034043547,
   "lon": 29.356872268084484,
-  "not": "≈2000 m² toplanma alanı"
+  "not": "≈2000 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-yunus-emre-ortaokulu-bahcesi",
@@ -1327,7 +1591,9 @@
   "mahalle": "Orta",
   "lat": 40.829184615014256,
   "lon": 29.355954888461284,
-  "not": "≈2500 m² toplanma alanı"
+  "not": "≈2500 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-cumhuriyet-parki",
@@ -1337,7 +1603,9 @@
   "mahalle": "İçmeler",
   "lat": 40.84695995380076,
   "lon": 29.30472273076268,
-  "not": "≈2312 m² toplanma alanı"
+  "not": "≈2312 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-hasan-cosar-parki",
@@ -1347,7 +1615,9 @@
   "mahalle": "İçmeler",
   "lat": 40.85116615596984,
   "lon": 29.31138919655033,
-  "not": "≈609 m² toplanma alanı"
+  "not": "≈609 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-icmeler-meydani",
@@ -1357,7 +1627,9 @@
   "mahalle": "İçmeler",
   "lat": 40.84901307896149,
   "lon": 29.305603632746767,
-  "not": "≈2900 m² toplanma alanı"
+  "not": "≈2900 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sehit-ferdi-bolat-parki",
@@ -1367,7 +1639,9 @@
   "mahalle": "İçmeler",
   "lat": 40.84632482932554,
   "lon": 29.30703375075149,
-  "not": "≈1006 m² toplanma alanı"
+  "not": "≈1006 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-tuzla-stadi",
@@ -1377,7 +1651,9 @@
   "mahalle": "İçmeler",
   "lat": 40.84523489459713,
   "lon": 29.30637912257121,
-  "not": "≈7500 m² toplanma alanı"
+  "not": "≈7500 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-6-cadde-parki",
@@ -1387,7 +1663,9 @@
   "mahalle": "Akfırat",
   "lat": 40.9244600842712,
   "lon": 29.420552777666387,
-  "not": "≈450 m² toplanma alanı"
+  "not": "≈450 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-firat-parki",
@@ -1397,7 +1675,9 @@
   "mahalle": "Akfırat",
   "lat": 40.92575086856445,
   "lon": 29.418130745727268,
-  "not": "≈1516 m² toplanma alanı"
+  "not": "≈1516 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sosyal-tesisler-parki",
@@ -1407,7 +1687,9 @@
   "mahalle": "Akfırat",
   "lat": 40.92705140290197,
   "lon": 29.415547153118705,
-  "not": "≈9357 m² toplanma alanı"
+  "not": "≈9357 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sehit-j-er-murat-asci-parki",
@@ -1417,7 +1699,9 @@
   "mahalle": "Akfırat",
   "lat": 40.92542573061913,
   "lon": 29.42444986239279,
-  "not": "≈5469 m² toplanma alanı"
+  "not": "≈5469 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-selale-park-otoparki-ayni-zamanda-transfer-alanidir",
@@ -1427,7 +1711,9 @@
   "mahalle": "Aydıntepe",
   "lat": 40.85861039379872,
   "lon": 29.317844541335557,
-  "not": "≈102000 m² toplanma alanı"
+  "not": "≈102000 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-genclik-parki",
@@ -1437,7 +1723,9 @@
   "mahalle": "Anadolu",
   "lat": 40.90554283716197,
   "lon": 29.375772709853138,
-  "not": "≈2000 m² toplanma alanı"
+  "not": "≈2000 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-belediye-parki-ayni-zamanda-transfer-alanidir",
@@ -1447,7 +1735,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.84329895423408,
   "lon": 29.3019096474112,
-  "not": "≈24990 m² toplanma alanı"
+  "not": "≈24990 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-dere-kenari-dinlenme-alani-ve-cevresi",
@@ -1457,7 +1747,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.83960201226813,
   "lon": 29.299333047392047,
-  "not": "≈10139 m² toplanma alanı"
+  "not": "≈10139 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-duravit-parki",
@@ -1467,7 +1759,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.83723972563799,
   "lon": 29.297400262157733,
-  "not": "≈4672 m² toplanma alanı"
+  "not": "≈4672 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-veysel-karani-parki",
@@ -1477,7 +1771,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.83865057673526,
   "lon": 29.30467806749756,
-  "not": "≈1233 m² toplanma alanı"
+  "not": "≈1233 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-evliya-celebi-parki",
@@ -1487,7 +1783,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.84083205586308,
   "lon": 29.304336746959898,
-  "not": "≈2886 m² toplanma alanı"
+  "not": "≈2886 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-huzur-parki",
@@ -1497,7 +1795,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.842056225053184,
   "lon": 29.299390019146298,
-  "not": "≈1695 m² toplanma alanı"
+  "not": "≈1695 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-merdekan-parki",
@@ -1507,7 +1807,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.84105741884652,
   "lon": 29.303270463457217,
-  "not": "≈3529 m² toplanma alanı"
+  "not": "≈3529 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-onur-parki",
@@ -1517,7 +1819,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.83796790446353,
   "lon": 29.299601199953912,
-  "not": "≈2805 m² toplanma alanı"
+  "not": "≈2805 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-aydintepe-evora-parki",
@@ -1527,7 +1831,9 @@
   "mahalle": "Aydıntepe",
   "lat": 40.85977291195335,
   "lon": 29.30104554110146,
-  "not": "≈9472 m² toplanma alanı"
+  "not": "≈9472 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-fatih-sultan-mehmet-parki",
@@ -1537,7 +1843,9 @@
   "mahalle": "Aydıntepe",
   "lat": 40.85713309426237,
   "lon": 29.300591240446096,
-  "not": "≈28609 m² toplanma alanı"
+  "not": "≈28609 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sehit-j-er-kamber-kutuk-parki",
@@ -1547,7 +1855,9 @@
   "mahalle": "Aydıntepe",
   "lat": 40.85619292967853,
   "lon": 29.294880741694204,
-  "not": "≈440 m² toplanma alanı"
+  "not": "≈440 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-aydintepe-mahallesi-piknik-alani",
@@ -1557,7 +1867,9 @@
   "mahalle": "Aydıntepe",
   "lat": 40.8541904384304,
   "lon": 29.30160181142789,
-  "not": "≈1700 m² toplanma alanı"
+  "not": "≈1700 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-tezer-taskiran-ortaokulu-bahcesi",
@@ -1567,7 +1879,9 @@
   "mahalle": "Aydıntepe",
   "lat": 40.85633966666204,
   "lon": 29.29937152824852,
-  "not": "≈3500 m² toplanma alanı"
+  "not": "≈3500 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-eski-ankara-asfalti-caddesi-parki",
@@ -1577,7 +1891,9 @@
   "mahalle": "Tepeören",
   "lat": 40.9116462007656,
   "lon": 29.385682060794156,
-  "not": "≈4600 m² toplanma alanı"
+  "not": "≈4600 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-kudret-parki",
@@ -1587,7 +1903,9 @@
   "mahalle": "Tepeören",
   "lat": 40.908470259508576,
   "lon": 29.39000773968172,
-  "not": "≈409 m² toplanma alanı"
+  "not": "≈409 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-medeniyet-bulvari-parki",
@@ -1597,7 +1915,9 @@
   "mahalle": "Tepeören",
   "lat": 40.91318209825342,
   "lon": 29.38987243064548,
-  "not": "≈8500 m² toplanma alanı"
+  "not": "≈8500 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-ulubey-sokak-parki",
@@ -1607,7 +1927,9 @@
   "mahalle": "Tepeören",
   "lat": 40.90845333281377,
   "lon": 29.37634409359772,
-  "not": "≈13130 m² toplanma alanı"
+  "not": "≈13130 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-vehbi-koc-universitesi-futbol-sahasi",
@@ -1617,7 +1939,9 @@
   "mahalle": "Tepeören",
   "lat": 40.9208169518734,
   "lon": 29.358514424101376,
-  "not": "≈15128 m² toplanma alanı"
+  "not": "≈15128 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-aksemseddin-parki",
@@ -1627,7 +1951,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82527151301424,
   "lon": 29.31435310181093,
-  "not": "≈3089 m² toplanma alanı"
+  "not": "≈3089 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-batakcali-parki",
@@ -1637,7 +1963,9 @@
   "mahalle": "İstasyon",
   "lat": 40.8304317171426,
   "lon": 29.32259897582959,
-  "not": "≈909 m² toplanma alanı"
+  "not": "≈909 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-borsa-kent-parki",
@@ -1647,7 +1975,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82767483701745,
   "lon": 29.313151049046773,
-  "not": "≈4536 m² toplanma alanı"
+  "not": "≈4536 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-cinarli-bahce-parki",
@@ -1657,7 +1987,9 @@
   "mahalle": "İstasyon",
   "lat": 40.83134936286916,
   "lon": 29.31594056104624,
-  "not": "≈12780 m² toplanma alanı"
+  "not": "≈12780 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-eksen-parki",
@@ -1667,7 +1999,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82696745968442,
   "lon": 29.319721958981503,
-  "not": "≈891 m² toplanma alanı"
+  "not": "≈891 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-galatasaraylilar-parki",
@@ -1677,7 +2011,9 @@
   "mahalle": "İstasyon",
   "lat": 40.823200732950944,
   "lon": 29.31970908918007,
-  "not": "≈3874 m² toplanma alanı"
+  "not": "≈3874 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-hayat-parki",
@@ -1687,7 +2023,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82782063054638,
   "lon": 29.31543965585788,
-  "not": "≈2700 m² toplanma alanı"
+  "not": "≈2700 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-ibb-cicekciler-parki",
@@ -1697,7 +2035,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82780500967928,
   "lon": 29.31693404275057,
-  "not": "≈2057 m² toplanma alanı"
+  "not": "≈2057 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-maresal-fevzi-cakmak-parki",
@@ -1707,7 +2047,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82508864371936,
   "lon": 29.3243870623938,
-  "not": "≈3148 m² toplanma alanı"
+  "not": "≈3148 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-tip-kent-parki",
@@ -1717,7 +2059,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82409909290966,
   "lon": 29.32249059350632,
-  "not": "≈588 m² toplanma alanı"
+  "not": "≈588 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-ugurkent-parki",
@@ -1727,7 +2071,9 @@
   "mahalle": "İstasyon",
   "lat": 40.832194768567874,
   "lon": 29.31625184612977,
-  "not": "≈7118 m² toplanma alanı"
+  "not": "≈7118 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-yunus-emre-parki",
@@ -1737,7 +2083,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82702840008172,
   "lon": 29.323173492877068,
-  "not": "≈5069 m² toplanma alanı"
+  "not": "≈5069 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-okul-parki-ve-bahcesi",
@@ -1747,7 +2095,9 @@
   "mahalle": "Fatih",
   "lat": 40.92774011163385,
   "lon": 29.341301210423115,
-  "not": "≈1400 m² toplanma alanı"
+  "not": "≈1400 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-15-temmuz-sehitler-parki-ayni-zamanda-transfer-alanidir",
@@ -1757,7 +2107,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.8353871272035,
   "lon": 29.365698263047356,
-  "not": "≈17505 m² toplanma alanı"
+  "not": "≈17505 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-baris-manco-parki",
@@ -1767,7 +2119,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.840873793887,
   "lon": 29.36166283128889,
-  "not": "≈1000 m² toplanma alanı"
+  "not": "≈1000 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-ciftlik-sokak-parki",
@@ -1777,7 +2131,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.83803061539136,
   "lon": 29.36704667213385,
-  "not": "≈2525 m² toplanma alanı"
+  "not": "≈2525 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-gungormus-parki",
@@ -1787,7 +2143,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.84202018520877,
   "lon": 29.36461997940033,
-  "not": "≈1694 m² toplanma alanı"
+  "not": "≈1694 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-mimar-sinan-parki",
@@ -1797,7 +2155,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.834512444761806,
   "lon": 29.362282030667224,
-  "not": "≈4415 m² toplanma alanı"
+  "not": "≈4415 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-saglik-ocagi-parki",
@@ -1807,7 +2167,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.84054865182822,
   "lon": 29.360506224106945,
-  "not": "≈246 m² toplanma alanı"
+  "not": "≈246 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sehit-ibrahim-dogan-parki-1",
@@ -1817,7 +2179,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.832210213131006,
   "lon": 29.367551295944008,
-  "not": "≈11872 m² toplanma alanı"
+  "not": "≈11872 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sehit-j-er-bahtiyar-maden-parki",
@@ -1827,7 +2191,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.84524419104663,
   "lon": 29.36168761844695,
-  "not": "≈1302 m² toplanma alanı"
+  "not": "≈1302 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-seyh-edebali-parki",
@@ -1837,7 +2203,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.84693990464117,
   "lon": 29.362695101371617,
-  "not": "≈2000 m² toplanma alanı"
+  "not": "≈2000 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-cevher-parki",
@@ -1847,7 +2215,9 @@
   "mahalle": "Postane",
   "lat": 40.82493898389063,
   "lon": 29.306699042785198,
-  "not": "≈2487 m² toplanma alanı"
+  "not": "≈2487 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-derya-parki",
@@ -1857,7 +2227,9 @@
   "mahalle": "Postane",
   "lat": 40.82158442094595,
   "lon": 29.30083235867112,
-  "not": "≈317 m² toplanma alanı"
+  "not": "≈317 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-dogan-parki",
@@ -1867,7 +2239,9 @@
   "mahalle": "Postane",
   "lat": 40.81902979212913,
   "lon": 29.299382830670258,
-  "not": "≈760 m² toplanma alanı"
+  "not": "≈760 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-ertugrul-gazi-parki",
@@ -1877,7 +2251,9 @@
   "mahalle": "Postane",
   "lat": 40.81755438090276,
   "lon": 29.29176542022104,
-  "not": "≈3379 m² toplanma alanı"
+  "not": "≈3379 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-gonca-sokak-parki",
@@ -1887,7 +2263,9 @@
   "mahalle": "Postane",
   "lat": 40.820904414967714,
   "lon": 29.290981607204824,
-  "not": "≈746 m² toplanma alanı"
+  "not": "≈746 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-golboyu-parki",
@@ -1897,7 +2275,9 @@
   "mahalle": "Postane",
   "lat": 40.82234644882758,
   "lon": 29.289372932080703,
-  "not": "≈1044 m² toplanma alanı"
+  "not": "≈1044 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-kardelen-parki",
@@ -1907,7 +2287,9 @@
   "mahalle": "Postane",
   "lat": 40.818595599694845,
   "lon": 29.28844200245204,
-  "not": "≈2797 m² toplanma alanı"
+  "not": "≈2797 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-org-esref-bitlis-parki",
@@ -1917,7 +2299,9 @@
   "mahalle": "Postane",
   "lat": 40.8228313107154,
   "lon": 29.309046562873355,
-  "not": "≈3466 m² toplanma alanı"
+  "not": "≈3466 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-orhan-gazi-parki",
@@ -1927,7 +2311,9 @@
   "mahalle": "Postane",
   "lat": 40.82428674688379,
   "lon": 29.28474994014656,
-  "not": "≈3607 m² toplanma alanı"
+  "not": "≈3607 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-osman-gazi-parki",
@@ -1937,7 +2323,9 @@
   "mahalle": "Postane",
   "lat": 40.81934959410994,
   "lon": 29.301086173883142,
-  "not": "≈1423 m² toplanma alanı"
+  "not": "≈1423 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sumru-parki",
@@ -1947,7 +2335,9 @@
   "mahalle": "Postane",
   "lat": 40.81571930560644,
   "lon": 29.28341327644939,
-  "not": "≈10905 m² toplanma alanı"
+  "not": "≈10905 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sumer-parki",
@@ -1957,7 +2347,9 @@
   "mahalle": "Postane",
   "lat": 40.82112465744276,
   "lon": 29.303286117411197,
-  "not": "≈394 m² toplanma alanı"
+  "not": "≈394 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sehit-murat-matuz-parki",
@@ -1967,7 +2359,9 @@
   "mahalle": "Postane",
   "lat": 40.819858666388456,
   "lon": 29.289509781968192,
-  "not": "≈1304 m² toplanma alanı"
+  "not": "≈1304 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-yayla-yolu-parki",
@@ -1977,7 +2371,9 @@
   "mahalle": "Postane",
   "lat": 40.82203716802631,
   "lon": 29.30417599466246,
-  "not": "≈1185 m² toplanma alanı"
+  "not": "≈1185 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-yildirim-beyazid-parki",
@@ -1987,7 +2383,9 @@
   "mahalle": "Postane",
   "lat": 40.82498232104648,
   "lon": 29.30881445039764,
-  "not": "≈1852 m² toplanma alanı"
+  "not": "≈1852 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-zabita-parki",
@@ -1997,7 +2395,9 @@
   "mahalle": "Postane",
   "lat": 40.82044544727204,
   "lon": 29.30494034409718,
-  "not": "≈4988 m² toplanma alanı"
+  "not": "≈4988 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-behiye-dr-nevhir-anadolu-lisesi-bahcesi",
@@ -2007,7 +2407,9 @@
   "mahalle": "Anadolu",
   "lat": 40.82161049912828,
   "lon": 29.302306870990133,
-  "not": "≈2800 m² toplanma alanı"
+  "not": "≈2800 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-esentepe-parki",
@@ -2017,7 +2419,9 @@
   "mahalle": "Postane",
   "lat": 40.81580999524736,
   "lon": 29.28652969356009,
-  "not": "≈3994 m² toplanma alanı"
+  "not": "≈3994 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-ceren-parki",
@@ -2027,7 +2431,9 @@
   "mahalle": "Mescit",
   "lat": 40.89663084024372,
   "lon": 29.353238141216547,
-  "not": "≈7326 m² toplanma alanı"
+  "not": "≈7326 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-okul-dinlenme-alani",
@@ -2037,7 +2443,9 @@
   "mahalle": "Cami",
   "lat": 40.8203325402069,
   "lon": 29.30786678516561,
-  "not": "≈466 m² toplanma alanı"
+  "not": "≈466 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-tepeoren-mahallesi-kultur-merkezi-ayni-zamanda-transfer-alanidir",
@@ -2047,7 +2455,9 @@
   "mahalle": "Tepeören",
   "lat": 40.90791272117772,
   "lon": 29.393075038097894,
-  "not": "≈2092 m² toplanma alanı"
+  "not": "≈2092 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-cemil-turker-ortaokulu-bahcesi",
@@ -2057,7 +2467,9 @@
   "mahalle": "Orta",
   "lat": 40.906620465576864,
   "lon": 29.392958649016247,
-  "not": "≈3685 m² toplanma alanı"
+  "not": "≈3685 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-krizantem-parki",
@@ -2067,7 +2479,9 @@
   "mahalle": "Postane",
   "lat": 40.81969062341117,
   "lon": 29.28473876722344,
-  "not": "≈1777 m² toplanma alanı"
+  "not": "≈1777 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "toplanma-alani-sehit-ibrahim-dogan-parki-2",
@@ -2077,7 +2491,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.829056917503046,
   "lon": 29.36536816687541,
-  "not": "≈13866 m² toplanma alanı"
+  "not": "≈13866 m² toplanma alanı",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "pazar-yeri-istasyon-mahallesi-semt-pazari",
@@ -2087,7 +2503,9 @@
   "mahalle": "İstasyon",
   "lat": null,
   "lon": null,
-  "not": "Kuruluş günü: Pazartesi · 51 esnaf"
+  "not": "Kuruluş günü: Pazartesi · 51 esnaf",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "pazar-yeri-mimarsinan-mahallesi-semt-pazari",
@@ -2097,7 +2515,9 @@
   "mahalle": "Mimar Sinan",
   "lat": null,
   "lon": null,
-  "not": "Kuruluş günü: Pazartesi · 55 esnaf"
+  "not": "Kuruluş günü: Pazartesi · 55 esnaf",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "pazar-yeri-aydinli-mahallesi-semt-pazari",
@@ -2107,7 +2527,9 @@
   "mahalle": "Aydınlı",
   "lat": null,
   "lon": null,
-  "not": "Kuruluş günü: Salı · 73 esnaf"
+  "not": "Kuruluş günü: Salı · 73 esnaf",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "pazar-yeri-aydintepe-mahallesi-semt-pazari",
@@ -2117,7 +2539,9 @@
   "mahalle": "Aydıntepe",
   "lat": null,
   "lon": null,
-  "not": "Kuruluş günü: Çarşamba · 159 esnaf"
+  "not": "Kuruluş günü: Çarşamba · 159 esnaf",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "pazar-yeri-orta-mahalle-semt-pazari",
@@ -2127,7 +2551,9 @@
   "mahalle": "Orta",
   "lat": null,
   "lon": null,
-  "not": "Kuruluş günü: Çarşamba · 29 esnaf"
+  "not": "Kuruluş günü: Çarşamba · 29 esnaf",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "pazar-yeri-yayla-mahallesi-semt-pazari",
@@ -2137,7 +2563,9 @@
   "mahalle": "Yayla",
   "lat": null,
   "lon": null,
-  "not": "Kuruluş günü: Perşembe · 98 esnaf"
+  "not": "Kuruluş günü: Perşembe · 98 esnaf",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "pazar-yeri-sifa-mahallesi-semt-pazari",
@@ -2147,7 +2575,9 @@
   "mahalle": "Fatih",
   "lat": null,
   "lon": null,
-  "not": "Kuruluş günü: Perşembe · 136 esnaf"
+  "not": "Kuruluş günü: Perşembe · 136 esnaf",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "pazar-yeri-tepeoren-mahallesi-semt-pazari",
@@ -2157,7 +2587,9 @@
   "mahalle": "Tepeören",
   "lat": null,
   "lon": null,
-  "not": "Kuruluş günü: Perşembe · 8 esnaf"
+  "not": "Kuruluş günü: Perşembe · 8 esnaf",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "pazar-yeri-mescit-mahallesi-semt-pazari",
@@ -2167,7 +2599,9 @@
   "mahalle": "Mescit",
   "lat": null,
   "lon": null,
-  "not": "Kuruluş günü: Cuma · 64 esnaf"
+  "not": "Kuruluş günü: Cuma · 64 esnaf",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "pazar-yeri-icmeler-mahallesi-semt-pazari",
@@ -2177,7 +2611,9 @@
   "mahalle": "İçmeler",
   "lat": null,
   "lon": null,
-  "not": "Kuruluş günü: Cumartesi · 56 esnaf"
+  "not": "Kuruluş günü: Cumartesi · 56 esnaf",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "pazar-yeri-evliya-celebi-mahallesi-semt-pazari",
@@ -2187,7 +2623,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": null,
   "lon": null,
-  "not": "Kuruluş günü: Cumartesi · 33 esnaf"
+  "not": "Kuruluş günü: Cumartesi · 33 esnaf",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "pazar-yeri-aydinli-toki-mahallesi-semt-pazari",
@@ -2197,7 +2635,9 @@
   "mahalle": "Aydınlı",
   "lat": null,
   "lon": null,
-  "not": "Kuruluş günü: Cumartesi · 42 esnaf"
+  "not": "Kuruluş günü: Cumartesi · 42 esnaf",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "pazar-yeri-postane-mahallesi-semt-pazari",
@@ -2207,7 +2647,9 @@
   "mahalle": "Postane",
   "lat": null,
   "lon": null,
-  "not": "Kuruluş günü: Pazar · 118 esnaf"
+  "not": "Kuruluş günü: Pazar · 118 esnaf",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "pazar-yeri-aydinli-konasli-mahallesi-semt-pazari",
@@ -2217,7 +2659,9 @@
   "mahalle": "Aydınlı",
   "lat": null,
   "lon": null,
-  "not": "Kuruluş günü: Pazar · 39 esnaf"
+  "not": "Kuruluş günü: Pazar · 39 esnaf",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "acem-kurs-merkezi-aydinli-acem-merkezi",
@@ -2227,7 +2671,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.833479,
   "lon": 29.3511253,
-  "not": "Kurs saati 09:00–16:00"
+  "not": "Kurs saati 09:00–16:00",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "acem-kurs-merkezi-tuzla-belediyesi-ek-hizmet-binasi-orhanli",
@@ -2237,7 +2683,9 @@
   "mahalle": "Orhanlı",
   "lat": 40.8963084,
   "lon": 29.3550543,
-  "not": "Kurs saati 09:00–16:00"
+  "not": "Kurs saati 09:00–16:00",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "acem-kurs-merkezi-emlak-konutlari-1-etap-acem-merkezi",
@@ -2247,7 +2695,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.8334737,
   "lon": 29.3262946,
-  "not": "Kurs saati 09:00–16:00"
+  "not": "Kurs saati 09:00–16:00",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "acem-kurs-merkezi-yayla-mah-acem-merkezi",
@@ -2257,7 +2707,9 @@
   "mahalle": "Yayla",
   "lat": 40.8348541,
   "lon": 29.3143705,
-  "not": "Kurs saati 09:00–16:00"
+  "not": "Kurs saati 09:00–16:00",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "acem-kurs-merkezi-sifa-park-avm-acem-merkezi",
@@ -2267,7 +2719,9 @@
   "mahalle": "Şifa",
   "lat": 40.8289086,
   "lon": 29.3578478,
-  "not": "Kurs saati 09:00–16:00"
+  "not": "Kurs saati 09:00–16:00",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "acem-kurs-merkezi-sifa-kultur-merkezi-acem-merkezi",
@@ -2277,7 +2731,9 @@
   "mahalle": "Şifa",
   "lat": 40.8274367,
   "lon": 29.3549819,
-  "not": "Kurs saati 09:00–16:00"
+  "not": "Kurs saati 09:00–16:00",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "acem-kurs-merkezi-icmeler-acem-merkezi",
@@ -2287,7 +2743,9 @@
   "mahalle": "İçmeler",
   "lat": 40.8482495,
   "lon": 29.0234502,
-  "not": "Kurs saati 09:00–16:00"
+  "not": "Kurs saati 09:00–16:00",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "acem-kurs-merkezi-mimar-sinan-acem-merkezi-ahmet-yesevi-semt-konagi",
@@ -2297,7 +2755,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.8338803,
   "lon": 29.3594565,
-  "not": "Kurs saati 09:00–16:00"
+  "not": "Kurs saati 09:00–16:00",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "acem-kurs-merkezi-kadin-koordinasyon-merkezi-acem",
@@ -2307,7 +2767,9 @@
   "mahalle": "Postane",
   "lat": 40.8207944,
   "lon": 29.3050023,
-  "not": "Kurs saati 09:00–16:00"
+  "not": "Kurs saati 09:00–16:00",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sehit-j-er-murat-asci-parki",
@@ -2317,7 +2779,9 @@
   "mahalle": "Akfırat",
   "lat": 40.92540849564695,
   "lon": 29.424513753133777,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-3-cadde-parki-2018",
@@ -2327,7 +2791,9 @@
   "mahalle": "Akfırat",
   "lat": 40.923430156190825,
   "lon": 29.41398842016929,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-43-leya-sokak-parki",
@@ -2337,7 +2803,9 @@
   "mahalle": "Akfırat",
   "lat": 40.92315642530877,
   "lon": 29.42524651063093,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-6-cadde-parki",
@@ -2347,7 +2815,9 @@
   "mahalle": "Akfırat",
   "lat": 40.92448246801255,
   "lon": 29.42053566419032,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-firat-parki",
@@ -2357,7 +2827,9 @@
   "mahalle": "Akfırat",
   "lat": 40.925753604584735,
   "lon": 29.41811796187486,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sosyal-tesisler-parki",
@@ -2367,7 +2839,9 @@
   "mahalle": "Akfırat",
   "lat": 40.927062354329664,
   "lon": 29.415486690074157,
-  "not": "Halı saha · Basketbol · Çok amaçlı saha"
+  "not": "Halı saha · Basketbol · Çok amaçlı saha",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-genclik-parki",
@@ -2377,7 +2851,9 @@
   "mahalle": "Anadolu",
   "lat": 40.9055443347091,
   "lon": 29.375787311803077,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-anadolu-mahallesi-parki",
@@ -2387,7 +2863,9 @@
   "mahalle": "Anadolu",
   "lat": 40.90867197751682,
   "lon": 29.37595223762979,
-  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-selale-parki",
@@ -2397,7 +2875,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.85891135365244,
   "lon": 29.316904154559676,
-  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sehit-j-er-bekir-demir-parki",
@@ -2407,7 +2887,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.86790846148264,
   "lon": 29.32630398301048,
-  "not": "Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-aydinli-merkez-parki",
@@ -2417,7 +2899,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.86931711687865,
   "lon": 29.328566671209252,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-dersaadet-caddesi-shell-yani-parki",
@@ -2427,7 +2911,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.87157327715853,
   "lon": 29.33183255073612,
-  "not": "Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-giresun-mah-oyun-alani",
@@ -2437,7 +2923,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.86099080574513,
   "lon": 29.338914693068073,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-necip-fazil-kisakurek-cami-yani-parki",
@@ -2447,7 +2935,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.86568691749339,
   "lon": 29.340487327453218,
-  "not": "Futbol sahası · Basketbol · Çocuk oyun grubu"
+  "not": "Futbol sahası · Basketbol · Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sht-piyade-cavus-omer-oner-parki",
@@ -2457,7 +2947,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.86829783456918,
   "lon": 29.33152336390373,
-  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-radisson-otel-yani-parki",
@@ -2467,7 +2959,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.87646620479649,
   "lon": 29.314689058524845,
-  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-kadesler-parki",
@@ -2477,7 +2971,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.8790984237853,
   "lon": 29.321908323892004,
-  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-kovan-sokak-saha",
@@ -2487,7 +2983,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.86746645349166,
   "lon": 29.3379082465654,
-  "not": "Çok amaçlı saha"
+  "not": "Çok amaçlı saha",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-mor-sokak-parki-2018",
@@ -2497,7 +2995,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.87687005061282,
   "lon": 29.327817190257367,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-nazik-sokak-parki-2018",
@@ -2507,7 +3007,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.864670644662795,
   "lon": 29.3275407530119,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-okan-sokak-parki",
@@ -2517,7 +3019,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.86216139972024,
   "lon": 29.336718959396663,
-  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-aydinli-parki",
@@ -2527,7 +3031,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.864600778946034,
   "lon": 29.323683814306992,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sedef-parki",
@@ -2537,7 +3043,9 @@
   "mahalle": "Aydınlı",
   "lat": 40.87572425905213,
   "lon": 29.334262278639493,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-berkant-sokak-parki",
@@ -2547,7 +3055,9 @@
   "mahalle": "Aydıntepe",
   "lat": 40.85392101224729,
   "lon": 29.299145912207006,
-  "not": "Fitness"
+  "not": "Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-bilgili-sokak-parki",
@@ -2557,7 +3067,9 @@
   "mahalle": "Aydıntepe",
   "lat": 40.856511410407016,
   "lon": 29.29339849042643,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-aydintepe-evora-parki",
@@ -2567,7 +3079,9 @@
   "mahalle": "Aydıntepe",
   "lat": 40.85866885416139,
   "lon": 29.30069271029459,
-  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-aydintepe-gonca-sokak-parki",
@@ -2577,7 +3091,9 @@
   "mahalle": "Aydıntepe",
   "lat": 40.85545959480895,
   "lon": 29.296296466094475,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sht-j-er-kamber-kutuk-parki",
@@ -2587,7 +3103,9 @@
   "mahalle": "Aydıntepe",
   "lat": 40.856254838697055,
   "lon": 29.294791590522745,
-  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-fatih-sultan-mehmet-parki",
@@ -2597,7 +3115,9 @@
   "mahalle": "Aydıntepe",
   "lat": 40.85606876613372,
   "lon": 29.30065047868328,
-  "not": "Halı saha · Çocuk oyun grubu · Fitness"
+  "not": "Halı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-aydintepe-dinlenme-alani",
@@ -2607,7 +3127,9 @@
   "mahalle": "Aydıntepe",
   "lat": 40.85595356490906,
   "lon": 29.29773949183044,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-ova-parki",
@@ -2617,7 +3139,9 @@
   "mahalle": "Cami",
   "lat": 40.817598253029104,
   "lon": 29.30719398452377,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-cinar-parki",
@@ -2627,7 +3151,9 @@
   "mahalle": "Cami",
   "lat": 40.82158121757359,
   "lon": 29.3134575595357,
-  "not": "Basketbol · Çocuk oyun grubu"
+  "not": "Basketbol · Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-filiz-parki",
@@ -2637,7 +3163,9 @@
   "mahalle": "Cami",
   "lat": 40.82198690251644,
   "lon": 29.31507253129518,
-  "not": "Basketbol · Tenis kortu · Fitness"
+  "not": "Basketbol · Tenis kortu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-okul-dinlenme-alani",
@@ -2647,7 +3175,9 @@
   "mahalle": "Cami",
   "lat": 40.8202595250759,
   "lon": 29.307765579715955,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-marmados-evleri-yani-parki",
@@ -2657,7 +3187,9 @@
   "mahalle": "Cami",
   "lat": 40.81980442868127,
   "lon": 29.316621800502638,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sahil-parki",
@@ -2667,7 +3199,9 @@
   "mahalle": "Cami",
   "lat": 40.81418994791446,
   "lon": 29.30529764408572,
-  "not": "Halı saha · Basketbol · Tenis kortu · Çocuk oyun grubu · Fitness"
+  "not": "Halı saha · Basketbol · Tenis kortu · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-onur-parki",
@@ -2677,7 +3211,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.83810838154738,
   "lon": 29.299518078124002,
-  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-evliya-celebi-parki",
@@ -2687,7 +3223,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.840824236997875,
   "lon": 29.30427400188605,
-  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-doruk-sokak-dinlenme-alani",
@@ -2697,7 +3235,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.83729828071951,
   "lon": 29.30096846829295,
-  "not": "Fitness"
+  "not": "Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-huzur-parki",
@@ -2707,7 +3247,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.84206895987184,
   "lon": 29.2994789569686,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-gundogdu-sokak-dinlenme-alani",
@@ -2717,7 +3259,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.841904773189356,
   "lon": 29.299890682748785,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-merdekan-parki",
@@ -2727,7 +3271,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.841063251682755,
   "lon": 29.303236112737935,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-belediye-parki",
@@ -2737,7 +3283,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.84346339863317,
   "lon": 29.301366037386146,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-kir-lokantasi",
@@ -2747,7 +3295,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.842616186990604,
   "lon": 29.302134833477382,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-tersane-meydan",
@@ -2757,7 +3307,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.84195419450828,
   "lon": 29.292695023226763,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-dere-kenari-dinlenme-alani",
@@ -2767,7 +3319,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.839604887137625,
   "lon": 29.298073736926387,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sener-sokak-parki-2018",
@@ -2777,7 +3331,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.83660266268247,
   "lon": 29.299739103295117,
-  "not": "Halı saha · Çocuk oyun grubu · Fitness"
+  "not": "Halı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sener-sokak-dinlenme-alani",
@@ -2787,7 +3343,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.837823927522145,
   "lon": 29.29956796535495,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-duravit-parki",
@@ -2797,7 +3355,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.83721959017678,
   "lon": 29.29736325486697,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-veysel-karani-parki",
@@ -2807,7 +3367,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.83864119953005,
   "lon": 29.304687648901574,
-  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-hz-omer-cami-yani-parki",
@@ -2817,7 +3379,9 @@
   "mahalle": "Evliya Çelebi",
   "lat": 40.843125544502534,
   "lon": 29.29706145890465,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-okul-parki",
@@ -2827,7 +3391,9 @@
   "mahalle": "Fatih",
   "lat": 40.92770006706208,
   "lon": 29.341319193454343,
-  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-hasan-cosar-parki",
@@ -2837,7 +3403,9 @@
   "mahalle": "İçmeler",
   "lat": 40.85097875930075,
   "lon": 29.312078771898676,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-icmeler-meydan",
@@ -2847,7 +3415,9 @@
   "mahalle": "İçmeler",
   "lat": 40.84900057276441,
   "lon": 29.305544195829235,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-cumhuriyet-parki",
@@ -2857,7 +3427,9 @@
   "mahalle": "İçmeler",
   "lat": 40.846950279597806,
   "lon": 29.304719639720012,
-  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sehit-ferdi-bolat-parki-2018",
@@ -2867,7 +3439,9 @@
   "mahalle": "İçmeler",
   "lat": 40.84633563749788,
   "lon": 29.30700773580772,
-  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-gokturk-caddesi-parki",
@@ -2877,7 +3451,9 @@
   "mahalle": "İçmeler",
   "lat": 40.849589909066665,
   "lon": 29.309179309052954,
-  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-galatasaraylilar-parki",
@@ -2887,7 +3463,9 @@
   "mahalle": "İstasyon",
   "lat": 40.823225863963415,
   "lon": 29.319733950459586,
-  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-cicekciler-parki",
@@ -2897,7 +3475,9 @@
   "mahalle": "İstasyon",
   "lat": 40.8278477180896,
   "lon": 29.31686263400843,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-ugurkent-parki",
@@ -2907,7 +3487,9 @@
   "mahalle": "İstasyon",
   "lat": 40.83213341489249,
   "lon": 29.31607371394307,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-cinarli-bahce-yani-parki",
@@ -2917,7 +3499,9 @@
   "mahalle": "İstasyon",
   "lat": 40.83168192762027,
   "lon": 29.315516992234045,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-borsa-kent-parki",
@@ -2927,7 +3511,9 @@
   "mahalle": "İstasyon",
   "lat": 40.827586553919446,
   "lon": 29.31335968167676,
-  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-kazim-karabekir-parki",
@@ -2937,7 +3523,9 @@
   "mahalle": "İstasyon",
   "lat": 40.832441486795354,
   "lon": 29.314854045447905,
-  "not": "Basketbol · Çocuk oyun grubu"
+  "not": "Basketbol · Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-eksen-parki",
@@ -2947,7 +3535,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82681894777775,
   "lon": 29.320239674681616,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-leyla-sokak-dinlenme-alani",
@@ -2957,7 +3547,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82701068403998,
   "lon": 29.321504086060717,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-miray-parki",
@@ -2967,7 +3559,9 @@
   "mahalle": "İstasyon",
   "lat": 40.829656433208534,
   "lon": 29.317165348803176,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-aksemseddin-parki",
@@ -2977,7 +3571,9 @@
   "mahalle": "İstasyon",
   "lat": 40.825158521244866,
   "lon": 29.31440625278038,
-  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-yunus-emre-parki",
@@ -2987,7 +3583,9 @@
   "mahalle": "İstasyon",
   "lat": 40.827312265758735,
   "lon": 29.323414669842045,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-hacioglu-piknik-alani-parki",
@@ -2997,7 +3595,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82774584384396,
   "lon": 29.32288655951696,
-  "not": "Fitness"
+  "not": "Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-tip-kent-parki",
@@ -3007,7 +3607,9 @@
   "mahalle": "İstasyon",
   "lat": 40.824165274015726,
   "lon": 29.32244274472155,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-batakcali-parki",
@@ -3017,7 +3619,9 @@
   "mahalle": "İstasyon",
   "lat": 40.83044304068969,
   "lon": 29.322569127531803,
-  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sevenler-sokak-dinlenme-alani",
@@ -3027,7 +3631,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82621788493258,
   "lon": 29.31888358095645,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-manolya-parki",
@@ -3037,7 +3643,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82897961659587,
   "lon": 29.320049147499354,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-maresal-fevzi-cakmak-parki",
@@ -3047,7 +3655,9 @@
   "mahalle": "İstasyon",
   "lat": 40.825091424703544,
   "lon": 29.32439409076768,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-hayat-parki",
@@ -3057,7 +3667,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82782668743666,
   "lon": 29.315428128754455,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-pati-park",
@@ -3067,7 +3679,9 @@
   "mahalle": "İstasyon",
   "lat": 40.82769418349127,
   "lon": 29.31495663432405,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-ceren-parki",
@@ -3077,7 +3691,9 @@
   "mahalle": "Mescit",
   "lat": 40.896510609869004,
   "lon": 29.35286994692335,
-  "not": "Halı saha · Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Halı saha · Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-hanedan-sokak-parki-kum-havuzu",
@@ -3087,7 +3703,9 @@
   "mahalle": "Mescit",
   "lat": 40.89453708232958,
   "lon": 29.34366163477124,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-malazgirt-caddesi-parki-kum-havuzu",
@@ -3097,7 +3715,9 @@
   "mahalle": "Mescit",
   "lat": 40.89184895816876,
   "lon": 29.35006723547052,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-15-temmuz-sehitler-parki",
@@ -3107,7 +3727,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.83533670390569,
   "lon": 29.365772232434367,
-  "not": "Halı saha · Tenis kortu · Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Halı saha · Tenis kortu · Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sehit-ibrahim-dogan-parki",
@@ -3117,7 +3739,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.832468326908405,
   "lon": 29.36790989911024,
-  "not": "Halı saha · Basketbol · Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Halı saha · Basketbol · Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-seyh-edebali-parki",
@@ -3127,7 +3751,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.8469334247682,
   "lon": 29.362681613663568,
-  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-baris-manco-parki",
@@ -3137,7 +3763,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.84087431224422,
   "lon": 29.361640335596967,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-saglik-ocagi-parki",
@@ -3147,7 +3775,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.840535300851585,
   "lon": 29.36050893975716,
-  "not": "Fitness"
+  "not": "Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-ciftlik-sok-parki",
@@ -3157,7 +3787,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.838035551683674,
   "lon": 29.367053029658766,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-mimar-sinan-parki",
@@ -3167,7 +3799,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.83443294429823,
   "lon": 29.362199966952797,
-  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-gungormus-sok-parki",
@@ -3177,7 +3811,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.841912865137886,
   "lon": 29.3644199953881,
-  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-komurcu-sokak-parki",
@@ -3187,7 +3823,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.84246764346447,
   "lon": 29.361723851299395,
-  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Halı saha · Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sehit-j-er-bahtiyar-maden-parki-1-2-kisim",
@@ -3197,7 +3835,9 @@
   "mahalle": "Mimar Sinan",
   "lat": 40.84525095822034,
   "lon": 29.361673461416245,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-anit-parki",
@@ -3207,7 +3847,9 @@
   "mahalle": "Orhanlı",
   "lat": 40.895802875298216,
   "lon": 29.362583124189555,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-orhanli-meydan",
@@ -3217,7 +3859,9 @@
   "mahalle": "Orhanlı",
   "lat": 40.895651534974434,
   "lon": 29.357424419659743,
-  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-kultur-parki",
@@ -3227,7 +3871,9 @@
   "mahalle": "Orhanlı",
   "lat": 40.900282856346465,
   "lon": 29.35184136309855,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-gulsumsokak-parki",
@@ -3237,7 +3883,9 @@
   "mahalle": "Orhanlı",
   "lat": 40.89225072942497,
   "lon": 29.356392403335853,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-ishakpasa-parki",
@@ -3247,7 +3895,9 @@
   "mahalle": "Orta",
   "lat": 40.90309686506869,
   "lon": 29.379466786090845,
-  "not": "Halı saha · Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Halı saha · Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-pazar-yeri-parki",
@@ -3257,7 +3907,9 @@
   "mahalle": "Orta",
   "lat": 40.901676033762605,
   "lon": 29.37616552061919,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-seyh-samil-parki",
@@ -3267,7 +3919,9 @@
   "mahalle": "Postane",
   "lat": 40.81450251101081,
   "lon": 29.304874326422727,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-ikizler-parki",
@@ -3277,7 +3931,9 @@
   "mahalle": "Postane",
   "lat": 40.813350647736144,
   "lon": 29.27028619435779,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-cevher-parki",
@@ -3287,7 +3943,9 @@
   "mahalle": "Postane",
   "lat": 40.824914491557344,
   "lon": 29.306703426919874,
-  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-yildirim-beyazid-parki",
@@ -3297,7 +3955,9 @@
   "mahalle": "Postane",
   "lat": 40.82499406691107,
   "lon": 29.308807040609047,
-  "not": "Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Futbol sahası · Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-dogan-sok-parki",
@@ -3307,7 +3967,9 @@
   "mahalle": "Postane",
   "lat": 40.81903348484183,
   "lon": 29.299396279610693,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-org-esref-bitlis-parki",
@@ -3317,7 +3979,9 @@
   "mahalle": "Postane",
   "lat": 40.82291886519499,
   "lon": 29.308907891791588,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sumru-parki",
@@ -3327,7 +3991,9 @@
   "mahalle": "Postane",
   "lat": 40.81565122536684,
   "lon": 29.28333234640502,
-  "not": "Futbol sahası · Çocuk oyun grubu · Fitness"
+  "not": "Futbol sahası · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sehit-murat-matuz-parki",
@@ -3337,7 +4003,9 @@
   "mahalle": "Postane",
   "lat": 40.81985149239292,
   "lon": 29.289474985565462,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-derya-parki",
@@ -3347,7 +4015,9 @@
   "mahalle": "Postane",
   "lat": 40.82159165531612,
   "lon": 29.300795087235425,
-  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-gonca-sokak-parki",
@@ -3357,7 +4027,9 @@
   "mahalle": "Postane",
   "lat": 40.82092985335187,
   "lon": 29.29095656722481,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-ertugrul-gazi-parki",
@@ -3367,7 +4039,9 @@
   "mahalle": "Postane",
   "lat": 40.81757992704444,
   "lon": 29.291764373884273,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-esentepe-parki-2018",
@@ -3377,7 +4051,9 @@
   "mahalle": "Postane",
   "lat": 40.81567416347513,
   "lon": 29.28675857938798,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-krizantem-parki",
@@ -3387,7 +4063,9 @@
   "mahalle": "Postane",
   "lat": 40.81979373706355,
   "lon": 29.28689532385994,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-zabita-parki",
@@ -3397,7 +4075,9 @@
   "mahalle": "Postane",
   "lat": 40.820454105324025,
   "lon": 29.305033472352438,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sehit-umut-eraslan-parki",
@@ -3407,7 +4087,9 @@
   "mahalle": "Postane",
   "lat": 40.81867592540367,
   "lon": 29.304885796799205,
-  "not": "Çocuk oyun grubu"
+  "not": "Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-gol-boyu-parki",
@@ -3417,7 +4099,9 @@
   "mahalle": "Postane",
   "lat": 40.82236542071348,
   "lon": 29.28943188875836,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-orhan-gazi-parki",
@@ -3427,7 +4111,9 @@
   "mahalle": "Postane",
   "lat": 40.82444131788416,
   "lon": 29.284745329487546,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-osman-gazi-parki",
@@ -3437,7 +4123,9 @@
   "mahalle": "Postane",
   "lat": 40.8196229600567,
   "lon": 29.301575364738323,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sumer-sokak-parki",
@@ -3447,7 +4135,9 @@
   "mahalle": "Postane",
   "lat": 40.82111045102434,
   "lon": 29.303265647626215,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-bahceler-parki",
@@ -3457,7 +4147,9 @@
   "mahalle": "Postane",
   "lat": 40.81901809641779,
   "lon": 29.30392243279557,
-  "not": "Basketbol · Çocuk oyun grubu"
+  "not": "Basketbol · Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sahil-2-etap-parki",
@@ -3467,7 +4159,9 @@
   "mahalle": "Postane",
   "lat": 40.813351041391,
   "lon": 29.28109008900876,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-ugurlu-sokak-parki-2018",
@@ -3477,7 +4171,9 @@
   "mahalle": "Postane",
   "lat": 40.81522647445659,
   "lon": 29.27187186047788,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-kardelen-parki",
@@ -3487,7 +4183,9 @@
   "mahalle": "Postane",
   "lat": 40.818643022888196,
   "lon": 29.28857757259697,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-pati-park",
@@ -3497,7 +4195,9 @@
   "mahalle": "Postane",
   "lat": 40.82136863705957,
   "lon": 29.285635448372325,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-19-mayis-cad-dinlenme-alani",
@@ -3507,7 +4207,9 @@
   "mahalle": "Şifa",
   "lat": 40.8320973375031,
   "lon": 29.35956011129329,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sehit-bahadirhan-solak-parki",
@@ -3517,7 +4219,9 @@
   "mahalle": "Şifa",
   "lat": 40.830989148380326,
   "lon": 29.35624755448985,
-  "not": "Basketbol · Çocuk oyun grubu"
+  "not": "Basketbol · Çocuk oyun grubu",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-s-uzm-cavus-ertan-bayraktar",
@@ -3527,7 +4231,9 @@
   "mahalle": "Şifa",
   "lat": 40.823553848781465,
   "lon": 29.35345542558561,
-  "not": "Halı saha · Çocuk oyun grubu · Fitness"
+  "not": "Halı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-mevlana-cami-yani",
@@ -3537,7 +4243,9 @@
   "mahalle": "Şifa",
   "lat": 40.837787923051636,
   "lon": 29.357949815188913,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-mecidiye-parki",
@@ -3547,7 +4255,9 @@
   "mahalle": "Şifa",
   "lat": 40.832254591243874,
   "lon": 29.35427952950215,
-  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sht-er-sezgin-zorba",
@@ -3557,7 +4267,9 @@
   "mahalle": "Şifa",
   "lat": 40.827994442245654,
   "lon": 29.35411044538956,
-  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-kudret-parki",
@@ -3567,7 +4279,9 @@
   "mahalle": "Tepeören",
   "lat": 40.90847325196291,
   "lon": 29.390001493091933,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-kirazli-mevkii-kiyi-sokak-parki",
@@ -3577,7 +4291,9 @@
   "mahalle": "Tepeören",
   "lat": 40.91143528857806,
   "lon": 29.40393088658518,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-medeniyet-bulvari-parki-2018",
@@ -3587,7 +4303,9 @@
   "mahalle": "Tepeören",
   "lat": 40.91325452070086,
   "lon": 29.389707948762652,
-  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-yavuz-selim-parki",
@@ -3597,7 +4315,9 @@
   "mahalle": "Yayla",
   "lat": 40.83682356953456,
   "lon": 29.307724298505924,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-ahu-sok-parki-2017",
@@ -3607,7 +4327,9 @@
   "mahalle": "Yayla",
   "lat": 40.829655546510025,
   "lon": 29.303155005347694,
-  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-mavi-evler-parki",
@@ -3617,7 +4339,9 @@
   "mahalle": "Yayla",
   "lat": 40.83030571555208,
   "lon": 29.29958976187594,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-sehit-j-er-necmi-yildirim-parki",
@@ -3627,7 +4351,9 @@
   "mahalle": "Yayla",
   "lat": 40.833217145671874,
   "lon": 29.30243296261415,
-  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-anadolu-parki",
@@ -3637,7 +4363,9 @@
   "mahalle": "Yayla",
   "lat": 40.832593358740674,
   "lon": 29.30111788692368,
-  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-denizhan-parki",
@@ -3647,7 +4375,9 @@
   "mahalle": "Yayla",
   "lat": 40.82618798128271,
   "lon": 29.30326923124534,
-  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness"
+  "not": "Çok amaçlı saha · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-zeytinlik-parki",
@@ -3657,7 +4387,9 @@
   "mahalle": "Yayla",
   "lat": 40.82803214421562,
   "lon": 29.304943319080937,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-huseyin-cakir-parki",
@@ -3667,7 +4399,9 @@
   "mahalle": "Yayla",
   "lat": 40.830151509545786,
   "lon": 29.30919204086466,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-m-akif-ersoy-parki",
@@ -3677,7 +4411,9 @@
   "mahalle": "Yayla",
   "lat": 40.8354617221195,
   "lon": 29.304323179349943,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-gazali-sokak-park-alani",
@@ -3687,7 +4423,9 @@
   "mahalle": "Yayla",
   "lat": 40.82653792498476,
   "lon": 29.306564202044473,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-yayla-cocuk-parki",
@@ -3697,7 +4435,9 @@
   "mahalle": "Yayla",
   "lat": 40.83020709637259,
   "lon": 29.312373306459765,
-  "not": "Basketbol · Çocuk oyun grubu · Fitness"
+  "not": "Basketbol · Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-toros-evleri-parki",
@@ -3707,7 +4447,9 @@
   "mahalle": "Yayla",
   "lat": 40.83469493374041,
   "lon": 29.313858528967554,
-  "not": "Çocuk oyun grubu · Fitness"
+  "not": "Çocuk oyun grubu · Fitness",
+  "tel": "",
+  "web": ""
  },
  {
   "id": "park-yayla-yolu-parki",
@@ -3717,6 +4459,1544 @@
   "mahalle": "Yayla",
   "lat": 40.82208500240158,
   "lon": 29.304166848649505,
-  "not": "Park"
+  "not": "Park",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "okul-abdullah-tayyip-olcok-imam-hatip-ortaokulu",
+  "tur": "Okul",
+  "ad": "Abdullah Tayyip Olçok İmam Hatip Ortaokulu",
+  "adres": "İçmeler Mah. Seyit Onbaşı Cad. No: 32 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "İçmeler",
+  "lat": null,
+  "lon": null,
+  "not": "İmam Hatip Ortaokulu",
+  "tel": "(216) 392 81 92",
+  "web": "abdullahtayyipolcokiho.meb.k12.tr"
+ },
+ {
+  "id": "okul-abdullah-tayyip-olcok-ortaokulu",
+  "tur": "Okul",
+  "ad": "Abdullah Tayyip Olçok Ortaokulu",
+  "adres": "İçmeler Mah. Seyit Onbaşı Cad. No: 32 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "İçmeler",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 392 81 92",
+  "web": "tuzlaabdullahtayyipolcokoo.meb.k12.tr"
+ },
+ {
+  "id": "okul-ahmet-refik-oral-ilkokulu",
+  "tur": "Okul",
+  "ad": "Ahmet Refik Oral İlkokulu",
+  "adres": "Fatih Mah. Avşar Sk. No: 12 Tuzla / İstanbul",
+  "mahalle": "Fatih",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 482 72 40",
+  "web": "ahmetrefikoral.meb.k12.tr"
+ },
+ {
+  "id": "okul-ahmet-yesevi-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Ahmet Yesevi Anadolu Lisesi",
+  "adres": "Aydıntepe Mah. Batu Sk. Tezer Taşkıran Ortaokul Blok No: 53/2 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu Lisesi",
+  "tel": "(216) 392 33 34",
+  "web": "tuzlaahmetyesevial.meb.k12.tr"
+ },
+ {
+  "id": "okul-asim-kibar-mesleki-ve-teknik-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Asım Kibar Mesleki Ve Teknik Anadolu Lisesi",
+  "adres": "Aydıntepe Mah. Batu Sk. Asım Kibar Meslek Lisesi Sitesi No: 3 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu Meslek Programı",
+  "tel": "(216) 507 20 53",
+  "web": "asimkibarmtal.meb.k12.tr"
+ },
+ {
+  "id": "okul-ataturk-ilkokulu",
+  "tur": "Okul",
+  "ad": "Atatürk İlkokulu",
+  "adres": "Postane Mah. Öykü Sk. Tuzla Atatürk İlkokulu No: 3 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Postane",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 395 62 16",
+  "web": "tuzlaataturk.meb.k12.tr"
+ },
+ {
+  "id": "okul-aydinli-anaokulu",
+  "tur": "Okul",
+  "ad": "Aydınlı Anaokulu",
+  "adres": "Aydınlı Mah. Başkomutan Cad. No: 46 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 393 73 95",
+  "web": "aydinlianaokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-aydinli-ilk-anaokulu",
+  "tur": "Okul",
+  "ad": "Aydınlı İlk Anaokulu",
+  "adres": "Aydınlı Mah. Firuz Sk. Aydınlı Ilk Okulu Blok No: 27 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 393 10 43",
+  "web": "770361.meb.k12.tr"
+ },
+ {
+  "id": "okul-aydinli-ilkokulu",
+  "tur": "Okul",
+  "ad": "Aydınlı İlkokulu",
+  "adres": "Aydınlı Mah. Firuz Sk. Aydınlı Ilk Okulu Blok No: 27 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 393 10 43",
+  "web": "aydinli.meb.k12.tr"
+ },
+ {
+  "id": "okul-barbaros-ilkokulu",
+  "tur": "Okul",
+  "ad": "Barbaros İlkokulu",
+  "adres": "Postane Mah. Rauf Orbay Cad. A1 Sitesi No: 290A1 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Postane",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 395 88 61",
+  "web": "tuzlabarbaros.meb.k12.tr"
+ },
+ {
+  "id": "okul-baris-manco-ortaokulu",
+  "tur": "Okul",
+  "ad": "Barış Manço Ortaokulu",
+  "adres": "Mimar Sinan Mah. İğde Sk. No: 9 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Mimar Sinan",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 423 44 55",
+  "web": "barismanco.meb.k12.tr"
+ },
+ {
+  "id": "okul-behiye-dr-nevhiz-isil-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Behiye Dr.nevhiz Işıl Anadolu Lisesi",
+  "adres": "Postane Mah. Ören Sk. No: 17 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu Lisesi",
+  "tel": "(216) 446 82 25",
+  "web": "benal.meb.k12.tr"
+ },
+ {
+  "id": "okul-binali-yildirim-anaokulu",
+  "tur": "Okul",
+  "ad": "Binali Yıldırım Anaokulu",
+  "adres": "Aydınlı Mah. İnal Sk. No: 3 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 629 96 66",
+  "web": "767501.meb.k12.tr"
+ },
+ {
+  "id": "okul-binali-yildirim-ilkokulu",
+  "tur": "Okul",
+  "ad": "Binali Yıldırım İlkokulu",
+  "adres": "Aydınlı Mah. İnal Sk. No: 3 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 629 96 66",
+  "web": "767447.meb.k12.tr"
+ },
+ {
+  "id": "okul-cemil-meric-imam-hatip-ortaokulu",
+  "tur": "Okul",
+  "ad": "Cemil Meriç İmam Hatip Ortaokulu",
+  "adres": "Aydınlı Mah. İlteriş Sk. Emlakkonut Okul Sitesi - Blok No: 3 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "İmam Hatip Ortaokulu",
+  "tel": "(216) 629 96 66",
+  "web": "tuzlacemilmericiho.meb.k12.tr"
+ },
+ {
+  "id": "okul-cemil-turker-ilkokulu",
+  "tur": "Okul",
+  "ad": "Cemil Türker İlkokulu",
+  "adres": "Tepeoren Mah. Süleymaniye Bul. Okul Sitesi No: 2 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Tepeören",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 304 11 29",
+  "web": "cemilturkerio.meb.k12.tr"
+ },
+ {
+  "id": "okul-cemil-turker-ortaokulu",
+  "tur": "Okul",
+  "ad": "Cemil Türker Ortaokulu",
+  "adres": "Tepeoren Mah. Süleymaniye Bul. Okul Sitesi No: 2 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Orta",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 304 11 29",
+  "web": "cemilturker.meb.k12.tr"
+ },
+ {
+  "id": "okul-cagribey-anaokulu",
+  "tur": "Okul",
+  "ad": "Çağrıbey Anaokulu",
+  "adres": "Postane Mah. İstasyon Cad. Cağrıbey Ilkokulu Blok No: 69 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "İstasyon",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 446 55 57",
+  "web": "770074.meb.k12.tr"
+ },
+ {
+  "id": "okul-cagribey-ilkokulu",
+  "tur": "Okul",
+  "ad": "Çağrıbey İlkokulu",
+  "adres": "Postane Mah. İstasyon Cad. No: 69/1 İç Kapı No: 2 Tuzla / İstanbul",
+  "mahalle": "İstasyon",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 446 55 57",
+  "web": "cagribeyilkokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-cagribey-ortaokulu",
+  "tur": "Okul",
+  "ad": "Çağrıbey Ortaokulu",
+  "adres": "Postane Mah. İstasyon Cad. No: 69 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "İstasyon",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 395 79 57",
+  "web": "tuzlacagribey.meb.k12.tr"
+ },
+ {
+  "id": "okul-dede-korkut-ortaokulu",
+  "tur": "Okul",
+  "ad": "Dede Korkut Ortaokulu",
+  "adres": "Aydınlı Mah. Yeniyurt Sk. No: 53 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 393 00 62",
+  "web": "dedekorkuttuzla.meb.k12.tr"
+ },
+ {
+  "id": "okul-emine-yildiz-ortaokulu",
+  "tur": "Okul",
+  "ad": "Emine Yıldız Ortaokulu",
+  "adres": "Anadolu Mah. Çanakkale Sk. - Sitesi - Blok No: 9 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 304 14 83",
+  "web": "tuzlaemineyildiz.meb.k12.tr"
+ },
+ {
+  "id": "okul-evliya-celebi-kiz-anadolu-imam-hatip-lisesi",
+  "tur": "Okul",
+  "ad": "Evliya Çelebi Kız Anadolu İmam Hatip Lisesi",
+  "adres": "Evliya Çelebi Mah. Ahmet Yesevi Sk. - Sitesi - Blok No: 8 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu İmam Hatip Lisesi",
+  "tel": "(216) 446 00 78",
+  "web": "evliyacelebikaihl.meb.k12.tr"
+ },
+ {
+  "id": "okul-evliya-celebi-ortaokulu",
+  "tur": "Okul",
+  "ad": "Evliya Çelebi Ortaokulu",
+  "adres": "Yayla Mah. Özdere Sk. No: 11 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Evliya Çelebi",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 446 17 14",
+  "web": "tuzlaevliyacelebi.meb.k12.tr"
+ },
+ {
+  "id": "okul-evliya-celebi-tuzlaanaokulu",
+  "tur": "Okul",
+  "ad": "Evliya Çelebi Tuzlaanaokulu",
+  "adres": "Yayla Mah. Özdere Sk. Evlıya Celepbı Kız Anadolu Imam Hatıp Lısesı Blok No: 11 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 446 17 14",
+  "web": "770075.meb.k12.tr"
+ },
+ {
+  "id": "okul-farabi-anaokulu",
+  "tur": "Okul",
+  "ad": "Farabi Anaokulu",
+  "adres": "Yayla Mah. Şinasi Dural Cad. Farabı Ilkokuku Blok No: 50 Tuzla / İstanbul",
+  "mahalle": "Yayla",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 395 80 24",
+  "web": "770081.meb.k12.tr"
+ },
+ {
+  "id": "okul-farabi-ilkokulu",
+  "tur": "Okul",
+  "ad": "Farabi İlkokulu",
+  "adres": "Yayla Mah. Şinasi Dural Cad. Farabi İlköğretim Okulu Blok No: 50 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Yayla",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 395 80 24",
+  "web": "farabiilkokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-fatih-sultan-mehmet-ilkokulu",
+  "tur": "Okul",
+  "ad": "Fatih Sultan Mehmet İlkokulu",
+  "adres": "Şifa Mah. Zafer Cad. No: 43 Tuzla / İstanbul",
+  "mahalle": "Fatih",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(0216) 674 60 81",
+  "web": "768010.meb.k12.tr"
+ },
+ {
+  "id": "okul-fatih-sultan-mehmet-imam-hatip-ortaokulu",
+  "tur": "Okul",
+  "ad": "Fatih Sultan Mehmet İmam Hatip Ortaokulu",
+  "adres": "Şifa Mah. Zafer Cad. No: 43 Tuzla / İstanbul",
+  "mahalle": "Fatih",
+  "lat": null,
+  "lon": null,
+  "not": "İmam Hatip Ortaokulu",
+  "tel": "(0216) 674 60 81",
+  "web": "tuzlafsmiho.meb.k12.tr"
+ },
+ {
+  "id": "okul-gazi-mustafa-pasa-ilkokulu",
+  "tur": "Okul",
+  "ad": "Gazi Mustafa Paşa İlkokulu",
+  "adres": "Akfırat Mah. 2. Cad. No: 21 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Akfırat",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 439 10 26",
+  "web": "tuzlagazimustafapasailkokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-gazi-mustafa-pasa-imam-hatip-ortaokulu",
+  "tur": "Okul",
+  "ad": "Gazi Mustafa Paşa İmam Hatip Ortaokulu",
+  "adres": "Akfırat Mah. 2. Cad. No: 21 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Akfırat",
+  "lat": null,
+  "lon": null,
+  "not": "İmam Hatip Ortaokulu",
+  "tel": "(0216) 439 10 26",
+  "web": "tuzlagazimustafapasaimamhatiport.meb.k12.tr"
+ },
+ {
+  "id": "okul-gazi-mustafa-pasa-ortaokulu",
+  "tur": "Okul",
+  "ad": "Gazi Mustafa Paşa Ortaokulu",
+  "adres": "Akfırat Mah. 2. Cad. No: 21 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Akfırat",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 439 10 26",
+  "web": "tuzlagazimustafapasaortaokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-gisbir-ortaokulu",
+  "tur": "Okul",
+  "ad": "Gisbir Ortaokulu",
+  "adres": "Aydınlı Mah. Firuz Sk. No: 13 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(0216) 446 06 80",
+  "web": "gisbirortaokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-haciogullari-hilmi-sonay-anaokulu",
+  "tur": "Okul",
+  "ad": "Hacıoğulları Hilmi Sonay Anaokulu",
+  "adres": "İstasyon Mah. Hatboyu Cad. Hacıoğulları Hılmı Sonay Ilkokulu Blok No: 59 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "İstasyon",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(0216) 447 00 41",
+  "web": "770082.meb.k12.tr"
+ },
+ {
+  "id": "okul-haciogullari-hilmi-sonay-ilkokulu",
+  "tur": "Okul",
+  "ad": "Hacıoğulları Hilmi Sonay İlkokulu",
+  "adres": "İstasyon Mah. Hatboyu Cad. Hacıoğulları Hilmi Sonay İl Blok No: 59 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "İstasyon",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 447 00 41",
+  "web": "hhsonayilk.meb.k12.tr"
+ },
+ {
+  "id": "okul-halil-turkkan-imam-hatip-ortaokulu",
+  "tur": "Okul",
+  "ad": "Halil Türkkan İmam Hatip Ortaokulu",
+  "adres": "Aydınlı Mah. Aydınlı Yolu Cadde No:115 Pk:34953 Tuzla/İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "İmam Hatip Ortaokulu",
+  "tel": "(216) 493 36 43",
+  "web": "halilturkkaniho.meb.k12.tr"
+ },
+ {
+  "id": "okul-ibni-sina-ortaokulu",
+  "tur": "Okul",
+  "ad": "İbni Sina Ortaokulu",
+  "adres": "Evliya Çelebi Mah. Gündoğdu Sk. No: 3 Tuzla / İstanbul",
+  "mahalle": "Evliya Çelebi",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 395 38 00",
+  "web": "tuzlaibnisina.meb.k12.tr"
+ },
+ {
+  "id": "okul-ihsan-hayriye-hurdogan-anaokulu",
+  "tur": "Okul",
+  "ad": "İhsan - Hayriye Hürdoğan Anaokulu",
+  "adres": "Aydınlı Mah. Yankı Sk. Ihsan Hayrıye Hürdoğan Ilkokulu Blok No: 3 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "",
+  "web": "770083.meb.k12.tr"
+ },
+ {
+  "id": "okul-ihsan-hayriye-hurdogan-ilkokulu",
+  "tur": "Okul",
+  "ad": "İhsan - Hayriye Hürdoğan İlkokulu",
+  "adres": "Aydınlı Mah. Yankı Sk. İhsan Hayriye Hürdoğan İ.Ö.O Blok No: 3 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 393 27 42",
+  "web": "tuzlaihhurdogan.meb.k12.tr"
+ },
+ {
+  "id": "okul-ilce-milli-egitim-mudurlugu",
+  "tur": "Okul",
+  "ad": "İlçe Milli Eğitim Müdürlüğü",
+  "adres": "Postane Mah. Mühendis Sk. No: 19 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Postane",
+  "lat": null,
+  "lon": null,
+  "not": "İlçe Milli Eğitim Müdürlüğü",
+  "tel": "(216) 395 79 58",
+  "web": "tuzla.meb.gov.tr"
+ },
+ {
+  "id": "okul-itosb-mesleki-ve-teknik-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "İtosb Mesleki Ve Teknik Anadolu Lisesi",
+  "adres": "Tepeoren İtosb Mah. Recep Bilal Hancı Cadde No:2 Pk:34944 Tuzla/İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu Meslek Programı",
+  "tel": "(216) 593 44 66",
+  "web": "itosbtem.meb.k12.tr"
+ },
+ {
+  "id": "okul-itu-minik-denizciler-anaokulu",
+  "tur": "Okul",
+  "ad": "İtü Minik Denizciler Anaokulu",
+  "adres": "Postane Mah. Manastır Yolu Cad. Itü Denızcılık Fakültesı Blok No: 1/11 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Postane",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 701 27 00",
+  "web": "ituminikdenizcileranaokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-kasif-kalkavan-cok-programli-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Kaşif Kalkavan Çok Programlı Anadolu Lisesi",
+  "adres": "Aydınlı Mah. Aydınlık Cadde No:47 Pk:34953 Tuzla/İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Çok Programlı Anadolu Lisesi",
+  "tel": "(216) 673 35 67",
+  "web": "kasifkalkavan.meb.k12.tr"
+ },
+ {
+  "id": "okul-mehmet-tekinalp-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Mehmet Tekinalp Anadolu Lisesi",
+  "adres": "Yayla Mah. Subaşı Sokak No:9 Tuzla/İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu Lisesi",
+  "tel": "(216) 582 02 83",
+  "web": "mtal.meb.k12.tr"
+ },
+ {
+  "id": "okul-mehmetcik-anaokulu",
+  "tur": "Okul",
+  "ad": "Mehmetçik Anaokulu",
+  "adres": "İstasyon Mah. Hatboyu Cad. Piyade Okul Komutanlığı Sitesi Kreş Blok No: 198-25 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "İstasyon",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 446 90 66",
+  "web": "mehmetcikanaokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-mevlana-ilkokulu",
+  "tur": "Okul",
+  "ad": "Mevlana İlkokulu",
+  "adres": "Orta Mah. Erkılıç Sk. Mevlana İlköğretim Okulu Sitesi No: 41 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Orta",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 304 02 69",
+  "web": "tuzlamevlanaio.meb.k12.tr"
+ },
+ {
+  "id": "okul-mevlana-imam-hatip-ortaokulu",
+  "tur": "Okul",
+  "ad": "Mevlana İmam Hatip Ortaokulu",
+  "adres": "Orta Mah. Erkılıç Sk. Mevlana İlköğretim Okulu Sitesi No: 41 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Orta",
+  "lat": null,
+  "lon": null,
+  "not": "İmam Hatip Ortaokulu",
+  "tel": "(216) 304 02 69",
+  "web": "tuzlamevlanaiho.meb.k12.tr"
+ },
+ {
+  "id": "okul-mimar-sinan-ilkokulu",
+  "tur": "Okul",
+  "ad": "Mimar Sinan İlkokulu",
+  "adres": "Mimar Sinan Mah. Altay Sk. Mimar Sinan İlk Ö. O. Blok No: 15 Tuzla / İstanbul",
+  "mahalle": "Mimar Sinan",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 423 36 83",
+  "web": "tuzlamimarsinan.meb.k12.tr"
+ },
+ {
+  "id": "okul-mimar-sinan-tuzla-anaokulu",
+  "tur": "Okul",
+  "ad": "Mimar Sinan Tuzla Anaokulu",
+  "adres": "Mimar Sinan Mah. Altay Sk. Mımar Sınan Ilkokulu Blok No: 15 Tuzla / İstanbul",
+  "mahalle": "Mimar Sinan",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 423 36 84",
+  "web": "770085.meb.k12.tr"
+ },
+ {
+  "id": "okul-muzafferda-guzide-pulur-imam-hatip-ortaokulu",
+  "tur": "Okul",
+  "ad": "Muzafferda-güzide Pulur İmam Hatip Ortaokulu",
+  "adres": "Şifa Mah. Çömlek Sk. - Sitesi - Blok No: 1/1 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Orta",
+  "lat": null,
+  "lon": null,
+  "not": "İmam Hatip Ortaokulu",
+  "tel": "(216) 423 58 08",
+  "web": "muzafferdaguzidepulur.meb.k12.tr"
+ },
+ {
+  "id": "okul-ord-prof-dr-cahit-arf-ilkokulu",
+  "tur": "Okul",
+  "ad": "Ord.prof.dr.cahit Arf İlkokulu",
+  "adres": "Evliya Çelebi Mah. Zübeyde Hanım Sk. No: 6 Tuzla / İstanbul",
+  "mahalle": "Evliya Çelebi",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 446 88 34",
+  "web": "cahitarf.meb.k12.tr"
+ },
+ {
+  "id": "okul-orhanli-anaokulu",
+  "tur": "Okul",
+  "ad": "Orhanlı Anaokulu",
+  "adres": "Orhanlı Mah. İrfan Cad. Orhanlı Orta Ve Ilkokulu Blok No: 1 Tuzla / İstanbul",
+  "mahalle": "Orhanlı",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "",
+  "web": "773426.meb.k12.tr"
+ },
+ {
+  "id": "okul-orhanli-ilkokulu",
+  "tur": "Okul",
+  "ad": "Orhanlı İlkokulu",
+  "adres": "Orhanlı Mah. İrfan Cad. No: 1 Tuzla / İstanbul",
+  "mahalle": "Orhanlı",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 394 32 46",
+  "web": "orhanliilkokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-orhanli-ortaokulu",
+  "tur": "Okul",
+  "ad": "Orhanlı Ortaokulu",
+  "adres": "Orhanlı Mah. İrfan Cad. No: 1 Tuzla / İstanbul",
+  "mahalle": "Orhanlı",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 394 32 46",
+  "web": "orhanliortaokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-osmangazi-ilkokulu",
+  "tur": "Okul",
+  "ad": "Osmangazi İlkokulu",
+  "adres": "Aydınlı Mah. Mutlu Sk. Osmangazı İlköğretım Okulu Blok No: 12/2 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 393 28 18",
+  "web": "tuzlaosmangaziilkokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-osmangazi-ortaokulu",
+  "tur": "Okul",
+  "ad": "Osmangazi Ortaokulu",
+  "adres": "Aydınlı Mah. Mutlu Sk. Osmangazı İlköğretım Okulu Blok No: 12 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 393 13 39",
+  "web": "tuzlaosmangaziortaokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-peyami-safa-anaokulu",
+  "tur": "Okul",
+  "ad": "Peyami Safa Anaokulu",
+  "adres": "İçmeler Mah. Ankara Cad. Peyami Safa İlkokulu Blok No: 55 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "İçmeler",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "",
+  "web": "770086.meb.k12.tr"
+ },
+ {
+  "id": "okul-peyami-safa-ilkokulu",
+  "tur": "Okul",
+  "ad": "Peyami Safa İlkokulu",
+  "adres": "İçmeler Mah. Ankara Cad. No: 55 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "İçmeler",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 392 70 13",
+  "web": "tuzlapeyamisafa.meb.k12.tr"
+ },
+ {
+  "id": "okul-piri-reis-mesleki-ve-teknik-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Piri Reis Mesleki Ve Teknik Anadolu Lisesi",
+  "adres": "Evliya Çelebi Mah. Genç Osman Cadde No:47 Pk:34940 Tuzla/İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu Meslek Programı",
+  "tel": "(216) 447 54 44",
+  "web": "pirireisdenizcilik.meb.k12.tr"
+ },
+ {
+  "id": "okul-piri-reis-ortaokulu",
+  "tur": "Okul",
+  "ad": "Piri Reis Ortaokulu",
+  "adres": "Postane Mah. Yalıboyu Cad. No: 49 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Orta",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 446 68 94",
+  "web": "tuzlapirireis.meb.k12.tr"
+ },
+ {
+  "id": "okul-seniye-huseyin-ozalp-anaokulu",
+  "tur": "Okul",
+  "ad": "Seniye-hüseyin Özalp Anaokulu",
+  "adres": "Postane Mah. Turuncu Sk. Seniye Hüseyin Özalp Anaokulu Sitesi - Blok No: 4 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Postane",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 446 48 90",
+  "web": "seniyehuseyinozalp.meb.k12.tr"
+ },
+ {
+  "id": "okul-tapduk-emre-anaokulu",
+  "tur": "Okul",
+  "ad": "Tapduk Emre Anaokulu",
+  "adres": "Şifa Mah. Mihmandar Sk. Tuzla Taptuk Emre Ilkokulu Blok No: 5 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Şifa",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 423 16 22",
+  "web": "770088.meb.k12.tr"
+ },
+ {
+  "id": "okul-tapduk-emre-ilkokulu",
+  "tur": "Okul",
+  "ad": "Tapduk Emre İlkokulu",
+  "adres": "Şifa Mah. Mihmandar Sk. Tapduk Emre İlköğretim Okulu Blok No: 5 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Şifa",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 423 16 22",
+  "web": "tapdukemre.meb.k12.tr"
+ },
+ {
+  "id": "okul-tepeoren-mesleki-ve-teknik-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Tepeören Mesleki Ve Teknik Anadolu Lisesi",
+  "adres": "Tepeören Mah. Demokrasi Cad. Orhanlı Teknık Ve Endüstrı M. Lısesı Blok No: 147A Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu Meslek Programı",
+  "tel": "(216) 755 70 95",
+  "web": "tepeorenmtal.meb.k12.tr"
+ },
+ {
+  "id": "okul-tezer-taskiran-anaokulu",
+  "tur": "Okul",
+  "ad": "Tezer Taşkıran Anaokulu",
+  "adres": "Aydıntepe Mah. Batu Sk. Ahmet Yesevı Anadolu Lısesı Blok No: 53/1 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 392 10 47",
+  "web": "www.tezertaskiranortaokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-tezer-taskiran-ortaokulu",
+  "tur": "Okul",
+  "ad": "Tezer Taşkıran Ortaokulu",
+  "adres": "Aydıntepe Mah. Batu Sk. Tezer Taşkıran Ortaokulu No: 53 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydıntepe",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 392 10 47",
+  "web": "tezertaskiranortaokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-toki-oruc-reis-anaokulu",
+  "tur": "Okul",
+  "ad": "Toki Oruç Reis Anaokulu",
+  "adres": "Aydınlı Mah. Erdemli Sk. Oruç Reıs Ilkokulu Blok No: 3 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 673 35 99",
+  "web": "770093.meb.k12.tr"
+ },
+ {
+  "id": "okul-toki-oruc-reis-ilkokulu",
+  "tur": "Okul",
+  "ad": "Toki Oruç Reis İlkokulu",
+  "adres": "Aydınlı Mah. Erdemli Sk. İlköğretim Binası (Toki) Sitesi No: 3 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 673 35 99",
+  "web": "tokiorucreis.meb.k12.tr"
+ },
+ {
+  "id": "okul-toki-oruc-reis-imam-hatip-ortaokulu",
+  "tur": "Okul",
+  "ad": "Toki Oruç Reis İmam Hatip Ortaokulu",
+  "adres": "Aydınlı Mah. Erdemli Sk. İlköğretim Binası (Toki) Sitesi No: 3 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "İmam Hatip Ortaokulu",
+  "tel": "(216) 673 35 99",
+  "web": "tokiorucreisiho.meb.k12.tr"
+ },
+ {
+  "id": "okul-toki-yahya-kemal-cok-programli-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Toki Yahya Kemal Çok Programlı Anadolu Lisesi",
+  "adres": "Aydınlı Mah. Erdemli Sk. Lise Binası (Toki) Sitesi No: 1 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Çok Programlı Anadolu Lisesi",
+  "tel": "(216) 673 35 02",
+  "web": "www.tokiyahyakemaltml.meb.k12.tr"
+ },
+ {
+  "id": "okul-toki-yahya-kemal-mesleki-ve-teknik-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Toki Yahya Kemal Mesleki Ve Teknik Anadolu Lisesi",
+  "adres": "Aydınlı Mah. Erdemli Sokak No:1 Pk:34940 Tuzla/İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu Meslek Programı",
+  "tel": "(216) 673 35 02",
+  "web": "tokiyahyakemaltml.meb.k12.tr"
+ },
+ {
+  "id": "okul-tugrul-bey-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Tuğrul Bey Anadolu Lisesi",
+  "adres": "İçmeler Mah. Seyit Onbaşı Cad. Abdullah Tayyıp Olçok Imam Hatıp Ortaokulu Blok No: 32 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu Lisesi",
+  "tel": "(216) 392 68 99",
+  "web": "tugrulbeyanadolulisesi.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-anadolu-imam-hatip-lisesi",
+  "tur": "Okul",
+  "ad": "Tuzla Anadolu İmam Hatip Lisesi",
+  "adres": "Yayla Mah. Ahu Sk. No: 10 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu İmam Hatip Lisesi",
+  "tel": "(216) 493 61 23",
+  "web": "tuzlaaihl.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Tuzla Anadolu Lisesi",
+  "adres": "Postane Mah. İstasyon Cad. No: 67 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu Lisesi",
+  "tel": "(216) 446 70 76",
+  "web": "tuzlaanadolulisesi.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-aydintepe-isitme-engelliler-ilkokulu",
+  "tur": "Okul",
+  "ad": "Tuzla Aydıntepe İşitme Engelliler İlkokulu",
+  "adres": "Aydıntepe Mah. Batu Sk. No: 29 Tuzla / İstanbul",
+  "mahalle": "Aydıntepe",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul (İşitme Engelliler)",
+  "tel": "(216) 494 09 88",
+  "web": "rotaryisitmeilkokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-aydintepe-isitme-engelliler-ortaokulu",
+  "tur": "Okul",
+  "ad": "Tuzla Aydıntepe İşitme Engelliler Ortaokulu",
+  "adres": "Aydıntepe Mah. Batu Sk. No: 29 Tuzla / İstanbul",
+  "mahalle": "Aydıntepe",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul (İşitme Engelliler)",
+  "tel": "(216) 494 09 88",
+  "web": "tuzlarotaryisitme.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-aydintepe-ozel-egitim-anaokulu",
+  "tur": "Okul",
+  "ad": "Tuzla Aydıntepe Özel Eğitim Anaokulu",
+  "adres": "Aydıntepe Mah. Batu Sk. No: 29 Tuzla / İstanbul",
+  "mahalle": "Aydıntepe",
+  "lat": null,
+  "lon": null,
+  "not": "Özel Eğitim Anaokulu",
+  "tel": "(216) 494 09 88",
+  "web": "773878.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-bilim-ve-sanat-merkezi",
+  "tur": "Okul",
+  "ad": "Tuzla Bilim Ve Sanat Merkezi",
+  "adres": "Aydıntepe Mah. Aydınlı Yolu Cad. Şelale Park Sitesi Bilsem Blok No: 43H İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "BİLSEM (Üstün veya Özel Yetenekliler)",
+  "tel": "(216) 393 43 40",
+  "web": "tuzlabilsem.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-borsa-istanbul-mesleki-ve-teknik-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Tuzla Borsa İstanbul Mesleki Ve Teknik Anadolu Lisesi",
+  "adres": "Aydınlı Mah. Aydınlık Cad. No: 49 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu Meslek Programı",
+  "tel": "(216) 393 69 71",
+  "web": "tuzlabistmtal.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-cezeri-mesleki-ve-teknik-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Tuzla Cezeri Mesleki Ve Teknik Anadolu Lisesi",
+  "adres": "Yayla Mah. Şinasi Dural Cadde No:51 Tuzla/İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu Meslek Programı",
+  "tel": "(216) 446 46 21",
+  "web": "tuzlacezerimtal.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-emlak-konut-cemil-meric-anaokulu",
+  "tur": "Okul",
+  "ad": "Tuzla Emlak Konut Cemil Meriç Anaokulu",
+  "adres": "Aydınlı Mah. İlteriş Sk. Cemıl Merıç Ilk Ve Ortaokulu Blok No: 3 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "",
+  "web": "770096.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-emlak-konut-cemil-meric-ilkokulu",
+  "tur": "Okul",
+  "ad": "Tuzla Emlak Konut Cemil Meriç İlkokulu",
+  "adres": "Aydınlı Mah. İlteriş Sk. Emlakkonut Okul Sitesi - Blok No: 3 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 290 36 18",
+  "web": "tuzlaemlakkonutcmio.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-emlak-konut-cemil-meric-ortaokulu",
+  "tur": "Okul",
+  "ad": "Tuzla Emlak Konut Cemil Meriç Ortaokulu",
+  "adres": "Aydınlı Mah. İlteriş Sk. Emlakkonut Okul Sitesi - Blok No: 3 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 290 36 18",
+  "web": "tuzlaemlakkonutcmoo.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-halil-turkkan-kiz-anadolu-imam-hatip-lisesi",
+  "tur": "Okul",
+  "ad": "Tuzla Halil Türkkan Kız Anadolu İmam Hatip Lisesi",
+  "adres": "Aydınlı Mah. Aydınlı Yolu Cad. Halıl Türkkan Kız Anadolu Imamhatıp Blok No: 115B İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "İmam Hatip Lisesi",
+  "tel": "(216) 493 36 43",
+  "web": "halilturkkankaihl.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-halk-egitimi-merkezi",
+  "tur": "Okul",
+  "ad": "Tuzla Halk Eğitimi Merkezi",
+  "adres": "Evliya Çelebi Mah. Gündoğdu Sk. No: 3 Tuzla / İstanbul",
+  "mahalle": "Evliya Çelebi",
+  "lat": null,
+  "lon": null,
+  "not": "Halk Eğitimi Merkezi",
+  "tel": "(216) 395 77 43",
+  "web": "tuzlahem.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-mahir-iz-anadolu-imam-hatip-lisesi",
+  "tur": "Okul",
+  "ad": "Tuzla Mahir İz Anadolu İmam Hatip Lisesi",
+  "adres": "Yayla Mah. Ressam Sokak No:1 Pk:34944 Tuzla/İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu İmam Hatip Lisesi",
+  "tel": "(216) 395 95 40",
+  "web": "tuzlamahirizaihl.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-mesleki-egitim-merkezi",
+  "tur": "Okul",
+  "ad": "Tuzla Mesleki Eğitim Merkezi",
+  "adres": "Evliya Çelebi Mah. Gündoğdu Sk. No: 3 Tuzla / İstanbul",
+  "mahalle": "Evliya Çelebi",
+  "lat": null,
+  "lon": null,
+  "not": "Mesleki Eğitim Merkezi",
+  "tel": "(216) 701 24 97",
+  "web": "tuzlamem.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-mesleki-ve-teknik-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Tuzla Mesleki Ve Teknik Anadolu Lisesi",
+  "adres": "Yayla Mah. Durmaz Sokak No:17 Pk:34944 Tuzla/İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu Meslek Programı",
+  "tel": "(216) 395 31 96",
+  "web": "tuzlamtal.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-mevlana-anaokulu",
+  "tur": "Okul",
+  "ad": "Tuzla Mevlana Anaokulu",
+  "adres": "Orta Mah. Erkılıç Sk. Tuzla Mevlana İlkokulu/İmamhatip Ortaokulu Blok No: 41 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Orta",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 304 02 69",
+  "web": "773416.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-orhanli-cok-programli-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Tuzla Orhanlı Çok Programlı Anadolu Lisesi",
+  "adres": "Orhanlı Mah. Ulubatlı Hasan Cad. Orhanlı Lisesi Sitesi No: 26 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Çok Programlı Anadolu Lisesi",
+  "tel": "(216) 394 30 12",
+  "web": "orhanlimtal.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-osmangazi-anaokulu",
+  "tur": "Okul",
+  "ad": "Tuzla Osmangazi Anaokulu",
+  "adres": "Aydınlı Mah. Mutlu Sk. Osmangazı İlköğretım Okulu Blok No: 12/2 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 393 28 18",
+  "web": "773572.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-rehberlik-ve-arastirma-merkezi",
+  "tur": "Okul",
+  "ad": "Tuzla Rehberlik Ve Araştırma Merkezi",
+  "adres": "Aydıntepe Mah. Batu Sk. No: 29 Tuzla / İstanbul",
+  "mahalle": "Aydıntepe",
+  "lat": null,
+  "lon": null,
+  "not": "Rehberlik ve Araştırma Merkezi",
+  "tel": "(216) 446 81 83",
+  "web": "tuzlaram.meb.k12.tr"
+ },
+ {
+  "id": "okul-tuzla-suleyman-demirel-mesleki-ve-teknik-anadolu-lisesi",
+  "tur": "Okul",
+  "ad": "Tuzla Süleyman Demirel Mesleki Ve Teknik Anadolu Lisesi",
+  "adres": "Aydıntepe Mah. Fedakar Sokak No:1 Pk:34947 Tuzla/İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Anadolu Meslek Programı",
+  "tel": "(216) 493 70 60",
+  "web": "sdticaret.meb.k12.tr"
+ },
+ {
+  "id": "okul-ulubatli-hasan-ilkokulu",
+  "tur": "Okul",
+  "ad": "Ulubatlı Hasan İlkokulu",
+  "adres": "Aydınlı Mah. Sadrazam Sk. Ulubatlı Hasan Ilk Ve Orta Okulu Blok No: 22 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 393 18 79",
+  "web": "tuzlaulubatlihasan.meb.k12.tr"
+ },
+ {
+  "id": "okul-ulubatli-hasan-ortaokulu",
+  "tur": "Okul",
+  "ad": "Ulubatlı Hasan Ortaokulu",
+  "adres": "Aydınlı Mah. Sadrazam Sk. Ulubatlı Hasan Ilk Ve Orta Okulu Blok No: 22 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 393 18 79",
+  "web": "tuzlaulubatlihasanortaokulu.meb.k12.tr"
+ },
+ {
+  "id": "okul-vala-gedik-ozel-egitim-meslek-okulu",
+  "tur": "Okul",
+  "ad": "Vala Gedik Özel Eğitim Meslek Okulu",
+  "adres": "Yayla Mah. Şinasi Dural Cad. Tuzla Cezerı Meslekı Teknık Ve Anadolu Lısesı Blok No: 51 Tuzla / İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "Özel Eğitim Meslek Okulu (Zihinsel Engelliler)",
+  "tel": "(216) 493 13 11",
+  "web": "tuzlavalagedikmem.meb.k12.tr"
+ },
+ {
+  "id": "okul-yildiz-ali-hasoglu-imam-hatip-ortaokulu",
+  "tur": "Okul",
+  "ad": "Yıldız- Ali Hasoğlu İmam Hatip Ortaokulu",
+  "adres": "İstasyon Mah. Hançer Sk. Yıldız Ali İmam Hatip Ortaokul Sitesi - Blok No: 16 Tuzla / İstanbul",
+  "mahalle": "İstasyon",
+  "lat": null,
+  "lon": null,
+  "not": "İmam Hatip Ortaokulu",
+  "tel": "(216) 446 06 96",
+  "web": "yildizalihasogluiho.meb.k12.tr"
+ },
+ {
+  "id": "okul-yunus-emre-anadolu-imam-hatip-lisesi",
+  "tur": "Okul",
+  "ad": "Yunus Emre Anadolu İmam Hatip Lisesi",
+  "adres": "Mimar Sinan Mah. Şekerpınar Cadde No:23 Pk:34950 Tuzla/İstanbul",
+  "mahalle": "Anadolu",
+  "lat": null,
+  "lon": null,
+  "not": "İmam Hatip Lisesi",
+  "tel": "(216) 423 52 82",
+  "web": "tuzlayunusemreihl.meb.k12.tr"
+ },
+ {
+  "id": "okul-yunus-emre-imam-hatip-ortaokulu",
+  "tur": "Okul",
+  "ad": "Yunus Emre İmam Hatip Ortaokulu",
+  "adres": "Şifa Mah. Mihmandar Sk. Yunus Emre Ortaokulu Blok No: 3 Tuzla / İstanbul",
+  "mahalle": "Orta",
+  "lat": null,
+  "lon": null,
+  "not": "İmam Hatip Ortaokulu",
+  "tel": "(216) 423 18 53",
+  "web": "tuzlayunusemreiho.meb.k12.tr"
+ },
+ {
+  "id": "okul-yunus-emre-ortaokulu",
+  "tur": "Okul",
+  "ad": "Yunus Emre Ortaokulu",
+  "adres": "Şifa Mah. Mihmandar Sk. Yunus Emre Ortaokulu Blok No: 3 Tuzla / İstanbul",
+  "mahalle": "Orta",
+  "lat": null,
+  "lon": null,
+  "not": "Ortaokul",
+  "tel": "(216) 423 18 53",
+  "web": "tuzlayunusemreoo.meb.k12.tr"
+ },
+ {
+  "id": "okul-yunus-emre-tuzla-anaokulu",
+  "tur": "Okul",
+  "ad": "Yunus Emre Tuzla Anaokulu",
+  "adres": "Şifa Mah. Mihmandar Sk. Yunus Emre Ortaokulu Blok No: 3 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Orta",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 423 18 53",
+  "web": "770098.meb.k12.tr"
+ },
+ {
+  "id": "okul-zubeyde-hanim-ilkokulu",
+  "tur": "Okul",
+  "ad": "Zübeyde Hanım İlkokulu",
+  "adres": "Aydıntepe Mah. Sevim Sk. Zübeyde Hanım İöo Blok No: 2 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydıntepe",
+  "lat": null,
+  "lon": null,
+  "not": "İlkokul",
+  "tel": "(216) 494 27 37",
+  "web": "tuzlazubeydeio.meb.k12.tr"
+ },
+ {
+  "id": "okul-zubeyde-hanim-tuzla-anaokulu",
+  "tur": "Okul",
+  "ad": "Zübeyde Hanım Tuzla Anaokulu",
+  "adres": "Aydıntepe Mah. Sevim Sk. Zübeyde Hanım Ilkokulu Blok No: 2 İç Kapı No: 1 Tuzla / İstanbul",
+  "mahalle": "Aydıntepe",
+  "lat": null,
+  "lon": null,
+  "not": "Anaokulu",
+  "tel": "(216) 494 27 37",
+  "web": "770109.meb.k12.tr"
+ },
+ {
+  "id": "universite-istanbul-medeniyet-universitesi-dis-hekimligi-turizm-fakultesi",
+  "tur": "Üniversite",
+  "ad": "İstanbul Medeniyet Üniversitesi (diş Hekimliği,turizm Fakültesi)",
+  "adres": "Fatih Mahallesi, Eski Ankara Asfaltı Caddesi. No:28 Tuzla/İstanbul",
+  "mahalle": "Fatih",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "(216) 280 33 33",
+  "web": "medeniyet.edu.tr"
+ },
+ {
+  "id": "universite-istanbul-teknik-universitesi-denizcilik-fakultesi",
+  "tur": "Üniversite",
+  "ad": "İstanbul Teknik Üniversitesi (denizcilik Fakültesi)",
+  "adres": "Postane Mah. İTÜ Denizcilik Fakültesi, 34940 Tuzla/İstanbul",
+  "mahalle": "Postane",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "(216) 395 10 64",
+  "web": "df.itu.edu.tr"
+ },
+ {
+  "id": "universite-okan-universitesi",
+  "tur": "Üniversite",
+  "ad": "Okan Üniversitesi",
+  "adres": "Tepeören Mah. Ballıca Yolu Cad. İstanbul Okan Üniversitesi Rektörlük Blok No: 11/11 Tuzla/İstanbul",
+  "mahalle": "Tepeören",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "(216) 677 16 30",
+  "web": "okan.edu.tr"
+ },
+ {
+  "id": "universite-piri-reis-universitesi",
+  "tur": "Üniversite",
+  "ad": "Piri Reis Üniversitesi",
+  "adres": "Postane Mah. Eflatun Sk. No:8, 34940 Tuzla/İstanbul",
+  "mahalle": "Postane",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "(216) 581 00 50",
+  "web": "pirireis.edu.tr"
+ },
+ {
+  "id": "universite-sabanci-universitesi",
+  "tur": "Üniversite",
+  "ad": "Sabancı Üniversitesi",
+  "adres": "Orta Mahalle, Üniversite Cd. No: 27, 34956 Tuzla/İstanbul",
+  "mahalle": "Orta",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "(216) 581 00 51",
+  "web": "sabanciuniv.edu.tr"
+ },
+ {
+  "id": "mezarlik-tuzla-mezarligi",
+  "tur": "Mezarlık",
+  "ad": "Tuzla Mezarlığı",
+  "adres": "",
+  "mahalle": "Cami",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "mezarlik-aydintepe-mezarligi",
+  "tur": "Mezarlık",
+  "ad": "Aydıntepe Mezarlığı",
+  "adres": "",
+  "mahalle": "Aydıntepe",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "mezarlik-sifa-mezarligi",
+  "tur": "Mezarlık",
+  "ad": "Şifa Mezarlığı",
+  "adres": "",
+  "mahalle": "Mimar Sinan",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "mezarlik-aydinli-mezarligi",
+  "tur": "Mezarlık",
+  "ad": "Aydınlı Mezarlığı",
+  "adres": "",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "mezarlik-tepeoren-mezarligi",
+  "tur": "Mezarlık",
+  "ad": "Tepeören Mezarlığı",
+  "adres": "",
+  "mahalle": "Tepeören",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "mezarlik-akfirat-mezarligi",
+  "tur": "Mezarlık",
+  "ad": "Akfırat Mezarlığı",
+  "adres": "",
+  "mahalle": "Akfırat",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "mezarlik-orhanli-mezarligi",
+  "tur": "Mezarlık",
+  "ad": "Orhanlı Mezarlığı",
+  "adres": "",
+  "mahalle": "Mescit",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "emniyet-guvenlik-tuzla-ilce-emniyet-mudurlugu",
+  "tur": "Emniyet & Güvenlik",
+  "ad": "Tuzla İlçe Emniyet Müdürlüğü",
+  "adres": "Evliya Çelebi, Hatboyu Cad., Çelebi Sk. No:6, 34940 Tuzla/İstanbul",
+  "mahalle": "Evliya Çelebi",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "emniyet-guvenlik-sahil-guvenlik-komutanligi",
+  "tur": "Emniyet & Güvenlik",
+  "ad": "Sahil Güvenlik Komutanlığı",
+  "adres": "Postane, Öğüt Sk. No:130, 34940 Tuzla/İstanbul",
+  "mahalle": "Postane",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "emniyet-guvenlik-tuzla-polis-merkezi",
+  "tur": "Emniyet & Güvenlik",
+  "ad": "Tuzla Polis Merkezi",
+  "adres": "Cami Mah., Ahmet Kılıç Blv. No:137, Tuzla/İstanbul",
+  "mahalle": "Cami",
+  "lat": null,
+  "lon": null,
+  "not": "24 saat açık",
+  "tel": "+90 216 423 11 17",
+  "web": ""
+ },
+ {
+  "id": "emniyet-guvenlik-sifa-sht-fadil-sisman-polis-merkezi",
+  "tur": "Emniyet & Güvenlik",
+  "ad": "Şifa Şht. Fadıl Şişman Polis Merkezi",
+  "adres": "Mimar Sinan, Emiroğlu Cd. No:100, 34950 Tuzla/İstanbul",
+  "mahalle": "Mimar Sinan",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "emniyet-guvenlik-orhanli-polis-merkezi-amirligi",
+  "tur": "Emniyet & Güvenlik",
+  "ad": "Orhanlı Polis Merkezi Amirliği",
+  "adres": "Aydınlı, Çeşme Cd. No:1, 34956 Tuzla/İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "ibadethaneler-al-i-aba-vakfi-cemevi",
+  "tur": "İbadethaneler",
+  "ad": "Al-i Aba Vakfı Cemevi",
+  "adres": "Evliya Çelebi, Veysel Karani Sk. No:14, 34944 Tuzla/İstanbul",
+  "mahalle": "Evliya Çelebi",
+  "lat": null,
+  "lon": null,
+  "not": "Cemevi",
+  "tel": "(0216) 447 47 36",
+  "web": ""
+ },
+ {
+  "id": "ibadethaneler-hakev-vakfi-tuzla-cem-ve-kultur-evi",
+  "tur": "İbadethaneler",
+  "ad": "HAKEV Vakfı Tuzla Cem ve Kültür Evi",
+  "adres": "Aydınlı, Yankı Sk. No:9, 34953 Tuzla/İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "Cemevi",
+  "tel": "(0216) 393 10 81",
+  "web": ""
+ },
+ {
+  "id": "ibadethaneler-sultan-dernegi-tuzla-subesi-cem-evi",
+  "tur": "İbadethaneler",
+  "ad": "Sultan Derneği Tuzla Şubesi Cem Evi",
+  "adres": "Mimar Sinan, Tolgahan Sk. No:25, 34950 Tuzla/İstanbul",
+  "mahalle": "Mimar Sinan",
+  "lat": null,
+  "lon": null,
+  "not": "Cemevi",
+  "tel": "(0216) 423 58 26",
+  "web": ""
+ },
+ {
+  "id": "ibadethaneler-sifa-mahallesi-cemevi",
+  "tur": "İbadethaneler",
+  "ad": "Şifa Mahallesi Cemevi",
+  "adres": "Mimar Sinan, Tolgahan Sk. No:25, 34950 Tuzla/İstanbul",
+  "mahalle": "Mimar Sinan",
+  "lat": null,
+  "lon": null,
+  "not": "Cemevi",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "ibadethaneler-konasli-hz-imam-ali-cemevi",
+  "tur": "İbadethaneler",
+  "ad": "Konaşlı Hz. İmam Ali Cemevi",
+  "adres": "Aydınlı, Ferahnaz Sk., 34956 Tuzla/İstanbul",
+  "mahalle": "Aydınlı",
+  "lat": null,
+  "lon": null,
+  "not": "Cemevi",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "ibadethaneler-seyit-seyfi-cem-evi",
+  "tur": "İbadethaneler",
+  "ad": "Seyit Seyfi Cem Evi",
+  "adres": "Fatih, Fedakar Sk. No:25, 34903 Tuzla/İstanbul",
+  "mahalle": "Fatih",
+  "lat": null,
+  "lon": null,
+  "not": "Cemevi · 24 saat açık",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "ibadethaneler-tuzla-orta-mahalle-cem-kultur-evi",
+  "tur": "İbadethaneler",
+  "ad": "Tuzla Orta Mahalle Cem Kültür Evi",
+  "adres": "Orta, Cengizhan Cd., 34956 Tuzla/İstanbul",
+  "mahalle": "Orta",
+  "lat": null,
+  "lon": null,
+  "not": "Cemevi",
+  "tel": "",
+  "web": ""
+ },
+ {
+  "id": "ibadethaneler-pkbv-tuzla-protestan-kilisesi",
+  "tur": "İbadethaneler",
+  "ad": "PKBV Tuzla Protestan Kilisesi",
+  "adres": "Cami, Cumhuriyet Cd. No:2, 34940 Tuzla/İstanbul",
+  "mahalle": "Cami",
+  "lat": null,
+  "lon": null,
+  "not": "Kilise · Pazar 10:30 açılış",
+  "tel": "0544 677 50 66",
+  "web": ""
  }
 ]

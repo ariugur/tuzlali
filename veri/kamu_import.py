@@ -17,6 +17,10 @@ Dataset kaynaklari (portal id):
   pazar.csv       -> tuzla-belediyesi-pazar-yerleri
   acem.csv        -> acem-kurs-merkezleri
   parklar.csv     -> tuzla-belediyesinde-bulunan-parklar-ve-imkanlar
+  egitim.csv      -> tuzla-egitim-kurumlari (okul + universite, koordinat yok)
+  mezarliklar.csv -> İBB data.ibb.gov.tr / mezarlik-adres-bilgileri (Tuzla, koordinat yok)
+  emniyet.csv     -> ELLE / kullanici bildirimi (Google Haritalar), koordinat yok
+  cemevi_kilise.csv-> ELLE / kullanici bildirimi (cami disi ibadethane), koordinat yok
 """
 import csv, json, os, re, sys
 
@@ -132,7 +136,17 @@ def acem_adi(s):
     return ACEM_DUZELT.get(slug(ham), tr_baslik(ham))
 
 
-def kayit(tur, ad, adres, lat, lon, mah, note):
+def tel_temiz(v):
+    v = temiz(v)
+    return "" if v in ("", "0") else v
+
+
+def web_temiz(v):
+    v = temiz(v).strip().strip("/")
+    return "" if v in ("", "0") else v
+
+
+def kayit(tur, ad, adres, lat, lon, mah, note, tel="", web=""):
     ad = temiz(ad)
     return {
         "id": slug(tur) + "-" + slug(ad),
@@ -143,6 +157,8 @@ def kayit(tur, ad, adres, lat, lon, mah, note):
         "lat": lat,
         "lon": lon,
         "not": temiz(note),
+        "tel": tel_temiz(tel),
+        "web": web_temiz(web),
     }
 
 
@@ -151,8 +167,10 @@ def main():
 
     # --- Cami & Mescit --- "CAMI ADI;ADRES;ENLEM;BOYLAM"
     for r in oku("camiler.csv", ";"):
-        out.append(kayit("Cami & Mescit", cami_adi(r["CAMI ADI"]), r["ADRES"],
-                         sayi(r["ENLEM"]), sayi(r["BOYLAM"]), "", ""))
+        ad = cami_adi(r["CAMI ADI"])
+        tip = "Mescit" if "mescid" in ad.lower() else "Cami"
+        out.append(kayit("İbadethaneler", ad, r["ADRES"],
+                         sayi(r["ENLEM"]), sayi(r["BOYLAM"]), "", tip))
 
     # --- Muhtarlik --- "MUHTARLIK ADI,ADRES,ENLEM,BOYLAM"
     for r in oku("muhtarliklar.csv", ","):
@@ -207,6 +225,37 @@ def main():
         out.append(kayit("Park", tr_baslik(r["PARKLARIMIZ"]), tr_baslik(r.get("ADRES", "")),
                          sayi(r["ENLEM"]), sayi(r["BOYLAM"]),
                          mahalle_bul(r.get("MAHALLE", "")), note))
+
+    # --- Okul & Üniversite --- OKUL ADI;ADRES;TELEFON;FAX;WEB ADRES;KURUM TUR ADI (koordinat yok)
+    for r in oku("egitim.csv", ";"):
+        turAd = temiz(r.get("KURUM TUR ADI", ""))
+        ad = tr_baslik(r["OKUL ADI"])
+        adres, tel, web = r.get("ADRES", ""), r.get("TELEFON"), r.get("WEB ADRES")
+        mah = mahalle_bul(adres, ad)
+        if "universite" in _norm(turAd) or "universite" in _norm(ad):
+            out.append(kayit("Üniversite", ad, adres, None, None, mah, "", tel, web))
+        else:
+            out.append(kayit("Okul", ad, adres, None, None, mah, turAd, tel, web))
+
+    # --- Mezarlık --- İBB açık veri (İlçe/Mahalle/Ad), koordinat yok
+    for r in oku("mezarliklar.csv", ","):
+        out.append(kayit("Mezarlık", tr_baslik(r["MEZARLIK ADI"]) + " Mezarlığı", "",
+                         None, None, mahalle_bul(r.get("MAHALLE", ""), r["MEZARLIK ADI"]), ""))
+
+    # --- Emniyet & Güvenlik --- kullanici bildirimi (Google Haritalar), koordinat yok
+    for r in oku("emniyet.csv", ","):
+        out.append(kayit("Emniyet & Güvenlik", r["AD"], r["ADRES"], None, None,
+                         mahalle_bul(r["ADRES"]), r.get("NOT", ""), r.get("TEL", "")))
+
+    # --- Cemevi & Kilise --- cami disi ibadethaneler (ayni "İbadethaneler" turunde),
+    #     kullanici bildirimi, koordinat yok. Alt-tip "not" alaninda gorunur.
+    for r in oku("cemevi_kilise.csv", ","):
+        ad = r["AD"]
+        tip = "Kilise" if "kilise" in ad.lower() else "Cemevi"
+        ek = temiz(r.get("NOT", ""))
+        note = tip + (" · " + ek if ek else "")
+        out.append(kayit("İbadethaneler", ad, r["ADRES"], None, None,
+                         mahalle_bul(r["ADRES"]), note, r.get("TEL", "")))
 
     json.dump(out, open(CIKTI, "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)

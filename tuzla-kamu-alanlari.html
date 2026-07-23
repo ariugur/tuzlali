@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) + Rıza Modu (çerez/KVKK) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9GYJV89N8X"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -12,11 +12,11 @@
   gtag('js', new Date());
   gtag('config', 'G-9GYJV89N8X');
 </script>
-<title>Tuzla Kamu & Yaşam Rehberi | Cami, Muhtarlık, Toplanma Alanı, Pazar</title>
-<meta name="description" content="Tuzla'daki camiler ve mescitler, mahalle muhtarlıkları, acil durum toplanma alanları, semt pazarları (kuruluş günleri), AÇEM kurs merkezleri ve parklar. Adres ve yol tarifiyle.">
+<title>Tuzla Kamu & Yaşam Rehberi | Cami, Okul, Muhtarlık, Mezarlık, Pazar</title>
+<meta name="description" content="Tuzla'daki camiler, okullar ve üniversiteler, muhtarlıklar, mezarlıklar, acil durum toplanma alanları, semt pazarları, AÇEM merkezleri, parklar ve emniyet birimleri — kategori kategori, adres ve yol tarifiyle.">
 <link rel="canonical" href="https://tuzlali.net/tuzla-kamu-alanlari.html">
 <meta property="og:title" content="Tuzla Kamu & Yaşam Rehberi">
-<meta property="og:description" content="Cami, muhtarlık, acil durum toplanma alanı, semt pazarı ve AÇEM merkezleri — adres ve yol tarifiyle.">
+<meta property="og:description" content="Cami, okul, muhtarlık, mezarlık, pazar, park, AÇEM ve emniyet — kategori kategori, adres ve yol tarifiyle.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tuzlali.net/tuzla-kamu-alanlari.html">
 <meta property="og:image" content="https://tuzlali.net/gorseller/marka/og-1200x630.png">
@@ -31,38 +31,41 @@
 <link rel="stylesheet" href="ikonlar/regular.css">
 <link rel="stylesheet" href="ikonlar/fill.css">
 <script src="ortak.js"></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Tuzla Kamu & Yaşam Rehberi","url":"https://tuzlali.net/tuzla-kamu-alanlari.html","description":"Tuzla'daki cami ve mescitler, mahalle muhtarlıkları, acil durum toplanma alanları, semt pazarları ve AÇEM kurs merkezleri.","isPartOf":{"@type":"WebSite","name":"tuzlali.net","url":"https://tuzlali.net/"},"about":[{"@type":"Thing","name":"Cami ve mescitler"},{"@type":"Thing","name":"Mahalle muhtarlıkları"},{"@type":"Thing","name":"Acil durum toplanma alanları"},{"@type":"Thing","name":"Semt pazarları"},{"@type":"Thing","name":"AÇEM kurs merkezleri"},{"@type":"Thing","name":"Parklar"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Tuzla Kamu & Yaşam Rehberi","url":"https://tuzlali.net/tuzla-kamu-alanlari.html","description":"Tuzla'daki cami ve mescitler, okullar, üniversiteler, muhtarlıklar, mezarlıklar, acil durum toplanma alanları, semt pazarları, AÇEM kurs merkezleri, parklar ve emniyet birimleri.","isPartOf":{"@type":"WebSite","name":"tuzlali.net","url":"https://tuzlali.net/"},"about":[{"@type":"Thing","name":"İbadethaneler (cami, cemevi, kilise)"},{"@type":"Thing","name":"Okullar"},{"@type":"Thing","name":"Üniversiteler"},{"@type":"Thing","name":"Mahalle muhtarlıkları"},{"@type":"Thing","name":"Mezarlıklar"},{"@type":"Thing","name":"Acil durum toplanma alanları"},{"@type":"Thing","name":"Semt pazarları"},{"@type":"Thing","name":"AÇEM kurs merkezleri"},{"@type":"Thing","name":"Parklar"},{"@type":"Thing","name":"Emniyet birimleri"}]}</script>
 <style>
   .kmu-head{padding:38px 0 6px}
   .kmu-head h1{font-size:clamp(24px,3.2vw,34px);margin-bottom:10px}
   .kmu-head .lede{max-width:64ch}
-  .kmu-meta{font-size:13px;color:var(--muted);margin:14px 0 2px;display:flex;
-    align-items:center;gap:8px;flex-wrap:wrap}
+  .kmu-meta{font-size:13px;color:var(--muted);margin:14px 0 2px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
   .kmu-meta i{color:var(--accent)}
-  /* tür sekmeleri: yatay kaydırılabilir cip şeridi */
-  .kmu-tabs{display:flex;gap:8px;overflow-x:auto;padding:18px 0 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-  .kmu-tabs::-webkit-scrollbar{display:none}
-  .kmu-tab{flex:0 0 auto;display:inline-flex;align-items:center;gap:7px;cursor:pointer;
-    border:1px solid var(--line);background:var(--card);color:var(--txt-2);
-    border-radius:var(--r-pill);padding:9px 15px;font-size:13.5px;font-weight:500;
-    white-space:nowrap;transition:all .15s var(--ease)}
-  .kmu-tab:hover{border-color:var(--line-strong)}
-  .kmu-tab .dot{width:8px;height:8px;border-radius:var(--r-pill)}
-  .kmu-tab small{color:var(--muted);font-variant-numeric:tabular-nums}
-  .kmu-tab[aria-selected="true"]{background:var(--accent-deep);border-color:var(--accent-deep);color:#fff}
-  .kmu-tab[aria-selected="true"] small{color:rgba(255,255,255,.7)}
   /* arama */
-  .kmu-ara{position:relative;margin:10px 0 2px}
+  .kmu-ara{position:relative;margin:18px 0 2px}
   .kmu-ara i{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:16px}
   .kmu-ara input{width:100%;border:1px solid var(--line);background:var(--card);
     border-radius:var(--r-surface);padding:13px 14px 13px 42px;font:inherit;font-size:15px;color:var(--txt)}
-  .kmu-ara input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-weak,rgba(11,95,208,.12))}
-  .kmu-say{font-size:12.5px;color:var(--muted);margin:14px 0 2px}
+  .kmu-ara input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(11,95,208,.12)}
+  /* kategori ızgarası (ilçeler gibi) */
+  .kmu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:22px 0 10px}
+  .kmu-cat{display:flex;align-items:center;gap:13px;padding:16px 18px;background:var(--card);
+    border:1px solid var(--line);border-radius:var(--r-surface);box-shadow:var(--sh-1);
+    cursor:pointer;text-align:left;width:100%;font:inherit;transition:.16s var(--ease)}
+  .kmu-cat:hover{border-color:var(--accent);transform:translateY(-1px);box-shadow:var(--sh-2)}
+  .kmu-cat .ik{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;
+    flex:0 0 auto;font-size:20px;color:#fff}
+  .kmu-cat .ad{font-size:14.5px;font-weight:600;color:var(--txt);letter-spacing:-.01em;line-height:1.25}
+  .kmu-cat .ad small{display:block;font-size:11.5px;font-weight:400;color:var(--muted);margin-top:2px;letter-spacing:0}
+  .kmu-cat .n{margin-left:auto;font-variant-numeric:tabular-nums;font-weight:700;font-size:17px;color:var(--txt-2)}
+  /* kategori detayı */
+  .kmu-geri{display:inline-flex;align-items:center;gap:7px;background:none;border:none;cursor:pointer;
+    color:var(--accent);font:inherit;font-size:13.5px;font-weight:500;padding:20px 0 6px}
+  .kmu-geri:hover{text-decoration:underline}
+  .kmu-baslik{font-size:21px;letter-spacing:-.01em;margin:4px 0 2px;display:flex;align-items:center;gap:10px}
+  .kmu-baslik .dot{width:11px;height:11px;border-radius:50%;flex:0 0 auto}
+  .kmu-say{font-size:12.5px;color:var(--muted);margin:8px 0 2px}
   .kmu-say b{color:var(--txt-2)}
-  /* liste */
-  .kmu-liste{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;padding:10px 0 8px}
+  .kmu-liste{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;padding:12px 0 8px}
   .kmu-kart{background:var(--card);border:1px solid var(--line);border-radius:var(--r-surface);
-    padding:18px 20px;box-shadow:var(--sh-1);display:flex;flex-direction:column;gap:10px}
+    padding:18px 20px;box-shadow:var(--sh-1);display:flex;flex-direction:column;gap:9px}
   .kmu-ust{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
   .kmu-kart h2{font-size:16px;font-weight:600;letter-spacing:-.015em;line-height:1.3}
   .kmu-tur{font-size:11.5px;color:var(--muted);margin-top:5px;display:inline-flex;align-items:center;gap:6px}
@@ -70,16 +73,19 @@
   .kmu-mah{flex:0 0 auto;font-size:11px;color:var(--txt-2);background:var(--surface);
     border-radius:var(--r-pill);padding:4px 10px;white-space:nowrap}
   .kmu-adres{font-size:13px;color:var(--muted);line-height:1.5}
-  .kmu-not{font-size:12.5px;color:var(--txt-2);display:inline-flex;align-items:center;gap:6px}
-  .kmu-not i{color:var(--accent);font-size:14px}
-  .kmu-alt{margin-top:2px}
+  .kmu-not{font-size:12.5px;color:var(--txt-2);display:inline-flex;align-items:center;gap:6px;word-break:break-word}
+  .kmu-not i{color:var(--accent);font-size:14px;flex:0 0 auto}
+  .kmu-not a{color:var(--txt-2)}
+  .kmu-alt{margin-top:3px}
   .kmu-yol{color:var(--accent);font-weight:500;font-size:13px;display:inline-flex;align-items:center;gap:6px}
   .kmu-yol:hover{text-decoration:underline}
-  .kmu-bos{padding:56px 20px;text-align:center;color:var(--muted)}
+  .kmu-bos{padding:52px 20px;text-align:center;color:var(--muted)}
   .kmu-bos i{font-size:34px;display:block;margin-bottom:12px;color:var(--line-strong)}
-  .kmu-kaynak{font-size:12.5px;color:var(--muted);line-height:1.6;margin:20px 0 56px;max-width:74ch}
+  .kmu-kaynak{font-size:12.5px;color:var(--muted);line-height:1.6;margin:22px 0 56px;max-width:76ch}
   .kmu-kaynak a{color:var(--accent)}
+  @media(max-width:820px){ .kmu-grid{grid-template-columns:repeat(2,1fr)} }
   @media(max-width:640px){ .kmu-liste{grid-template-columns:1fr} .kmu-head{padding:26px 0 4px} }
+  @media(max-width:520px){ .kmu-grid{grid-template-columns:1fr} }
 </style>
 </head>
 <body>
@@ -122,27 +128,35 @@
 
     <section class="kmu-head">
       <h1>Tuzla Kamu & Yaşam Rehberi</h1>
-      <p class="lede">Mahallendeki cami ve mescitler, muhtarlıklar, acil durum toplanma alanları,
-        semt pazarları, AÇEM kurs merkezleri ve parklar — adres ve tek dokunuşla yol tarifiyle.
-        Bir tür seç ya da ara.</p>
+      <p class="lede">Mahallendeki kamu ve yaşam noktaları — kategori kategori. Bir kategori seç,
+        o kategorinin tüm kayıtlarını adres ve yol tarifiyle gör. Ya da hepsinde birden ara.</p>
       <p class="kmu-meta"><i class="ph-fill ph-map-pin" aria-hidden="true"></i>
-        <span><b id="top">0</b> kayıt · Tuzla geneli</span></p>
+        <span><b id="top">0</b> kayıt · <b id="turSay">0</b> kategori · Tuzla geneli</span></p>
     </section>
-
-    <div class="kmu-tabs" id="tabs" role="tablist" aria-label="Tür"></div>
 
     <div class="kmu-ara">
       <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
-      <input id="ara" type="search" placeholder="Ad, mahalle veya adres ara…" aria-label="Ara" autocomplete="off">
+      <input id="ara" type="search" placeholder="Tümünde ara: ad, mahalle veya adres…" aria-label="Ara" autocomplete="off">
     </div>
 
-    <p class="kmu-say" id="say" aria-live="polite"></p>
-    <div class="kmu-liste" id="liste"></div>
+    <!-- kategori ızgarası (varsayılan görünüm) -->
+    <div class="kmu-grid" id="grid"></div>
+
+    <!-- kategori detayı / arama sonucu -->
+    <div id="detay" hidden>
+      <button class="kmu-geri" id="geri" type="button"><i class="ph ph-arrow-left" aria-hidden="true"></i> Tüm kategoriler</button>
+      <h2 class="kmu-baslik" id="baslik"></h2>
+      <p class="kmu-say" id="say" aria-live="polite"></p>
+      <div class="kmu-liste" id="liste"></div>
+    </div>
 
     <p class="kmu-kaynak">
-      <b>Kaynak:</b> Veriler <a href="https://veri.tuzla.bel.tr" target="_blank" rel="noopener">Tuzla Belediyesi Açık Veri Portalı</a>'ndan
-      derlenmiştir (CC-BY). Semt pazarlarının portalda koordinatı bulunmadığından yol tarifi mahalle üzerinden yaklaşık açılır.
-      Kesin gün/saat ve güncel durum için ilgili kurumu esas alın.
+      <b>Kaynak:</b> Cami, muhtarlık, toplanma alanı, pazar, AÇEM, park ve okul/üniversite verileri
+      <a href="https://veri.tuzla.bel.tr" target="_blank" rel="noopener">Tuzla Belediyesi Açık Veri</a> (CC-BY);
+      mezarlıklar <a href="https://data.ibb.gov.tr" target="_blank" rel="noopener">İBB Açık Veri</a>;
+      emniyet birimleri kullanıcı bildirimi. Okul, üniversite, pazar, mezarlık ve emniyet kayıtlarında
+      koordinat bulunmadığından yol tarifi ad/adres üzerinden yaklaşık açılır. Kesin gün/saat ve güncel
+      durum için ilgili kurumu esas alın.
     </p>
   </div>
 </main>
@@ -168,30 +182,38 @@
     </nav>
     <div class="foot-col">
       <h3>Veri kaynağı</h3>
-      <p class="foot-src">İşletme verisi: OpenStreetMap (ODbL), İBB Açık Veri, GİSBİR. Kamu & yaşam: Tuzla Belediyesi Açık Veri (CC-BY). Nöbetçi eczane: istanbul.eczaneleri.org.</p>
+      <p class="foot-src">İşletme verisi: OpenStreetMap (ODbL), İBB Açık Veri, GİSBİR. Kamu & yaşam: Tuzla Belediyesi & İBB Açık Veri. Nöbetçi eczane: istanbul.eczaneleri.org.</p>
     </div>
   </div>
   <div class="wrap foot-alt">
     <span>© 2026 tuzlali.net · Bağımsız topluluk projesi, resmî kurum değildir.</span>
+    <span class="foot-legal"><a href="gizlilik.html">Gizlilik & Çerez</a> · <a href="kvkk.html">KVKK</a> · <a href="#" data-cerez>Çerez ayarları</a></span>
     <span class="foot-cd">Tasarım · <a href="https://yapgitsin.co" target="_blank" rel="noopener">yapgitsin.co</a></span>
   </div>
 </footer>
 
 <script>
-/* Kamu/yasam noktalari: veri/kamu.json (Tuzla Belediyesi Acik Veri'den uretildi,
-   bkz. veri/kamu_import.py). isletme DEGIL -> tuzla_data.json'dan ayri. */
+/* Kamu/yasam noktalari: veri/kamu.json (Tuzla Bel. + İBB Acik Veri'den, bkz.
+   veri/kamu_import.py). isletme DEGIL -> tuzla_data.json'dan ayri.
+   Yapisi ilcelere/mahallelere benzer: once KATEGORI izgarasi, tikla -> o
+   kategorinin kayitlari. Arama tum kategorilerde gezer. */
 var TURLER = [
-  {ad:"Cami & Mescit",      renk:"#157a3a", ikon:"ph-map-pin"},
-  {ad:"Muhtarlık",          renk:"#0b5fd0", ikon:"ph-house"},
-  {ad:"Toplanma Alanı",     renk:"#0e7c86", ikon:"ph-warning"},
-  {ad:"Pazar Yeri",         renk:"#9a6a00", ikon:"ph-shopping-cart-simple"},
-  {ad:"AÇEM Kurs Merkezi",  renk:"#7b4bc0", ikon:"ph-info"},
-  {ad:"Park",               renk:"#b5651d", ikon:"ph-map-pin-area"}
+  {ad:"İbadethaneler",       renk:"#157a3a", ikon:"ph-map-pin",             desc:"Cami · mescit · cemevi · kilise"},
+  {ad:"Okul",                renk:"#b23a6f", ikon:"ph-house",               desc:"Ana/ilk/orta/lise"},
+  {ad:"Üniversite",          renk:"#345aa8", ikon:"ph-globe-hemisphere-east",desc:"Yükseköğretim"},
+  {ad:"Park",                renk:"#b5651d", ikon:"ph-map-pin-area",        desc:"Yeşil alan · saha"},
+  {ad:"Toplanma Alanı",      renk:"#0e7c86", ikon:"ph-warning",            desc:"Acil durum"},
+  {ad:"Muhtarlık",           renk:"#0b5fd0", ikon:"ph-house",              desc:"Mahalle muhtarlıkları"},
+  {ad:"Mezarlık",            renk:"#5a6b73", ikon:"ph-map-pin",            desc:"İBB Açık Veri"},
+  {ad:"Pazar Yeri",          renk:"#9a6a00", ikon:"ph-shopping-cart-simple",desc:"Semt pazarları · gün"},
+  {ad:"AÇEM Kurs Merkezi",   renk:"#7b4bc0", ikon:"ph-info",              desc:"Anne-çocuk eğitim"},
+  {ad:"Emniyet & Güvenlik",  renk:"#1a3a6b", ikon:"ph-seal-check",        desc:"Polis · karakol"}
 ];
-var RENK = {}; TURLER.forEach(function(t){ RENK[t.ad]=t.renk; });
+var TUR = {}; TURLER.forEach(function(t){ TUR[t.ad]=t; });
 
 var DATA=[], aktif="", q="";
 
+function webHref(w){ return /^https?:\/\//i.test(w) ? w : "https://"+w; }
 function yolLink(r){
   if(r.lat) return "https://www.google.com/maps/dir/?api=1&destination="+r.lat+","+r.lon;
   return "https://www.google.com/maps/search/?api=1&query="+
@@ -199,70 +221,85 @@ function yolLink(r){
 }
 
 function kartHTML(r){
-  var renk=RENK[r.tur]||"var(--accent)";
+  var t=TUR[r.tur]||{}, renk=t.renk||"var(--accent)";
   var mah = r.mahalle ? '<span class="kmu-mah">'+esc(r.mahalle)+'</span>' : "";
   var adres = r.adres ? '<div class="kmu-adres">'+esc(r.adres)+'</div>' : "";
   var not = r.not ? '<div class="kmu-not"><i class="ph ph-info" aria-hidden="true"></i>'+esc(r.not)+'</div>' : "";
+  var tel = r.tel ? '<div class="kmu-not"><i class="ph ph-phone" aria-hidden="true"></i><a href="tel:'+esc(r.tel.replace(/[^0-9+]/g,""))+'">'+esc(r.tel)+'</a></div>' : "";
+  var web = r.web ? '<div class="kmu-not"><i class="ph ph-globe" aria-hidden="true"></i><a href="'+esc(webHref(r.web))+'" target="_blank" rel="noopener">'+esc(r.web)+'</a></div>' : "";
   var yolYazi = r.lat ? "Yol tarifi" : "Haritada ara";
   return '<article class="kmu-kart">'+
     '<div class="kmu-ust"><div><h2>'+esc(r.ad)+'</h2>'+
       '<span class="kmu-tur"><span class="dot" style="background:'+renk+'"></span>'+esc(r.tur)+'</span>'+
     '</div>'+mah+'</div>'+
-    adres+not+
+    adres+not+tel+web+
     '<div class="kmu-alt"><a class="kmu-yol" href="'+yolLink(r)+'" target="_blank" rel="noopener">'+
       '<i class="ph ph-map-trifold" aria-hidden="true"></i> '+yolYazi+'</a></div>'+
   '</article>';
 }
 
-function ciz(){
-  var qn=q.trim().toLocaleLowerCase("tr");
-  var rows=DATA.filter(function(r){
-    if(aktif && r.tur!==aktif) return false;
-    if(!qn) return true;
-    return (r.ad+" "+(r.mahalle||"")+" "+(r.adres||"")).toLocaleLowerCase("tr").indexOf(qn)>=0;
+function gridCiz(){
+  var sayac={}; DATA.forEach(function(r){ sayac[r.tur]=(sayac[r.tur]||0)+1; });
+  var g=document.getElementById("grid");
+  g.innerHTML=TURLER.filter(function(t){return sayac[t.ad];}).map(function(t){
+    return '<button class="kmu-cat" type="button" data-tur="'+esc(t.ad)+'">'+
+      '<span class="ik" style="background:'+t.renk+'"><i class="ph-fill '+t.ikon+'" aria-hidden="true"></i></span>'+
+      '<span class="ad">'+esc(t.ad)+'<small>'+esc(t.desc)+'</small></span>'+
+      '<span class="n">'+sayac[t.ad]+'</span></button>';
+  }).join("");
+  g.querySelectorAll(".kmu-cat").forEach(function(b){
+    b.addEventListener("click",function(){ ac(b.getAttribute("data-tur")); });
   });
-  var liste=document.getElementById("liste"), say=document.getElementById("say");
-  if(!rows.length){
-    liste.innerHTML=""; say.textContent="";
-    liste.innerHTML='<div class="kmu-bos" style="grid-column:1/-1"><i class="ph ph-magnifying-glass"></i>'+
-      '<div>Aramanı karşılayan kayıt yok. Farklı bir tür ya da kelime dene.</div></div>';
-    return;
-  }
-  say.innerHTML='<b>'+rows.length+'</b> kayıt'+(aktif?" · "+esc(aktif):"")+(qn?' · "'+esc(q.trim())+'"':"");
-  liste.innerHTML=rows.map(kartHTML).join("");
 }
 
-function tabsCiz(){
-  var sayac={}; DATA.forEach(function(r){ sayac[r.tur]=(sayac[r.tur]||0)+1; });
-  var tabs=document.getElementById("tabs");
-  var html='<button class="kmu-tab" role="tab" data-tur="" aria-selected="'+(aktif===""?"true":"false")+'">'+
-    'Tümü <small>'+DATA.length+'</small></button>';
-  TURLER.forEach(function(t){
-    if(!sayac[t.ad]) return;
-    html+='<button class="kmu-tab" role="tab" data-tur="'+esc(t.ad)+'" aria-selected="'+(aktif===t.ad?"true":"false")+'">'+
-      '<span class="dot" style="background:'+t.renk+'"></span>'+esc(t.ad)+' <small>'+sayac[t.ad]+'</small></button>';
-  });
-  tabs.innerHTML=html;
-  tabs.querySelectorAll(".kmu-tab").forEach(function(b){
-    b.addEventListener("click",function(){
-      aktif=b.getAttribute("data-tur");
-      tabs.querySelectorAll(".kmu-tab").forEach(function(x){ x.setAttribute("aria-selected", x===b?"true":"false"); });
-      ciz();
-    });
-  });
+function listeCiz(){
+  var qn=q.trim().toLocaleLowerCase("tr");
+  var rows=DATA.filter(function(r){
+    if(qn) return (r.ad+" "+(r.mahalle||"")+" "+(r.adres||"")).toLocaleLowerCase("tr").indexOf(qn)>=0;
+    return r.tur===aktif;
+  }).sort(function(a,b){ return (a.ad||"").localeCompare(b.ad||"","tr"); });
+
+  var t=TUR[aktif]||{};
+  document.getElementById("baslik").innerHTML = qn
+    ? 'Arama sonuçları'
+    : '<span class="dot" style="background:'+(t.renk||"var(--accent)")+'"></span>'+esc(aktif);
+  document.getElementById("say").innerHTML = '<b>'+rows.length+'</b> kayıt'+
+    (qn?' · "'+esc(q.trim())+'"':(t.desc?' · '+esc(t.desc):""));
+
+  var liste=document.getElementById("liste");
+  liste.innerHTML = rows.length
+    ? rows.map(kartHTML).join("")
+    : '<div class="kmu-bos" style="grid-column:1/-1"><i class="ph ph-magnifying-glass"></i>'+
+      '<div>Kayıt bulunamadı. Farklı bir kelime ya da kategori dene.</div></div>';
 }
+
+function goster(detayMi){
+  document.getElementById("grid").hidden = detayMi;
+  document.getElementById("detay").hidden = !detayMi;
+}
+function ac(tur){ aktif=tur; goster(true); listeCiz(); window.scrollTo({top:0,behavior:"smooth"}); }
+function grid(){ aktif=""; goster(false); }
 
 fetch("veri/kamu.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(d){
   DATA=d||[];
   document.getElementById("top").textContent=DATA.length;
-  tabsCiz(); ciz();
+  var turler={}; DATA.forEach(function(r){turler[r.tur]=1;});
+  document.getElementById("turSay").textContent=Object.keys(turler).length;
+  gridCiz(); grid();
 }).catch(function(){
-  document.getElementById("liste").innerHTML=
+  document.getElementById("grid").innerHTML=
     '<div class="kmu-bos" style="grid-column:1/-1"><i class="ph ph-warning-circle"></i>'+
     '<div>Veri şu an yüklenemedi, biraz sonra tekrar deneyin.</div></div>';
 });
 
-document.getElementById("ara").addEventListener("input",function(e){ q=e.target.value; ciz(); });
+document.getElementById("geri").addEventListener("click",function(){
+  var a=document.getElementById("ara"); a.value=""; q=""; grid();
+});
+document.getElementById("ara").addEventListener("input",function(e){
+  q=e.target.value;
+  if(q.trim()){ goster(true); listeCiz(); }
+  else grid();
+});
 </script>
 
 </body>
