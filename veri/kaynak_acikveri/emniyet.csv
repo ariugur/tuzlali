@@ -1,6 +1,11 @@
 AD,ADRES,TEL,NOT
-Tuzla İlçe Emniyet Müdürlüğü,"Evliya Çelebi, Hatboyu Cad., Çelebi Sk. No:6, 34940 Tuzla/İstanbul",,
-Sahil Güvenlik Komutanlığı,"Postane, Öğüt Sk. No:130, 34940 Tuzla/İstanbul",,
-Tuzla Polis Merkezi,"Cami Mah., Ahmet Kılıç Blv. No:137, Tuzla/İstanbul",+90 216 423 11 17,24 saat açık
-Şifa Şht. Fadıl Şişman Polis Merkezi,"Mimar Sinan, Emiroğlu Cd. No:100, 34950 Tuzla/İstanbul",,
-Orhanlı Polis Merkezi Amirliği,"Aydınlı, Çeşme Cd. No:1, 34956 Tuzla/İstanbul",,
+Tuzla İlçe Emniyet Müdürlüğü,"Evliya Çelebi, Hatboyu Cad., Çelebi Sk. No:6, 34940 Tuzla/İstanbul",155,Emniyet Müdürlüğü · acil hat
+Sahil Güvenlik Komutanlığı,"Postane, Öğüt Sk. No:130, 34940 Tuzla/İstanbul",158,Sahil Güvenlik · acil hat
+Tuzla Polis Merkezi,"Cami Mah., Ahmet Kılıç Blv. No:137, Tuzla/İstanbul",+90 216 423 11 17,Polis merkezi · 24 saat açık
+Şifa Şht. Fadıl Şişman Polis Merkezi,"Mimar Sinan, Emiroğlu Cd. No:100, 34950 Tuzla/İstanbul",155,Polis merkezi · acil hat
+Orhanlı Polis Merkezi Amirliği,"Aydınlı, Çeşme Cd. No:1, 34956 Tuzla/İstanbul",155,Polis merkezi · acil hat
+Tuzla İtfaiye Grup Amirliği,"Aydıntepe, Batu Sk. No:4, 34947 Tuzla/İstanbul",112,İtfaiye · acil hat
+Tuzla Sahil İtfaiye İstasyonu,"Cami, Şehitler Cd. No:15, 34940 Tuzla/İstanbul",112,İtfaiye · acil hat
+Tuzla Yayla İtfaiye İstasyonu,"Cami, Şehitler Cd., 34940 Tuzla/İstanbul",112,İtfaiye · acil hat
+Tuzla OSB İtfaiye İstasyonu,"Aydınlı - Birlik OSB, Doğu Cd. No:4, 34953 Aydınlı/Tuzla/İstanbul",112,İtfaiye · acil hat
+Tuzla Belediye Başkanlığı Zabıta Müdürlüğü,"Evliya Çelebi Mah., Yenice Sok. No:1, 34940 Tuzla/İstanbul",444 0 906,Zabıta · Tuzla Bel. çağrı merkezi

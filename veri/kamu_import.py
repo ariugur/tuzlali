@@ -242,9 +242,10 @@ def main():
         out.append(kayit("Mezarlık", tr_baslik(r["MEZARLIK ADI"]) + " Mezarlığı", "",
                          None, None, mahalle_bul(r.get("MAHALLE", ""), r["MEZARLIK ADI"]), ""))
 
-    # --- Emniyet & Güvenlik --- kullanici bildirimi (Google Haritalar), koordinat yok
+    # --- Güvenlik & Acil --- polis/emniyet/sahil güvenlik/itfaiye/zabıta; kullanici
+    #     bildirimi + resmi acil numaralari (112/155/158). Koordinat yok.
     for r in oku("emniyet.csv", ","):
-        out.append(kayit("Emniyet & Güvenlik", r["AD"], r["ADRES"], None, None,
+        out.append(kayit("Güvenlik & Acil", r["AD"], r["ADRES"], None, None,
                          mahalle_bul(r["ADRES"]), r.get("NOT", ""), r.get("TEL", "")))
 
     # --- Cemevi & Kilise --- cami disi ibadethaneler (ayni "İbadethaneler" turunde),
