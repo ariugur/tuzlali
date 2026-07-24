@@ -2,18 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-07-23T20:32+03:00",
+  "guncelleme": "2026-07-24T12:01+03:00",
   "eczaneler": [
-    {
-      "ad": "Lavanta Eczanesi",
-      "adres": "Evliya Çelebi Mahallesi Hatboyu Caddesi 6/a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-lavanta-eczanesi.html"
-    },
-    {
-      "ad": "Önder Eczanesi",
-      "adres": "Mimarsinan Mimar Sinan Mahallesi Güngörmüş Sokak No:35/a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-onder-eczanesi.html"
-    },
     {
       "ad": "Ecem Eczanesi",
       "adres": "Yayla Mahallesi Vatan Caddesi Vizyon Park Sitesi B1 Blok No:72/1 No:3",
@@ -28,6 +18,21 @@
       "ad": "Şifa Eczanesi",
       "adres": "Şifa Mahallesi Egemenlik Caddesi 40/a",
       "detay": "https://istanbul.eczaneleri.org/tuzla-sifa-eczanesi.html"
+    },
+    {
+      "ad": "Çağatay Eczanesi",
+      "adres": "Mimarsinan Şifa Mahallesi Emiroğlu Caddesi 83/b",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-cagatay-eczanesi.html"
+    },
+    {
+      "ad": "Gül Eczanesi",
+      "adres": "İçmeler İçmeler Mahallesi Ankara Caddesi 2/d",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-gul-eczanesi.html"
+    },
+    {
+      "ad": "Sevgi Eczanesi",
+      "adres": "İstasyon Postane Mahallesi İstasyon Caddesi 5",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-sevgi-eczanesi.html"
     }
   ]
 }
