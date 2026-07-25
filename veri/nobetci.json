@@ -2,23 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-07-24T20:01+03:00",
+  "guncelleme": "2026-07-25T11:28+03:00",
   "eczaneler": [
-    {
-      "ad": "Ecem Eczanesi",
-      "adres": "Yayla Mahallesi Vatan Caddesi Vizyon Park Sitesi B1 Blok No:72/1 No:3",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-ecem-eczanesi.html"
-    },
-    {
-      "ad": "Horoz Eczanesi",
-      "adres": "Aydınlı Aydınlı Mahallesi Bahçeler Sokak 2/b",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-horoz-eczanesi.html"
-    },
-    {
-      "ad": "Şifa Eczanesi",
-      "adres": "Şifa Mahallesi Egemenlik Caddesi 40/a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-sifa-eczanesi.html"
-    },
     {
       "ad": "Çağatay Eczanesi",
       "adres": "Mimarsinan Şifa Mahallesi Emiroğlu Caddesi 83/b",
@@ -33,6 +18,16 @@
       "ad": "Sevgi Eczanesi",
       "adres": "İstasyon Postane Mahallesi İstasyon Caddesi 5",
       "detay": "https://istanbul.eczaneleri.org/tuzla-sevgi-eczanesi.html"
+    },
+    {
+      "ad": "Berkay Eczanesi",
+      "adres": "Mimarsinan Mimar Sinan Mahallesi Başak Sokak (g.74 Sk.) 21/d",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-berkay-eczanesi.html"
+    },
+    {
+      "ad": "İlhan Eczanesi",
+      "adres": "Yayla Mahallesi Ali İhsan Paşa Caddesi 37a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-ilhan-eczanesi.html"
     }
   ]
 }
