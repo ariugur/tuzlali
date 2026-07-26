@@ -2,23 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-07-25T19:24+03:00",
+  "guncelleme": "2026-07-26T11:42+03:00",
   "eczaneler": [
-    {
-      "ad": "Çağatay Eczanesi",
-      "adres": "Mimarsinan Şifa Mahallesi Emiroğlu Caddesi 83/b",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-cagatay-eczanesi.html"
-    },
-    {
-      "ad": "Gül Eczanesi",
-      "adres": "İçmeler İçmeler Mahallesi Ankara Caddesi 2/d",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-gul-eczanesi.html"
-    },
-    {
-      "ad": "Sevgi Eczanesi",
-      "adres": "İstasyon Postane Mahallesi İstasyon Caddesi 5",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-sevgi-eczanesi.html"
-    },
     {
       "ad": "Berkay Eczanesi",
       "adres": "Mimarsinan Mimar Sinan Mahallesi Başak Sokak (g.74 Sk.) 21/d",
@@ -28,6 +13,16 @@
       "ad": "İlhan Eczanesi",
       "adres": "Yayla Mahallesi Ali İhsan Paşa Caddesi 37a",
       "detay": "https://istanbul.eczaneleri.org/tuzla-ilhan-eczanesi.html"
+    },
+    {
+      "ad": "Bilge Eczanesi",
+      "adres": "Yayla Mahallesi Ali İhsan Paşa Caddesi 35a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-bilge-eczanesi.html"
+    },
+    {
+      "ad": "Dila Eczanesi",
+      "adres": "Mimarsinan Şifa Mahallesi Emiroğlu Caddesi 133",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-dila-eczanesi.html"
     }
   ]
 }
