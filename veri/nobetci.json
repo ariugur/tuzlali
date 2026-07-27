@@ -2,18 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-07-26T19:27+03:00",
+  "guncelleme": "2026-07-27T13:14+03:00",
   "eczaneler": [
-    {
-      "ad": "Berkay Eczanesi",
-      "adres": "Mimarsinan Mimar Sinan Mahallesi Başak Sokak (g.74 Sk.) 21/d",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-berkay-eczanesi.html"
-    },
-    {
-      "ad": "İlhan Eczanesi",
-      "adres": "Yayla Mahallesi Ali İhsan Paşa Caddesi 37a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-ilhan-eczanesi.html"
-    },
     {
       "ad": "Bilge Eczanesi",
       "adres": "Yayla Mahallesi Ali İhsan Paşa Caddesi 35a",
@@ -23,6 +13,21 @@
       "ad": "Dila Eczanesi",
       "adres": "Mimarsinan Şifa Mahallesi Emiroğlu Caddesi 133",
       "detay": "https://istanbul.eczaneleri.org/tuzla-dila-eczanesi.html"
+    },
+    {
+      "ad": "Masal Eczanesi",
+      "adres": "İçmeler Mahallesi İncesu Sokak 16/a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-masal-eczanesi.html"
+    },
+    {
+      "ad": "Önder Eczanesi",
+      "adres": "Mimarsinan Mimar Sinan Mahallesi Güngörmüş Sokak No:35/a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-onder-eczanesi.html"
+    },
+    {
+      "ad": "Yelken Eczanesi",
+      "adres": "Tersaneler Evliya Çelebi Mahallesi Hatboyu Caddesi 10d",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-yelken-eczanesi.html"
     }
   ]
 }
