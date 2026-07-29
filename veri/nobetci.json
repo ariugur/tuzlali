@@ -2,23 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-07-28T19:56+03:00",
+  "guncelleme": "2026-07-29T12:19+03:00",
   "eczaneler": [
-    {
-      "ad": "Masal Eczanesi",
-      "adres": "İçmeler Mahallesi İncesu Sokak 16/a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-masal-eczanesi.html"
-    },
-    {
-      "ad": "Önder Eczanesi",
-      "adres": "Mimarsinan Mimar Sinan Mahallesi Güngörmüş Sokak No:35/a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-onder-eczanesi.html"
-    },
-    {
-      "ad": "Yelken Eczanesi",
-      "adres": "Tersaneler Evliya Çelebi Mahallesi Hatboyu Caddesi 10d",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-yelken-eczanesi.html"
-    },
     {
       "ad": "Barbaros Eczanesi",
       "adres": "Yayla Mahallesi Şinasi Dural Caddesi 90/b",
@@ -28,6 +13,21 @@
       "ad": "Şeyma Eczanesi",
       "adres": "Şifa Şifa Mahallesi Başar Sokak 36/a",
       "detay": "https://istanbul.eczaneleri.org/tuzla-seyma-eczanesi.html"
+    },
+    {
+      "ad": "Erdem Eczanesi",
+      "adres": "Şifa Mahallesi Emiroğlu Caddesi 91 B",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-erdem-eczanesi.html"
+    },
+    {
+      "ad": "Güneş Eczanesi",
+      "adres": "İstasyon Mahallesi İstasyon Caddesi 152c",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-gunes-eczanesi.html"
+    },
+    {
+      "ad": "Nil Eczanesi",
+      "adres": "İçmeler İçmeler Mahallesi Zinnur Sokak 3/4",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-nil-eczanesi.html"
     }
   ]
 }
