@@ -2,23 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-07-30T19:57+03:00",
+  "guncelleme": "2026-07-31T12:22+03:00",
   "eczaneler": [
-    {
-      "ad": "Erdem Eczanesi",
-      "adres": "Şifa Mahallesi Emiroğlu Caddesi 91 B",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-erdem-eczanesi.html"
-    },
-    {
-      "ad": "Güneş Eczanesi",
-      "adres": "İstasyon Mahallesi İstasyon Caddesi 152c",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-gunes-eczanesi.html"
-    },
-    {
-      "ad": "Nil Eczanesi",
-      "adres": "İçmeler İçmeler Mahallesi Zinnur Sokak 3/4",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-nil-eczanesi.html"
-    },
     {
       "ad": "Egem Eczanesi",
       "adres": "Mimarsinan Mimar Sinan Mahallesi Başak Sokak (g.74 Sk.) 10a/10b",
@@ -28,6 +13,21 @@
       "ad": "Tuğba Eczanesi",
       "adres": "İstasyon Postane Mahallesi Manastır Yolu Caddesi 78/a",
       "detay": "https://istanbul.eczaneleri.org/tuzla-tugba-eczanesi.html"
+    },
+    {
+      "ad": "Doğa Eczanesi",
+      "adres": "Şifa Şifa Mahallesi Başar Sokak 32a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-doga-eczanesi.html"
+    },
+    {
+      "ad": "Metro Eczanesi",
+      "adres": "Tersaneler Evliya Çelebi Mahallesi Hatboyu Caddesi 8/a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-metro-eczanesi.html"
+    },
+    {
+      "ad": "Miray Eczanesi",
+      "adres": "Aydınlı Mahallesi Gürpınar Caddesi 37b",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-miray-eczanesi.html"
     }
   ]
 }
