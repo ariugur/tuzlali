@@ -2,18 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-07-31T20:00+03:00",
+  "guncelleme": "2026-08-01T11:37+03:00",
   "eczaneler": [
-    {
-      "ad": "Egem Eczanesi",
-      "adres": "Mimarsinan Mimar Sinan Mahallesi Başak Sokak (g.74 Sk.) 10a/10b",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-egem-eczanesi.html"
-    },
-    {
-      "ad": "Tuğba Eczanesi",
-      "adres": "İstasyon Postane Mahallesi Manastır Yolu Caddesi 78/a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-tugba-eczanesi.html"
-    },
     {
       "ad": "Doğa Eczanesi",
       "adres": "Şifa Şifa Mahallesi Başar Sokak 32a",
@@ -28,6 +18,16 @@
       "ad": "Miray Eczanesi",
       "adres": "Aydınlı Mahallesi Gürpınar Caddesi 37b",
       "detay": "https://istanbul.eczaneleri.org/tuzla-miray-eczanesi.html"
+    },
+    {
+      "ad": "Esin Eczanesi",
+      "adres": "Şifa Mahallesi İnönü Caddesi Tuzla Kiptaş 1.etap Konutları E03 Blok No:73/b",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-esin-eczanesi.html"
+    },
+    {
+      "ad": "Via Marin Eczanesi",
+      "adres": "İstasyon Cami Mahallesi Balıkçılar Sokak 20n",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-via-marin-eczanesi.html"
     }
   ]
 }
