@@ -2,18 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-08-03T20:22+03:00",
+  "guncelleme": "2026-08-04T12:18+03:00",
   "eczaneler": [
-    {
-      "ad": "Berkay Eczanesi",
-      "adres": "Mimarsinan Mimar Sinan Mahallesi Başak Sokak (g.74 Sk.) 21/d",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-berkay-eczanesi.html"
-    },
-    {
-      "ad": "Tuzla Vital Eczanesi",
-      "adres": "İstasyon Mahallesi Fevzi Çakmak Caddesi No:101/b",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-tuzla-vital-eczanesi.html"
-    },
     {
       "ad": "Eda Eczanesi",
       "adres": "Tersaneler Evliya Çelebi Mahallesi Müştak Sokak 19/1",
@@ -23,6 +13,16 @@
       "ad": "Şifa Eczanesi",
       "adres": "Şifa Mahallesi Egemenlik Caddesi 40/a",
       "detay": "https://istanbul.eczaneleri.org/tuzla-sifa-eczanesi.html"
+    },
+    {
+      "ad": "Bigem Eczanesi",
+      "adres": "Evliya Çelebi Mahallesi Hatboyu Caddesi 42a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-bigem-eczanesi.html"
+    },
+    {
+      "ad": "Çağatay Eczanesi",
+      "adres": "Mimarsinan Şifa Mahallesi Emiroğlu Caddesi 83/b",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-cagatay-eczanesi.html"
     }
   ]
 }
