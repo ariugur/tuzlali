@@ -2,7 +2,7 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-08-05T12:17+03:00",
+  "guncelleme": "2026-08-05T19:58+03:00",
   "eczaneler": [
     {
       "ad": "Bigem Eczanesi",
@@ -23,6 +23,16 @@
       "ad": "Tuzla Eczanesi",
       "adres": "İstasyon Postane Mahallesi İstasyon Caddesi 1a",
       "detay": "https://istanbul.eczaneleri.org/tuzla-tuzla-eczanesi.html"
+    },
+    {
+      "ad": "Erdem Eczanesi",
+      "adres": "Şifa Mahallesi Emiroğlu Caddesi 91 B",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-erdem-eczanesi.html"
+    },
+    {
+      "ad": "Umut Eczanesi",
+      "adres": "Yayla Mahallesi Fevzi Çakmak Caddesi 29",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-umut-eczanesi.html"
     }
   ]
 }
