@@ -2,18 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-08-05T19:58+03:00",
+  "guncelleme": "2026-08-06T12:19+03:00",
   "eczaneler": [
-    {
-      "ad": "Bigem Eczanesi",
-      "adres": "Evliya Çelebi Mahallesi Hatboyu Caddesi 42a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-bigem-eczanesi.html"
-    },
-    {
-      "ad": "Çağatay Eczanesi",
-      "adres": "Mimarsinan Şifa Mahallesi Emiroğlu Caddesi 83/b",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-cagatay-eczanesi.html"
-    },
     {
       "ad": "Dila Eczanesi",
       "adres": "Mimarsinan Şifa Mahallesi Emiroğlu Caddesi 133",
@@ -30,9 +20,29 @@
       "detay": "https://istanbul.eczaneleri.org/tuzla-erdem-eczanesi.html"
     },
     {
+      "ad": "Konak Eczanesi",
+      "adres": "İçmeler İçmeler Mahallesi Aydemir Sokak 4a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-konak-eczanesi.html"
+    },
+    {
       "ad": "Umut Eczanesi",
       "adres": "Yayla Mahallesi Fevzi Çakmak Caddesi 29",
       "detay": "https://istanbul.eczaneleri.org/tuzla-umut-eczanesi.html"
+    },
+    {
+      "ad": "Manolya Eczanesi",
+      "adres": "Yayla Mahallesi Şinasi Dural Caddesi 96b",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-manolya-eczanesi.html"
+    },
+    {
+      "ad": "Saka Eczanesi",
+      "adres": "İçmeler Mahallesi İncesu Sokak 6/a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-saka-eczanesi.html"
+    },
+    {
+      "ad": "Şeyma Eczanesi",
+      "adres": "Şifa Şifa Mahallesi Başar Sokak 36/a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-seyma-eczanesi.html"
     }
   ]
 }
