@@ -2,23 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-08-08T18:53+03:00",
+  "guncelleme": "2026-08-09T10:29+03:00",
   "eczaneler": [
-    {
-      "ad": "Manolya Eczanesi",
-      "adres": "Yayla Mahallesi Şinasi Dural Caddesi 96b",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-manolya-eczanesi.html"
-    },
-    {
-      "ad": "Saka Eczanesi",
-      "adres": "İçmeler Mahallesi İncesu Sokak 6/a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-saka-eczanesi.html"
-    },
-    {
-      "ad": "Şeyma Eczanesi",
-      "adres": "Şifa Şifa Mahallesi Başar Sokak 36/a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-seyma-eczanesi.html"
-    },
     {
       "ad": "Doğa Eczanesi",
       "adres": "Şifa Şifa Mahallesi Başar Sokak 32a",
@@ -43,6 +28,21 @@
       "ad": "Sevgi Eczanesi",
       "adres": "İstasyon Postane Mahallesi İstasyon Caddesi 5",
       "detay": "https://istanbul.eczaneleri.org/tuzla-sevgi-eczanesi.html"
+    },
+    {
+      "ad": "Ata Eczanesi",
+      "adres": "Tersaneler Yayla Mahallesi Şinasi Dural Caddesi 29/b",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-ata-eczanesi.html"
+    },
+    {
+      "ad": "Belkıs Eczanesi",
+      "adres": "İçmeler Aydıntepe Mahallesi Batu Sokak 62a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-belkis-eczanesi.html"
+    },
+    {
+      "ad": "Egem Eczanesi",
+      "adres": "Mimarsinan Mimar Sinan Mahallesi Başak Sokak (g.74 Sk.) 10a/10b",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-egem-eczanesi.html"
     }
   ]
 }
