@@ -2,18 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-08-10T19:13+03:00",
+  "guncelleme": "2026-08-11T10:44+03:00",
   "eczaneler": [
-    {
-      "ad": "Erdem Eczanesi",
-      "adres": "Şifa Mahallesi Emiroğlu Caddesi 91 B",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-erdem-eczanesi.html"
-    },
-    {
-      "ad": "Sevgi Eczanesi",
-      "adres": "İstasyon Postane Mahallesi İstasyon Caddesi 5",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-sevgi-eczanesi.html"
-    },
     {
       "ad": "Ata Eczanesi",
       "adres": "Tersaneler Yayla Mahallesi Şinasi Dural Caddesi 29/b",
@@ -38,6 +28,26 @@
       "ad": "Lotus Eczanesi",
       "adres": "Tersaneler Yayla Mahallesi Vatan Caddesi 72/1/5",
       "detay": "https://istanbul.eczaneleri.org/tuzla-lotus-eczanesi.html"
+    },
+    {
+      "ad": "Anadolu Eczanesi",
+      "adres": "İçmeler Aydıntepe Mahallesi Yavuz Caddesi 7a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-anadolu-eczanesi.html"
+    },
+    {
+      "ad": "Esin Eczanesi",
+      "adres": "Şifa Mahallesi İnönü Caddesi Tuzla Kiptaş 1.etap Konutları E03 Blok No:73/b",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-esin-eczanesi.html"
+    },
+    {
+      "ad": "Mutluluk Eczanesi",
+      "adres": "Tersaneler Yayla Mahallesi Ayışığı Sokak 4a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-mutluluk-eczanesi.html"
+    },
+    {
+      "ad": "Neva Eczanesi",
+      "adres": "İstasyon Postane Mahallesi Fevzi Çakmak Caddesi A Blok No:142/d",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-neva-eczanesi.html"
     }
   ]
 }
