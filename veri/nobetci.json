@@ -2,18 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-08-12T19:23+03:00",
+  "guncelleme": "2026-08-13T10:59+03:00",
   "eczaneler": [
-    {
-      "ad": "Berkay Eczanesi",
-      "adres": "Mimarsinan Mimar Sinan Mahallesi Başak Sokak (g.74 Sk.) 21/d",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-berkay-eczanesi.html"
-    },
-    {
-      "ad": "Lotus Eczanesi",
-      "adres": "Tersaneler Yayla Mahallesi Vatan Caddesi 72/1/5",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-lotus-eczanesi.html"
-    },
     {
       "ad": "Anadolu Eczanesi",
       "adres": "İçmeler Aydıntepe Mahallesi Yavuz Caddesi 7a",
@@ -43,6 +33,16 @@
       "ad": "Yaşam Eczanesi",
       "adres": "Yayla Mahallesi Şinasi Dural Caddesi 31/a",
       "detay": "https://istanbul.eczaneleri.org/tuzla-yasam-eczanesi.html"
+    },
+    {
+      "ad": "Ecem Eczanesi",
+      "adres": "Yayla Mahallesi Vatan Caddesi Vizyon Park Sitesi B1 Blok No:72/1 No:3",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-ecem-eczanesi.html"
+    },
+    {
+      "ad": "Erdem Eczanesi",
+      "adres": "Şifa Mahallesi Emiroğlu Caddesi 91 B",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-erdem-eczanesi.html"
     }
   ]
 }
