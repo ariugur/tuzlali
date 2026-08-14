@@ -2,23 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-08-13T19:14+03:00",
+  "guncelleme": "2026-08-14T10:56+03:00",
   "eczaneler": [
-    {
-      "ad": "Anadolu Eczanesi",
-      "adres": "İçmeler Aydıntepe Mahallesi Yavuz Caddesi 7a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-anadolu-eczanesi.html"
-    },
-    {
-      "ad": "Esin Eczanesi",
-      "adres": "Şifa Mahallesi İnönü Caddesi Tuzla Kiptaş 1.etap Konutları E03 Blok No:73/b",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-esin-eczanesi.html"
-    },
-    {
-      "ad": "Mutluluk Eczanesi",
-      "adres": "Tersaneler Yayla Mahallesi Ayışığı Sokak 4a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-mutluluk-eczanesi.html"
-    },
     {
       "ad": "Anka Eczanesi",
       "adres": "Aydınlı Aydınlı Mahallesi Hal Yolu Caddesi 1/b-11",
@@ -43,6 +28,21 @@
       "ad": "Erdem Eczanesi",
       "adres": "Şifa Mahallesi Emiroğlu Caddesi 91 B",
       "detay": "https://istanbul.eczaneleri.org/tuzla-erdem-eczanesi.html"
+    },
+    {
+      "ad": "Çağatay Eczanesi",
+      "adres": "Mimarsinan Şifa Mahallesi Emiroğlu Caddesi 83/b",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-cagatay-eczanesi.html"
+    },
+    {
+      "ad": "Çınar Eczanesi",
+      "adres": "İçmeler İçmeler Mahallesi Zinnur Sokak 3/7",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-cinar-eczanesi.html"
+    },
+    {
+      "ad": "Papatya Eczanesi",
+      "adres": "İstasyon İstasyon Mahallesi Vatan Caddesi 117/4-3",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-papatya-eczanesi.html"
     }
   ]
 }
