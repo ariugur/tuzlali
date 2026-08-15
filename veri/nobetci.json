@@ -2,7 +2,7 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-08-15T10:04+03:00",
+  "guncelleme": "2026-08-15T18:42+03:00",
   "eczaneler": [
     {
       "ad": "Ecem Eczanesi",
@@ -28,6 +28,21 @@
       "ad": "Papatya Eczanesi",
       "adres": "İstasyon İstasyon Mahallesi Vatan Caddesi 117/4-3",
       "detay": "https://istanbul.eczaneleri.org/tuzla-papatya-eczanesi.html"
+    },
+    {
+      "ad": "Önder Eczanesi",
+      "adres": "Mimarsinan Mimar Sinan Mahallesi Güngörmüş Sokak No:35/a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-onder-eczanesi.html"
+    },
+    {
+      "ad": "Tuğba Eczanesi",
+      "adres": "İstasyon Postane Mahallesi Manastır Yolu Caddesi 78/a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-tugba-eczanesi.html"
+    },
+    {
+      "ad": "Yaşar Eczanesi",
+      "adres": "İçmeler Aydıntepe Mahallesi 100. Yıl Caddesi No:81/a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-yasar-eczanesi.html"
     }
   ]
 }
