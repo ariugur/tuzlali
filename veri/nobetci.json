@@ -2,23 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-08-14T19:12+03:00",
+  "guncelleme": "2026-08-15T10:04+03:00",
   "eczaneler": [
-    {
-      "ad": "Anka Eczanesi",
-      "adres": "Aydınlı Aydınlı Mahallesi Hal Yolu Caddesi 1/b-11",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-anka-eczanesi.html"
-    },
-    {
-      "ad": "Egem Eczanesi",
-      "adres": "Mimarsinan Mimar Sinan Mahallesi Başak Sokak (g.74 Sk.) 10a/10b",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-egem-eczanesi.html"
-    },
-    {
-      "ad": "Yaşam Eczanesi",
-      "adres": "Yayla Mahallesi Şinasi Dural Caddesi 31/a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-yasam-eczanesi.html"
-    },
     {
       "ad": "Ecem Eczanesi",
       "adres": "Yayla Mahallesi Vatan Caddesi Vizyon Park Sitesi B1 Blok No:72/1 No:3",
@@ -35,9 +20,9 @@
       "detay": "https://istanbul.eczaneleri.org/tuzla-cagatay-eczanesi.html"
     },
     {
-      "ad": "Çınar Eczanesi",
-      "adres": "İçmeler İçmeler Mahallesi Zinnur Sokak 3/7",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-cinar-eczanesi.html"
+      "ad": "Masal Eczanesi",
+      "adres": "İçmeler Mahallesi İncesu Sokak 16/a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-masal-eczanesi.html"
     },
     {
       "ad": "Papatya Eczanesi",
