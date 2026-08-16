@@ -2,18 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-08-15T18:42+03:00",
+  "guncelleme": "2026-08-16T10:07+03:00",
   "eczaneler": [
-    {
-      "ad": "Ecem Eczanesi",
-      "adres": "Yayla Mahallesi Vatan Caddesi Vizyon Park Sitesi B1 Blok No:72/1 No:3",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-ecem-eczanesi.html"
-    },
-    {
-      "ad": "Erdem Eczanesi",
-      "adres": "Şifa Mahallesi Emiroğlu Caddesi 91 B",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-erdem-eczanesi.html"
-    },
     {
       "ad": "Çağatay Eczanesi",
       "adres": "Mimarsinan Şifa Mahallesi Emiroğlu Caddesi 83/b",
@@ -43,6 +33,21 @@
       "ad": "Yaşar Eczanesi",
       "adres": "İçmeler Aydıntepe Mahallesi 100. Yıl Caddesi No:81/a",
       "detay": "https://istanbul.eczaneleri.org/tuzla-yasar-eczanesi.html"
+    },
+    {
+      "ad": "Berkcem Eczanesi",
+      "adres": "İçmeler Aydıntepe Mahallesi Yeşildere Caddesi 54/b",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-berkcem-eczanesi.html"
+    },
+    {
+      "ad": "Doğa Eczanesi",
+      "adres": "Şifa Şifa Mahallesi Başar Sokak 32a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-doga-eczanesi.html"
+    },
+    {
+      "ad": "Halk Eczanesi",
+      "adres": "Cami Mahallesi İstasyon Caddesi 102/9",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-halk-eczanesi.html"
     }
   ]
 }
