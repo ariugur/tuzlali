@@ -2,23 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-08-18T18:54+03:00",
+  "guncelleme": "2026-08-19T10:13+03:00",
   "eczaneler": [
-    {
-      "ad": "Berkcem Eczanesi",
-      "adres": "İçmeler Aydıntepe Mahallesi Yeşildere Caddesi 54/b",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-berkcem-eczanesi.html"
-    },
-    {
-      "ad": "Doğa Eczanesi",
-      "adres": "Şifa Şifa Mahallesi Başar Sokak 32a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-doga-eczanesi.html"
-    },
-    {
-      "ad": "Halk Eczanesi",
-      "adres": "Cami Mahallesi İstasyon Caddesi 102/9",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-halk-eczanesi.html"
-    },
     {
       "ad": "Erdem Eczanesi",
       "adres": "Şifa Mahallesi Emiroğlu Caddesi 91 B",
@@ -35,6 +20,11 @@
       "detay": "https://istanbul.eczaneleri.org/tuzla-zuhal-eczanesi.html"
     },
     {
+      "ad": "Büşra Eczanesi",
+      "adres": "Aydınlı Mahallesi Dersaadet Sokak 20/f",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-busra-eczanesi.html"
+    },
+    {
       "ad": "Mercan Eczanesi",
       "adres": "İstasyon Cami Mahallesi İstasyon Caddesi 48d",
       "detay": "https://istanbul.eczaneleri.org/tuzla-mercan-eczanesi.html"
@@ -43,6 +33,21 @@
       "ad": "Şeyma Eczanesi",
       "adres": "Şifa Şifa Mahallesi Başar Sokak 36/a",
       "detay": "https://istanbul.eczaneleri.org/tuzla-seyma-eczanesi.html"
+    },
+    {
+      "ad": "Berkay Eczanesi",
+      "adres": "Mimarsinan Mimar Sinan Mahallesi Başak Sokak (g.74 Sk.) 21/d",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-berkay-eczanesi.html"
+    },
+    {
+      "ad": "Cantürk Eczanesi",
+      "adres": "Aydıntepe Mahallesi Batu Sokak 24/a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-canturk-eczanesi.html"
+    },
+    {
+      "ad": "İlhan Eczanesi",
+      "adres": "Yayla Mahallesi Ali İhsan Paşa Caddesi 37a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-ilhan-eczanesi.html"
     }
   ]
 }
