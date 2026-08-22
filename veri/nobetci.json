@@ -2,23 +2,8 @@
   "ilce": "Tuzla",
   "kaynak": "istanbul.eczaneleri.org",
   "kaynak_url": "https://istanbul.eczaneleri.org/tuzla/nobetci-eczaneler.html",
-  "guncelleme": "2026-08-21T18:56+03:00",
+  "guncelleme": "2026-08-22T10:07+03:00",
   "eczaneler": [
-    {
-      "ad": "Berkay Eczanesi",
-      "adres": "Mimarsinan Mimar Sinan Mahallesi Başak Sokak (g.74 Sk.) 21/d",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-berkay-eczanesi.html"
-    },
-    {
-      "ad": "Cantürk Eczanesi",
-      "adres": "Aydıntepe Mahallesi Batu Sokak 24/a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-canturk-eczanesi.html"
-    },
-    {
-      "ad": "İlhan Eczanesi",
-      "adres": "Yayla Mahallesi Ali İhsan Paşa Caddesi 37a",
-      "detay": "https://istanbul.eczaneleri.org/tuzla-ilhan-eczanesi.html"
-    },
     {
       "ad": "Bilge Eczanesi",
       "adres": "Yayla Mahallesi Ali İhsan Paşa Caddesi 35a",
@@ -43,6 +28,16 @@
       "ad": "Metro Eczanesi",
       "adres": "Tersaneler Evliya Çelebi Mahallesi Hatboyu Caddesi 8/a",
       "detay": "https://istanbul.eczaneleri.org/tuzla-metro-eczanesi.html"
+    },
+    {
+      "ad": "Dila Eczanesi",
+      "adres": "Mimarsinan Şifa Mahallesi Emiroğlu Caddesi 133",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-dila-eczanesi.html"
+    },
+    {
+      "ad": "Lavanta Eczanesi",
+      "adres": "Evliya Çelebi Mahallesi Hatboyu Caddesi 6/a",
+      "detay": "https://istanbul.eczaneleri.org/tuzla-lavanta-eczanesi.html"
     }
   ]
 }
